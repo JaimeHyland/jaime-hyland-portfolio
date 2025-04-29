@@ -6,7 +6,7 @@ export const contact = [
   },
   {
     id: 2,
-    tittle: "Ankit",
+    tittle: "Jaime",
     img: "/github.png",
   },
 ];
