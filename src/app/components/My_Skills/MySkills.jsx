@@ -8,7 +8,7 @@ const MySkills = () => {
       <section id="skills">
         <div className="bg-[#1F1E1B] flex flex-col justify-center items-center font-Inconsolata  gap-9 flex-wrap py-44">
           <div className="flex justify-center items-center">
-            <h1 className="text-[#FF8303] text-3xl font-semibold">My Skills</h1>
+            <h1 className="text-[#FF8303] text-3xl font-semibold">My skills</h1>
           </div>
           <div>
             <div className="flex flex-wrap justify-center items-center gap-5 p-2">

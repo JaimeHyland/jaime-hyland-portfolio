@@ -1,7 +1,7 @@
 export const menuList = [
   {
     id: "2",
-    title: "About Me",
+    title: "About me",
     path: "#about",
   },
   {
@@ -16,7 +16,7 @@ export const menuList = [
   },
   {
     id: "5",
-    title: "Pet Projects",
+    title: "Pet projects",
     path: "#blog",
   },
   {

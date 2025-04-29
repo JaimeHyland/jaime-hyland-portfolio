@@ -7,7 +7,7 @@ const MyWork = () => {
     <section id="services">
       <div className="bg-[#1F1E1B] flex flex-col justify-center items-center font-Inconsolata  gap-12 py-52">
         <div className="flex justify-center items-center">
-          <h1 className="text-[#FF8303] text-3xl font-semibold">My Work</h1>
+          <h1 className="text-[#FF8303] text-3xl font-semibold">My work</h1>
         </div>
         <div className="flex flex-col lg:flex-row gap-12">
         <div className="relative">

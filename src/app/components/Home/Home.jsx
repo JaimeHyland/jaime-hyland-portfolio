@@ -11,24 +11,20 @@ const Home = () => {
             </div>
             <div className="lg:w-1/2 text-center lg:text-start">
               <p>
-                A few years ago, I became interested in developing websites and
-                interfaces. Since then, I have been steadily improving my
-                skills. Now I am developing websites and web applications to
-                order or for myself.
+                A former technical translator, I recently completed a year-long course in Full-stack Web development. I'm now looking for opportunities to put my skills into real-world action.
               </p>
             </div>
           </div>
           <div className="flex flex-col lg:flex-row justify-center items-center  gap-10">
             <div className="flex flex-col lg:items-start justify-center items-center gap-2 p-5">
               <h1 className="text-[#FF8303] text-4xl font-bold">
-                Ankit Yadav
+                Jaime Hyland
               </h1>
               <label className="text-[#F0E3CA] text-3xl">
-                MERN Developer
+                Full-stack web developer
               </label>
               <span className="text-[#F0E3CA] text-lg text-center lg:text-start">
-                MERN developer looking for ideas and projects for himself
-                and others
+                ... in search a creative team building real-world projects.
               </span>
             </div>
             <div className="relative w-96 h-96 bg-cover">

@@ -8,15 +8,16 @@ const Contacts = () => {
         <div className="bg-[#1F1E1B] flex flex-col  xl:flex-row justify-center p-20 gap-5 font-Inconsolata ">
           <div className="flex flex-col  gap-4 p-6">
             <h1 className="text-3xl text-[#F0E3CA]">
-              <span className="text-[#FF8303]">&lt;/A</span>nkit
+              <span className="text-[#FF8303]">&lt;J</span>aime 
+              <span className="text-[#FF8303]"> H</span>yland
               <span className="text-[#FF8303]">&gt;</span>
             </h1>
              <p className="text-[#F0E3CA] text-xl">
-              If you liked my work and you need me, I&apos;m ready to talk to you.
+              If you're interested in my skills and like my work, Please get in touch.
             </p>
           </div>
           <div className="flex flex-col  items-start gap-5  flex-wrap">
-            <h1 className="text-[#FF8303] text-3xl font-bold">Contacts</h1>
+            <h1 className="text-[#FF8303] text-3xl font-bold">Contact email</h1>
             <div className="flex flex-col lg:flex-row justify-center items-center gap-10">
               <div className="flex justify-center items-center gap-4">
                 <Image
@@ -27,9 +28,9 @@ const Contacts = () => {
                 />
                 <Link
                   className="text-[#FF8303] text-xl text-center"
-                  href="mailto:ankityadav119liv@gmail.com"
+                  href="mailto:jaime.hyland@language-landscapes.com"
                 >
-                  ankityadav119liv@gmail.com
+                  jaime.hyland@language-landscapes.com
                 </Link>
               </div>
               <div className="flex justify-center items-center gap-4">
@@ -41,9 +42,9 @@ const Contacts = () => {
                 />
                 <Link
                   className="text-[#FF8303] text-2xl text-center"
-                  href="https://github.com/LiveWithCodeAnkit"
+                  href="https://github.com/JaimeHyland/"
                 >
-                  LiveWithCodeAnkit
+                  Jaime's Repos
                 </Link>
               </div>
             </div>
