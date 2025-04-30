@@ -11,7 +11,7 @@ const Home = () => {
             </div>
             <div className="lg:w-1/2 text-center lg:text-start">
               <p>
-                A former technical translator, I recently completed a year-long course in Full-stack Web development. I'm now looking for opportunities to put my skills into real-world action.
+                A former technical translator, I recently completed a year-long course in Full-stack Web development. I&apos;m now looking for opportunities to put my skills into real-world action.
               </p>
             </div>
           </div>

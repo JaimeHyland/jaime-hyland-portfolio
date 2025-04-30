@@ -11,7 +11,7 @@ export default function Home() {
           I build and deploy content-centred, user-focused web apps from backend to frontend.
         </p>
           <p className="mt-4 text-base text-gray-700">
-          This page will give you an idea of what I do and where I'm aiming.
+          This page will give you an idea of what I do and where I&apos;m aiming.
         </p>
       </section>
 

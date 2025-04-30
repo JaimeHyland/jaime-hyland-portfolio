@@ -13,7 +13,7 @@ const Contacts = () => {
               <span className="text-[#FF8303]">&gt;</span>
             </h1>
              <p className="text-[#F0E3CA] text-xl">
-              If you're interested in my skills and like my work, Please get in touch.
+              If you&apos;re interested in my skills and like my work, Please get in touch.
             </p>
           </div>
           <div className="flex flex-col  items-start gap-5  flex-wrap">
@@ -44,7 +44,7 @@ const Contacts = () => {
                   className="text-[#FF8303] text-2xl text-center"
                   href="https://github.com/JaimeHyland/"
                 >
-                  Jaime's Repos
+                  Jaime&apos;s Repos
                 </Link>
               </div>
             </div>
