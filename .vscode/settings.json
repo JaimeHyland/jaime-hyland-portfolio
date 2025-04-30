@@ -1,6 +1,8 @@
 {
     "cSpell.words": [
-        "Jaime Hyland",
-        "Jaime"
-    ]
-}
+      "Jaime Hyland",
+      "Jaime"
+    ],
+    "css.customData": [".vscode/tailwind-custom-data.json"]
+  }
+  

@@ -1,0 +1,9 @@
+{
+    "atDirectives": [
+      {
+        "name": "@tailwind",
+        "description": "Tailwind CSS directive"
+      }
+    ]
+  }
+  
