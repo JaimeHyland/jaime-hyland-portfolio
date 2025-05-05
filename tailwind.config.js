@@ -5,6 +5,9 @@ module.exports = {
   ],
   safelist: [
     'text-2xl',
+    'text-3xl',
+    'text-4xl',
+    'text-5xl',
     'lg:text-4xl',
     'font-bold',
     'text-[#F0E3CA]',
