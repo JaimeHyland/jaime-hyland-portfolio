@@ -39,7 +39,7 @@ export default function Home() {
           <div className="border p-4 rounded shadow">
             <h3 className="font-bold">Project Name</h3>
             <p className="text-sm text-gray-600">Tech: React, Node.js</p>
-            <p className="mt-2 text-gray-700">Short description of the project goes here.</p>
+            <p className="mt-2 text-gray-700">Put a short description of the project in here.</p>
           </div>
           {/* Add more project cards later */}
         </div>
