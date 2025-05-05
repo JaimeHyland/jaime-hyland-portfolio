@@ -4,8 +4,8 @@ export default function Home() {
       {/* Hero */}
       <section className="text-center my-12">
         <h1 className="text-5xl font-bold mb-4">Jaime Hyland</h1>
-        <h1 className="text-4xl">Hiya!</h1>
-        <h1 className="text-3xl">How is it going?</h1>
+        <h1 className="text-2xl hidden"></h1>
+        <h1 className="text-3xl hidden"></h1>
         <h1 className="text-2xl">Hello</h1>
         <p className="text-lg text-gray-600">
           Full-Stack Developer • JavaScript | Python | Django | React | Node.js
