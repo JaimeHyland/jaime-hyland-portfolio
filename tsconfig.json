@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve", // or "react-jsx" if you're using React 17+
+    "module": "esnext",
+    "target": "es6",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["app", "components", "pages", "lib", "public"],
+  "exclude": ["node_modules"]
+}
