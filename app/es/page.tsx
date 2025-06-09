@@ -8,7 +8,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold">Jaime Hyland</h1>
           <nav className="space-x-4">
-            <Link href="/">Casa</Link>
+            <Link href="/">Inicio</Link>
             <Link href="/projects">Proyectos</Link>
             <Link href="/cv">Curriculum Vitae</Link>
             <Link href="/contact">Contactar</Link>
@@ -17,7 +17,7 @@ export default function Home() {
       </header>
 
       <section className="max-w-5xl mx-auto p-8">
-        <h2 className="text-3xl font-semibold mb-4">¡Bienvenido</h2>
+        <h2 className="text-3xl font-semibold mb-4">¡Bienvenido!</h2>
         <p className="text-lg text-gray-600 mb-6">
           Soy un programador de web full-stack. Me gusta desarrollar aplicaciones web limpios, atractivos y escalables.
         </p>
