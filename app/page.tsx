@@ -19,7 +19,7 @@ export default function Home() {
       <section className="max-w-5xl mx-auto p-8">
         <h2 className="text-3xl font-semibold mb-4">Welcome</h2>
         <p className="text-lg text-gray-600 mb-6">
-          I'm a full-stack developer who enjoys building clean, scalable web applications.
+          I&apos;m a full-stack developer who enjoys building clean, scalable web applications.
         </p>
         <Link href="/projects" className="inline-block bg-gray-900 text-white px-5 py-2 rounded-xl shadow hover:bg-gray-700 transition">
           View my work
