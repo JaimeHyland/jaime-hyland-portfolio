@@ -4,6 +4,16 @@ import { ReactNode, useEffect, useState } from 'react';
 import Link from 'next/link';
 import GDPRConsent from './gdpr-consent';
 
+export const metadata = {
+  title: 'Jaime Hyland',
+  description: 'Showcasing my work and skills',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-32x32.png',
+    apple: '/apple-touch-icon.png',
+  },
+};
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
