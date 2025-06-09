@@ -1,8 +1,34 @@
-export default function HomeDE() {
+import React from "react";
+import Link from "next/link";
+
+export default function Home() {
   return (
-    <div>
-      <h2 className="text-2xl font-semibold">Willkommen</h2>
-      <p>Dies ist die deutsche Version der Seite.</p>
-    </div>
+    <main className="min-h-screen bg-white text-gray-800 font-sans">
+      <header className="p-6 border-b border-gray-200">
+        <div className="max-w-5xl mx-auto flex justify-between items-center">
+          <h1 className="text-2xl font-bold">Jaime Hyland</h1>
+          <nav className="space-x-4">
+            <Link href="/">Home</Link>
+            <Link href="/projects">Projekte</Link>
+            <Link href="/cv">Lebenslauf</Link>
+            <Link href="/contact">Kontakt</Link>
+          </nav>
+        </div>
+      </header>
+
+      <section className="max-w-5xl mx-auto p-8">
+        <h2 className="text-3xl font-semibold mb-4">Willkommen!</h2>
+        <p className="text-lg text-gray-600 mb-6">
+          Ich bin ein Full-Stack-Webentwickler. Gerne entwerfe und erstelle ich saubere, attraktive und skalierbare Web-Apps. 
+        </p>
+        <Link href="/projects" className="inline-block bg-gray-900 text-white px-5 py-2 rounded-xl shadow hover:bg-gray-700 transition">
+          Meine Arbeiten durchblättern
+        </Link>
+      </section>
+
+      <footer className="p-6 border-t border-gray-200 text-center text-sm text-gray-500">
+        &copy; {new Date().getFullYear()} Jaime Hyland. Alle Rechte vorbehalten.
+      </footer>
+    </main>
   );
 }

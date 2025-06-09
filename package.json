@@ -1,7 +1,18 @@
 {
-  "name": "taskone",
+  "name": "jaime-hyland-portfolio",
   "version": "0.1.0",
   "private": true,
+  "description": "Multilingual personal portfolio site for Jaime Hyland, showcasing projects and experience in English, Spanish, and German.",
+  "author": "Jaime Hyland <jaime.hyland@language-landscapes.com>",
+  "license": "MIT",
+  "homepage": "https://jaime-hyland.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JaimeHyland/jaime-hyland-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JaimeHyland/jaime-hyland-portfolio/issues"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
