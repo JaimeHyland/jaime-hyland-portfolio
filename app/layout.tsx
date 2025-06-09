@@ -1,7 +1,7 @@
 
 import './globals.css';
 import { ReactNode, useEffect, useState } from 'react';
-import Link from 'next/link';
+import Header from '@/components/Header';
 import GDPRConsent from './gdpr-consent';
 
 export const metadata = {
@@ -19,14 +19,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body className="font-sans bg-white text-gray-800">
         <GDPRConsent />
-        <header className="p-4 bg-gray-100 border-b flex justify-between items-center">
-          <h1 className="text-xl font-bold">Jaime Hyland</h1>
-          <nav className="space-x-4">
-            <Link href="/en">English</Link>
-            <Link href="/de">Deutsch</Link>
-            <Link href="/es">Español</Link>
-          </nav>
-        </header>
+        <Header labels={{ en: 'English', de: 'German', es: 'Spanish' }} />
         <main className="p-6">{children}</main>
       </body>
     </html>
