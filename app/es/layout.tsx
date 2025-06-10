@@ -19,7 +19,18 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body className="font-sans bg-white text-gray-800">
         <GDPRConsent />
-        <Header labels={{ en: 'inglés', de: 'alemán', es: 'español' }} />
+        <Header
+          lang="en"
+          labels={{
+            home: 'Inicio',
+            projects: 'Proyectos',
+            cv: 'Curriculum',
+            contact: 'Contactos',
+            en: 'inglés',
+            de: 'alemán',
+            es: 'español',
+          }}
+        />
         <main className="p-6">{children}</main>
       </body>
     </html>

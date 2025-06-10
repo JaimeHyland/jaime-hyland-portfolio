@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import GDPRConsent from '../gdpr-consent';
 
 export const metadata = {
-  title: 'Jaime Hyland',
+  title: 'Jaime Hylands Portfolio',
   description: 'Meine Arbeit und Fähigkeiten präsentieren',
   icons: {
     icon: '/favicon.ico',
@@ -19,7 +19,18 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body className="font-sans bg-white text-gray-800">
         <GDPRConsent />
-        <Header labels={{ en: 'Englisch', de: 'Deutsch', es: 'Spanisch' }} />
+        <Header
+          lang="en"
+          labels={{
+            home: 'Start',
+            projects: 'Projekte',
+            cv: 'Lebenslauf',
+            contact: 'Kontakt',
+            en: 'Englisch',
+            de: 'Deutsch',
+            es: 'Spanisch',
+          }}
+        />
         <main className="p-6">{children}</main>
       </body>
     </html>
