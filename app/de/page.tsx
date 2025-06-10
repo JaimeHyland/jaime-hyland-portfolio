@@ -6,7 +6,7 @@ export default function Home() {
     <main className="min-h-screen bg-white text-gray-800 font-sans">
       <header className="p-6 border-b border-gray-200">
         <div className="max-w-5xl mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Jaime Hyland</h1>
+          <h1 className="text-2xl font-bold">Jaime Hyland's CV and Portfolio</h1>
           <nav className="space-x-4">
             <Link href="/">Home</Link>
             <Link href="/projects">Projekte</Link>
