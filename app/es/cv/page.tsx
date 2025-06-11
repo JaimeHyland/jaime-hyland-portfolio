@@ -59,7 +59,7 @@ export default function CVPage() {
 
       <h2>Aficiones e intereses</h2>
       <p>
-        Participo en "hackathons" de Code Institute, me sigo formando en brilliant.org, LinkedIn Learning y KodeKloud. Experimento con Dart/Flutter y aprendo Linux.
+        Participo en &ldquo;hackathons&rdquo; de Code Institute, me sigo formando en brilliant.org, LinkedIn Learning y KodeKloud. Experimento con Dart/Flutter y aprendo Linux.
       </p>
       <p>
         Me gusta la jardinería, la cocina (ver mi vídeo en YouTube), la apicultura y fabricar moldes de silicona.

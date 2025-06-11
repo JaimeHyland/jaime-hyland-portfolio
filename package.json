@@ -6,6 +6,7 @@
   "author": "Jaime Hyland <jaime.hyland@language-landscapes.com>",
   "license": "MIT",
   "homepage": "https://jaime-hyland.com",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/JaimeHyland/jaime-hyland-portfolio.git"
