@@ -1,10 +1,9 @@
-
-import '@/app/globals.css';
-import GDPRConsent from './gdpr-consent';
+// app/layout.tsx
+import './globals.css';
 import { ReactNode } from 'react';
-import type { Metadata } from 'next';
+import GDPRConsent from './gdpr-consent';
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Jaime Hyland Portfolio',
   description: 'Multilingual CV and project showcase',
   icons: {
@@ -14,14 +13,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-    children
-}: {
-    children: ReactNode
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    // default to English
-    <html lang="en">
+    <html>
       <body className="font-sans bg-white text-gray-800">
         <GDPRConsent />
         {children}
