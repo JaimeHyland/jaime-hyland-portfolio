@@ -1,5 +1,5 @@
 
-import './globals.css';
+import '@/app/globals.css';
 import GDPRConsent from './gdpr-consent';
 import { ReactNode } from 'react';
 import type { Metadata } from 'next';
