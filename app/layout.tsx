@@ -20,7 +20,8 @@ export default function RootLayout({
     children: ReactNode
 }) {
   return (
-    <html lang="en">  # default to english
+    // default to English
+    <html lang="en">
       <body className="font-sans bg-white text-gray-800">
         <GDPRConsent />
         {children}
