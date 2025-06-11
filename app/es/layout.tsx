@@ -1,5 +1,5 @@
 
-import './globals.css';
+import '../../globals.css';
 import { ReactNode, useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import GDPRConsent from '../gdpr-consent';
