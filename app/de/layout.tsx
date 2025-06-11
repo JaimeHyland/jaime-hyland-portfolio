@@ -1,8 +1,6 @@
 
-import '../../globals.css';
-import { ReactNode, useEffect, useState } from 'react';
+import { ReactNode } from 'react';
 import Header from '@/components/Header';
-import GDPRConsent from '../gdpr-consent';
 
 export const metadata = {
   title: 'Jaime Hylands Portfolio',
@@ -16,23 +14,20 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body className="font-sans bg-white text-gray-800">
-        <GDPRConsent />
-        <Header
-          lang="en"
-          labels={{
-            home: 'Start',
-            projects: 'Projekte',
-            cv: 'Lebenslauf',
-            contact: 'Kontakt',
-            en: 'Englisch',
-            de: 'Deutsch',
-            es: 'Spanisch',
-          }}
-        />
-        <main className="p-6">{children}</main>
-      </body>
-    </html>
+    <>
+      <Header
+        lang="de"
+        labels={{
+          home: 'Start',
+          projects: 'Projekte',
+          cv: 'Lebenslauf',
+          contact: 'Kontakt',
+          en: 'Englisch',
+          de: 'Deutsch',
+          es: 'Spanisch',
+        }}
+      />
+      <main className="p-6">{children}</main>
+    </>
   );
 }
