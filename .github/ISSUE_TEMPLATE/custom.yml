@@ -1,6 +1,6 @@
 name: Custom issue template
 description: Describe this issue template's purpose here.
-title: ""
+title: "Other Issue: [title]"
 labels: []
 assignees: []
 body:
@@ -8,3 +8,9 @@ body:
     attributes:
       value: |
         *(Write your issue content here...)*
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Please provide detailed information about the issue.
+      placeholder: Describe the issue here...
