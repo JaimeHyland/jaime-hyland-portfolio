@@ -6,18 +6,30 @@ labels:
 assignees:
   - JaimeHyland
 body:
-  - type: markdown
+  - type: textarea
+    id: problem_description
     attributes:
-      value: |
-        **Is your feature request related to a problem? Please describe.**  
-        A clear and concise description of what the problem is.  
-        _Ex: I'm always frustrated when [...]_
+      label: Is your feature request related to a problem? Please describe.
+      description: A clear and concise description of what the problem is. Ex: "I'm always frustrated when..."
+    validations:
+      required: true
 
-        **Describe the solution you'd like**  
-        A clear and concise description of what you want to happen.
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Describe the solution you'd like
+      description: A clear and concise description of what you want to happen.
+    validations:
+      required: true
 
-        **Describe alternatives you've considered**  
-        A clear and concise description of any alternative solutions or features you've considered.
+  - type: textarea
+    id: alternatives_considered
+    attributes:
+      label: Describe alternatives you've considered
+      description: A clear and concise description of any alternative solutions or features you've considered.
 
-        **Additional context**  
-        Add any other context or screenshots about the feature request here.
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
