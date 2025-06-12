@@ -17,6 +17,4 @@ body:
       label: Please check off the tasks you have completed:
       options:
         - label: CR1
-          required: false
         - label: CR2
-          required: false
