@@ -11,7 +11,12 @@ body:
       value: |
         As a **role**, I can **capability**, so that **received benefit**.
 
-        **Acceptance Criteria**
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: List the acceptance criteria for this user story
+      placeholder: |
         - AC1:
         - AC2:
         - AC3:
