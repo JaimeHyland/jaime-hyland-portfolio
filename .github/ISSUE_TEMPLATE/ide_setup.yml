@@ -11,5 +11,12 @@ body:
       value: |
         As the **Developer**, I have **set-up installed or configured** in my IDE, so that I can **benefit**.
 
-        - CR1:  
-        - CR2:
+  - type: checkboxes
+    id: setup_tasks
+    attributes:
+      label: Please check off the tasks you have completed:
+      options:
+        - label: CR1
+          required: false
+        - label: CR2
+          required: false
