@@ -1,37 +1,45 @@
-name: Feature request
-description: Template for suggested new feature or improvement in the current app
+name: Feature Request
+description: Template for suggesting a new feature or improvement in the app
 title: "New Feature: [title]"
 labels:
   - enhancement
 assignees:
   - JaimeHyland
+
 body:
   - type: textarea
     id: problem_description
     attributes:
-      label: Is your feature request related to a problem? Please describe.
-      description: |
-        A clear and concise description of what the problem is. Ex: I'm always frustrated when...
-
+      label: Problem / Motivation
+      description: Describe the issue or opportunity that leads to this feature.
+      value: |
+        I'm currently experiencing **[describe the problem or limitation]**, and I think **[this feature]** would help because **[reason/benefit]**.
     validations:
       required: true
 
   - type: textarea
     id: proposed_solution
     attributes:
-      label: Describe the solution you'd like
-      description: A clear and concise description of what you want to happen.
+      label: Proposed Solution
+      description: How do you envision solving the problem?
+      value: |
+        I propose **[feature/behavior]**, which would allow users to **[benefit/result]**.
     validations:
       required: true
 
   - type: textarea
     id: alternatives_considered
     attributes:
-      label: Describe alternatives you've considered
-      description: A clear and concise description of any alternative solutions or features you've considered.
+      label: Alternatives Considered
+      description: Any other approaches you've thought about?
+      value: |
+        - [Alternative 1]
+        - [Alternative 2]
 
   - type: textarea
     id: additional_context
     attributes:
-      label: Additional context
-      description: Add any other context or screenshots about the feature request here.
+      label: Additional Context
+      description: Add links, mockups, screenshots, or other relevant info.
+      value: |
+        - [Link to reference material or design]
