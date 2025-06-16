@@ -1,29 +1,31 @@
-name: Bug report
-description: Template to record bug or infelicity in current code
+name: Bug Report
+description: Template to report a bug or unexpected behavior in the code
 title: "BUG: [title]"
 labels:
   - bug
 assignees:
   - JaimeHyland
-body:
-  - type: markdown
-    attributes:
-      value: |
-        Please fill out the following fields to help us reproduce the bug.
 
+body:
   - type: textarea
     id: bug_description
     attributes:
-      label: Describe the bug
-      description: A clear and concise description of what the bug is.
+      label: Describe the Bug
+      description: What’s happening that shouldn't be?
+      value: |
+        When I **[do something]**, the app **[unexpected behavior]** instead of **[expected behavior]**.
     validations:
       required: true
 
   - type: textarea
     id: steps_to_reproduce
     attributes:
-      label: To Reproduce
-      description: Steps to reproduce the behavior. Be specific and include URLs or actions.
+      label: Steps to Reproduce
+      description: List the specific steps to trigger the bug.
+      value: |
+        1. Go to **[URL/page]**
+        2. Click on **[button/action]**
+        3. Observe **[unexpected behavior]**
     validations:
       required: true
 
@@ -31,10 +33,14 @@ body:
     id: expected_behavior
     attributes:
       label: Expected Behavior
-      description: What did you expect to happen instead?
+      description: What should happen instead?
+      value: |
+        The system should **[expected action or result]** when **[trigger]**.
 
   - type: textarea
     id: additional_context
     attributes:
       label: Additional Context
-      description: Add any other context, error messages, or screenshots.
+      description: Logs, screenshots, or related discussion.
+      value: |
+        - [Paste error logs here or attach screenshots if relevant]
