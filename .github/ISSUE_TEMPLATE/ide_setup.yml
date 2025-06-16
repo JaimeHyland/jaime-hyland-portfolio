@@ -5,16 +5,31 @@ labels:
   - set-up
 assignees:
   - JaimeHyland
-body:
-  - type: markdown
-    attributes:
-      value: |
-        As the **Developer**, I have **set-up installed or configured** in my IDE, so that I can **benefit**.
 
-  - type: checkboxes
-    id: setup_tasks
+body:
+  - type: textarea
+    id: dev_story
     attributes:
-      label: "Please check off the tasks you have completed:"
-      options:
-        - label: CR1
-        - label: CR2
+      label: Developer Setup Story
+      description: Define the IDE setup task in the format below.
+      value: |
+        As the **Developer**, I have **[set-up, tool, or config]** in my IDE, so that I can **[benefit to development process]**.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / Notes
+      description: Add any relevant background, links, configs, or related setup info.
+      value: |
+        - [Explain system requirements, plugin choices, or settings here.]
+
+  - type: textarea
+    id: criteria
+    attributes:
+      label: Completion Requirements
+      description: What needs to be done for this to be considered complete?
+      value: |
+        - **CR1**: **[First config or install step]**
+        - **CR2**: **[Second config or validation step]**
