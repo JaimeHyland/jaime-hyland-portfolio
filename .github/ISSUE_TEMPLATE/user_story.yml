@@ -11,9 +11,9 @@ body:
     id: user_story
     attributes:
       label: User Story
-      description: "Write your user story in the format: 'As a [role], I can [capability], so that [benefit].'"
-      placeholder: >
-        As a [role], I can [capability], so that [received benefit].
+      description: Describe the story using this standard format.
+      value: |
+        As a **[role]**, I can **[capability]**, so that **[benefit]**.
     validations:
       required: true
 
@@ -21,17 +21,16 @@ body:
     id: acceptance_criteria
     attributes:
       label: Acceptance Criteria
-      description: Define what must be true for this story to be considered complete.
-      placeholder: >
-        - AC1 [First acceptance condition]
-        - AC2 [Second acceptance condition]
-        - AC3 [Optional third condition]
+      description: What must be true for this story to be considered complete?
+      value: |
+        - **AC1**: **[First acceptance condition]**
+        - **AC2**: **[Second acceptance condition]**
+        - **AC3**: **[Optional third condition]**
 
   - type: textarea
     id: notes
     attributes:
       label: Notes / Context (Optional)
-      description: Add any relevant context, links, diagrams, or considerations.
-      placeholder: >
-        - Link to design mockups
-        - Background information
+      description: Add any background, links, or related discussion.
+      value: |
+        - [Insert relevant links or diagrams]
