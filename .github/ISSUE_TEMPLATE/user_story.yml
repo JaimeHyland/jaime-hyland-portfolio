@@ -1,22 +1,37 @@
 name: User Story Template
-description: This template is used to help the developer to set up User Stories on the Kanban
+description: This template helps developers define and manage User Stories for the Kanban board
 title: "USER STORY: [title]"
 labels:
   - enhancement
 assignees:
   - JaimeHyland
+
 body:
-  - type: markdown
+  - type: textarea
+    id: user_story
     attributes:
-      value: |
-        As a **role**, I can **capability**, so that **received benefit**.
+      label: User Story
+      description: Write your user story in the format: "As a [role], I can [capability], so that [benefit]."
+      placeholder: |
+        As a [role], I can [capability], so that [received benefit].
+    validations:
+      required: true
 
   - type: textarea
     id: acceptance_criteria
     attributes:
       label: Acceptance Criteria
-      description: List the acceptance criteria for this user story
+      description: Define what must be true for this story to be considered complete.
       placeholder: |
-        - AC1:
-        - AC2:
-        - AC3:
+        - AC1: [First acceptance condition]
+        - AC2: [Second acceptance condition]
+        - AC3: [Optional third condition]
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Context (Optional)
+      description: Add any relevant context, links, diagrams, or considerations.
+      placeholder: |
+        - Link to design mockups
+        - Background information
