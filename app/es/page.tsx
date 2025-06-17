@@ -10,7 +10,7 @@ export default function Home() {
         <p className="text-lg text-gray-600 mb-6">
           Soy un programador web de pila completa. Me gusta desarrollar aplicaciones web limpios, atractivos y escalables.
         </p>
-        <Link href="/projects" className="inline-block bg-gray-900 text-white px-5 py-2 rounded-xl shadow hover:bg-gray-700 transition">
+        <Link href="/es/proyectos" className="inline-block bg-gray-900 text-white px-5 py-2 rounded-xl shadow hover:bg-gray-700 transition">
           Explora mis proyectos
         </Link>
       </section>

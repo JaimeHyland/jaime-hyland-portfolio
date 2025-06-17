@@ -10,7 +10,7 @@ export default function Home() {
         <p className="text-lg text-gray-600 mb-6">
           Ich bin ein Full-Stack-Webentwickler und Geschichtenvermittler. Gerne entwerfe und erstelle ich saubere, attraktive und skalierbare Web-Apps. 
         </p>
-        <Link href="/projects" className="inline-block bg-gray-900 text-white px-5 py-2 rounded-xl shadow hover:bg-gray-700 transition">
+        <Link href="/de/projekte" className="inline-block bg-gray-900 text-white px-5 py-2 rounded-xl shadow hover:bg-gray-700 transition">
           Meine Arbeiten durchblättern
         </Link>
       </section>
