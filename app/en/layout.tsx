@@ -1,33 +1,19 @@
 
-import { ReactNode, useEffect, useState } from 'react';
+import { ReactNode } from 'react';
 import Header from '@/components/Header';
+import { localizedPaths } from '@/lib/paths';
+import { localizedLabels } from '@/lib/labels';
 
-export const metadata = {
-  title: 'Jaime Hyland&apos;s portfolio',
-  description: 'Showcasing my work and skills',
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-32x32.png',
-    apple: '/apple-touch-icon.png',
-  },
-};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <>
-      <Header 
-        lang='en' 
-        labels={{
-          home: 'Home',
-          projects: 'Projects',
-          cv: 'CV',
-          contact: 'Contact',
-          en: 'English',
-          de: 'German',
-          es: 'Spanish',
-        }}
+      <Header
+        lang='en'
+        labels={localizedLabels['en']}
+        paths={localizedPaths['en']} 
       />
-        <main className="p-6">{children}</main>
-      </>
+      <main className="p-6">{children}</main>
+    </>
   );
 }

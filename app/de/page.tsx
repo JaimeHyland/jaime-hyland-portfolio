@@ -4,17 +4,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-gray-800 font-sans">
-      <header className="p-6 border-b border-gray-200">
-        <div className="max-w-5xl mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Jaime Hylands Lebenslauf und Portfolio</h1>
-          <nav className="space-x-4">
-            <Link href="/">Start</Link>
-            <Link href="/projects">Projekte</Link>
-            <Link href="/cv">Lebenslauf</Link>
-            <Link href="/contact">Kontakt</Link>
-          </nav>
-        </div>
-      </header>
 
       <section className="max-w-5xl mx-auto p-8">
         <h2 className="text-3xl font-semibold mb-4">Willkommen!</h2>

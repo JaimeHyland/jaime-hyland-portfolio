@@ -37,7 +37,7 @@
     "pages",
     "public",
     ".next/types/**/*.ts"
-  ],
+, "lib"  ],
   "exclude": [
     "node_modules"
   ]
