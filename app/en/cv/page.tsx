@@ -1,10 +1,8 @@
-import React from 'react';
-
 export default function CVPage() {
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-6">
       <h1 className="text-3xl font-bold">Jaime Hyland</h1>
-      <p className="text-lg italic">Software developer, storyteller — Berlin</p>
+      <p className="text-lg italic">Software developer, trainer, storyteller — Berlin</p>
       <p className="text-sm text-gray-600">E-Mail / GitHub / Website / LinkedIn</p>
 
       <section>

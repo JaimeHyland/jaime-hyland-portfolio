@@ -47,19 +47,19 @@ export default function ProyectosPage() {
         <p className="mb-4">These collaborative projects were developed as part of various hackathons. My contributions are noted where relevant.</p>
         <ul className="space-y-6">
           <li>
-            <strong>SparkSync</strong> – Code Institute's February '25 Hackathon<br />
+            <strong>SparkSync</strong> – Code Institute,&apos;s February &apos;25 Hackathon<br />
             <em>Dating app</em><br />
             <span className="text-blue-600 underline">[Live site URL]</span> | <span className="text-blue-600 underline">[GitHub URL]</span><br />
             <span className="text-sm text-gray-700">My role: [e.g. Frontend design, React form handling, project coordination]</span>
           </li>
           <li>
-            <strong>TechBuddy</strong> – Code Institute's May '25 Hackathon<br />
+            <strong>TechBuddy</strong> – Code Institute&apos;s May &apos;25 Hackathon<br />
             <em>Technical help app for all the family</em><br />
             <span className="text-blue-600 underline">[Live site URL]</span> | <span className="text-blue-600 underline">[GitHub URL]</span><br />
             <span className="text-sm text-gray-700">My role: [e.g. Django models, session handling, UI text content]</span>
           </li>
           <li>
-            <strong>SheGitsIt</strong> – Code Institute's March '25 Hackathon<br />
+            <strong>SheGitsIt</strong> – Code Institute&apos;s March &apos;25 Hackathon<br />
             <em>Support app for women in tech</em><br />
             <span className="text-blue-600 underline">[Live site URL]</span> | <span className="text-blue-600 underline">[GitHub URL]</span><br />
             <span className="text-sm text-gray-700">My role: [e.g. Accessibility testing, multilingual copywriting, component logic]</span>
