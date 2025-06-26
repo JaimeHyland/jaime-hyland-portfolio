@@ -25,7 +25,7 @@ export default function ProjectsPage() {
             target="_blank" rel="noopener noreferrer">Live demo site</a></span> | 
             {' '}<span className="text-blue-600 underline"><a href="https://github.com/JaimeHyland/farming-futures/" 
             target="_blank" rel="noopener noreferrer">GitHub repo</a></span> | 
-            {' '}<span className="text-blue-600 underline"><a href="https://markdown-viewer.vercel.app/#https://raw.githubusercontent.com/JaimeHyland/farming-futures/main/README.md"
+            {' '}<span className="text-blue-600 underline"><a href="https://github.com/jaimehyland/farming-futures/blob/main/README.md"
             target="_blank" rel="noopener noreferrer">Project readme file</a></span>
           </li>
           <li>
@@ -33,11 +33,18 @@ export default function ProjectsPage() {
             <span className="text-blue-600 underline"><a href="https://jaimehyland.github.io/elAcentoEspanyol/" 
             target="_blank" rel="noopener noreferrer">Live demo site</a></span> | 
             {' '}<span className="text-blue-600 underline"><a href="https://github.com/JaimeHyland/elAcentoEspanyol" 
-            target="_blank" rel="noopener noreferrer">GitHub repo</a></span>
+            target="_blank" rel="noopener noreferrer">GitHub repo</a></span> | 
+            {' '}<span className="text-blue-600 underline"><a href="https://github.com/jaimehyland/elAcentoEspanyol/blob/main/readme.md"
+            target="_blank" rel="noopener noreferrer">Project readme file</a></span>
           </li>
           <li>
             <strong>Witch-Hazel</strong> – Grafting manager CLI app (Python, Heroku)<br />
-            <span className="text-blue-600 underline">[Live app URL]</span> | <span className="text-blue-600 underline">[GitHub URL]</span>
+            <span className="text-blue-600 underline"><a href="https://jaimehyland.github.io/witch-hazel/" 
+            target="_blank" rel="noopener noreferrer">Live demo site</a></span> | 
+            {' '}<span className="text-blue-600 underline"><a href="https://github.com/JaimeHyland/witch-hazel" 
+            target="_blank" rel="noopener noreferrer">GitHub repo</a></span> | 
+            {' '}<span className="text-blue-600 underline"><a href="https://github.com/jaimehyland/witch-hazel/blob/main/README.md"
+            target="_blank" rel="noopener noreferrer">Project readme file</a></span>
           </li>
           <li>
             <strong>Family Shopping List</strong> – Django/PostgreSQL shopping app<br />
