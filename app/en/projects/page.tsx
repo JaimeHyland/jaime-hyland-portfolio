@@ -48,7 +48,12 @@ export default function ProjectsPage() {
           </li>
           <li>
             <strong>Family Shopping List</strong> – Django/PostgreSQL shopping app<br />
-            <span className="text-blue-600 underline">[Live app URL]</span> | <span className="text-blue-600 underline">[GitHub URL]</span>
+            <span className="text-blue-600 underline"><a href="https://jaimehyland.github.io/witch-hazel/" 
+            target="_blank" rel="noopener noreferrer">Live demo site</a></span> | 
+            {' '}<span className="text-blue-600 underline"><a href="https://github.com/JaimeHyland/witch-hazel" 
+            target="_blank" rel="noopener noreferrer">GitHub repo</a></span> | 
+            {' '}<span className="text-blue-600 underline"><a href="https://github.com/jaimehyland/witch-hazel/blob/main/README.md"
+            target="_blank" rel="noopener noreferrer">Project readme file</a></span>
           </li>
           <li>
             <strong>Mellifera</strong> – Online shop for beekeepers (Stripe, AWS)<br />
@@ -59,17 +64,17 @@ export default function ProjectsPage() {
       <section className="mb-10">
         <h2 className="text-2xl font-semibold mb-4">Ongoing independent Projects</h2>
         <p className="mb-4">These projects were created independently on my own initiative. They showcase some additional  
-          competencies and technologies that I have learned independently.</p>
+          competencies and technologies that I&apos;ve learned independently.</p>
         <ul className="space-y-4">
           <li>
             <strong>Jaime Hyland&apos;s Portfolio</strong><br />
-            <span className="text-sm text-gray-600">This trilingual site is a personal project of mine. The webpage you're 
+            <span className="text-sm text-gray-600">This trilingual site is a personal project of mine. The webpage you&apos;re 
               now looking at is part of it. It is designed to showcase my skills, experiences and aptitudes in web development.
               Even more so than the other projects in this list, it should be regarded as a work in progress. It uses 
               React/Next.js technology and is hosted by Vercel.</span><br />
-            <span className="text-blue-600 underline"><a href="https://jaime-hyland.com">jaime-hyland.com's GitHub repo</a></span> | 
+            <span className="text-blue-600 underline"><a href="https://jaime-hyland.com">jaime-hyland.com&apos;s GitHub repo</a></span> | 
             <span className="text-blue-600 underline"><a href="https://github.com/JaimeHyland/jaime-hyland-portfolio" target="_blank" 
-            rel="noopener noreferrer"></a>jaime-hyland.com's GitHub repo</span>
+            rel="noopener noreferrer"></a>jaime-hyland.com&apos;s GitHub repo</span>
           </li>
           <li>
             <strong>language-landscape.com</strong><br />
@@ -81,7 +86,7 @@ export default function ProjectsPage() {
               <span className="text-sm text-gray-600">It is currently hosted by Godaddy but, mainly for value-for-money and 
                 quality-of-service reasons, I intend to move it as soon as possible to another host.</span><br />
             <span className="text-blue-600 underline"><a href="https://language-landscapes.com">language-landscapes.com</a></span> | 
-            <span className="text-blue-600 underline"><a href="https://github.com/JaimeHyland/language-landscapes" target="_blank" rel="noopener noreferrer">language-landscapes.com's GitHub repo</a></span>
+            <span className="text-blue-600 underline"><a href="https://github.com/JaimeHyland/language-landscapes" target="_blank" rel="noopener noreferrer">language-landscapes.com&apos;s GitHub repo</a></span>
           </li>
         </ul>
       </section>
@@ -95,15 +100,15 @@ export default function ProjectsPage() {
           <li>
             <strong>TechBuddy</strong> – Code Institute&apos;s May &apos;25 Hackathon<br />
             <em>Technical help app for all the family</em><br />
-            <span className="text-blue-600 underline"><a href="https://support-squad-tech-buddy-9d4a4ad47301.herokuapp.com/" target="_blank" rel="noopener noreferrer">TechBuddy's live demo</a></span> | <span className="text-blue-600 underline">
-              <a href="https://github.com/apeskinian/tech_buddy" target="_blank" rel="noopener noreferrer"></a>TechBuddy's GitHub repo</span><br />
+            <span className="text-blue-600 underline"><a href="https://support-squad-tech-buddy-9d4a4ad47301.herokuapp.com/" target="_blank" rel="noopener noreferrer">TechBuddy&apos;s live demo</a></span> | <span className="text-blue-600 underline">
+              <a href="https://github.com/apeskinian/tech_buddy" target="_blank" rel="noopener noreferrer"></a>TechBuddy&apos;s GitHub repo</span><br />
             <span className="text-sm text-gray-700">My role: conception of original log-in logic; logic, design and implementation of AI chat page, 
               including AI tuning and connection to te OpenAI API.</span>
           </li>
           <li>
             <strong>SheGitsIt</strong> – Code Institute&apos;s March &apos;25 Hackathon<br />
             <em>Support app for women in tech</em><br />
-            <span className="text-blue-600 underline"><a href="https://she-gits-it-8555f0353cc7.herokuapp.com/" target="_blank" rel="noopener noreferrer">SheGitsIt's live demo</a></span> | <span className="text-blue-600 underline"><a href="https://github.com/Carlos-n21/Team-4-SheCanGitIt" 
+            <span className="text-blue-600 underline"><a href="https://she-gits-it-8555f0353cc7.herokuapp.com/" target="_blank" rel="noopener noreferrer">SheGitsIt&apos;s live demo</a></span> | <span className="text-blue-600 underline"><a href="https://github.com/Carlos-n21/Team-4-SheCanGitIt" 
             target="_blank" rel="noopener noreferrer">SheGitsIt GitHub repo</a></span><br />
             <span className="text-sm text-gray-700">My role: logic, design and implementation of instant messaging page, 
               including changes to deployment details for Django daphne and channels.</span>
@@ -111,13 +116,13 @@ export default function ProjectsPage() {
           <li>
             <strong>SparkSync</strong> – Code Institute&apos;s February &apos;25 Hackathon<br />
             <em>Dating app</em><br />
-            <span className="text-blue-600 underline"><a href="https://sparksync-7438f8dc8240.herokuapp.com/" target="_blank" rel="noopener noreferrer">SparkSync's live demo</a></span> | <span className="text-blue-600 underline"><a href="https://github.com/violaberg/dating-app" target="_blank" rel="noopener noreferrer">SparkSync's GitHHubRepo</a></span><br />
+            <span className="text-blue-600 underline"><a href="https://sparksync-7438f8dc8240.herokuapp.com/" target="_blank" rel="noopener noreferrer">SparkSync&apos;s live demo</a></span> | <span className="text-blue-600 underline"><a href="https://github.com/violaberg/dating-app" target="_blank" rel="noopener noreferrer">SparkSync&apos;s GitHHubRepo</a></span><br />
             <span className="text-sm text-gray-700">My role: logic, design and implementation of instant messaging page, including necessary changes to deployment.</span>
           </li>
           <li>
             <strong>CO<sub>2</sub>nscious</strong> – Battle of the Bootcamps, Berlin, November 25 to 28 2024<br />
             <em>Climate-friendly action app (very much still a work-in-progress).</em><br />
-            <span className="text-blue-600 underline">CO<sub>2</sub>nscious doesn't have a live demo</span> | <span className="text-blue-600 underline"><a href="https://github.com/raneem-yad/CO-nsious" target="_blank" rel="noopener noreferrer">CO<sub>2</sub>nscious's GitHub repo</a></span><br />
+            <span className="text-blue-600 underline">CO<sub>2</sub>nscious doesn&apos;t have a live demo</span> | <span className="text-blue-600 underline"><a href="https://github.com/raneem-yad/CO-nsious" target="_blank" rel="noopener noreferrer">CO<sub>2</sub>nscious&apos;s GitHub repo</a></span><br />
             <span className="text-sm text-gray-700">My role: initial wireframing, Django models and Swagger APIs.</span>
           </li>
         </ul>
