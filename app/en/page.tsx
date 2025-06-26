@@ -16,7 +16,7 @@ export default function HomePage() {
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">James Hyland</h1>
         <p className="text-xl text-gray-700 mb-2">Developer. Storyteller. Teacher.</p>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          I'm a full-stack developer with a background in languages and education who enjoys building clean, attractive and scalable web apps that inform, educate, increase productivity and improve quality of life.
+          I&apos;m a full-stack developer with a background in languages and education who enjoys building clean, attractive and scalable web apps that inform, educate, increase productivity and improve quality of life.
         </p>
       </section>
 

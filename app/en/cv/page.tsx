@@ -13,7 +13,7 @@ export default function CVPage() {
         <h2 className="text-xl font-semibold">Personal profile</h2>
         <p>
           A versatile software developer, trainer and storyteller, 
-          I'm a graduate of the remote diploma course in Full-Stack development at the Code
+          I&apos;m a graduate of the remote diploma course in Full-Stack development at the Code
           Institute (Dublin). I have long experience in localization, translation & authoring 
           and have proven ability to grapple with complex issues in a range of specialist 
           environments. I&apos;m impatient to resume my career as an energetic member of an 
