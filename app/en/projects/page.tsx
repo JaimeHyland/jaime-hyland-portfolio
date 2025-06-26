@@ -2,20 +2,38 @@ export default function ProjectsPage() {
   return (
     <div className="p-6 max-w-4xl mx-auto">
       <h1 className="text-3xl font-bold mb-6">Projects</h1>
+      <p>This page lists a number of the projects I have been involved in recently. 
+      I have divided it into three sections, the first one listing the projects that I completed
+      as part of my recent course in full-stack software development with 
+      {' '}<span className="text-blue-600 underline"><a href="https://codeinstitute.net/" target="_blank" rel="noopener 
+      noreferrer">Code Institute</a></span>, 
+      while the second one lists some ongoing projects that I have been working on independently over the 
+      last few months. The third section lists the projects that I have contributed to as part of the series of
+      {' '}<span className="text-blue-600 underline"><a href="https://hackathon.codeinstitute.net/" target="_blank" rel="noopener noreferrer">Hackathons</a></span>
+      {' '}organized by Code Institute since November 2024.</p><br />
 
       {/* Portfolio Projects for Code institute */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-4">Portfolio Projects for Code institute</h2>
-        <p className="mb-4">These projects were created independently for assessment as part of my course in Full-stack programming. 
+        <h2 className="text-2xl font-semibold mb-4">Portfolio Projects for my CI full-stack qualification</h2>
+        <p className="mb-4">These projects were created independently for assessment as part of my
+          {' '}<span className="text-blue-600 underline"><a href="https://codeinstitute.net/" target="_blank" rel="noopener noreferrer">full-stack programming course</a></span>. 
           They showcase a variety of the technologies, methodologies and techniques that learned as part of this course.</p>
         <ul className="space-y-4">
           <li>
             <strong>Farming Futures</strong> – Robotics in agriculture (HTML5, CSS, JS)<br />
-            <span className="text-blue-600 underline">[Live site URL]</span> | <span className="text-blue-600 underline">[GitHub URL]</span>
+            <span className="text-blue-600 underline"><a href="https://jaimehyland.github.io/farming-futures/" 
+            target="_blank" rel="noopener noreferrer">Live demo site</a></span> | 
+            {' '}<span className="text-blue-600 underline"><a href="https://github.com/JaimeHyland/farming-futures/" 
+            target="_blank" rel="noopener noreferrer">GitHub repo</a></span> | 
+            {' '}<span className="text-blue-600 underline"><a href="https://markdown-viewer.vercel.app/#https://raw.githubusercontent.com/JaimeHyland/farming-futures/main/README.md"
+            target="_blank" rel="noopener noreferrer">Project readme file</a></span>
           </li>
           <li>
             <strong>El acento español</strong> – Spanish tilde explainer (HTML5, CSS, JS)<br />
-            <span className="text-blue-600 underline">[Live site URL]</span> | <span className="text-blue-600 underline">[GitHub URL]</span>
+            <span className="text-blue-600 underline"><a href="https://jaimehyland.github.io/elAcentoEspanyol/" 
+            target="_blank" rel="noopener noreferrer">Live demo site</a></span> | 
+            {' '}<span className="text-blue-600 underline"><a href="https://github.com/JaimeHyland/elAcentoEspanyol" 
+            target="_blank" rel="noopener noreferrer">GitHub repo</a></span>
           </li>
           <li>
             <strong>Witch-Hazel</strong> – Grafting manager CLI app (Python, Heroku)<br />
@@ -73,7 +91,7 @@ export default function ProjectsPage() {
             <span className="text-blue-600 underline"><a href="https://support-squad-tech-buddy-9d4a4ad47301.herokuapp.com/" target="_blank" rel="noopener noreferrer">TechBuddy's live demo</a></span> | <span className="text-blue-600 underline">
               <a href="https://github.com/apeskinian/tech_buddy" target="_blank" rel="noopener noreferrer"></a>TechBuddy's GitHub repo</span><br />
             <span className="text-sm text-gray-700">My role: conception of original log-in logic; logic, design and implementation of AI chat page, 
-              including AI tuning and connection to te openai API.</span>
+              including AI tuning and connection to te OpenAI API.</span>
           </li>
           <li>
             <strong>SheGitsIt</strong> – Code Institute&apos;s March &apos;25 Hackathon<br />
