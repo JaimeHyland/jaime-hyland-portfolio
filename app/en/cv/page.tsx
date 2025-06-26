@@ -3,14 +3,21 @@ export default function CVPage() {
     <div className="max-w-4xl mx-auto p-6 space-y-6">
       <h1 className="text-3xl font-bold">Jaime Hyland</h1>
       <p className="text-lg italic">Software developer, trainer, storyteller — Berlin</p>
-      <p className="text-sm text-gray-600">E-Mail / GitHub / Website / LinkedIn</p>
+      <p className="text-sm text-gray-600">
+        <a href="mailto:jaime.hyland@language-landscapes.com">E-Mail</a> / 
+        <a href="https://github.com/JaimeHyland/" target="_blank" rel="noopener noreferrer">GitHub</a> / 
+        <a href="https://www.linkedin.com/in/language-landscapes/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </p>
 
       <section>
         <h2 className="text-xl font-semibold">Personal profile</h2>
         <p>
-          A versatile software developer, trainer and storyteller, I have just
-          completed a remote diploma course in Full-Stack development at the Code
-          Institute (Dublin)...
+          A versatile software developer, trainer and storyteller, 
+          I'm a graduate of the remote diploma course in Full-Stack development at the Code
+          Institute (Dublin). I have long experience in localization, translation & authoring 
+          and have proven ability to grapple with complex issues in a range of specialist 
+          environments. I&apos;m impatient to resume my career as an energetic member of an 
+          innovative, accomplished development team.
         </p>
       </section>
 
@@ -18,14 +25,14 @@ export default function CVPage() {
         <h2 className="text-xl font-semibold">Key technologies</h2>
         <ul className="list-disc list-inside">
           <li>
-            <strong>Programming:</strong> HTML, CSS, JavaScript, Python, Java,
-            VB.NET, Dart
+            <strong>Programming:</strong> HTML, CSS, JS, Python, Java,
+            VB.NET, Dart/Flutter
           </li>
           <li><strong>Databases:</strong> MySQL, PostgreSQL, Oracle</li>
           <li><strong>Deployment:</strong> AWS, Heroku, Cloudinary, GoDaddy</li>
           <li>
             <strong>Frameworks:</strong> Flask, Django, Bootstrap, Stripe,
-            PassoloApp
+            <a href="http://" target="_blank" rel="noopener noreferrer">Passolo</a>
           </li>
           <li><strong>Tools:</strong> Jira, AuthorIT, Doc2Help</li>
         </ul>
