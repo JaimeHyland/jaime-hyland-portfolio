@@ -98,7 +98,7 @@ export default function ProjectsPage() {
         <ul className="space-y-6">
 
           <li>
-            <strong>TechBuddy</strong> – Code Institute&apos;s May &apos;25 Hackathon<br />
+            <strong>TechBuddy</strong> – Code Institute&apos;s May 2025 Hackathon<br />
             <em>Technical help app for all the family</em><br />
             <span className="text-blue-600 underline"><a href="https://support-squad-tech-buddy-9d4a4ad47301.herokuapp.com/" target="_blank" rel="noopener noreferrer">TechBuddy&apos;s live demo</a></span> | <span className="text-blue-600 underline">
               <a href="https://github.com/apeskinian/tech_buddy" target="_blank" rel="noopener noreferrer"></a>TechBuddy&apos;s GitHub repo</span><br />
@@ -117,7 +117,8 @@ export default function ProjectsPage() {
             <strong>SparkSync</strong> – Code Institute&apos;s February &apos;25 Hackathon<br />
             <em>Dating app</em><br />
             <span className="text-blue-600 underline"><a href="https://sparksync-7438f8dc8240.herokuapp.com/" target="_blank" rel="noopener noreferrer">SparkSync&apos;s live demo</a></span> | <span className="text-blue-600 underline"><a href="https://github.com/violaberg/dating-app" target="_blank" rel="noopener noreferrer">SparkSync&apos;s GitHHubRepo</a></span><br />
-            <span className="text-sm text-gray-700">My role: logic, design and implementation of instant messaging page, including necessary changes to deployment.</span>
+            <span className="text-sm text-gray-700">My role: logic, design and implementation of instant messaging page,
+              including necessary changes to deployment.</span>
           </li>
           <li>
             <strong>CO<sub>2</sub>nscious</strong> – Battle of the Bootcamps, Berlin, November 25 to 28 2024<br />

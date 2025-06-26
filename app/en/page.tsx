@@ -16,7 +16,8 @@ export default function HomePage() {
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">James Hyland</h1>
         <p className="text-xl text-gray-700 mb-2">Developer. Storyteller. Teacher.</p>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          I&apos;m a full-stack developer with a background in languages and education who enjoys building clean, attractive and scalable web apps that inform, educate, increase productivity and improve quality of life.
+          I&apos;m a full-stack developer with a background in languages and education who enjoys building clean, 
+          attractive and scalable web apps that inform, educate, increase productivity and improve quality of life.
         </p>
       </section>
 
@@ -53,15 +54,15 @@ export default function HomePage() {
 
       {/* Training / Education */}
       <section className="mb-16">
-        <h2 className="text-2xl font-semibold text-center mb-6">Some of the places where I've learned</h2>
+        <h2 className="text-2xl font-semibold text-center mb-6">Some of the places where I&apos;ve learned</h2>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 justify-items-center">
           <img src="/images/Logo-fas_s2.png" alt="FÁS" className="w-24 h-auto" />
           <img src="/images/Trinity_shield.png" alt="Trinity College Dublin" className="w-24 h-auto" />
           <img src="/images/code_institute.png" alt="Code Institute" className="w-24 h-auto" />
           <img src="/images/khan-academy-solid.png" alt="Khan Academy" className="w-24 h-auto" />
           <img src="/images/codefinity.jpg" alt="Codefinity" className="w-24 h-auto" />
-          <img src="/images/brilliantbw.png" alt="Brilliant" className="w-24 h-auto" />
-          <img src="/images/kodekloudbw.png" alt="KodeKloud" className="w-24 h-auto" />
+          <img src="/images/brilliant-bw.png" alt="Brilliant" className="w-24 h-auto" />
+          <img src="/images/kodekloud-bw.png" alt="KodeKloud" className="w-24 h-auto" />
           <img src="/images/leetcode.png" alt="LeetCode" className="w-24 h-auto" />
           <img src="/images/linkedin-learning.png" alt="LinkedIn Learning" className="w-24 h-auto" />
           <img src="/images/freecodecamp-icon.svg" alt="freecodecamp" className="w-24 h-auto" />
