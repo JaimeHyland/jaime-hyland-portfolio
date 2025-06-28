@@ -41,23 +41,27 @@ export default function ProjectsPage() {
             <strong>Witch-Hazel</strong> – Grafting manager CLI app (Python, Heroku)<br />
             <span className="text-blue-600 underline"><a href="https://jaimehyland.github.io/witch-hazel/" 
             target="_blank" rel="noopener noreferrer">Live demo site</a></span> | 
-            {' '}<span className="text-blue-600 underline"><a href="https://github.com/JaimeHyland/witch-hazel" 
+            {' '}<span className="text-blue-600 underline"><a href="https://witch-hazel-5f8d8dfa45da.herokuapp.com/" 
             target="_blank" rel="noopener noreferrer">GitHub repo</a></span> | 
             {' '}<span className="text-blue-600 underline"><a href="https://github.com/jaimehyland/witch-hazel/blob/main/README.md"
             target="_blank" rel="noopener noreferrer">Project readme file</a></span>
           </li>
           <li>
             <strong>Family Shopping List</strong> – Django/PostgreSQL shopping app<br />
-            <span className="text-blue-600 underline"><a href="https://jaimehyland.github.io/witch-hazel/" 
+            <span className="text-blue-600 underline"><a href="https://family-shopping-list-v1-bafe564ca613.herokuapp.com/" 
             target="_blank" rel="noopener noreferrer">Live demo site</a></span> | 
-            {' '}<span className="text-blue-600 underline"><a href="https://github.com/JaimeHyland/witch-hazel" 
+            {' '}<span className="text-blue-600 underline"><a href="https://github.com/JaimeHyland/family_shopping_list_v1" 
             target="_blank" rel="noopener noreferrer">GitHub repo</a></span> | 
-            {' '}<span className="text-blue-600 underline"><a href="https://github.com/jaimehyland/witch-hazel/blob/main/README.md"
+            {' '}<span className="text-blue-600 underline"><a href="https://github.com/JaimeHyland/family_shopping_list_v1/blob/main/README.md"
             target="_blank" rel="noopener noreferrer">Project readme file</a></span>
           </li>
           <li>
-            <strong>Mellifera</strong> – Online shop for beekeepers (Stripe, AWS)<br />
-            <span className="text-blue-600 underline">[Live site URL]</span> | <span className="text-blue-600 underline">[GitHub URL]</span>
+            <strong>Mellifera</strong> – Online shop for beekeepers (Stripe, AWS)<br /><span className="text-blue-600 underline"><a href="https://mellifera-e383ea0670a3.herokuapp.com/" 
+            target="_blank" rel="noopener noreferrer">Live demo site</a></span> | 
+            {' '}<span className="text-blue-600 underline"><a href="https://github.com/JaimeHyland/Mellifera" 
+            target="_blank" rel="noopener noreferrer">GitHub repo</a></span> | 
+            {' '}<span className="text-blue-600 underline"><a href="https://github.com/JaimeHyland/Mellifera/blob/main/README.md"
+            target="_blank" rel="noopener noreferrer">Project readme file</a></span>
           </li>
         </ul>
       </section>
@@ -77,7 +81,7 @@ export default function ProjectsPage() {
             rel="noopener noreferrer"></a>jaime-hyland.com&apos;s GitHub repo</span>
           </li>
           <li>
-            <strong>language-landscape.com</strong><br />
+            <strong>language-landscapes.com</strong><br />
             <span className="text-sm text-gray-600">This is a legacy CakePHP project originally commissioned to a third party but 
               currently maintained by me. It contains a number of issues, resulting both from incompatibilities between older and 
               newer versions of the CakePhP framework, and the fact that it was not originally designed to be responsive.

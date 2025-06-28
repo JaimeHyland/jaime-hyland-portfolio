@@ -60,9 +60,9 @@ export default function HomePage() {
           <img src="/images/Trinity_shield.png" alt="Trinity College Dublin" className="w-24 h-auto" />
           <img src="/images/code_institute.png" alt="Code Institute" className="w-24 h-auto" />
           <img src="/images/khan-academy-solid.png" alt="Khan Academy" className="w-24 h-auto" />
-          <img src="/images/codefinity.jpg" alt="Codefinity" className="w-24 h-auto" />
-          <img src="/images/brilliant-bw.png" alt="Brilliant" className="w-24 h-auto" />
-          <img src="/images/kodekloud-bw.png" alt="KodeKloud" className="w-24 h-auto" />
+          <img src="/images/codefinity_bw.png" alt="Codefinity" className="w-24 h-auto" />
+          <img src="/images/brilliant_bw.png" alt="Brilliant" className="w-24 h-auto" />
+          <img src="/images/kodekloud_bw.png" alt="KodeKloud" className="w-24 h-auto" />
           <img src="/images/leetcode.png" alt="LeetCode" className="w-24 h-auto" />
           <img src="/images/linkedin-learning.png" alt="LinkedIn Learning" className="w-24 h-auto" />
           <img src="/images/freecodecamp-icon.svg" alt="freecodecamp" className="w-24 h-auto" />
