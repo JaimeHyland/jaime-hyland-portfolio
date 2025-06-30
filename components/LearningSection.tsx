@@ -45,7 +45,7 @@ export default function LearningSection() {
       img: '/images/Trinity_shield.png',
       alt: 'Trinity College Dublin',
       content: (
-        <p>I studied Philosophy (or "Mental and Moral Science", as the degree course is still called) at
+        <p>I studied Philosophy (or &quot;Mental and Moral Science&quot;, as the degree course is still called) at
           <a
             href="https://www.tcd.ie/"
             className="text-blue-600 underline"
@@ -80,7 +80,12 @@ export default function LearningSection() {
       alt: 'Khan Academy',
       content: (
         <p>
-          <a href="https://www.khanacademy.org/" target="_blank" rel="noopener noreferrer">Khan Academy</a>
+          <a href="https://www.khanacademy.org/"
+            className="text-blue-600 underline"
+            target="_blank"
+            rel="noopener noreferrer">
+              Khan Academy
+          </a>
             is an excellent resource for IT training and Maths education.
             I&apos;ve used it so far in self-training in Computer Science Theory, 
             JavaScript programming, Statistics and Calculus.
@@ -93,7 +98,13 @@ export default function LearningSection() {
       alt: 'Codefinity',
       content: (
         <p>
-          <a href="https://www.khanacademy.org/" target="_blank" rel="noopener noreferrer">Codefinity</a>
+          <a
+          href="https://www.khanacademy.org/"
+          className="text-blue-600 underline"
+          target="_blank"
+          rel="noopener noreferrer">
+            Codefinity
+          </a>
             is yet another excellent resource for IT training.
             So far, I&apos;ve been using it for a variety of learning materials,
             with a special emphasis on Python.
@@ -106,7 +117,13 @@ export default function LearningSection() {
       alt: 'Brilliant',
       content: (
         <p>
-          <a href="https://brilliant.org/" target="_blank" rel="noopener noreferrer">Brilliant</a>
+          <a 
+          href="https://brilliant.org/"
+          target="_blank"
+          className="text-blue-600 underline"
+          rel="noopener noreferrer">
+            Brilliant
+          </a>
             is my go-to place when I want to take a short, but productive break.
             I&apos;ve been using it so far mainly to revise my old school general maths,
             and to learn a little about electrical circuits,
@@ -120,9 +137,15 @@ export default function LearningSection() {
       alt: 'Brilliant',
       content: (
         <p>
-          I&apos;ve been using <a href="https://kodekloud.com/" target="_blank" rel="noopener noreferrer">KodeKloud</a>
-            on and off to improve my fairly primitive understanding of Linux. It&apos;s an excellent provider of training &mdash;
-            in DevOps in particular.
+          I&apos;ve been using <a
+          href="https://kodekloud.com/"
+          target="_blank"
+          className="text-blue-600 underline"
+          rel="noopener noreferrer">
+            KodeKloud
+          </a>
+            on and off to improve my as yet fairly primitive understanding of Linux. It&apos;s an excellent
+            provider of training &mdash; in DevOps in particular.
         </p>
       ),
     },
@@ -132,9 +155,16 @@ export default function LearningSection() {
       alt: 'LeetCode',
       content: (
         <p>
-          I&apos;ve been using <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer">LeetCode</a>
-            mainly to get a grip on some of the common questions that might come up for me when applying for a job as a
-            full-stack web programmer.
+          I&apos;ve been using
+          <a
+          href="https://leetcode.com/"
+          target="_blank"
+          className="text-blue-600 underline"
+          rel="noopener noreferrer">
+            LeetCode
+          </a>
+            mainly to get a grip on some of the common questions that might come up for me when applying 
+            for a job as a full-stack web programmer.
         </p>
       ),
     },
