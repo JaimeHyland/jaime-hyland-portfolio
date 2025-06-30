@@ -7,6 +7,7 @@ import {
   SiFlutter, SiSwagger, SiDotnet,
 } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
+import LearningSection from '@/components/LearningSection';
 
 export default function HomePage() {
   return (
@@ -37,14 +38,16 @@ export default function HomePage() {
           <SiTailwindcss className="w-10 h-10" title="Tailwind CSS" />
           <SiStripe className="w-10 h-10" title="Stripe" />
           <SiAmazonaws className="w-10 h-10" title="AWS" />
-          <img src="\images\cloudinary_cloud.png" alt="Cloudinary" className="w-10 h-10" title="Cloudinary"/>
+          <div className="flex items-center justify-center w-10 h-10">
+            <img src="/images/cloudinary_cloud.png" alt="Cloudinary" className="max-h-full max-w-full object-contain" title="Cloudinary" />
+          </div>
           <SiBootstrap className="w-10 h-10" title="Bootstrap" />
           <SiFlask className="w-10 h-10" title="Flask" />
           <SiJira className="w-10 h-10" title="Jira" />
           <SiJupyter className="w-10 h-10" title="Jupyter" />
           <SiHtml5 className="w-10 h-10" title="HTML5" />
           <SiCss3 className="w-10 h-10" title="CSS3" />
-          <FaJava className="w-10 h-10" title="Java" />
+          <FaJava className="w-10 h-10" title="Java Swing" />
           <SiDart className="w-10 h-10" title="Dart" />
           <SiFlutter className="w-10 h-10" title="Flutter" />
           <SiSwagger className="w-10 h-10" title="Swagger" />
@@ -53,21 +56,7 @@ export default function HomePage() {
       </section>
 
       {/* Training / Education */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold text-center mb-6">Some of the places where I&apos;ve learned</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 justify-items-center">
-          <img src="/images/Logo-fas_s2.png" alt="FÁS" className="w-24 h-auto" />
-          <img src="/images/Trinity_shield.png" alt="Trinity College Dublin" className="w-24 h-auto" />
-          <img src="/images/code_institute.png" alt="Code Institute" className="w-24 h-auto" />
-          <img src="/images/khan-academy-solid.png" alt="Khan Academy" className="w-24 h-auto" />
-          <img src="/images/codefinity_bw.png" alt="Codefinity" className="w-24 h-auto" />
-          <img src="/images/brilliant_bw.png" alt="Brilliant" className="w-24 h-auto" />
-          <img src="/images/kodekloud_bw.png" alt="KodeKloud" className="w-24 h-auto" />
-          <img src="/images/leetcode.png" alt="LeetCode" className="w-24 h-auto" />
-          <img src="/images/linkedin-learning.png" alt="LinkedIn Learning" className="w-24 h-auto" />
-          <img src="/images/freecodecamp-icon.svg" alt="freecodecamp" className="w-24 h-auto" />
-        </div>
-      </section>
+      <LearningSection />
 
       {/* CTA */}
       <section className="text-center">
