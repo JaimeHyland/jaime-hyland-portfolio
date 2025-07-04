@@ -1,0 +1,35 @@
+{
+  "learningSection": {
+    "heading": "Einige der Orte, an denen ich mein Lernen absolviert habe",
+
+    "FASTitle": "FÁS",
+    "fasModalContent": "FÁS war zur Zeit meiner grundlegenden IT-Ausbildung die irische nationale Behörde für berufliche Ausbildung. Es wurde inzwischen durch <link>Solas</link> ersetzt.",
+
+    "trinityModalTitle": "Trinity College Dublin",
+    "trinityModalContent": "Ich habe Philosophie (oder „Mentale und Moralische Wissenschaft“, wie der Studiengang noch genannt wird) am <link>Trinity College Dublin</link> studiert. In längst vergangener Zeit (1984 bis 1988) habe ich dort viel zur Philosophie der Logik und Mathematik gearbeitet.",
+
+    "codeInstituteModalTitle": "Code Institute",
+    "codeInstituteModalContent": "Ich habe von 2023 bis Ende 2024 einen Online-<link>Full-Stack-Softwareentwicklungs-Diplomkurs</link> beim ausgezeichneten, in Dublin ansässigen Ausbilder Code Institute abgeschlossen.\nDer Kurs legte besonderen Wert auf die Programmiersprache Python für das moderne Web, unter Verwendung der Frameworks Django und Bootstrap.\nMein spezialisiertes Abschlussprojekt war eine E-Commerce-Website, die Stripe als Online-Zahlungssystem einsetzt.",
+
+    "khanModalTitle": "Khan Academy",
+    "khanModalContent": "<link>Khan Academy</link> ist eine ausgezeichnete Ressource für IT-Ausbildung und Mathematikunterricht. Ich habe sie bisher für das Selbststudium in Informatiktheorie, JavaScript-Programmierung, Statistik und Analysis verwendet.",
+
+    "codefinityModalTitle": "Codefinity",
+    "codefinityModalContent": "<link>Codefinity</link> ist eine weitere ausgezeichnete Ressource für IT-Ausbildung. Bisher habe ich es für verschiedene Lernmaterialien genutzt, mit besonderem Schwerpunkt auf Python.",
+
+    "brilliantModalTitle": "Brilliant",
+    "brilliantModalContent": "<link>Brilliant</link> ist mein Lieblingsort, wenn ich eine kurze, aber produktive Pause machen möchte. Bisher habe ich es hauptsächlich genutzt, um meine alten allgemeinen Schulmathematikkenntnisse aufzufrischen und ein wenig über elektrische Schaltkreise zu lernen, die mir mein ganzes Leben lang ein Rätsel waren.",
+
+    "kodekloudModalTitle": "KodeKloud",
+    "kodekloudModalContent": "Ich nutze <link>KodeKloud</link> immer wieder, um mein bisher noch recht primitives Verständnis von Linux zu verbessern.\nEs ist ein ausgezeichneter Anbieter von Schulungen – insbesondere im Bereich DevOps.",
+
+    "leetcodeModalTitle": "LeetCode",
+    "leetcodeModalContent": "Ich nutze <link>LeetCode</link> hauptsächlich, um einige der häufigen Fragen zu verstehen, die bei einer Bewerbung als Full-Stack-Webprogrammierer auf mich zukommen könnten.",
+
+    "linkedinModalTitle": "LinkedIn Learning",
+    "linkedinModalContent": "<link>LinkedIn Learning</link> bietet eine breite Palette an Kursen für das gesamte Spektrum an beruflichen Disziplinen, die man in der IT-Branche und darüber hinaus lernen muss.\nEs ist das Produkt der Übernahme des berühmten IT-Ausbilders Lynda.com durch LinkedIn.\nBisher habe ich es hauptsächlich genutzt, um mich mit Dart/Flutter vertraut zu machen.",
+
+    "freecodecampModalTitle": "freecodecamp",
+    "freecodecampModalContent": "<link>freecodecamp</link> ist mein ursprünglicher Anbieter vieler meiner Grundkenntnisse in der Webentwicklung.\nIch habe enorm von ihrem Certified Full Stack Developer Curriculum profitiert (obwohl es zum Zeitpunkt des Schreibens noch in der Beta-Phase ist)."
+  }
+}

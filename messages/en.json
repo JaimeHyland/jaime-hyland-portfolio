@@ -1,0 +1,35 @@
+{
+  "learningSection": {
+    "heading": "Some of the places where I&apos;ve done my learning",
+
+    "FASTitle": "FÁS",
+    "fasModalContent": "FÁS was the Irish National Vocational Training Authority at the time I did my foundational training in IT there. It has since been replaced by <link>Solas</link>.",
+    
+    "trinityModalTitle": "Trinity College Dublin",
+    "trinityModalContent": "I studied Philosophy (or \"Mental and Moral Science\", as the degree course is still called) at <link>Trinity College Dublin</link>. Back in ancient history (1984 to 1988), I did quite a lot of work there on philosophy of logic and mathematics.",
+
+    "codeInstituteModalTitle": "Code Institute",
+    "codeInstituteModalContent": "I completed an online <link>full-stack software development diploma</link> course at the excellent Dublin-based educator Code Institute from 2023 to the end of 2024.\nThe course put a particular emphasis on the Python language for the modern web, leveraging the Django and Bootstrap frameworks.\nMy specialized final portfolio project was an e-Commerce site, using Stripe as its online payment system.",
+
+    "khanModalTitle": "Khan Academy",
+    "khanModalContent": "<link>Khan Academy</link> is an excellent resource for IT training and Maths education. I've used it so far in self-training in Computer Science Theory, JavaScript programming, Statistics and Calculus.",
+
+    "codefinityModalTitle": "Codefinity",
+    "codefinityModalContent": "<link>Codefinity</link> is yet another excellent resource for IT training. So far, I've been using it for a variety of learning materials, with a special emphasis on Python.",
+
+    "brilliantModalTitle": "Brilliant",
+    "brilliantModalContent": "<link>Brilliant</link> is my go-to place when I want to take a short, but productive break. I've been using it so far mainly to revise my old school general maths, and to learn a little about electrical circuits, which has been a closed book to me all my life.",
+
+    "kodekloudModalTitle": "KodeKloud",
+    "kodekloudModalContent": "I've been using <link>KodeKloud</link> on and off to improve my as yet fairly primitive understanding of Linux.\nIt's an excellent provider of training — in DevOps in particular.",
+
+    "leetcodeModalTitle": "LeetCode",
+    "leetcodeModalContent": "I've been using <link>LeetCode</link> mainly to get a grip on some of the common questions that might come up for me when applying for a job as a full-stack web programmer.",
+
+    "linkedinModalTitle": "LinkedIn Learning",
+    "linkedinModalContent": "<link>LinkedIn Learning</link> provides a wide variety of courses on the whole gamut of professional disciplines that one may need to learn in the IT industry and elsewhere.\nIt is the product of LinkedIn's purchase of the famous IT training provider Lynda.com.\nSo far, I've used it mostly to get a grip on Dart/Flutter.",
+
+    "freecodecampModalTitle": "freecodecamp",
+    "freecodecampModalContent": "<link>freecodecamp</link> is my original provider of many of my basic skills on web development.\nI've got enormous mileage out of its Certified Full Stack Developer Curriculum (though it's still in Beta testing at time of writing)."
+  }
+}

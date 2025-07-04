@@ -1,3 +1,4 @@
+// app/layout.tsx
 import './globals.css';
 import { ReactNode } from 'react';
 import GDPRConsent from './gdpr-consent';
@@ -12,9 +13,15 @@ export const metadata = {
   },
 };
 
+interface LayoutProps {
+  children: ReactNode;
+  params: { lang: string };
+}
+
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html>
       <body className="font-sans bg-white text-gray-800">
         <GDPRConsent />
         {children}

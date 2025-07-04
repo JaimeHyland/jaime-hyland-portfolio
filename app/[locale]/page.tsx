@@ -14,7 +14,7 @@ export default function HomePage() {
     <main className="px-6 py-10 max-w-6xl mx-auto">
       {/* Hero / Intro */}
       <section className="text-center mb-16">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-4">James Hyland</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-4">Jaime Hyland</h1>
         <p className="text-xl text-gray-700 mb-2">Developer. Storyteller. Teacher.</p>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           I&apos;m a full-stack developer with a background in languages and education who enjoys building clean, 

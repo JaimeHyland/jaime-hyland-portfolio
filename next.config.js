@@ -1,14 +1,8 @@
+const withNextIntl = require('next-intl/plugin')('./app/i18n/request.ts');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  redirects: async () => {
-    return [
-      {
-        source: '/',
-        destination: '/en',
-        permanent: false,
-      },
-    ];
-  },
+  // Do NOT put an i18n field here!
 };
 
-module.exports = nextConfig;
+module.exports = withNextIntl(nextConfig);

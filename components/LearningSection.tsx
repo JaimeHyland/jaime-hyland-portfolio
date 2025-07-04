@@ -1,6 +1,9 @@
 'use client';
+
 import { useState } from 'react';
 import EducationModal from './EducationModal';
+import { useTranslations } from 'next-intl';
+
 
 interface InstitutionProps {
   title: string;
@@ -10,6 +13,7 @@ interface InstitutionProps {
 }
 
 export default function LearningSection() {
+  const t = useTranslations('learningSection');
   const [modalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState<InstitutionProps>({
   title: '',
@@ -24,178 +28,177 @@ export default function LearningSection() {
   };
 
   const institutions = [
-    {
-      title: 'FÁS',
-      img: '/images/Logo-fas_s2.png',
-      alt: 'FÁS',
-      content: (
-        <p>FÁS was the Irish National Training Authority at the time I did foundational training in computing and office tech there.
-            It has since been replaced by
-          <a
-            href="https://www.solas.ie/"
-            className="text-blue-600 underline"
-            target="_blank"
-            rel="noopener noreferrer">Solas
-          </a>.
-        </p>
+  {
+    title: 'FÁS',
+    img: '/images/Logo-fas_s2.png',
+    alt: 'FÁS',
+    content: t.rich('fasModalContent', {
+      link: (children) => (
+        <a
+          href="https://www.solas.ie/"
+          className="text-blue-600 underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
       ),
-    },
-    {
-      title: 'Trinity College Dublin',
-      img: '/images/Trinity_shield.png',
-      alt: 'Trinity College Dublin',
-      content: (
-        <p>I studied Philosophy (or &quot;Mental and Moral Science&quot;, as the degree course is still called) at
-          <a
-            href="https://www.tcd.ie/"
-            className="text-blue-600 underline"
-            target="_blank" 
-            rel="noopener noreferrer">Trinity College Dublin
-          </a>
-          . Back in ancient history (1984 to 1988), I did quite a lot of work there on philosophy of logic and mathematics.
-        </p>
+    }),
+  },
+  {
+    title: t('trinityModalTitle'),
+    img: '/images/Trinity_shield.png',
+    alt: 'Trinity College Dublin',
+    content: t.rich('trinityModalContent', {
+      link: (children) => (
+        <a
+          href="https://www.tcd.ie/"
+          className="text-blue-600 underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
       ),
-    },
-    {
-      title: 'Code Institute',
-      img: '/images/code_institute.png',
-      alt: 'Code Institute',
-      content: (
-        <p>I completed an online 
-          <a
-            href="https://codeinstitute.net/de/full-stack-software-development-diploma-3/"
-            className="text-blue-600 underline"
-            target="_blank" rel="noopener noreferrer">full-stack software development diploma
-          </a>at the excellent Dublin-based educator Code Institute from 2023 to the end of 2024.
-            The course put a particular emphasis on the Python language
-            for the modern web, leveraging the Django and Bootstrap frameworks.
-            My specialized final portfolio project was an e-Commerce site, using 
-            Stripe as its online payment system. 
-        </p>
+    }),
+  },
+  {
+    title: t('codeInstituteModalTitle'),
+    img: '/images/code_institute.png',
+    alt: 'Code Institute',
+    content: t.rich('codeInstituteModalContent', {
+      link: (children) => (
+        <a
+          href="https://codeinstitute.net/de/full-stack-software-development-diploma-3/"
+          className="text-blue-600 underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
       ),
-    },
-    {
-      title: 'Khan Academy',
-      img: '/images/khan-academy-solid.png',
-      alt: 'Khan Academy',
-      content: (
-        <p>
-          <a href="https://www.khanacademy.org/"
-            className="text-blue-600 underline"
-            target="_blank"
-            rel="noopener noreferrer">
-              Khan Academy
-          </a>
-            is an excellent resource for IT training and Maths education.
-            I&apos;ve used it so far in self-training in Computer Science Theory, 
-            JavaScript programming, Statistics and Calculus.
-        </p>
-      ),
-    },
-    {
-      title: 'Codefinity',
-      img: '/images/codefinity_bw.png',
-      alt: 'Codefinity',
-      content: (
-        <p>
-          <a
+    }),
+  },
+  {
+    title: t('khanModalTitle'),
+    img: '/images/khan-academy-solid.png',
+    alt: 'Khan Academy',
+    content: t.rich('khanModalContent', {
+      link: (children) => (
+        <a
           href="https://www.khanacademy.org/"
           className="text-blue-600 underline"
           target="_blank"
-          rel="noopener noreferrer">
-            Codefinity
-          </a>
-            is yet another excellent resource for IT training.
-            So far, I&apos;ve been using it for a variety of learning materials,
-            with a special emphasis on Python.
-        </p>
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
       ),
-    },
-    {
-      title: 'Brilliant',
-      img: '/images/brilliant_bw.png',
-      alt: 'Brilliant',
-      content: (
-        <p>
-          <a 
+    }),
+  },
+  {
+    title: t('codefinityModalTitle'),
+    img: '/images/codefinity_bw.png',
+    alt: 'Codefinity',
+    content: t.rich('codefinityModalContent', {
+      link: (children) => (
+        <a
+          href="https://www.codefinity.com/"
+          className="text-blue-600 underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
+      ),
+    }),
+  },
+  {
+    title: t('brilliantModalTitle'),
+    img: '/images/brilliant_bw.png',
+    alt: 'Brilliant',
+    content: t.rich('brilliantModalContent', {
+      link: (children) => (
+        <a
           href="https://brilliant.org/"
-          target="_blank"
           className="text-blue-600 underline"
-          rel="noopener noreferrer">
-            Brilliant
-          </a>
-            is my go-to place when I want to take a short, but productive break.
-            I&apos;ve been using it so far mainly to revise my old school general maths,
-            and to learn a little about electrical circuits,
-            which has been a closed book to me all my life.
-        </p>
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
       ),
-    },
-    {
-      title: 'KodeKloud',
-      img: '/images/kodekloud_bw.png',
-      alt: 'Brilliant',
-      content: (
-        <p>
-          I&apos;ve been using <a
+    }),
+  },
+  {
+    title: t('kodekloudModalTitle'),
+    img: '/images/kodekloud_bw.png',
+    alt: 'KodeKloud',
+    content: t.rich('kodekloudModalContent', {
+      link: (children) => (
+        <a
           href="https://kodekloud.com/"
-          target="_blank"
           className="text-blue-600 underline"
-          rel="noopener noreferrer">
-            KodeKloud
-          </a>
-            on and off to improve my as yet fairly primitive understanding of Linux. It&apos;s an excellent
-            provider of training &mdash; in DevOps in particular.
-        </p>
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
       ),
-    },
-    {
-      title: 'LeetCode',
-      img: '/images/leetcode.png',
-      alt: 'LeetCode',
-      content: (
-        <p>
-          I&apos;ve been using
-          <a
+    }),
+  },
+  {
+    title: t('leetcodeModalTitle'),
+    img: '/images/leetcode.png',
+    alt: 'LeetCode',
+    content: t.rich('leetcodeModalContent', {
+      link: (children) => (
+        <a
           href="https://leetcode.com/"
-          target="_blank"
           className="text-blue-600 underline"
-          rel="noopener noreferrer">
-            LeetCode
-          </a>
-            mainly to get a grip on some of the common questions that might come up for me when applying 
-            for a job as a full-stack web programmer.
-        </p>
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
       ),
-    },
-    {
-      title: 'LinkedIn Learning',
-      img: '/images/linkedin-learning.png',
-      alt: 'LinkedIn Learning',
-      content: (
-        <p>
-          <a href="https://www.linkedin.com/learning/" target="_blank" rel="noopener noreferrer">LinkedIn Learning</a>
-            provides a wide variety of courses on the whole gamut of professional disciplines that one may
-            need to learn in the IT industry and elsewhere. It is the product of LinkedIn&apos;s purchase of the
-            famous Lynda.com IT training provider Lynda.com.  So far, I&apos;ve used it mostly to get a grip on 
-            Dart/Flutter.
-        </p>
+    }),
+  },
+  {
+    title: t('linkedinModalTitle'),
+    img: '/images/linkedin-learning.png',
+    alt: 'LinkedIn Learning',
+    content: t.rich('linkedinModalContent', {
+      link: (children) => (
+        <a
+          href="https://www.linkedin.com/learning/"
+          className="text-blue-600 underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
       ),
-    },
-    {
-      title: 'freecodecamp',
-      img: '/images/freecodecamp-icon.svg',
-      alt: 'freecodecamp',
-      content: (
-        <p>
-          <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freecodecamp</a>
-            is my original provider of many of my basic skills on web development. I&apos;ve got enormous mileage
-            out of its Certified Full Stack Developer Curriculum (though it&apos;s still in Beta testing at time of
-            writing).
-        </p>
+    }),
+  },
+  {
+    title: t('freecodecampModalTitle'),
+    img: '/images/freecodecamp-icon.svg',
+    alt: 'freecodecamp',
+    content: t.rich('freecodecampModalContent', {
+      link: (children) => (
+        <a
+          href="https://www.freecodecamp.org/"
+          className="text-blue-600 underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
       ),
-    },
-  ];
+    }),
+  },
+];
 
   return (
     <section className="mb-16">

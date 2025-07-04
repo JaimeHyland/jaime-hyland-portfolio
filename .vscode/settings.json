@@ -1,16 +1,23 @@
 {
     "cSpell.words": [
+      "autoprefixer",
       "Berlín",
+      "browserslist",
+      "cssesc",
       "doesn",
+      "envify",
       "esnext",
       "gdpr",
       "Jaime",
       "Jaime Hyland",
+      "jiti",
       "Kloud",
       "kontakt",
+      "napi",
       "nscious",
       "projekte",
       "Releasenotes",
+      "rimraf",
       "vercel"
     ],
     "css.customData": [".vscode/tailwind-custom-data.json"]
