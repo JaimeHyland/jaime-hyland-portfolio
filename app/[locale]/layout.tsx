@@ -34,7 +34,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header
             lang={locale}
-            labels={localizedLabels[locale]}
+            labels={localizedLabels[locale] as (typeof localizedLabels)[keyof typeof localizedLabels]}
             paths={localizedPaths[locale]}
           />
           <main className="p-6">{children}</main>
