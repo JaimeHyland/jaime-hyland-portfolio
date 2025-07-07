@@ -27,7 +27,6 @@ export default async function HomePage() {
   };
 
   const rawLocale = await getLocale();
-  console.log('🌍 Detected locale:', rawLocale);
 
   const {
     name,

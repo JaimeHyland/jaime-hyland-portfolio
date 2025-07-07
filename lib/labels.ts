@@ -28,7 +28,7 @@ export const localizedLabels: Record<'en' | 'es' | 'de', LabelSet> = {
     de: 'alemán',
   },
   de: {
-    home: 'Startseite',
+    home: 'Start',
     projects: 'Projekte',
     cv: 'Lebenslauf',
     contact: 'Kontakt',

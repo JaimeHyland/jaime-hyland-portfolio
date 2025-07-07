@@ -39,7 +39,7 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
     <header className="flex justify-between items-center p-4 border-b">
       <h1 className="text-xl font-bold">Jaime Hyland</h1>
 
-      <nav className="flex gap-4 text-sm text-gray-800">
+      <nav className="flex gap-4 text-lg text-gray-800">
         <Link href={`/${lang}/${paths.home}`} className={pageKey === 'home' ? 'font-bold' : ''}>
           {labels.home}
         </Link>
