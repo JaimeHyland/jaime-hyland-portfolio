@@ -8,7 +8,7 @@ import { localizedLabels } from '@/lib/labels';
 
 interface HeaderProps {
   lang: 'en' | 'es' | 'de';
-  labels: (typeof localizedLabels)[keyof typeof localizedLabels];
+  labels: Record<string, string>;
   paths: {
     home: string;
     projects: string;
