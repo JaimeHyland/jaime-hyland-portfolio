@@ -4,6 +4,16 @@ import { useState } from 'react';
 import EducationModal from './EducationModal';
 import { useTranslations } from 'next-intl';
 
+import messagesEn from '../messages/en.json';
+import messagesEs from '../messages/es.json';
+import messagesDe from '../messages/de.json';
+
+
+const messagesMap = {
+  en: messagesEn,
+  es: messagesEs,
+  de: messagesDe
+};
 
 interface InstitutionProps {
   title: string;
@@ -12,7 +22,12 @@ interface InstitutionProps {
   content: React.ReactNode;
 }
 
-export default function LearningSection() {
+export default function LearningSection({ locale }: { locale: string }) {
+  
+  const messages = (messagesMap[locale as 'en' | 'es' | 'de'] || messagesEn) as { homeInline: any };
+
+  const { educationTitle } = messages.homeInline;
+
   const t = useTranslations('learningSection');
   const [modalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState<InstitutionProps>({
@@ -202,7 +217,7 @@ export default function LearningSection() {
 
   return (
     <section className="mb-16">
-      <h2 className="text-2xl font-semibold text-center mb-6">Some of the places where I&apos;ve done my learning</h2>
+      <h2 className="text-2xl font-semibold text-center mb-6">{educationTitle}</h2>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 justify-items-center">
         {institutions.map((inst, index) => (
           <div

@@ -1,4 +1,7 @@
-'use client';
+import messagesEn from '../../messages/en.json';
+import messagesEs from '../../messages/es.json';
+import messagesDe from '../../messages/de.json';
+import { getLocale } from 'next-intl/server';
 
 import {
   SiPython, SiDjango, SiPostgresql, SiMysql, SiGithub, SiGodaddy, SiHeroku,
@@ -9,22 +12,44 @@ import {
 import { FaJava } from 'react-icons/fa';
 import LearningSection from '@/components/LearningSection';
 
-export default function HomePage() {
+
+const messagesMap = {
+  en: messagesEn,
+  es: messagesEs,
+  de: messagesDe
+};
+
+export default async function HomePage() {
+  const locale = await getLocale();
+
+  const messages = (messagesMap[locale as 'en' | 'es' | 'de'] || messagesEn) as {
+    homeInline: any;
+  };
+
+  const rawLocale = await getLocale();
+  console.log('🌍 Detected locale:', rawLocale);
+
+  const {
+    name,
+    tagline,
+    intro,
+    techsTitle,
+    buttonLabel,
+    buttonText
+  } = messages.homeInline;
+
   return (
     <main className="px-6 py-10 max-w-6xl mx-auto">
       {/* Hero / Intro */}
       <section className="text-center mb-16">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-4">Jaime Hyland</h1>
-        <p className="text-xl text-gray-700 mb-2">Developer. Storyteller. Teacher.</p>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          I&apos;m a full-stack developer with a background in languages and education who enjoys building clean, 
-          attractive and scalable web apps that inform, educate, increase productivity and improve quality of life.
-        </p>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-4">{name}</h1>
+        <p className="text-xl text-gray-700 mb-2">{tagline}</p>
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto">{intro}</p>
       </section>
 
       {/* Tech Stack */}
       <section className="mb-16">
-        <h2 className="text-2xl font-semibold text-center mb-8">Some of the technologies I work with</h2>
+        <h2 className="text-2xl font-semibold text-center mb-8">{techsTitle}</h2>
         <div className="grid grid-cols-3 sm:grid-cols-5 gap-6 justify-items-center text-gray-800">
           <SiPython className="w-10 h-10" title="Python" />
           <SiDjango className="w-10 h-10" title="Django" />
@@ -55,17 +80,19 @@ export default function HomePage() {
         </div>
       </section>
 
+
       {/* Training / Education */}
-      <LearningSection />
+      <LearningSection locale={locale} />
 
       {/* CTA */}
       <section className="text-center">
-        <p className="text-lg text-gray-700 mb-4">Looking for a collaborator or developer?</p>
+        <p className="text-lg text-gray-700 mb-4">{buttonLabel}</p>
         <a
           href="/en/contact"
+
           className="inline-block px-6 py-3 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700 transition"
         >
-          Get in touch
+          {buttonText}
         </a>
       </section>
     </main>
