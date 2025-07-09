@@ -84,7 +84,7 @@ export default function LearningSection({ locale }: { locale: string }) {
     content: t.rich('codeInstituteModalContent', {
       link: (children) => (
         <a
-          href="https://codeinstitute.net/de/full-stack-software-development-diploma-3/"
+          href="https://codeinstitute.net/de/full-stack-software-development-diploma/"
           className="text-blue-600 underline"
           target="_blank"
           rel="noopener noreferrer"
