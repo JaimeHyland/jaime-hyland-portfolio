@@ -2,28 +2,29 @@
 
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { useLocale } from 'next-intl';
 import Cookies from 'js-cookie';
 import { localizedPaths } from '@/lib/paths';
 import { localizedLabels } from '@/lib/labels';
 
-export default function Header() {
+
+type HeaderProps = {
+  lang: 'en' | 'es' | 'de';
+  labels: (typeof localizedLabels)['en']; // Same structure for all
+  paths: {
+    home: string;
+    cv: string;
+    projects: string;
+    contact: string;
+  };
+};
+
+export default function Header({ lang, labels, paths }: HeaderProps) {
   const router = useRouter();
   const pathname = usePathname();
-  const lang = useLocale() as keyof typeof localizedLabels;
 
-  const paths = {
-    home: '',
-    cv: lang === 'es' ? 'curriculum' : lang === 'de' ? 'lebenslauf' : 'cv',
-    projects: lang === 'es' ? 'proyectos' : lang === 'de' ? 'projekte' : 'projects',
-    contact: lang === 'es' ? 'contacto' : lang === 'de' ? 'kontakt' : 'contact',
-  };
-
-  const labels = localizedLabels[lang]; // ✅ Safely grab localized labels
-
-  const pageKey = Object.keys(paths).find(
-    (key) => pathname === `/${lang}/${paths[key as keyof typeof paths]}`
-  ) as keyof typeof paths || 'home';
+  const pageKey = (Object.keys(paths) as (keyof typeof paths)[]).find(
+    (key) => pathname === `/${lang}/${paths[key]}`
+  ) ?? 'home';
 
   const handleLanguageChange = (lng: 'en' | 'es' | 'de') => {
     Cookies.set('NEXT_LOCALE', lng, { expires: 365 });
