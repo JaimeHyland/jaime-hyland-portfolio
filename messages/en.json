@@ -8,60 +8,7 @@
     "buttonLabel": "Looking for a collaborator or developer?",
     "buttonText": "Get in touch"
   },
-  "cv": {
-    "heading": "James Hyland",
-    "subtitle": "Software developer, Storyteller, Teacher — Berlin",
-    "contact": {
-      "email": "E-Mail",
-      "github": "GitHub",
-      "linkedin": "LinkedIn"
-    },
-    "profile": {
-      "heading": "Personal profile",
-      "text": "A versatile software developer, trainer and storyteller, I'm a graduate of the remote diploma course in Full-Stack development at the Code Institute (Dublin). I have long experience in localization, translation & authoring and have proven ability to grapple with complex issues in a range of specialist environments. I'm impatient to resume my career as an energetic member of an innovative, accomplished development team."
-    },
-    "technologies": {
-      "heading": "Key technologies",
-      "items": {
-        "programming": "Programming: HTML, CSS, JS, Python, Java, VB.NET, Dart/Flutter",
-        "databases": "Databases: MySQL, PostgreSQL, Oracle",
-        "deployment": "Deployment: AWS, Heroku, Cloudinary, GoDaddy",
-        "frameworks": "Frameworks: Flask, Django, Bootstrap, Stripe, Passolo",
-        "tools": "Tools: Jira, AuthorIT, Doc2Help"
-      }
-    },
-    "education": {
-      "heading": "Education and Training",
-      "items": [
-        "2023–2024: Code Institute: Full-Stack Diploma",
-        "2000: FAS CITP Programming Course",
-        "1984–1988: BA in Philosophy, Trinity College Dublin"
-      ]
-    },
-    "portfolio": {
-      "heading": "Portfolio Projects",
-      "items": [
-        "Farming Futures – Robotics in agriculture (HTML5, CSS, JS) [GitHub link]",
-        "El acento español – Spanish tilde explainer (HTML5, CSS, JS) [GitHub link]",
-        "Witch-Hazel – Grafting manager CLI app (Python, Heroku) [GitHub link]",
-        "Family Shopping List – Django/PostgreSQL shopping app [GitHub link]",
-        "Mellifera – Online shop for beekeepers (Stripe, AWS) [GitHub link]"
-      ]
-    },
-    "experience": {
-      "heading": "Work Experience",
-      "text": "2022–2023: Software and mobile project (MySQL, Java Swing, Flutter)\n2020–2022: Translation, localization, training, teaching\n2010–2020: Freelance localization (language-landscapes.com)\n2004–2010: IVU Traffic Technologies — Localization manager"
-    },
-    "languages": {
-      "heading": "Languages",
-      "fluent": "Fluent: English, Spanish, German (C1)",
-      "rusty": "Rusty: French, Italian, Irish"
-    },
-    "hobbies": {
-      "heading": "Hobbies and Interests",
-      "text": "Code Institute hackathons, Dart/Flutter, gardening, beekeeping, cooking, silicon moulding."
-    }
-  },
+  
   "learningSection": {
     "heading": "Some of the places where I&apos;ve done my learning",
 

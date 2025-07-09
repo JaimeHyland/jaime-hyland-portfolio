@@ -2,26 +2,25 @@
 
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
+import { useLocale } from 'next-intl';
 import Cookies from 'js-cookie';
 import { localizedPaths } from '@/lib/paths';
 import { localizedLabels } from '@/lib/labels';
 
-interface HeaderProps {
-  lang: 'en' | 'es' | 'de';
-  labels:  (typeof localizedLabels)[keyof typeof localizedLabels];
-  paths: {
-    home: string;
-    projects: string;
-    cv: string;
-    contact: string;
-  };
-}
-
-export default function Header({ lang, labels, paths }: HeaderProps) {
+export default function Header() {
   const router = useRouter();
   const pathname = usePathname();
+  const lang = useLocale() as keyof typeof localizedLabels;
 
-  // Determine the current page key by checking which path matches
+  const paths = {
+    home: '',
+    cv: lang === 'es' ? 'curriculum' : lang === 'de' ? 'lebenslauf' : 'cv',
+    projects: lang === 'es' ? 'proyectos' : lang === 'de' ? 'projekte' : 'projects',
+    contact: lang === 'es' ? 'contacto' : lang === 'de' ? 'kontakt' : 'contact',
+  };
+
+  const labels = localizedLabels[lang]; // ✅ Safely grab localized labels
+
   const pageKey = Object.keys(paths).find(
     (key) => pathname === `/${lang}/${paths[key as keyof typeof paths]}`
   ) as keyof typeof paths || 'home';
@@ -41,16 +40,16 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
 
       <nav className="flex gap-4 text-lg text-gray-800">
         <Link href={`/${lang}/${paths.home}`} className={pageKey === 'home' ? 'font-bold' : ''}>
-          {labels.home}
+          {labels?.home}
         </Link>
         <Link href={`/${lang}/${paths.cv}`} className={pageKey === 'cv' ? 'font-bold' : ''}>
-          {labels.cv}
+          {labels?.cv}
         </Link>
         <Link href={`/${lang}/${paths.projects}`} className={pageKey === 'projects' ? 'font-bold' : ''}>
-          {labels.projects}
+          {labels?.projects}
         </Link>
         <Link href={`/${lang}/${paths.contact}`} className={pageKey === 'contact' ? 'font-bold' : ''}>
-          {labels.contact}
+          {labels?.contact}
         </Link>
       </nav>
 
@@ -61,7 +60,7 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
             onClick={() => handleLanguageChange(lng)}
             className={lang === lng ? 'font-bold' : 'font-normal'}
           >
-            {labels[lng]}
+            {labels?.[lng]}
           </button>
         ))}
       </div>

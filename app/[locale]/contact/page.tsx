@@ -1,15 +1,48 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
+
 export default function ContactPage() {
+  const t = useTranslations();
+
   return (
     <div className="p-6 max-w-xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4">Contact</h1>
-      <p className="mb-2">You can reach me using the following contact details:</p>
+      <h1 className="text-3xl font-bold mb-4">{t('heading')}</h1>
+      <p className="mb-2">{t('intro')}</p>
       <ul className="space-y-1">
-        <li><strong>Email:</strong> jaime.hyland@language-landscapes.com</li>
-        <li><strong>Landline:</strong> +49 3048628468</li>
-        <li><strong>Mobile:</strong> +49 177 2570734</li>
-        <li><strong>Address:</strong><br />Kuckhoffstr. 108D<br />13156 Berlin</li>
-        <li><strong>Website:</strong> <a href="https://jaime-hyland.com" className="text-blue-600 underline">jaime-hyland.com</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/language-landscapes/" className="text-blue-600 underline" target="_blank">language-landscapes</a></li>
+        <li>
+          <strong>{t('emailLabel')}:</strong> {t('email')}
+        </li>
+        <li>
+          <strong>{t('landlineLabel')}:</strong> {t('landline')}
+        </li>
+        <li>
+          <strong>{t('mobileLabel')}:</strong> {t('mobile')}
+        </li>
+        <li>
+          <strong>{t('addressLabel')}:</strong><br />
+          {t('addressLine1')}<br />
+          {t('addressLine2')}
+        </li>
+        <li>
+          <strong>{t('websiteLabel')}:</strong>{' '}
+          <a
+            href={t('websiteURL')}
+            className="text-blue-600 underline"
+          >
+            {t('websiteText')}
+          </a>
+        </li>
+        <li>
+          <strong>{t('linkedinLabel')}:</strong>{' '}
+          <a
+            href={t('linkedinURL')}
+            className="text-blue-600 underline"
+            target="_blank"
+          >
+            {t('linkedinText')}
+          </a>
+        </li>
       </ul>
     </div>
   );

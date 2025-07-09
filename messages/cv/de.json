@@ -1,0 +1,56 @@
+{
+  "heading": "Jaime Hyland",
+  "subtitle": "Softwareentwickler, Dozent, Erzähler — Berlin",
+  "contact": "E-Mail / GitHub / Website / LinkedIn",
+
+  "profile": {
+    "heading": "Persönliches Profil",
+    "text": "Ich bin ein vielseitiger Softwareentwickler, Ausbilder und Erzähler. Kürzlich habe ich ein Fernstudium im Bereich Full-Stack-Webentwicklung beim Code Institute (Dublin) abgeschlossen. Ich verfüge über umfangreiche Erfahrung in der Lokalisierung, Übersetzung und technischen Redaktion und kann komplexe Herausforderungen in verschiedensten Fachbereichen souverän meistern. Ich freue mich darauf, wieder Teil eines innovativen und kompetenten Entwicklerteams zu werden."
+  },
+
+  "technologies": {
+    "heading": "Zentrale Technologien",
+    "programming": "Programmiersprachen: HTML, CSS, JavaScript, Python, Java, VB.NET, Dart",
+    "databases": "Datenbanken: MySQL, PostgreSQL, Oracle",
+    "deployment": "Deployment: AWS, Heroku, Cloudinary, GoDaddy",
+    "frameworks": "Frameworks/Bibliotheken: Flask, Django, Bootstrap, Stripe, PassoloApp",
+    "tools": "Tools: Jira, AuthorIT, Doc2Help"
+  },
+
+  "education": {
+    "heading": "Ausbildung",
+    "items": [
+      "2023–2024: Code Institute – Diplom in Full-Stack-Webentwicklung",
+      "2000: FAS CITP – Diplom in Computerprogrammierung",
+      "1984–1988: University of Dublin (Trinity College Dublin) – BA in Philosophie"
+    ]
+  },
+
+  "portfolio": {
+    "heading": "Portfolio-Projekte",
+    "items": [
+      "Farming Futures – Robotik in der Landwirtschaft (HTML5, CSS, JS)",
+      "El acento español – Erklärtool zur spanischen Akzentsetzung (HTML5, CSS, JS)",
+      "Witch-Hazel – CLI-Anwendung zur Verwaltung von Veredelungen (Python, Heroku)",
+      "Family Shopping List – Geteilte Einkaufslisten-App (Django, PostgreSQL)",
+      "Mellifera – Online-Shop für Imker (Stripe, AWS)"
+    ]
+  },
+
+  "experience": {
+    "heading": "Berufserfahrung",
+    "text": "2022–2023: Web-/Mobile-App-Projekt (MySQL, Java Swing, Flutter)\n2020–2022: Übersetzung, Lokalisierung, Schulung, Unterricht\n2010–2020: Freiberuflicher Übersetzer/Lokalisierer (Spanisch/Deutsch > Englisch)\n2004–2010: Leiter Technische Lokalisierung — IVU Traffic Technologies, Berlin"
+  },
+
+  "languages": {
+    "heading": "Sprachen",
+    "fluent": "Fließend: Englisch, Spanisch, Deutsch (Zertifikat C1)",
+    "rusty": "Grundkenntnisse: Französisch, Italienisch, Irisch"
+  },
+
+  "hobbies": {
+    "heading": "Hobbys & Interessen",
+    "line1": "Hackathons des Code Institute, Fortbildungen bei brilliant.org, LinkedIn Learning und KodeKloud, Experimente mit Dart/Flutter und erste Schritte in Linux.",
+    "line2": "Ich gärtnere und koche gern (siehe mein Video auf YouTube), halte Bienen und stelle Silikonformen her."
+  }
+}

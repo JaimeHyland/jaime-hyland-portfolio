@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-    "jsx": "preserve", // or "react-jsx" if you're using React 17+
+    "jsx": "preserve",
+    "types": [
+      "react"
+    ],
     "module": "esnext",
     "target": "es6",
     "allowJs": true,

@@ -1,0 +1,71 @@
+{
+  "title": "Projects",
+  "intro": "This page lists a number of the projects I have been involved in recently. I have divided it into three sections...",
+  "section1": {
+    "title": "Portfolio Projects for my CI full-stack qualification",
+    "description": "These projects were created independently for assessment as part of my full-stack programming course...",
+    "projects": {
+      "farming": {
+        "name": "Farming Futures",
+        "desc": "Robotics in agriculture (HTML5, CSS, JS)"
+      },
+      "acento": {
+        "name": "El acento español",
+        "desc": "Spanish tilde explainer (HTML5, CSS, JS)"
+      },
+      "witch": {
+        "name": "Witch-Hazel",
+        "desc": "Grafting manager CLI app (Python, Heroku)"
+      },
+      "family": {
+        "name": "Family Shopping List",
+        "desc": "Django/PostgreSQL shopping app"
+      },
+      "mellifera": {
+        "name": "Mellifera",
+        "desc": "Online shop for beekeepers (Stripe, AWS)"
+      }
+    }
+  },
+  "section2": {
+    "title": "Ongoing independent Projects",
+    "description": "These projects were created independently on my own initiative...",
+    "projects": {
+      "portfolio": {
+        "name": "Jaime Hyland's Portfolio",
+        "desc": "This trilingual site is a personal project of mine..."
+      },
+      "language": {
+        "name": "language-landscapes.com",
+        "desc1": "This is a legacy CakePHP project...",
+        "desc2": "It is currently hosted by GoDaddy..."
+      }
+    }
+  },
+  "section3": {
+    "title": "Hackathon Projects",
+    "description": "These collaborative projects were developed as part of various hackathons...",
+    "projects": {
+      "techbuddy": {
+        "name": "TechBuddy",
+        "desc": "Technical help app for all the family",
+        "role": "My role: conception of original log-in logic; AI chat tuning and OpenAI integration."
+      },
+      "shegitsit": {
+        "name": "SheGitsIt",
+        "desc": "Support app for women in tech",
+        "role": "My role: messaging logic and Django channels deployment setup."
+      },
+      "sparksync": {
+        "name": "SparkSync",
+        "desc": "Dating app",
+        "role": "My role: instant messaging page and deployment logic."
+      },
+      "co2nscious": {
+        "name": "CO₂nscious",
+        "desc": "Climate-friendly action app (still in progress)",
+        "role": "My role: wireframes, Django models and Swagger APIs."
+      }
+    }
+  }
+}

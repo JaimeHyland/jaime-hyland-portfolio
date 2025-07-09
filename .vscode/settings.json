@@ -8,6 +8,8 @@
       "envify",
       "esnext",
       "gdpr",
+      "gehostet",
+      "hackathon",
       "Jaime",
       "Jaime Hyland",
       "jiti",
@@ -18,7 +20,9 @@
       "projekte",
       "Releasenotes",
       "rimraf",
-      "vercel"
+      "vercel",
+      "Veredelungsverwaltung",
+      "wireframes"
     ],
     "css.customData": [".vscode/tailwind-custom-data.json"]
   }

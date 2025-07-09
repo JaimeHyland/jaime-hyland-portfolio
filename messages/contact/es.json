@@ -1,0 +1,19 @@
+{
+  "heading": "Contacto",
+  "intro": "Puedes contactarme usando los siguientes datos.",
+  "emailLabel": "Correo electrónico",
+  "email": "jaime.hyland@language-landscapes.com",
+  "landlineLabel": "Teléfono fijo",
+  "landline": "+49 3048628468",
+  "mobileLabel": "Móvil",
+  "mobile": "+49 177 2570734",
+  "addressLabel": "Dirección",
+  "addressLine1": "Kuckhoffstr. 108D",
+  "addressLine2": "13156 Berlín",
+  "websiteLabel": "Sitio web",
+  "websiteText": "jaime-hyland.com",
+  "websiteURL": "https://jaime-hyland.com",
+  "linkedinLabel": "LinkedIn",
+  "linkedinText": "language-landscapes",
+  "linkedinURL": "https://www.linkedin.com/in/language-landscapes/"
+}

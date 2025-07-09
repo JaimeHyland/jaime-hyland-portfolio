@@ -1,0 +1,71 @@
+{
+  "title": "Proyectos",
+  "intro": "Esta página lista varios de los proyectos en los que he estado involucrado recientemente. Los he dividido en tres secciones...",
+  "section1": {
+    "title": "Proyectos de Portafolio para mi certificación full-stack de CI",
+    "description": "Estos proyectos fueron creados de forma independiente para evaluación como parte de mi curso de programación full-stack...",
+    "projects": {
+      "farming": {
+        "name": "Farming Futures",
+        "desc": "Robótica en agricultura (HTML5, CSS, JS)"
+      },
+      "acento": {
+        "name": "El acento español",
+        "desc": "Explicador de tildes en español (HTML5, CSS, JS)"
+      },
+      "witch": {
+        "name": "Witch-Hazel",
+        "desc": "Aplicación CLI para gestión de injertos (Python, Heroku)"
+      },
+      "family": {
+        "name": "Lista de compras familiar",
+        "desc": "Aplicación de compras con Django/PostgreSQL"
+      },
+      "mellifera": {
+        "name": "Mellifera",
+        "desc": "Tienda online para apicultores (Stripe, AWS)"
+      }
+    }
+  },
+  "section2": {
+    "title": "Proyectos independientes en curso",
+    "description": "Estos proyectos fueron creados de forma independiente por iniciativa propia...",
+    "projects": {
+      "portfolio": {
+        "name": "Portafolio de Jaime Hyland",
+        "desc": "Este sitio trilingüe es un proyecto personal mío..."
+      },
+      "language": {
+        "name": "language-landscapes.com",
+        "desc1": "Este es un proyecto legado en CakePHP...",
+        "desc2": "Actualmente está alojado en GoDaddy..."
+      }
+    }
+  },
+  "section3": {
+    "title": "Proyectos de hackathon",
+    "description": "Estos proyectos colaborativos fueron desarrollados como parte de varios hackathons...",
+    "projects": {
+      "techbuddy": {
+        "name": "TechBuddy",
+        "desc": "Aplicación de ayuda técnica para toda la familia",
+        "role": "Mi rol: concepción de la lógica original de inicio de sesión; afinación del chat AI e integración de OpenAI."
+      },
+      "shegitsit": {
+        "name": "SheGitsIt",
+        "desc": "Aplicación de apoyo para mujeres en tecnología",
+        "role": "Mi rol: lógica de mensajería y configuración de despliegue con Django channels."
+      },
+      "sparksync": {
+        "name": "SparkSync",
+        "desc": "Aplicación de citas",
+        "role": "Mi rol: página de mensajería instantánea y lógica de despliegue."
+      },
+      "co2nscious": {
+        "name": "CO₂nscious",
+        "desc": "Aplicación para acciones amigables con el clima (en progreso)",
+        "role": "Mi rol: wireframes, modelos Django y APIs Swagger."
+      }
+    }
+  }
+}

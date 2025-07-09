@@ -1,0 +1,71 @@
+{
+  "title": "Projekte",
+  "intro": "Diese Seite listet eine Reihe von Projekten auf, an denen ich kürzlich beteiligt war. Ich habe sie in drei Abschnitte unterteilt...",
+  "section1": {
+    "title": "Portfolio-Projekte für meine CI Full-Stack-Zertifizierung",
+    "description": "Diese Projekte wurden unabhängig im Rahmen meines Full-Stack-Programmierkurses erstellt...",
+    "projects": {
+      "farming": {
+        "name": "Farming Futures",
+        "desc": "Robotik in der Landwirtschaft (HTML5, CSS, JS)"
+      },
+      "acento": {
+        "name": "El acento español",
+        "desc": "Spanischer Tilde-Erklärer (HTML5, CSS, JS)"
+      },
+      "witch": {
+        "name": "Witch-Hazel",
+        "desc": "CLI-App zur Veredelungsverwaltung (Python, Heroku)"
+      },
+      "family": {
+        "name": "Familieneinkaufsliste",
+        "desc": "Einkaufs-App mit Django/PostgreSQL"
+      },
+      "mellifera": {
+        "name": "Mellifera",
+        "desc": "Online-Shop für Imker (Stripe, AWS)"
+      }
+    }
+  },
+  "section2": {
+    "title": "Laufende unabhängige Projekte",
+    "description": "Diese Projekte wurden unabhängig auf eigene Initiative erstellt...",
+    "projects": {
+      "portfolio": {
+        "name": "Jaime Hylands Portfolio",
+        "desc": "Diese dreisprachige Website ist ein persönliches Projekt von mir..."
+      },
+      "language": {
+        "name": "language-landscapes.com",
+        "desc1": "Dies ist ein Legacy-Projekt mit CakePHP...",
+        "desc2": "Es wird derzeit bei GoDaddy gehostet..."
+      }
+    }
+  },
+  "section3": {
+    "title": "Hackathon-Projekte",
+    "description": "Diese kollaborativen Projekte wurden im Rahmen verschiedener Hackathons entwickelt...",
+    "projects": {
+      "techbuddy": {
+        "name": "TechBuddy",
+        "desc": "Technische Hilfs-App für die ganze Familie",
+        "role": "Meine Rolle: Konzeption der ursprünglichen Anmelde-Logik; KI-Chat-Tuning und OpenAI-Integration."
+      },
+      "shegitsit": {
+        "name": "SheGitsIt",
+        "desc": "Unterstützungs-App für Frauen in der Technik",
+        "role": "Meine Rolle: Nachrichtenlogik und Django-Channels-Deployment-Setup."
+      },
+      "sparksync": {
+        "name": "SparkSync",
+        "desc": "Dating-App",
+        "role": "Meine Rolle: Instant-Messaging-Seite und Deployment-Logik."
+      },
+      "co2nscious": {
+        "name": "CO₂nscious",
+        "desc": "Klimafreundliche Aktions-App (noch in Arbeit)",
+        "role": "Meine Rolle: Wireframes, Django-Modelle und Swagger-APIs."
+      }
+    }
+  }
+}

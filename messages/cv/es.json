@@ -1,0 +1,56 @@
+{
+  "heading": "Jaime Hyland",
+  "subtitle": "Desarrollador de software, formador, narrador — Berlín",
+  "contact": "E-Mail / GitHub / Website / LinkedIn",
+
+  "profile": {
+    "heading": "Perfil personal",
+    "text": "Soy un desarrollador de software, formador y narrador polivalente. Acabo de completar un diploma a distancia en desarrollo Full-Stack en el Code Institute (Dublín). Tengo una amplia experiencia en localización, traducción y redacción técnica, y una gran capacidad para abordar cuestiones complejas en entornos especializados diversos. Estoy impaciente por reincorporarme a un equipo de desarrollo innovador y competente."
+  },
+
+  "technologies": {
+    "heading": "Tecnologías clave",
+    "programming": "Lenguajes de programación: HTML, CSS, JavaScript, Python, Java, VB.NET, Dart",
+    "databases": "Bases de datos: MySQL, PostgreSQL, Oracle",
+    "deployment": "Despliegue: AWS, Heroku, Cloudinary, GoDaddy",
+    "frameworks": "Frameworks/Librerías: Flask, Django, Bootstrap, Stripe, PassoloApp",
+    "tools": "Herramientas: Jira, AuthorIT, Doc2Help"
+  },
+
+  "education": {
+    "heading": "Formación",
+    "items": [
+      "2023–2024: Code Institute – Diploma en desarrollo Full-Stack",
+      "2000: FAS CITP – Diplomado en Programación informática",
+      "1984–1988: Universidad de Dublín (Trinity College Dublin) – Licenciatura en Filosofía"
+    ]
+  },
+
+  "portfolio": {
+    "heading": "Proyectos del portafolio",
+    "items": [
+      "Farming Futures – Robótica en la agricultura (HTML5, CSS, JS)",
+      "El acento español – Explicador de la tilde en español (HTML5, CSS, JS)",
+      "Witch-Hazel – App CLI para injertos (Python, Heroku)",
+      "Family Shopping List – App de compras familiares (Django, PostgreSQL)",
+      "Mellifera – Tienda online para apicultores (Stripe, AWS)"
+    ]
+  },
+
+  "experience": {
+    "heading": "Experiencia laboral",
+    "text": "2022–2023: Proyecto de app web/móvil (MySQL, Java Swing, Flutter)\n2020–2022: Traducción, localización, formación, docencia\n2010–2020: Traductor/localizador freelance (Spanish/German to English)\n2004–2010: Responsable de localización técnica — IVU Traffic Technologies, Berlín"
+  },
+
+  "languages": {
+    "heading": "Idiomas",
+    "fluent": "Fluido: Inglés, Español, Alemán (Cert. C1)",
+    "rusty": "Básico: Francés, Italiano, Irlandés"
+  },
+
+  "hobbies": {
+    "heading": "Aficiones e intereses",
+    "line1": "Hackathons del Code Institute, formación en brilliant.org, LinkedIn Learning y KodeKloud, experimentación con Dart/Flutter y aprendizaje de Linux.",
+    "line2": "Me gusta la jardinería, la cocina (ver mi vídeo en YouTube), la apicultura y la fabricación de moldes de silicona."
+  }
+}

@@ -15,31 +15,25 @@ export async function generateStaticParams() {
 
 type Locale = 'en' | 'es' | 'de';
 
-export default async function LocaleLayout({
-  children,
-  params,
-}: {
-  children: ReactNode;
-  params: Promise<{ locale: Locale }>;
-}) {
+export default async function LocaleLayout({ children, params}: { children: 
+  React.ReactNode; params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
   const messages = await getMessages();
+
   if (!messages) notFound();
 
   return (
-    <html lang={locale as string}>
-      <body className="font-sans bg-white text-gray-800">
-        <GDPRConsent />
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <Header
-            lang={locale}
-            labels={localizedLabels[locale] as (typeof localizedLabels)[keyof typeof localizedLabels]}
-            paths={localizedPaths[locale]}
-          />
-          <main className="p-6">{children}</main>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <>
+      <GDPRConsent />
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <Header
+          lang={locale as Locale}
+          labels={localizedLabels[locale as Locale] as (typeof localizedLabels)[keyof typeof localizedLabels]}
+          paths={localizedPaths[locale as Locale]}
+        />
+        <main className="p-6">{children}</main>
+      </NextIntlClientProvider>
+    </>
   );
 }
