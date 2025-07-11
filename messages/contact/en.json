@@ -11,9 +11,9 @@
   "addressLine1": "Kuckhoffstr. 108D",
   "addressLine2": "13156 Berlin",
   "websiteLabel": "Website",
-  "websiteURL": "https://jaime-hyland.com",
   "websiteText": "jaime-hyland.com",
+  "websiteURL": "https://jaime-hyland.com",
   "linkedinLabel": "LinkedIn",
-  "linkedinURL": "https://www.linkedin.com/in/language-landscapes/",
-  "linkedinText": "language-landscapes"
+  "linkedinName": "language-landscapes",
+  "linkedinURL": "https://www.linkedin.com/in/language-landscapes/"
 }

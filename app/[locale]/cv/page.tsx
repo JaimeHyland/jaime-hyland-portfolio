@@ -1,66 +1,124 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import React from 'react';
+import { CvHeading } from '../../../components/CvHeading';
+import { ProjLink } from '../../../components/ProjLink';
 
 
 export default function CVPage() {
   const t = useTranslations();
+  const educationItems = t.raw('education.items');
+  const locale = useLocale();
+
+  const urls = [
+    `/${locale}/projects#ci-assessment`,
+    `/${locale}/projects#independent`,
+    `/${locale}/projects#hackathons`
+  ];
+
+  const rawItems = t.raw('portfolio.items') as string[];
+
+  const richItems = rawItems.map((_, i) =>
+    t.rich(`portfolio.items.${i}`, {
+      link: (chunks) => (
+        <ProjLink href={urls[i]}>
+          {chunks}
+        </ProjLink>
+      )
+    })
+  );
+
 
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-6">
-      <h1 className="text-3xl font-bold">{t('cvOwner')}</h1>
-      <p className="text-lg italic">{t('subtitle')}</p>
-      <p className="text-sm text-gray-600">{t('contact')}</p>
-
+      <div className="text-center">
+        <h1 className="text-3xl font-bold">{t('cvOwner')}</h1>
+        <p className="text-lg italic"><ProjLink href={t('emailURL')}>{t('emailText')}</ProjLink> | <ProjLink href={t('githubURL')}>{t('githubText')}</ProjLink> | <ProjLink href={t('linkedinURL')}>{t('linkedinText')}</ProjLink></p>
+      </div>
       <section>
-        <h2 className="text-xl font-semibold">{t('profile.heading')}</h2>
-        <p>{t('profile.text')}</p>
+        <CvHeading>{t('summary.title')}</CvHeading>
+        <p>{t('summary.text')}</p>
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold">{t('technologies.heading')}</h2>
-        <ul className="list-disc list-inside">
-          <li><strong>{t('technologies.programming')}</strong></li>
-          <li><strong>{t('technologies.databases')}</strong></li>
-          <li><strong>{t('technologies.deployment')}</strong></li>
-          <li><strong>{t('technologies.frameworks')}</strong></li>
-          <li><strong>{t('technologies.tools')}</strong></li>
-        </ul>
+        <CvHeading>{t('technologies.heading')}</CvHeading>
+        <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
+          <div className="font-semibold">{t('technologies.programmingPt')}</div>
+          <div>{t('technologies.programmingText')}</div>
+          <div className="font-semibold">{t('technologies.databasesPt')}</div>
+          <div>{t('technologies.databasesText')}</div>
+          <div className="font-semibold">{t('technologies.deploymentPt')}</div>
+          <div>{t('technologies.deploymentText')}</div>
+          <div className="font-semibold">{t('technologies.versionControlPt')}</div>
+          <div>{t('technologies.versionControlText')}</div>
+          <div className="font-semibold">{t('technologies.frameworksPt')}</div>
+          <div>{t('technologies.frameworksText')}</div>
+          <div className="font-semibold">{t('technologies.xlationPt')}</div>
+          <div>{t('technologies.xlationText')}</div>
+          <div className="font-semibold">{t('technologies.singlesourcePt')}</div>
+          <div>{t('technologies.singlesourceText')}</div>
+        </div>
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold">{t('education.heading')}</h2>
-        <ul className="list-disc list-inside">
-          {t.raw('education.items').map((item: string, i: number) => (
+        <CvHeading>{t('education.heading')}</CvHeading>
+        <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
+          {educationItems.map((item: { period: string; text: string }, i: number) => (
+            <React.Fragment key={i}>
+              <div className="font-semibold">{item.period}</div>
+              <div>{item.text}</div>
+            </React.Fragment>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <CvHeading>{t('portfolio.heading')}</CvHeading>
+        <p>{t('portfolio.intro')}</p>
+        <ul className="list-disc list-outside pl-6">
+          {richItems.map((item, i) => (
             <li key={i}>{item}</li>
           ))}
         </ul>
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold">{t('portfolio.heading')}</h2>
-        <ul className="list-disc list-inside">
-          {t.raw('portfolio.items').map((item: string, i: number) => (
-            <li key={i}>{item}</li>
+        <CvHeading>{t('workExperience.heading')}</CvHeading>
+        <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
+          {t.raw('workExperience.items').map((item: { period: string; text: string }, i: number) => (
+            <React.Fragment key={i}>
+              <div className="font-semibold">{item.period}</div>
+              <div>{item.text}</div>
+            </React.Fragment>
           ))}
+        </div>
+      </section>
+
+      <section>
+        <CvHeading>{t('workRelevantSkills.heading')}</CvHeading>
+        <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
+          <div className="font-semibold">{t('workRelevantSkills.languagesPt')}</div>
+          <div>{t('workRelevantSkills.languagesText')}</div>
+
+          <div className="font-semibold">{t('workRelevantSkills.mgtPt')}</div>
+          <div>{t('workRelevantSkills.mgtText')}</div>
+
+          <div className="font-semibold">{t('workRelevantSkills.xlationPt')}</div>
+          <div>{t('workRelevantSkills.xlationText')}</div>
+
+          <div className="font-semibold">{t('workRelevantSkills.docuPt')}</div>
+          <div>{t('workRelevantSkills.docuText')}</div>
+        </div>
+      </section>
+
+
+      <section>
+        <CvHeading>{t('hobbies.heading')}</CvHeading>
+        <ul className="list-disc list-outside pl-6">
+          <li key="line1">{t('hobbies.line1')}</li>
+          <li key="line2">{t('hobbies.line2')}</li>
         </ul>
-      </section>
-
-      <section>
-        <h2 className="text-xl font-semibold">{t('experience.heading')}</h2>
-        <p className="whitespace-pre-line">{t('experience.text')}</p>
-      </section>
-
-      <section>
-        <h2 className="text-xl font-semibold">{t('languages.heading')}</h2>
-        <p>{t('languages.fluent')}</p>
-        <p>{t('languages.rusty')}</p>
-      </section>
-
-      <section>
-        <h2 className="text-xl font-semibold">{t('hobbies.heading')}</h2>
-        <p>{t('hobbies.line1')}</p>
-        <p>{t('hobbies.line2')}</p>
       </section>
     </div>
   );

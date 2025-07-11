@@ -1,70 +1,114 @@
 {
   "title": "Projects",
-  "intro": "This page lists a number of the projects I have been involved in recently. I have divided it into three sections...",
+  "projIntro": "This page lists a number of the projects I have been involved in recently. I have divided it into three sections...",
   "section1": {
     "title": "Portfolio Projects for my CI full-stack qualification",
-    "description": "These projects were created independently for assessment as part of my full-stack programming course...",
+    "description": "These projects were created by me alone as part of my full-stack programming course. Some of them have been further developed since, but they were all originally designed simply to satisfy the assessors' requirements",
     "projects": {
       "farming": {
         "name": "Farming Futures",
-        "desc": "Robotics in agriculture (HTML5, CSS, JS)"
+        "siteURL": "https://jaimehyland.github.io/farming-futures/",
+        "codebaseText": "GitHub repository",
+        "codebaseURL": "https://github.com/JaimeHyland/farming-futures",
+        "desc": "Robotics in agriculture. This is a fairly simple, responsive static site (with deployment in GitHub)"
       },
       "acento": {
         "name": "El acento español",
-        "desc": "Spanish tilde explainer (HTML5, CSS, JS)"
+        "siteURL": "https://jaimehyland.github.io/elAcentoEspanyol/",
+        "codebaseText": "GitHub repository",
+        "codebaseURL": "https://github.com/JaimeHyland/farming-futures",
+        "desc": "Spanish tilde explainer. It shows the use of a simple, json-based data file and contains some simple logic written in JS (deployment in Github)"
       },
       "witch": {
         "name": "Witch-Hazel",
-        "desc": "Grafting manager CLI app (Python, Heroku)"
+        "siteURL": "https://witch-hazel-5f8d8dfa45da.herokuapp.com/",
+        "codebaseText": "GitHub repository",
+        "codebaseURL": "https://github.com/JaimeHyland/elAcentoEspanyol",
+        "desc": "Grafting manager CLI app. A specialized app to manage a grafting process at a plant nursery. Contains some relatively intricate logic on a Google spreadsheet using Python (deployment using Heroku)"
       },
       "family": {
         "name": "Family Shopping List",
-        "desc": "Django/PostgreSQL shopping app"
+        "siteURL": "https://family-shopping-list-v1-bafe564ca613.herokuapp.com/",
+        "codebaseText": "GitHub repository",
+        "codebaseURL": "https://github.com/JaimeHyland/family_shopping_list_v1",
+        "desc": "A Django/PostgreSQL multi-user shopping app with instant messaging using Daphne and Django Channels in combination with Redis (deployment using Heroku)"
       },
       "mellifera": {
         "name": "Mellifera",
-        "desc": "Online shop for beekeepers (Stripe, AWS)"
+        "siteURL": "https://mellifera-e383ea0670a3.herokuapp.com/",
+        "codebaseText": "GitHub repository",
+        "codebaseURL": "https://github.com/JaimeHyland/mellifera",
+        "desc": "An (almost) working online shop for beekeepers using Stripe for payments, deployed on Heroku, and using AWS to deal with static files"
       }
     }
   },
   "section2": {
     "title": "Ongoing independent Projects",
-    "description": "These projects were created independently on my own initiative...",
+    "description": "These projects were created independently on my own initiative; they should all be considered Work in Progress",
     "projects": {
       "portfolio": {
         "name": "Jaime Hyland's Portfolio",
-        "desc": "This trilingual site is a personal project of mine..."
+        "siteURL": "https://jaime-hyland.com/",
+        "codebaseText": "GitHub repository",
+        "codebaseURL": "https://github.com/JaimeHyland/jaime-hyland-portfolio",
+        "desc": "This project is the trilingual site you're looking at now. It's a personal project of mine. Its structure is original to me. I built it using next.js."
       },
       "language": {
         "name": "language-landscapes.com",
-        "desc1": "This is a legacy CakePHP project...",
-        "desc2": "It is currently hosted by GoDaddy..."
+        "siteURL": "https://language-landscapes.com",
+        "codebaseText": "GitHub repository",
+        "codebaseURL": "https://github.com/JaimeHyland/language-landscapes",
+        "desc1": "This is a legacy CakePHP project. It was designed and developed more than a decade ago following my instructions. I now manage it. I have broken and fixed it again several times. At some stage in the future I intend to refactor it to a more modern framework, but at the moment it is not responsive.",
+        "desc2": "It is currently hosted by GoDaddy, but for reasons of price and customer service, I intend to move it to another provider as part of my refactoring effort."
       }
     }
   },
   "section3": {
     "title": "Hackathon Projects",
-    "description": "These collaborative projects were developed as part of various hackathons...",
+    "description1": "These collaborative projects were developed as part of various hackathons organized by Code Institute from late 2024 on. With one exception, each hackathon involved a team of six or seven people designing, developing and documenting a project on a particular theme over five days. While I look in on them from time to time to check on them, I can't guarantee that they will always be in working condition.",
+    "description2": "As I feel I probably learnt more in each week that I completed a hackathon than I would often learn in an entire month of study, I intend to continue doing hackathons whenever I get the chance. So stand by for ongoing additions to this list!",
+    "CIHackathonsURL": "https://hackathon.codeinstitute.net/",
     "projects": {
       "techbuddy": {
         "name": "TechBuddy",
-        "desc": "Technical help app for all the family",
-        "role": "My role: conception of original log-in logic; AI chat tuning and OpenAI integration."
+        "hackathonName": "Branching Out: A family hackathon",
+        "hackathonURL": "https://hackathon.codeinstitute.net/hackathon/public/60/",
+        "siteURL": "",
+        "codebaseText": "GitHub repository",
+        "codebaseURL": "https://github.com/apeskinian/tech_buddy",
+        "desc": "A technical help app for all the family, developed in a six-person team over a mere three days, with the team working on site on the last day, TeamBuddy won 2nd prize in the Hackathon.",
+        "role": "My role: conception of original log-in logic; AI chat tuning; design and coding of the chat structure."
       },
       "shegitsit": {
         "name": "SheGitsIt",
-        "desc": "Support app for women in tech",
-        "role": "My role: messaging logic and Django channels deployment setup."
+        "hackathonName": "CodeHER: Empowering Women in Tech",
+        "hackathonURL": "https://hackathon.codeinstitute.net/hackathon/public/58/",
+        "siteURL": "",
+        "codebaseText": "GitHub repository",
+        "codebaseURL": "https://github.com/Carlos-n21/Team-4-SheCanGitIt",
+        "desc": "An app designed to provide specialized support services for women in tech. Chief among its functions was an instant messaging service for female IT professionals to engage with their mentors. The project won third place in CI's March Hackathon.",
+        "role": "My role: I designed and implemented the logic and structure of the messaging logic and completed the Django channels deployment setup."
       },
       "sparksync": {
         "name": "SparkSync",
-        "desc": "Dating app",
-        "role": "My role: instant messaging page and deployment logic."
+        "hackathonName": "Love.exe - Coding connections in the digital age",
+        "hackathonURL": "https://hackathon.codeinstitute.net/hackathon/public/56/",
+        "siteURL": "",
+        "codebaseText": "GitHub repository",
+        "codebaseURL": "https://github.com/violaberg/dating-app",
+        "technologies": "Django, Python, HTML5, CSS3, JavaScript, Heroku, Neon, Resend, Bootstrap, Django Channels, Daphne, Redis",
+        "desc": "A dating app with an instant messaging component, SparkSync is one of the select list of Hackathon projects chosen by Code Institute for showcasing the output of its students. It also won 2nd prize in CI's February Hackathon",
+        "role": "My role: I designed and implemented the logic and structure of the messaging logic and completed the Django channels deployment setup using Redis."
       },
       "co2nscious": {
         "name": "CO₂nscious",
-        "desc": "Climate-friendly action app (still in progress)",
-        "role": "My role: wireframes, Django models and Swagger APIs."
+        "hackathonName": "Battle of the Bootcamps",
+        "hackathonDesc": "This was an extra short hackathon (over three days instead of the usual five) organized by Code Institute and two Berlin-based IT training institutions with the sponsorship of Doc Morris.",
+        "hackathonURL": "https://hackathon.codeinstitute.net/hackathon/public/52/",
+        "codebaseText": "GitHub repository",
+        "codebaseURL": "https://github.com/raneem-yad/CO-nsious",
+        "desc": "Climate-friendly action app. This project was developed over a mere three days, which turned out not to be enough time to create a working app.",
+        "role": "My role: wireframes, Django models and Swagger APIs. I learned a lot in a very limited time about separating frontend and backend logic via code structure and clearly defined APIs and, perhaps above all, about using Git in a team environment."
       }
     }
   }

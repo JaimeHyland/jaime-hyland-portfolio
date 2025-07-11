@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { ProjLink } from '../../../components/ProjLink';
 
 export default function ContactPage() {
   const t = useTranslations();
@@ -26,22 +27,11 @@ export default function ContactPage() {
         </li>
         <li>
           <strong>{t('websiteLabel')}:</strong>{' '}
-          <a
-            href={t('websiteURL')}
-            className="text-blue-600 underline"
-          >
-            {t('websiteText')}
-          </a>
+          <ProjLink href={t('websiteURL')}>{t('websiteText')}</ProjLink>
         </li>
         <li>
           <strong>{t('linkedinLabel')}:</strong>{' '}
-          <a
-            href={t('linkedinURL')}
-            className="text-blue-600 underline"
-            target="_blank"
-          >
-            {t('linkedinText')}
-          </a>
+          <ProjLink href={t('linkedinURL')}>{t('linkedinName')}</ProjLink>
         </li>
       </ul>
     </div>

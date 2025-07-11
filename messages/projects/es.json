@@ -1,6 +1,6 @@
 {
   "title": "Proyectos",
-  "intro": "Esta página lista varios de los proyectos en los que he estado involucrado recientemente. Los he dividido en tres secciones...",
+  "projIntro": "Esta página lista varios de los proyectos en los que he estado involucrado recientemente. Los he dividido en tres secciones...",
   "section1": {
     "title": "Proyectos de Portafolio para mi certificación full-stack de CI",
     "description": "Estos proyectos fueron creados de forma independiente para evaluación como parte de mi curso de programación full-stack...",

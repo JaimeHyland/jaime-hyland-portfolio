@@ -1,6 +1,6 @@
-# Next.js  Portfolio Template
+# Next.js Portfolio Template
 
-This Git repository contains a Next.js project for building a  portfolio template. The template is designed using Next.js, Tailwind CSS, Google Fonts, and routing techniques that allow for easy redirection to specific sections of a page.
+This Git repository contains a Next.js project for building a portfolio template. The template is designed using Next.js, Tailwind CSS, Google Fonts, and routing techniques that allow for easy redirection to specific sections of a page.
 
 ## Features
 
@@ -8,7 +8,9 @@ This Git repository contains a Next.js project for building a  portfolio templat
 - Responsive design with Tailwind CSS for easy customization.
 - Integration of Google Fonts for enhanced typography.
 - Routing functionality to redirect to specific page sections.
+
 ## Topics Covered
+
 - Next JS
 - JavaScript
 - HTML5
@@ -16,6 +18,7 @@ This Git repository contains a Next.js project for building a  portfolio templat
 - CSS Grid
 - tailwind CSS
 - CSS Flexbox
+
 ## Getting Started
 
 1. Clone the repository to your local machine.

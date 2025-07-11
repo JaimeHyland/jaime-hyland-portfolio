@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import EducationModal from './EducationModal';
 import { useTranslations } from 'next-intl';
+import { ProjLink } from '../components/ProjLink';
 
 import messagesEn from '../messages/en.json';
 import messagesEs from '../messages/es.json';

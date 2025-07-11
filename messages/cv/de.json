@@ -52,5 +52,11 @@
     "heading": "Hobbys & Interessen",
     "line1": "Hackathons des Code Institute, Fortbildungen bei brilliant.org, LinkedIn Learning und KodeKloud, Experimente mit Dart/Flutter und erste Schritte in Linux.",
     "line2": "Ich gärtnere und koche gern (siehe mein Video auf YouTube), halte Bienen und stelle Silikonformen her."
+  },
+
+  "portfolioAnchors": {
+    "ciAssessment": "ci-bewertung",
+    "independent": "eigenständig",
+    "hackathons": "hackathons"
   }
 }

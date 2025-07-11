@@ -5,6 +5,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import Cookies from 'js-cookie';
 import { localizedPaths } from '@/lib/paths';
 import { localizedLabels } from '@/lib/labels';
+import { HeaderLink } from '../components/HeaderLink';
 
 
 type HeaderProps = {
@@ -40,26 +41,27 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
       <h1 className="text-xl font-bold">Jaime Hyland</h1>
 
       <nav className="flex gap-4 text-lg text-gray-800">
-        <Link href={`/${lang}/${paths.home}`} className={pageKey === 'home' ? 'font-bold' : ''}>
+        <HeaderLink href={`/${lang}/${paths.home}`} pageKey="home" currentKey={pageKey}>
           {labels?.home}
-        </Link>
-        <Link href={`/${lang}/${paths.cv}`} className={pageKey === 'cv' ? 'font-bold' : ''}>
+        </HeaderLink>
+        <HeaderLink href={`/${lang}/${paths.cv}`} pageKey="cv" currentKey={pageKey}>
           {labels?.cv}
-        </Link>
-        <Link href={`/${lang}/${paths.projects}`} className={pageKey === 'projects' ? 'font-bold' : ''}>
+        </HeaderLink>
+        <HeaderLink href={`/${lang}/${paths.projects}`} pageKey="projects" currentKey={pageKey}>
           {labels?.projects}
-        </Link>
-        <Link href={`/${lang}/${paths.contact}`} className={pageKey === 'contact' ? 'font-bold' : ''}>
+        </HeaderLink>
+        <HeaderLink href={`/${lang}/${paths.contact}`} pageKey="contact" currentKey={pageKey}>
           {labels?.contact}
-        </Link>
+        </HeaderLink>
       </nav>
-
       <div className="flex gap-2 justify-center md:justify-end text-sm text-gray-600">
         {(['en', 'es', 'de'] as const).map((lng) => (
           <button
             key={lng}
             onClick={() => handleLanguageChange(lng)}
-            className={lang === lng ? 'font-bold' : 'font-normal'}
+            className={`transition-transform duration-200 transform hover:scale-105 ${
+              lang === lng ? 'font-bold' : 'font-normal'
+            }`}
           >
             {labels?.[lng]}
           </button>
