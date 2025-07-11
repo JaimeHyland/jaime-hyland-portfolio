@@ -1,57 +1,104 @@
 {
   "cvOwner": "Jaime Hyland",
   "subtitle": "Desarrollador de software, formador, narrador — Berlín",
-  "contact": "E-Mail / GitHub / Website / LinkedIn",
+  "emailText": "Correo electrónico",
+  "emailURL": "mailto:%20jaime.hyland@language-landscapes.com",
+  "githubText": "GitHub",
+  "githubURL": "https://github.com/JaimeHyland/",
+  "linkedinText": "LinkedIn",
+  "linkedinURL": "https://www.linkedin.com/in/language-landscapes/",
 
-  "profile": {
-    "heading": "Perfil personal",
-    "text": "Soy un desarrollador de software, formador y narrador polivalente. Acabo de completar un diploma a distancia en desarrollo Full-Stack en el Code Institute (Dublín). Tengo una amplia experiencia en localización, traducción y redacción técnica, y una gran capacidad para abordar cuestiones complejas en entornos especializados diversos. Estoy impaciente por reincorporarme a un equipo de desarrollo innovador y competente."
+  "summary": {
+    "title": "Perfil personal",
+    "text": "Soy un desarrollador de software, formador y narrador versátil. Acabo de terminar un curso a distancia de desarrollo Full-Stack con Code Institute (Dublín). Tengo una amplia experiencia en localización, traducción y redacción técnica, y una sólida capacidad para enfrentar retos complejos en entornos especializados diversos. Estoy deseando incorporarme de nuevo a un equipo de desarrollo innovador y competente."
   },
 
   "technologies": {
     "heading": "Tecnologías clave",
-    "programming": "Lenguajes de programación: HTML, CSS, JavaScript, Python, Java, VB.NET, Dart",
-    "databases": "Bases de datos: MySQL, PostgreSQL, Oracle",
-    "deployment": "Despliegue: AWS, Heroku, Cloudinary, GoDaddy",
-    "frameworks": "Frameworks/Librerías: Flask, Django, Bootstrap, Stripe, PassoloApp",
-    "tools": "Herramientas: Jira, AuthorIT, Doc2Help"
+    "programmingPt": "Lenguajes de programación:",
+    "programmingText": "HTML, CSS, JavaScript, Python, Java, VB.NET, Dart/Flutter",
+    "databasesPt": "Bases de datos:",
+    "databasesText": "MySQL, PostgreSQL, Oracle",
+    "deploymentPt": "Despliegue:",
+    "deploymentText": "AWS, Heroku, Cloudinary, GoDaddy, Vercel",
+    "versionControlPt": "Control de versiones:",
+    "versionControlText": "GitHub, Git",
+    "frameworksPt": "Frameworks/Librerías:",
+    "frameworksText": "Flask, Django, Bootstrap, Stripe, PassoloApp",
+    "xlationPt": "Traducción, l10n, i18n",
+    "xlationText": "Suite de SDL, Déjà Vu, MemoQ, Transit/Termstar",
+    "singlesourcePt": "Herramientas de fuente única:",
+    "singlesourceText": "Author-it, Doc2Help"
+  },
+
+  "workRelevantSkills": {
+    "heading": "Otras competencias profesionales",
+    "languagesPt": "Idiomas y culturas:",
+    "languagesText": "Lengua materna: inglés. Fluidez total en alemán (certificado C1) y español. Viví 9 años en España y los últimos 23 en Berlín. Conocimiento de lectura de francés, italiano e irlandés.",
+    "mgtPt": "Gestión:",
+    "mgtText": "Gestión de proyectos, metodologías ágiles, planificación estratégica",
+    "xlationPt": "Traducción:",
+    "xlationText": "Del español y alemán al inglés. Especializado en TI, transporte público y telecomunicaciones; amplia experiencia con textos históricos y sociológicos.",
+    "docuPt": "Documentación:",
+    "docuText": "Notas de versión, materiales de formación y ayuda, integración documental para desarrollo ágil, documentación multilingüe, automatización de archivos y recursos",
+    "hobbiesPt": "Aficiones:",
+    "hobbiesText": "Soy jardinero y apicultor aficionado. Me gusta fabricar moldes de silicona para componentes de resina epoxi."
   },
 
   "education": {
     "heading": "Formación",
     "items": [
-      "2023–2024: Code Institute – Diploma en desarrollo Full-Stack",
-      "2000: FAS CITP – Diplomado en Programación informática",
-      "1984–1988: Universidad de Dublín (Trinity College Dublin) – Licenciatura en Filosofía"
+      {
+        "period": "Ago 2023 – Dic 2024:",
+        "text": "Code Institute: Curso de diploma en desarrollo Full-Stack"
+      },
+      {
+        "period": "2000:",
+        "text": "FAS CITP – Diplomado en Programación informática"
+      },
+      {
+        "period": "1984–1988:",
+        "text": "Universidad de Dublín (Trinity College Dublin) – Licenciatura en Filosofía"
+      }
+    ]
+  },
+
+  "workExperience": {
+    "heading": "Experiencia profesional",
+    "items": [
+      {
+        "period": "2022 – julio 2023:",
+        "text": "Trabajo en proyecto de software para el aprendizaje de idiomas en línea. App web y móvil, MySQL, Java Swing, Flutter/Dart."
+      },
+      {
+        "period": "2020 – 2022:",
+        "text": "Traducción y localización, formación profesional independiente, enseñanza de idiomas"
+      },
+      {
+        "period": "Sept 2010 – 2020:",
+        "text": "Traductor técnico/localizador freelance, de español/alemán a inglés bajo el nombre language-landscapes.com"
+      },
+      {
+        "period": "Abril 2004 – Sept. 2010",
+        "text": "Responsable de localización técnica de software y materiales de formación para el sistema de gestión de transporte público IVU Suite en IVU Traffic Technologies, Friedenau (Berlín)."
+      }
     ]
   },
 
   "portfolio": {
     "heading": "Proyectos del portafolio",
+    "intro": "Tengo una buena cantidad de aplicaciones web full-stack, que agrupo en las siguientes categorías:",
     "items": [
-      "Farming Futures – Robótica en la agricultura (HTML5, CSS, JS)",
-      "El acento español – Explicador de la tilde en español (HTML5, CSS, JS)",
-      "Witch-Hazel – App CLI para injertos (Python, Heroku)",
-      "Family Shopping List – App de compras familiares (Django, PostgreSQL)",
-      "Mellifera – Tienda online para apicultores (Stripe, AWS)"
+      "Proyectos para la evaluación del Code Institute – <link>Ver lista completa</link>",
+      "Proyectos independientes desarrollados por mí – <link>Ver lista completa</link>",
+      "Proyectos de hackathon del CI en equipo – <link>Ver lista completa</link>"
     ]
-  },
-
-  "experience": {
-    "heading": "Experiencia laboral",
-    "text": "2022–2023: Proyecto de app web/móvil (MySQL, Java Swing, Flutter)\n2020–2022: Traducción, localización, formación, docencia\n2010–2020: Traductor/localizador freelance (Spanish/German to English)\n2004–2010: Responsable de localización técnica — IVU Traffic Technologies, Berlín"
-  },
-
-  "languages": {
-    "heading": "Idiomas",
-    "fluent": "Fluido: Inglés, Español, Alemán (Cert. C1)",
-    "rusty": "Básico: Francés, Italiano, Irlandés"
   },
 
   "hobbies": {
     "heading": "Aficiones e intereses",
-    "line1": "Hackathons del Code Institute, formación en brilliant.org, LinkedIn Learning y KodeKloud, experimentación con Dart/Flutter y aprendizaje de Linux.",
-    "line2": "Me gusta la jardinería, la cocina (ver mi vídeo en YouTube), la apicultura y la fabricación de moldes de silicona."
+    "line1": "Hackathons del Code Institute; formación continua en brilliant.org, LinkedIn Learning y KodeKloud; experimentación con Dart/Flutter y aprendizaje de Linux.",
+    "line2": "Me gusta cultivar mi jardín y cocinar (ver mi vídeo en YouTube). También me dedico a la apicultura y la fabricación de moldes de silicona."
   },
 
   "portfolioAnchors": {
