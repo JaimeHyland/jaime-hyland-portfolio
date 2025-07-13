@@ -6,10 +6,11 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 type Props = {
   title: string;
   children: ReactNode;
+  defaultOpen?: boolean;
 };
 
-export function CollapsibleSection({ title, children }: Props) {
-  const [isOpen, setIsOpen] = useState(true);
+export function CollapsibleSection({ title, children, defaultOpen }: Props) {
+  const [isOpen, setIsOpen] = useState(defaultOpen ?? true);
 
   return (
     <section>
@@ -17,13 +18,13 @@ export function CollapsibleSection({ title, children }: Props) {
         onClick={() => setIsOpen(!isOpen)}
         className="w-full text-left"
       >
-        <h2 className="text-xl font-semibold border-t border-black bg-gray-300 px-2 pt-2 pb-4 mt-8 mb-4 flex items-center justify-between">
+        <h2 className="text-xl font-semibold border-t border-black bg-gray-300 pt-2 pb-2 flex items-center justify-between">
           {title}
           {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
         </h2>
       </button>
 
-      {isOpen && <div className="px-2">{children}</div>}
+      {isOpen && <div className="px-2 pb-4 mt-2 mb-4">{children}</div>}
     </section>
   );
 }
