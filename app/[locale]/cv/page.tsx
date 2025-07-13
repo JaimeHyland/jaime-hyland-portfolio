@@ -4,7 +4,19 @@ import { useTranslations, useLocale } from 'next-intl';
 import React from 'react';
 import { CvHeading } from '../../../components/CvHeading';
 import { ProjLink } from '../../../components/ProjLink';
+import { useEffect, useState } from 'react';
 
+
+function PhoneDisplay() {
+  const [phone, setPhone] = useState('');
+
+  useEffect(() => {
+    const parts = ['+49', '177', '2570734'];
+    setPhone(parts.join(' '));
+  }, []);
+
+  return <span>{phone}</span>;
+}
 
 export default function CVPage() {
   const t = useTranslations();
@@ -86,10 +98,30 @@ export default function CVPage() {
       <section>
         <CvHeading>{t('workExperience.heading')}</CvHeading>
         <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
-          {t.raw('workExperience.items').map((item: { period: string; text: string }, i: number) => (
+          {t.raw('workExperience.items').map((
+            item: {
+              period: string;
+              text: string;
+              blurbTitle?: string;
+              blurb1?: string;
+              blurb2?: string;
+            },
+            i: number
+          ) => (
             <React.Fragment key={i}>
               <div className="font-semibold">{item.period}</div>
               <div>{item.text}</div>
+
+              {/* Blurb content: shown in a single full-width row */}
+              {(item.blurbTitle || item.blurb1 || item.blurb2) && (
+                <div className="col-span-2 space-y-1 pl-24 my-4">
+                  {item.blurbTitle && <div><em>{item.blurbTitle}</em></div>}
+                  <ul className="list-disc list-outside pl-6 space-y-1">
+                    {item.blurb1 && <li>{item.blurb1}</li>}
+                    {item.blurb2 && <li>{item.blurb2}</li>}
+                  </ul>
+                </div>
+              )}          
             </React.Fragment>
           ))}
         </div>

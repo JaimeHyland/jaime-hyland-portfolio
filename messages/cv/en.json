@@ -76,12 +76,16 @@
       },
       {
         "period": "Sept 2010 – 2020:",
-        "text": "Freelance technical translator/localization specialist, Spanish/German to English under the name language-landscapes.com"
+        "text": "Freelance technical translator/localization specialist, Spanish/German to English under the name language-landscapes.com",
+        "blurb1": "From Spanish and German into English. IT, public transport & telecommunication, but also worked extensively with sociology and history texts",
+        "blurb2": "Internationalization/Localization: Trados Studio (incl. Passolo), Déjà Vu, Transit/Termstar, memoQ"
       },
       {
         "period": "April 2004 – Sept. 2010",
-        "text": "Responsible for technical localization of software, training materials, etc. on IVU Traffic Technologies’ IVU Suite public transport management system in Friedenau, Berlin."
-        
+        "text": "Responsible for technical localization of software, training materials, etc. on IVU Traffic Technologies’ IVU Suite public transport management system in Friedenau, Berlin.",
+        "blurbTitle": "Major achievements:",
+        "blurb1": "Design, documentation and implementation of an automated workflow to localize software and help documentation, including full integration of workflow in the development life cycle and daily build (using VB)",
+        "blurb2": "Management of translation and localization processes in 14 language/dialect sets"
       }
     ]
   },
