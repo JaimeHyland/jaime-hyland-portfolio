@@ -22,11 +22,11 @@
     "deploymentPt": "Deployment:",
     "deploymentText": "AWS, Heroku, Cloudinary, GoDaddy, Vercel",
     "versionControlPt": "Version Control:",
-    "versionControlText": "GitHub, Git",
+    "versionControlText": "GitHub, Git, a little Subversion",
     "frameworksPt": "Frameworks/Libraries:",
     "frameworksText": "Flask, Django, Bootstrap, Stripe, PassoloApp",
     "xlationPt": "xlation, l10n, i18n",
-    "xlationText": "SDL suite, Déjà Vu, MemoQ, Transit/Termstar",
+    "xlationText": "SDL suite, Déjà Vu, MemoQ, Transit/Termstar, Django-i18n, next-intl",
     "singlesourcePt": "Single source tools:",
     "singlesourceText": "Author-it, Doc2Help"
   },
@@ -37,12 +37,14 @@
     "languagesText": "English as mother tongue, totally fluent in German (C1 certification) and Spanish. I lived for 9 years in Spain, and for the last 23 years in Berlin). I have a reader's knowledge of French, Italian and Irish",
     "mgtPt": "Management:",
     "mgtText": "Project management, agile methodologies, strategic planning",
-    "xlationPt": "Translation:",
-    "xlationText": "From Spanish and German into English. Specialized in IT, public transport & telecommunication, but also worked extensively with sociological and historical texts",
+    "xlationPt": "Translation domains:",
+    "xlationText": "From Spanish and German into English. Specialized in IT, public transport & telecommunication, but also worked extensively with journalistic, marketing, medical, sociological and historical texts",
+    "l10nPt": "Localization tools",
+    "l10nText": "SDL-Trados, Transit/Termstar, MemoQ, SDL-Passolo, terminology management/translation memory (incl. data migration via xml)",
     "docuPt": "Documentation:",
     "docuText": "Release notes, help and training materials, document integration for agile development, training and help, multi-lingual documentation, automated file and resource manipulation",
-    "hobbiesPt": "Hobbies:",
-    "hobbiesText": "I’m an experienced gardener and a beekeeper. I enjoy making silicon moulds for epoxy resin components."
+    "accountancyPt": "Accountancy:",
+    "accountancyText": "Familiar with accountancy processes for sole traders in English, Spanish and German"
   },
 
   "education": {
@@ -81,11 +83,49 @@
         "blurb2": "Internationalization/Localization: Trados Studio (incl. Passolo), Déjà Vu, Transit/Termstar, memoQ"
       },
       {
-        "period": "April 2004 – Sept. 2010",
+        "period": "April 2004 – Sept 2010",
         "text": "Responsible for technical localization of software, training materials, etc. on IVU Traffic Technologies’ IVU Suite public transport management system in Friedenau, Berlin.",
         "blurbTitle": "Major achievements:",
         "blurb1": "Design, documentation and implementation of an automated workflow to localize software and help documentation, including full integration of workflow in the development life cycle and daily build (using VB)",
         "blurb2": "Management of translation and localization processes in 14 language/dialect sets"
+      },
+      {
+        "period": "June 2002 – Apr 2004",
+        "text": "Self-employed EFL teacher and translator (es -> en)"
+      },
+      {
+        "period": "Dec 2000 – Sept. 2002",
+        "text": "Consultant, KPMG Consulting (now Bearing Point), Specialist CRM Integrator",
+        "blurbTitle": "Major achievements:",
+        "blurb1": "Coded a CRM system for An Post (Ireland's State postal service) using the Saratoga CRM framework, including a mail redirection system for the general public",
+        "blurb2": "Coordinated and developed a variety of IT systems within a complex IT environment for EirCell, at the time a leading young Irish telco"
+      },
+      {
+        "period": "Feb –July 1999",
+        "text": "Air Freight Forwarder, Aerly Bird Trans Global, Santry, Dublin 9"
+      },
+       {
+        "period": "Dec 1997 – Feb 1999",
+        "text": "Exploitation of business opportunity in importation of landscaping materials"
+      },
+      {
+        "period": "Jan 1994 – Nov 1997",
+        "text": "Self-employed translator (es -> en)"
+      },
+      {
+        "period": "Mar 1992 – Jan 1994",
+        "text": "Specialist technician in strategic planning at the The Basque Institute for Futures Studies (Prospektiker Erakundea) in Zarautz, Spain"
+      },
+      {
+        "period": "1990 – June 1992",
+        "text":  "Owner/Director of a small language school in Zarautz, Spain",
+        "blurbTitle": "Major achievements:",
+        "blurb1": "Provided employment to two teachers and an admin",
+        "blurb2": "Sold school profitably as going concern in the summer of 1992"
+      },
+      {
+        "period": "1988 – Jan 1990",
+        "text": "EFL teacher in Vitoria-Gasteiz and Zarautz, Spain"
       }
     ]
   },

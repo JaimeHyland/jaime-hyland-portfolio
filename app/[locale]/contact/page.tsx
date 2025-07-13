@@ -2,7 +2,6 @@
 
 import { useTranslations } from 'next-intl';
 import { ProjLink } from '../../../components/ProjLink';
-import { useEffect, useState } from 'react';
 import { EmailDisplay, MobileDisplay, LandlineDisplay } from '../../../components/ContactInfo';
 
 

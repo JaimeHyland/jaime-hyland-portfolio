@@ -4,6 +4,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import React from 'react';
 import { CvHeading } from '../../../components/CvHeading';
 import { ProjLink } from '../../../components/ProjLink';
+import { CollapsibleSection } from '../../../components/CollapsibleSection';
 
 
 export default function CVPage() {
@@ -36,13 +37,11 @@ export default function CVPage() {
         <h1 className="text-3xl font-bold">{t('cvOwner')}</h1>
         <p className="text-lg italic"><ProjLink href={t('emailURL')}>{t('emailText')}</ProjLink> | <ProjLink href={t('githubURL')}>{t('githubText')}</ProjLink> | <ProjLink href={t('linkedinURL')}>{t('linkedinText')}</ProjLink></p>
       </div>
-      <section>
-        <CvHeading>{t('summary.title')}</CvHeading>
+      <CollapsibleSection title={t('summary.title')}>
         <p>{t('summary.text')}</p>
-      </section>
+      </CollapsibleSection>
 
-      <section>
-        <CvHeading>{t('technologies.heading')}</CvHeading>
+      <CollapsibleSection title={t('technologies.heading')}>
         <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
           <div className="font-semibold">{t('technologies.programmingPt')}</div>
           <div>{t('technologies.programmingText')}</div>
@@ -59,10 +58,9 @@ export default function CVPage() {
           <div className="font-semibold">{t('technologies.singlesourcePt')}</div>
           <div>{t('technologies.singlesourceText')}</div>
         </div>
-      </section>
+      </CollapsibleSection>
 
-      <section>
-        <CvHeading>{t('education.heading')}</CvHeading>
+      <CollapsibleSection title={t('education.heading')}>
         <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
           {educationItems.map((item: { period: string; text: string }, i: number) => (
             <React.Fragment key={i}>
@@ -71,20 +69,18 @@ export default function CVPage() {
             </React.Fragment>
           ))}
         </div>
-      </section>
+      </CollapsibleSection>
 
-      <section>
-        <CvHeading>{t('portfolio.heading')}</CvHeading>
+      <CollapsibleSection title={t('portfolio.heading')}>
         <p>{t('portfolio.intro')}</p>
         <ul className="list-disc list-outside pl-6">
           {richItems.map((item, i) => (
             <li key={i}>{item}</li>
           ))}
         </ul>
-      </section>
+      </CollapsibleSection>
 
-      <section>
-        <CvHeading>{t('workExperience.heading')}</CvHeading>
+      <CollapsibleSection title={t('workExperience.heading')}>
         <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
           {t.raw('workExperience.items').map((
             item: {
@@ -113,10 +109,9 @@ export default function CVPage() {
             </React.Fragment>
           ))}
         </div>
-      </section>
+      </CollapsibleSection>
 
-      <section>
-        <CvHeading>{t('workRelevantSkills.heading')}</CvHeading>
+      <CollapsibleSection title={t('workRelevantSkills.heading')}>
         <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
           <div className="font-semibold">{t('workRelevantSkills.languagesPt')}</div>
           <div>{t('workRelevantSkills.languagesText')}</div>
@@ -127,19 +122,23 @@ export default function CVPage() {
           <div className="font-semibold">{t('workRelevantSkills.xlationPt')}</div>
           <div>{t('workRelevantSkills.xlationText')}</div>
 
+          <div className="font-semibold">{t('workRelevantSkills.l10nPt')}</div>
+          <div>{t('workRelevantSkills.l10nText')}</div>
+
           <div className="font-semibold">{t('workRelevantSkills.docuPt')}</div>
           <div>{t('workRelevantSkills.docuText')}</div>
+
+          <div className="font-semibold">{t('workRelevantSkills.accountancyPt')}</div>
+          <div>{t('workRelevantSkills.accountancyText')}</div>
         </div>
-      </section>
+      </CollapsibleSection>
 
-
-      <section>
-        <CvHeading>{t('hobbies.heading')}</CvHeading>
+      <CollapsibleSection title={t('hobbies.heading')}>
         <ul className="list-disc list-outside pl-6">
           <li key="line1">{t('hobbies.line1')}</li>
           <li key="line2">{t('hobbies.line2')}</li>
         </ul>
-      </section>
+      </CollapsibleSection>
     </div>
   );
 }
