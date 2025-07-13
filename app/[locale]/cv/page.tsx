@@ -4,19 +4,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import React from 'react';
 import { CvHeading } from '../../../components/CvHeading';
 import { ProjLink } from '../../../components/ProjLink';
-import { useEffect, useState } from 'react';
 
-
-function PhoneDisplay() {
-  const [phone, setPhone] = useState('');
-
-  useEffect(() => {
-    const parts = ['+49', '177', '2570734'];
-    setPhone(parts.join(' '));
-  }, []);
-
-  return <span>{phone}</span>;
-}
 
 export default function CVPage() {
   const t = useTranslations();
