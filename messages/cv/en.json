@@ -39,10 +39,10 @@
     "mgtText": "Project management, agile methodologies, strategic planning",
     "xlationPt": "Translation domains:",
     "xlationText": "From Spanish and German into English. Specialized in IT, public transport & telecommunication, but also worked extensively with journalistic, marketing, medical, sociological and historical texts",
-    "l10nPt": "Localization tools",
-    "l10nText": "translation memory, terminology management (incl. data migration via xml), automatic l10n of software and docu",
+    "l10nPt": "Localization domains:",
+    "l10nText": "Translation memory, terminology management (incl. data migration via xml), automatic localization of software and documentation",
     "docuPt": "Documentation:",
-    "docuText": "Release notes, help and training materials, document integration for agile development, training and help, multi-lingual documentation, automated file and resource manipulation",
+    "docuText": "Release notes, help and training materials, document integration for agile development, multi-lingual documentation, automated file and resource manipulation",
     "accountancyPt": "Accountancy:",
     "accountancyText": "Familiar with accountancy processes and standards for sole traders in Irish, Spanish and German environments"
   },
@@ -79,7 +79,7 @@
       {
         "period": "Sept 2010 – 2020:",
         "text": "Freelance technical translator/localization specialist, Spanish/German to English under the name language-landscapes.com",
-        "blurb1": "From Spanish and German into English. IT, public transport & telecommunication, but also worked extensively with sociology and history texts",
+        "blurb1": "From Spanish and German into English. IT, public transport & telecommunication, but also worked extensively with sociological and historical texts",
         "blurb2": "Internationalization/Localization: Trados Studio (incl. Passolo), Déjà Vu, Transit/Termstar, memoQ"
       },
       {
