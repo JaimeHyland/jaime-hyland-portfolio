@@ -7,9 +7,10 @@ type Props = {
   title: string;
   children: ReactNode;
   defaultOpen?: boolean;
+  id?: string;
 };
 
-export function CollapsibleSection({ title, children, defaultOpen }: Props) {
+export function CollapsibleSection({ title, children, defaultOpen, id }: Props) {
   const [isOpen, setIsOpen] = useState(defaultOpen ?? true);
 
   return (
@@ -18,7 +19,7 @@ export function CollapsibleSection({ title, children, defaultOpen }: Props) {
         onClick={() => setIsOpen(!isOpen)}
         className="w-full text-left"
       >
-        <h2 className="text-xl font-semibold border-t border-black bg-gray-300 pt-2 pb-2 pl-3 pr-3 flex items-center justify-between">
+        <h2 id={id} className="text-xl font-semibold border-t border-black bg-gray-300 pt-2 pb-2 pl-3 pr-3 flex items-center justify-between">
           {title}
           {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
         </h2>
