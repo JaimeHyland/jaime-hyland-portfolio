@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { ProjLink } from './ProjLink';
 
 export function EmailDisplay() {
   const [email, setEmail] = useState('');
@@ -15,9 +16,9 @@ export function EmailDisplay() {
   }, []);
 
   return (
-    <a href={`mailto:${email}`} className="underline text-blue-600 hover:text-blue-800">
+    <ProjLink href={`mailto:${email}`}>
       {email}
-    </a>
+    </ProjLink>
   );
 }
 
