@@ -197,10 +197,20 @@ export default function CVPage() {
       </CollapsibleSection>
 
       <CollapsibleSection title={t('hobbies.heading')}>
-        <ul className="list-disc list-outside pl-6">
-          <li key="line1">{t('hobbies.line1')}</li>
-          <li key="line2">{t('hobbies.line2')}</li>
-        </ul>
+      <ul className="list-disc list-outside pl-6">
+        <li key="line1">{t('hobbies.line1')}</li>
+        <li key="line2">
+          {
+            t.rich('hobbies.line2', {
+              link: (chunks) => (
+                <ProjLink href="https://www.youtube.com/watch?v=hdQ3FHiF_uM&t=96s">
+                  {chunks}
+                </ProjLink>
+              )
+            })
+          }
+        </li>
+      </ul>
       </CollapsibleSection>
     </div>
   );

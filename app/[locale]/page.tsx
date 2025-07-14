@@ -40,11 +40,11 @@ export default async function HomePage() {
   return (
     <main className="px-6 py-10 max-w-6xl mx-auto">
       <section className="mb-16 flex flex-col sm:flex-row items-start">
-        <div className="flex justify-center sm:justify-start mb-4 sm:mb-0">
+        <div className="w-full sm:w-auto flex justify-center sm:justify-start mb-4 sm:mb-0">
           <img
             src="/images/small_photo.jpg"
             alt="Jaime Hyland"
-            className="w-48 h-48 rounded-full mb-4 sm:mb-0 sm:mr-6"
+            className="w-48 h-48 rounded-full"
           />
         </div>
         <div className="flex-1 flex flex-col items-center text-center">
