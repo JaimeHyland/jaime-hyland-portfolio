@@ -10,7 +10,7 @@
 
   "summary": {
     "title": "Perfil personal",
-    "text": "Soy un desarrollador de software, formador y narrador versátil. Acabo de terminar un curso a distancia de desarrollo Full-Stack con Code Institute (Dublín). Tengo una amplia experiencia en localización, traducción y redacción técnica, y una sólida capacidad para enfrentar retos complejos en entornos especializados diversos. Estoy deseando incorporarme de nuevo a un equipo de desarrollo innovador y competente."
+    "text": "Soy un desarrollador de software, formador y narrador versátil. Acabo de terminar un curso a distancia de desarrollo Full-Stack con Code Institute (Dublín). Tengo una amplia experiencia en localización, traducción y redacción técnica, y una sólida capacidad para enfrentar retos complejos en entornos especializados diversos. Estoy deseando incorporarme de nuevo a un equipo de desarrollo innovador y competente que tenga la misión de crear un producto innovador."
   },
 
   "technologies": {
@@ -18,15 +18,15 @@
     "programmingPt": "Lenguajes de programación:",
     "programmingText": "HTML, CSS, JavaScript, Python, Java, VB.NET, Dart/Flutter",
     "databasesPt": "Bases de datos:",
-    "databasesText": "MySQL, PostgreSQL, Oracle",
+    "databasesText": "MySQL, PostgreSQL, Oracle, Access",
     "deploymentPt": "Despliegue:",
     "deploymentText": "AWS, Heroku, Cloudinary, GoDaddy, Vercel",
     "versionControlPt": "Control de versiones:",
-    "versionControlText": "GitHub, Git",
+    "versionControlText": "GitHub, Git, Subversion (un poco)",
     "frameworksPt": "Frameworks/Librerías:",
-    "frameworksText": "Flask, Django, Bootstrap, Stripe, PassoloApp",
-    "xlationPt": "Traducción, l10n, i18n",
-    "xlationText": "Suite de SDL, Déjà Vu, MemoQ, Transit/Termstar",
+    "frameworksText": "Flask, Django, Next.js, Typescript, Bootstrap, Tailwind, Stripe",
+    "xlationPt": "Traducción, localización, internacionalización:",
+    "xlationText": "Trados, Passolo, Transit/Termstar, MemoQ, Déjà Vu, Django-i18n, next-intl",
     "singlesourcePt": "Herramientas de fuente única:",
     "singlesourceText": "Author-it, Doc2Help"
   },
@@ -37,12 +37,14 @@
     "languagesText": "Lengua materna: inglés. Fluidez total en alemán (certificado C1) y español. Viví 9 años en España y los últimos 23 en Berlín. Conocimiento de lectura de francés, italiano e irlandés.",
     "mgtPt": "Gestión:",
     "mgtText": "Gestión de proyectos, metodologías ágiles, planificación estratégica",
-    "xlationPt": "Traducción:",
-    "xlationText": "Del español y alemán al inglés. Especializado en TI, transporte público y telecomunicaciones; amplia experiencia con textos históricos y sociológicos.",
+    "xlationPt": "Ámbitos de traducción:",
+    "xlationText": "Del español y alemán al inglés. Especializado en TI, transporte público y telecomunicaciones; también trabajé ampliamente con textos periodísticos, médicos, sociológicos e históricos.",
+    "l10nPt": "Ámbitos de localización:",
+    "l10nText": "Memoria de traducción, gestión terminológica (incluida migración de datos vía XML), localización automática de software y documentación",
     "docuPt": "Documentación:",
-    "docuText": "Notas de versión, materiales de formación y ayuda, integración documental para desarrollo ágil, documentación multilingüe, automatización de archivos y recursos",
-    "hobbiesPt": "Aficiones:",
-    "hobbiesText": "Soy jardinero y apicultor aficionado. Me gusta fabricar moldes de silicona para componentes de resina epoxi."
+    "docuText": "Notas de versión, materiales de formación y ayuda, integración documental en entornos ágiles, documentación multilingüe, manipulación automatizada de archivos y recursos",
+    "accountancyPt": "Contabilidad:",
+    "accountancyText": "Familiarizado con los procesos y estándares contables para autónomos en Irlanda, España y Alemania"
   },
 
   "education": {
@@ -54,7 +56,7 @@
       },
       {
         "period": "2000:",
-        "text": "FAS CITP – Diplomado en Programación informática"
+        "text": "FÁS CITP – Diplomado en Programación informática"
       },
       {
         "period": "1984–1988:",
@@ -63,8 +65,8 @@
     ]
   },
 
-  "workExperience": {
-    "heading": "Experiencia profesional",
+  "workExperienceGermany": {
+    "heading": "Experiencia profesional, Berlín",
     "items": [
       {
         "period": "2022 – julio 2023:",
@@ -76,11 +78,66 @@
       },
       {
         "period": "Sept 2010 – 2020:",
-        "text": "Traductor técnico/localizador freelance, de español/alemán a inglés bajo el nombre language-landscapes.com"
+        "text": "Traductor técnico/localizador freelance, de español/alemán a inglés bajo el nombre language-landscapes.com",
+        "blurb1": "De español y alemán a inglés. TI, transporte público y telecomunicaciones, pero también textos sociológicos e históricos",
+        "blurb2": "Internacionalización/Localización: Trados Studio (incl. Passolo), Déjà Vu, Transit/Termstar, memoQ"
       },
       {
         "period": "Abril 2004 – Sept. 2010",
-        "text": "Responsable de localización técnica de software y materiales de formación para el sistema de gestión de transporte público IVU Suite en IVU Traffic Technologies, Friedenau (Berlín)."
+        "text": "Responsable de localización técnica de software y materiales de formación para el sistema de gestión de transporte público IVU Suite en IVU Traffic Technologies, Friedenau (Berlín).",
+        "blurbTitle": "Logros destacados:",
+        "blurb1": "Diseño, documentación e implementación de un flujo de trabajo automatizado para la localización de software y ayuda, con integración total en el ciclo de desarrollo y el sistema de compilación diaria (VB)",
+        "blurb2": "Gestión de los procesos de traducción/localización en 14 combinaciones de idioma/dialecto"
+      },
+      {
+        "period": "Jun 2002 – Abr 2004",
+        "text": "Profesor de inglés y traductor autónomo (es > en)"
+      }
+    ]
+  },
+
+  "workExperienceIreland": {
+    "heading": "Experiencia profesional, Dublín",
+    "items": [
+      {
+        "period": "Dic 2000 – Sept. 2002",
+        "text": "Consultor en KPMG Consulting (hoy Bearing Point), integrador especializado en CRM",
+        "blurbTitle": "Logros destacados:",
+        "blurb1": "Desarrollo de un sistema CRM para An Post (el servicio postal irlandés), incluyendo sistema de redirección de correo para el público general",
+        "blurb2": "Coordinación y desarrollo de diversos sistemas informáticos en un entorno tecnológico complejo para EirCell (en ese momento, un joven operador líder de telecomunicaciones)"
+      },
+      {
+        "period": "Feb – Julio 1999",
+        "text": "Agente de carga aérea, Aerly Bird Trans Global, Santry, Dublín 9"
+      },
+      {
+        "period": "Dic 1997 – Feb 1999",
+        "text": "Desarrollo de un negocio de importación de materiales para jardinería paisajista"
+      }
+    ]
+  },
+
+  "workExperienceSpain": {
+    "heading": "Experiencia profesional, País Vasco",
+    "items": [
+      {
+        "period": "Ene 1994 – Nov 1997",
+        "text": "Traductor autónomo (es > en)"
+      },
+      {
+        "period": "Mar 1992 – Ene 1994",
+        "text": "Técnico especializado en planificación estratégica en el Instituto Vasco de Prospectiva (Prospektiker), Zarautz, España"
+      },
+      {
+        "period": "1990 – Jun 1992",
+        "text": "Propietario/director de una pequeña academia de idiomas en Zarautz, España",
+        "blurbTitle": "Logros destacados:",
+        "blurb1": "Creación de empleo para dos profesores y una persona de administración",
+        "blurb2": "Venta exitosa del negocio como empresa en funcionamiento en verano de 1992"
+      },
+      {
+        "period": "1988 – Ene 1990",
+        "text": "Profesor de inglés en Vitoria-Gasteiz y Zarautz, España"
       }
     ]
   },
@@ -98,7 +155,7 @@
   "hobbies": {
     "heading": "Aficiones e intereses",
     "line1": "Hackathons del Code Institute; formación continua en brilliant.org, LinkedIn Learning y KodeKloud; experimentación con Dart/Flutter y aprendizaje de Linux.",
-    "line2": "Me gusta cultivar mi jardín y cocinar (ver mi vídeo en YouTube). También me dedico a la apicultura y la fabricación de moldes de silicona."
+    "line2": "Me gusta cultivar mi jardín y cocinar (ver <link>mi vídeo en YouTube</link>). También practico la apicultura y la fabricación de moldes de silicona."
   },
 
   "portfolioAnchors": {

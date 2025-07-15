@@ -1,71 +1,115 @@
 {
-  "title": "Proyectos",
-  "projIntro": "Esta página lista varios de los proyectos en los que he estado involucrado recientemente. Los he dividido en tres secciones...",
-  "section1": {
-    "title": "Proyectos de Portafolio para mi certificación full-stack de CI",
-    "description": "Estos proyectos fueron creados de forma independiente para evaluación como parte de mi curso de programación full-stack...",
-    "projects": {
-      "farming": {
-        "name": "Farming Futures",
-        "desc": "Robótica en agricultura (HTML5, CSS, JS)"
-      },
-      "acento": {
-        "name": "El acento español",
-        "desc": "Explicador de tildes en español (HTML5, CSS, JS)"
-      },
-      "witch": {
-        "name": "Witch-Hazel",
-        "desc": "Aplicación CLI para gestión de injertos (Python, Heroku)"
-      },
-      "family": {
-        "name": "Lista de compras familiar",
-        "desc": "Aplicación de compras con Django/PostgreSQL"
-      },
-      "mellifera": {
-        "name": "Mellifera",
-        "desc": "Tienda online para apicultores (Stripe, AWS)"
-      }
+    "title": "Proyectos",
+    "projIntro": "Esta página lista varios de los proyectos en los que he estado involucrado recientemente. Los he dividido en tres secciones...",
+    "section1": {
+        "title": "Proyectos de Portafolio para mi certificación full-stack de CI",
+        "description": "Estos proyectos fueron creados de forma independiente como parte de mi curso de programación full-stack. Algunos se han desarrollado aún más desde entonces, pero todos fueron originalmente diseñados simplemente para satisfacer los requisitos de los evaluadores.",
+        "projects": {
+            "farming": {
+                "name": "Farming Futures",
+                "siteURL": "https://jaimehyland.github.io/farming-futures/",
+                "codebaseText": "Repositorio GitHub",
+                "codebaseURL": "https://github.com/JaimeHyland/farming-futures",
+                "desc": "Robótica en agricultura. Este es un sitio estático y responsivo bastante simple (desplegado en GitHub)."
+            },
+            "acento": {
+                "name": "El acento español",
+                "siteURL": "https://jaimehyland.github.io/elAcentoEspanyol/",
+                "codebaseText": "Repositorio GitHub",
+                "codebaseURL": "https://github.com/JaimeHyland/farming-futures",
+                "desc": "Explicador de la tilde española. Muestra el uso de un archivo de datos sencillo basado en JSON y contiene algo de lógica básica escrita en JS (desplegado en GitHub)."
+            },
+            "witch": {
+                "name": "Witch-Hazel",
+                "siteURL": "https://witch-hazel-5f8d8dfa45da.herokuapp.com/",
+                "codebaseText": "Repositorio GitHub",
+                "codebaseURL": "https://github.com/JaimeHyland/elAcentoEspanyol",
+                "desc": "Aplicación CLI para gestionar injertos en un vivero. Contiene lógica algo compleja implementada en una hoja de cálculo de Google mediante Python (desplegado en Heroku)."
+            },
+            "family": {
+                "name": "Lista de compras familiar",
+                "siteURL": "https://family-shopping-list-v1-bafe564ca613.herokuapp.com/",
+                "codebaseText": "Repositorio GitHub",
+                "codebaseURL": "https://github.com/JaimeHyland/family_shopping_list_v1",
+                "desc": "Aplicación de compras multiusuario en Django/PostgreSQL con mensajería instantánea usando Daphne y Django Channels junto con Redis (desplegado en Heroku)."
+            },
+            "mellifera": {
+                "name": "Mellifera",
+                "siteURL": "https://mellifera-e383ea0670a3.herokuapp.com/",
+                "codebaseText": "Repositorio GitHub",
+                "codebaseURL": "https://github.com/JaimeHyland/mellifera",
+                "desc": "Una tienda online (casi) funcional para apicultores con pagos a través de Stripe, desplegada en Heroku y usando AWS para archivos estáticos."
+            }
+        }
+    },
+    "section2": {
+        "title": "Proyectos independientes en curso",
+        "description": "Estos proyectos fueron creados de forma independiente por iniciativa propia; todos deben considerarse trabajo en curso.",
+        "projects": {
+            "portfolio": {
+                "name": "Portafolio de Jaime Hyland",
+                "siteURL": "https://jaime-hyland.com/",
+                "codebaseText": "Repositorio GitHub",
+                "codebaseURL": "https://github.com/JaimeHyland/jaime-hyland-portfolio",
+                "desc": "Este proyecto es el sitio trilingüe que estás viendo ahora. Es un proyecto personal mío. Su estructura es original. Lo construí usando Next.js."
+            },
+            "language": {
+                "name": "language-landscapes.com",
+                "siteURL": "https://language-landscapes.com",
+                "codebaseText": "Repositorio GitHub",
+                "codebaseURL": "https://github.com/JaimeHyland/language-landscapes",
+                "desc1": "Este es un proyecto legado en CakePHP. Fue diseñado y desarrollado hace más de una década por un profesional cualificado siguiendo mis indicaciones. Actualmente lo gestiono yo. Lo he roto y arreglado varias veces. En el futuro tengo intención de migrarlo a un framework más moderno, pero por ahora no es responsive.",
+                "desc2": "Actualmente está alojado en GoDaddy, pero por motivos de precio y atención al cliente, tengo pensado trasladarlo a otro proveedor como parte de la reestructuración."
+            }
+        }
+    },
+    "section3": {
+        "title": "Proyectos de hackathon",
+        "description1": "Estos proyectos colaborativos fueron desarrollados como parte de varios hackathons organizados por Code Institute desde finales de 2024. Cada hackathon reunió a un equipo de seis o siete personas que diseñaron, desarrollaron y documentaron una aplicación full-stack sobre un tema específico – con una sola excepción, en cinco días. Aunque reviso los proyectos de vez en cuando, no puedo garantizar que siempre funcionen correctamente.",
+        "description2": "Como aprendí probablemente más durante cada semana de hackathon que en todo un mes de estudio, pienso seguir participando siempre que tenga la oportunidad. ¡Así que esta lista seguirá creciendo!",
+        "CIHackathonsURL": "https://hackathon.codeinstitute.net/",
+        "projects": {
+            "techbuddy": {
+                "name": "TechBuddy",
+                "hackathonName": "Branching Out: A family hackathon",
+                "hackathonURL": "https://hackathon.codeinstitute.net/hackathon/public/60/",
+                "siteURL": "",
+                "codebaseText": "Repositorio en GitHub",
+                "codebaseURL": "https://github.com/apeskinian/tech_buddy",
+                "desc": "Aplicación de ayuda técnica para toda la familia, desarrollada por un equipo de seis personas en tan solo tres días. El equipo trabajó de forma presencial el último día. TechBuddy obtuvo el segundo premio en el hackathon de mayo del CI.",
+                "role": "Mi rol: concepción de la lógica de inicio de sesión; afinación del chat con IA; diseño y programación de la estructura del chat."
+            },
+            "shegitsit": {
+                "name": "SheGitsIt",
+                "hackathonName": "CodeHER: Empowering Women in Tech",
+                "hackathonURL": "https://hackathon.codeinstitute.net/hackathon/public/58/",
+                "siteURL": "",
+                "codebaseText": "Repositorio en GitHub",
+                "codebaseURL": "https://github.com/Carlos-n21/Team-4-SheCanGitIt",
+                "desc": "Aplicación diseñada para ofrecer servicios de apoyo especializado a mujeres en tecnología. Su función principal era un sistema de mensajería instantánea para facilitar el contacto entre mentoras y profesionales IT. El proyecto ganó el tercer premio en el hackathon de marzo del CI.",
+                "role": "Mi rol: diseñé e implementé la lógica y estructura del sistema de mensajería e hice la configuración de despliegue con Django Channels."
+            },
+            "sparksync": {
+                "name": "SparkSync",
+                "hackathonName": "Love.exe - Coding connections in the digital age",
+                "hackathonURL": "https://hackathon.codeinstitute.net/hackathon/public/56/",
+                "siteURL": "",
+                "codebaseText": "Repositorio en GitHub",
+                "codebaseURL": "https://github.com/violaberg/dating-app",
+                "technologies": "Django, Python, HTML5, CSS3, JavaScript, Heroku, Neon, Resend, Bootstrap, Django Channels, Daphne, Redis",
+                "desc": "Aplicación de citas con sistema de mensajería instantánea. SparkSync fue seleccionada por Code Institute como uno de los proyectos ejemplares para mostrar el trabajo de sus estudiantes. También obtuvo el segundo premio en el hackathon de febrero del CI.",
+                "role": "Mi rol: diseñé e implementé la lógica y estructura del sistema de mensajería, y completé la configuración de despliegue con Django Channels usando Redis."
+            },
+            "co2nscious": {
+                "name": "CO₂nscious",
+                "hackathonName": "Battle of the Bootcamps",
+                "hackathonDesc": "Hackathon corto (solo tres días en lugar de cinco), organizado por Code Institute y dos centros de formación en Berlín con el patrocinio de Doc Morris.",
+                "hackathonURL": "https://hackathon.codeinstitute.net/hackathon/public/52/",
+                "codebaseText": "Repositorio en GitHub",
+                "codebaseURL": "https://github.com/raneem-yad/CO-nsious",
+                "desc": "Aplicación para promover acciones respetuosas con el clima. El proyecto se desarrolló en apenas tres días, y no dio tiempo a completar una versión funcional.",
+                "role": "Mi rol: wireframes, modelos Django y APIs con Swagger. Aprendí mucho en muy poco tiempo sobre la separación entre frontend y backend, estructuras limpias de código, y sobre todo, el uso de Git en equipo."
+            }
+        }
     }
-  },
-  "section2": {
-    "title": "Proyectos independientes en curso",
-    "description": "Estos proyectos fueron creados de forma independiente por iniciativa propia...",
-    "projects": {
-      "portfolio": {
-        "name": "Portafolio de Jaime Hyland",
-        "desc": "Este sitio trilingüe es un proyecto personal mío..."
-      },
-      "language": {
-        "name": "language-landscapes.com",
-        "desc1": "Este es un proyecto legado en CakePHP...",
-        "desc2": "Actualmente está alojado en GoDaddy..."
-      }
-    }
-  },
-  "section3": {
-    "title": "Proyectos de hackathon",
-    "description": "Estos proyectos colaborativos fueron desarrollados como parte de varios hackathons...",
-    "projects": {
-      "techbuddy": {
-        "name": "TechBuddy",
-        "desc": "Aplicación de ayuda técnica para toda la familia",
-        "role": "Mi rol: concepción de la lógica original de inicio de sesión; afinación del chat AI e integración de OpenAI."
-      },
-      "shegitsit": {
-        "name": "SheGitsIt",
-        "desc": "Aplicación de apoyo para mujeres en tecnología",
-        "role": "Mi rol: lógica de mensajería y configuración de despliegue con Django channels."
-      },
-      "sparksync": {
-        "name": "SparkSync",
-        "desc": "Aplicación de citas",
-        "role": "Mi rol: página de mensajería instantánea y lógica de despliegue."
-      },
-      "co2nscious": {
-        "name": "CO₂nscious",
-        "desc": "Aplicación para acciones amigables con el clima (en progreso)",
-        "role": "Mi rol: wireframes, modelos Django y APIs Swagger."
-      }
-    }
-  }
 }

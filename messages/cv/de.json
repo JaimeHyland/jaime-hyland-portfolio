@@ -10,7 +10,7 @@
 
   "summary": {
     "title": "Persönliches Profil",
-    "text": "Ich bin ein vielseitiger Softwareentwickler, Ausbilder und Erzähler. Kürzlich habe ich ein Fernstudium im Bereich Full-Stack-Webentwicklung beim Code Institute (Dublin) abgeschlossen. Ich verfüge über umfangreiche Erfahrung in der Lokalisierung, Übersetzung und technischen Redaktion und kann komplexe Herausforderungen in verschiedensten Fachbereichen souverän meistern. Ich freue mich darauf, wieder Teil eines innovativen und kompetenten Entwicklerteams zu werden."
+    "text": "Ich bin ein vielseitiger Softwareentwickler, Ausbilder und Erzähler. Kürzlich habe ich ein Fernstudium im Bereich Full-Stack-Webentwicklung beim Code Institute (Dublin) abgeschlossen. Ich verfüge über umfangreiche Erfahrung in der Lokalisierung, Übersetzung und technischen Redaktion und kann komplexe Herausforderungen in verschiedensten Fachbereichen souverän meistern. Ich freue mich darauf, wieder Teil eines innovativen und kompetenten Entwicklerteams zu werden, das ein innovatives Produkt auf den Weg bringt."
   },
 
   "technologies": {
@@ -18,15 +18,15 @@
     "programmingPt": "Programmiersprachen:",
     "programmingText": "HTML, CSS, JavaScript, Python, Java, VB.NET, Dart/Flutter",
     "databasesPt": "Datenbanken:",
-    "databasesText": "MySQL, PostgreSQL, Oracle",
+    "databasesText": "MySQL, PostgreSQL, Oracle, Access",
     "deploymentPt": "Deployment:",
     "deploymentText": "AWS, Heroku, Cloudinary, GoDaddy, Vercel",
     "versionControlPt": "Versionskontrolle:",
-    "versionControlText": "GitHub, Git",
+    "versionControlText": "GitHub, Git, Subversion (ein wenig)",
     "frameworksPt": "Frameworks/Bibliotheken:",
-    "frameworksText": "Flask, Django, Bootstrap, Stripe, PassoloApp",
+    "frameworksText": "Flask, Django, Next.js, Typescript, Bootstrap, Tailwind, Stripe",
     "xlationPt": "Übersetzung, Lokalisierung, Internationalisierung:",
-    "xlationText": "SDL-Suite, Déjà Vu, MemoQ, Transit/Termstar",
+    "xlationText": "Trados, Passolo, Transit/Termstar, MemoQ, Déjà Vu, Django-i18n, next-intl",
     "singlesourcePt": "Single-Source-Tools:",
     "singlesourceText": "Author-it, Doc2Help"
   },
@@ -37,10 +37,14 @@
     "languagesText": "Englisch als Muttersprache, fließend in Deutsch (Zertifikat C1) und Spanisch. Ich lebte 9 Jahre in Spanien und die letzten 23 Jahre in Berlin. Lesekenntnisse in Französisch, Italienisch und Irisch.",
     "mgtPt": "Management:",
     "mgtText": "Projektmanagement, agile Methoden, strategische Planung",
-    "xlationPt": "Übersetzung:",
-    "xlationText": "Aus dem Spanischen und Deutschen ins Englische. Fachgebiete: IT, öffentlicher Verkehr, Telekommunikation; auch viel Erfahrung mit soziologischen und historischen Texten.",
+    "xlationPt": "Übersetzungsgebiete:",
+    "xlationText": "Aus dem Spanischen und Deutschen ins Englische. Fachgebiete: IT, öffentlicher Verkehr, Telekommunikation; auch viel Erfahrung mit journalistischen, medizinischen, soziologischen und historischen Texten.",
+    "l10nPt": "Lokalisierungsgebiete:",
+    "l10nText": "Translation Memory, Terminologiemanagement (inkl. Datenmigration via XML), automatische Software- und Dokumentenlokalisierung",
     "docuPt": "Dokumentation:",
-    "docuText": "Release Notes, Hilfedokumentation, Schulungsmaterial, agile Dokumentationsintegration, mehrsprachige Dokumentation, automatisierte Dateiverarbeitung"
+    "docuText": "Release Notes, Hilfedokumentation, Schulungsmaterial, Integration in agile Entwicklungsprozesse, mehrsprachige Dokumentation, automatisierte Verarbeitung von Dateien und Ressourcen",
+    "accountancyPt": "Buchhaltung:",
+    "accountancyText": "Vertraut mit Buchhaltungsstandards und -prozessen für Selbstständige in Irland, Spanien und Deutschland"
   },
 
   "education": {
@@ -52,7 +56,7 @@
       },
       {
         "period": "2000:",
-        "text": "FAS CITP – Diplom in Computerprogrammierung"
+        "text": "FÁS CITP – Diplom in Computerprogrammierung"
       },
       {
         "period": "1984–1988:",
@@ -61,8 +65,8 @@
     ]
   },
 
-  "workExperience": {
-    "heading": "Berufserfahrung",
+  "workExperienceGermany": {
+    "heading": "Berufserfahrung, Berlin",
     "items": [
       {
         "period": "2022 – Juli 2023:",
@@ -74,11 +78,66 @@
       },
       {
         "period": "Sept. 2010 – 2020:",
-        "text": "Freiberuflicher technischer Übersetzer/Lokalisierungsspezialist für Spanisch/Deutsch > Englisch unter dem Namen language-landscapes.com"
+        "text": "Freiberuflicher technischer Übersetzer/Lokalisierungsspezialist für Spanisch/Deutsch > Englisch unter dem Namen language-landscapes.com",
+        "blurb1": "Fachgebiete: IT, öffentlicher Verkehr & Telekommunikation, daneben viele soziologische und historische Texte",
+        "blurb2": "Internationalisierung/Lokalisierung: Trados Studio (inkl. Passolo), Déjà Vu, Transit/Termstar, memoQ"
       },
       {
         "period": "April 2004 – Sept. 2010:",
-        "text": "Technische Lokalisierung der IVU-Suite für das ÖPNV-Managementsystem von IVU Traffic Technologies in Friedenau, Berlin."
+        "text": "Technische Lokalisierung der IVU-Suite für das ÖPNV-Managementsystem von IVU Traffic Technologies in Friedenau, Berlin",
+        "blurbTitle": "Wichtige Erfolge:",
+        "blurb1": "Konzeption, Dokumentation und Implementierung eines automatisierten Workflows zur Software- und Hilfedokumentenlokalisierung (VB)",
+        "blurb2": "Verantwortlich für Übersetzungsprozesse in 14 Sprach-/Dialektversionen"
+      },
+      {
+        "period": "Juni 2002 – Apr 2004:",
+        "text": "Selbständiger Englischlehrer und Übersetzer (es > en)"
+      }
+    ]
+  },
+
+  "workExperienceIreland": {
+    "heading": "Berufserfahrung, Dublin",
+    "items": [
+      {
+        "period": "Dez. 2000 – Sept. 2002",
+        "text": "Berater bei KPMG Consulting (heute BearingPoint), Spezialist für CRM-Integration",
+        "blurbTitle": "Wichtige Erfolge:",
+        "blurb1": "Entwicklung eines CRM-Systems für An Post (Irlands staatlicher Postdienst), inkl. Nachsendeauftragssystem",
+        "blurb2": "Koordination und Entwicklung komplexer IT-Systeme für EirCell (ehemals führender irischer Telekom-Anbieter)"
+      },
+      {
+        "period": "Feb – Juli 1999",
+        "text": "Luftfrachtabwicklung bei Aerly Bird Trans Global, Santry, Dublin 9"
+      },
+      {
+        "period": "Dez. 1997 – Feb 1999",
+        "text": "Selbständige Vermarktung von Landschaftsbau-Materialien"
+      }
+    ]
+  },
+
+  "workExperienceSpain": {
+    "heading": "Berufserfahrung, Baskenland",
+    "items": [
+      {
+        "period": "Jan. 1994 – Nov. 1997",
+        "text": "Freiberuflicher Übersetzer (es > en)"
+      },
+      {
+        "period": "März 1992 – Jan. 1994",
+        "text": "Fachtechniker für strategische Planung am Baskischen Institut für Zukunftsforschung (Prospektiker), Zarautz, Spanien"
+      },
+      {
+        "period": "1990 – Juni 1992",
+        "text": "Inhaber und Leiter einer kleinen Sprachschule in Zarautz, Spanien",
+        "blurbTitle": "Wichtige Erfolge:",
+        "blurb1": "Beschäftigung von zwei Lehrkräften und einer Verwaltungskraft",
+        "blurb2": "Erfolgreicher Verkauf des Betriebs im Sommer 1992"
+      },
+      {
+        "period": "1988 – Jan. 1990",
+        "text": "Englischlehrer in Vitoria-Gasteiz und Zarautz, Spanien"
       }
     ]
   },
@@ -95,8 +154,8 @@
 
   "hobbies": {
     "heading": "Hobbys & Interessen",
-    "line1": "Hackathons des Code Institute, kontinuierliche Weiterbildung über brilliant.org, LinkedIn Learning und KodeKloud; Experimente mit Dart/Flutter und erste Schritte mit Linux.",
-    "line2": "Ich gärtnere und koche gern (siehe mein YouTube-Video), halte Bienen und stelle Silikonformen her."
+    "line1": "Teilnahme an Hackathons des Code Institute, kontinuierliche Weiterbildung (u.a. über brilliant.org, LinkedIn Learning, KodeKloud), Experimente mit Dart/Flutter und erste Schritte in Linux.",
+    "line2": "Ich gärtnere und koche gern (siehe <link>mein YouTube-Video</link>), halte Bienen und stelle Silikonformen her."
   },
 
   "portfolioAnchors": {
