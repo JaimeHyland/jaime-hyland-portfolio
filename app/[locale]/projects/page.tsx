@@ -1,6 +1,7 @@
 'use client';
 import { useTranslations, useLocale } from 'next-intl';
 import { ProjLink } from '../../../components/ProjLink';
+import { BadgeDisplay } from '../../../components/BadgeDisplay';
 
 export default function ProjectsPage() {
   const t = useTranslations();
@@ -111,64 +112,97 @@ export default function ProjectsPage() {
         </ul>
       </section>
 
-      <section>
+      <section className='mb-10'>
         <h2 className="text-2xl font-semibold mb-4" id="hackathons">{t('section3.title')}</h2>
         <p className="mb-4">{t('section3.description1')}</p>
         <p className="mb-4">{t('section3.description2')}</p>
         <ul className="space-y-6">
-          <li>
-            <strong>
-              <ProjLink href={t('section3.projects.techbuddy.siteURL')}>
-                {t('section3.projects.techbuddy.name')}
-              </ProjLink>
-            </strong>
-            <br />
-            <em>{t('section3.projects.techbuddy.desc')}</em>
-            <br />
-            <span className="mb-4">{t('section3.projects.techbuddy.role')}</span>
-            <br />
-            <ProjLink href={t('section3.projects.techbuddy.codebaseURL')}>
+          <li className="flex justify-between items-center">
+            <div>
+              <strong>
+                <ProjLink href={t('section3.projects.techbuddy.siteURL')}>
+                  {t('section3.projects.techbuddy.name')}
+                </ProjLink>
+              </strong>
+              <br />
+              <em>{t('section3.projects.techbuddy.desc')}</em>
+              <br />
+              <span className="mb-4">{t('section3.projects.techbuddy.role')}</span>
+              <br />
+              <ProjLink href={t('section3.projects.techbuddy.codebaseURL')}>
                 {t('section3.projects.techbuddy.codebaseText')}
-            </ProjLink>
-          </li>
-          <li>
-            <strong>
-              <ProjLink href={t('section3.projects.shegitsit.siteURL')}>
-                {t('section3.projects.shegitsit.name')}
               </ProjLink>
-            </strong>
-            <br />
-            <em>{t('section3.projects.shegitsit.desc')}</em>
-            <br />
-            <span className="mb-4">{t('section3.projects.shegitsit.role')}</span>
-            <br />
-            <ProjLink href={t('section3.projects.shegitsit.codebaseURL')}>
-              {t('section3.projects.shegitsit.codebaseText')}
-            </ProjLink>
+            </div>
+            <div className="flex space-x-2 ml-4">
+              <BadgeDisplay
+                badgePaths={['/images/May-2025-Hackathon-2nd.png']}
+                altTexts={['May 2025 2nd place']}
+              />
+            </div>
           </li>
-          <li>
-            <strong>
-              <ProjLink href={t('section3.projects.sparksync.siteURL')}>
-                {t('section3.projects.sparksync.name')}
+          <li className="flex justify-between items-center">
+            <div className='flex-grow'>
+              <strong>
+                <ProjLink href={t('section3.projects.shegitsit.siteURL')}>
+                  {t('section3.projects.shegitsit.name')}
+                </ProjLink>
+              </strong>
+              <br />
+              <em>{t('section3.projects.shegitsit.desc')}</em>
+              <br />
+              <span className="mb-4">{t('section3.projects.shegitsit.role')}</span>
+              <br />
+              <ProjLink href={t('section3.projects.shegitsit.codebaseURL')}>
+                {t('section3.projects.shegitsit.codebaseText')}
               </ProjLink>
-            </strong>
-            <br />
-            <em>{t('section3.projects.sparksync.desc')}</em>
-            <br />
-            <span className="mb-4">{t('section3.projects.sparksync.role')}</span>
-            <br />
-            <ProjLink href={t('section3.projects.sparksync.codebaseURL')}>
-              {t('section3.projects.sparksync.codebaseText')}
-            </ProjLink>
+            </div>
+              <BadgeDisplay
+                badgePaths={[
+                  '/images/March-2025-Hackathon-3rd.png',
+                  '/images/March-hackathon-peoples-choice.png'
+                ]}
+                altTexts={[
+                  'March 2025 3rd place',
+                  'March 2025 People&apos;s choice for innovation'
+                ]}
+              />
           </li>
-          <li>
-            <strong>{t('section3.projects.co2nscious.name')}</strong><br />
-            <em>{t('section3.projects.co2nscious.desc')}</em><br />
-            <span className="mb-4">{t('section3.projects.co2nscious.role')}</span>
-            <br />
-            <ProjLink href={t('section3.projects.co2nscious.codebaseURL')}>
-              {t('section3.projects.co2nscious.codebaseText')}
-            </ProjLink>
+          <li className="flex justify-between items-center">
+            <div>
+              <strong>
+                <ProjLink href={t('section3.projects.sparksync.siteURL')}>
+                  {t('section3.projects.sparksync.name')}
+                </ProjLink>
+              </strong>
+              <br />
+              <em>{t('section3.projects.sparksync.desc')}</em>
+              <br />
+              <span className="mb-4">{t('section3.projects.sparksync.role')}</span>
+              <br />
+              <ProjLink href={t('section3.projects.sparksync.codebaseURL')}>
+                {t('section3.projects.sparksync.codebaseText')}
+              </ProjLink>
+            </div>
+            <div className="flex space-x-2 ml-4">
+              <BadgeDisplay
+                badgePaths={['/images/February_2025_Hackathon_2nd.png']}
+                altTexts={['March 2025 3rd place']}
+              />
+            </div>
+          </li>
+          <li className="flex justify-between items-center">
+            <div>
+              <strong>
+                {t('section3.projects.co2nscious.name')}
+              </strong>
+              <br />
+              <em>{t('section3.projects.co2nscious.desc')}</em><br />
+              <span className="mb-4">{t('section3.projects.co2nscious.role')}</span>
+              <br />
+              <ProjLink href={t('section3.projects.co2nscious.codebaseURL')}>
+                {t('section3.projects.co2nscious.codebaseText')}
+              </ProjLink>
+            </div>
           </li>
         </ul>
       </section>
