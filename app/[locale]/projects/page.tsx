@@ -117,7 +117,7 @@ export default function ProjectsPage() {
         <p className="mb-4">{t('section3.description1')}</p>
         <p className="mb-4">{t('section3.description2')}</p>
         <ul className="space-y-6">
-          <li className="flex justify-between items-center">
+          <li className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
             <div>
               <strong>
                 <ProjLink href={t('section3.projects.techbuddy.siteURL')}>
@@ -140,7 +140,7 @@ export default function ProjectsPage() {
               />
             </div>
           </li>
-          <li className="flex justify-between items-center">
+          <li className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
             <div className='flex-grow'>
               <strong>
                 <ProjLink href={t('section3.projects.shegitsit.siteURL')}>
@@ -167,7 +167,7 @@ export default function ProjectsPage() {
                 ]}
               />
           </li>
-          <li className="flex justify-between items-center">
+          <li className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
             <div>
               <strong>
                 <ProjLink href={t('section3.projects.sparksync.siteURL')}>
