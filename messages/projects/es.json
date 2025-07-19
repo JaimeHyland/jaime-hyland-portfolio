@@ -109,7 +109,13 @@
                 "codebaseURL": "https://github.com/raneem-yad/CO-nsious",
                 "desc": "Aplicación para promover acciones respetuosas con el clima. El proyecto se desarrolló en apenas tres días, y no dio tiempo a completar una versión funcional.",
                 "role": "Mi rol: wireframes, modelos Django y APIs con Swagger. Aprendí mucho en muy poco tiempo sobre la separación entre frontend y backend, estructuras limpias de código, y sobre todo, el uso de Git en equipo."
-            }
+            } 
         }
+    },
+    "badges": {
+        "may2025_2nd": "Segundo premio – Hackathon, mayo de 2015",
+        "march2025_3rd": "Tercer premio – Hackathon, marzo de 2025",
+        "march2025_people": "'People's Choice' – Hackathon, marzo de 2025",
+        "feb2025_2nd": "Segundo premio – Hackathon, febrero de 2025"
     }
 }

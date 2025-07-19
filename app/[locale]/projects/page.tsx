@@ -2,6 +2,7 @@
 import { useTranslations, useLocale } from 'next-intl';
 import { ProjLink } from '../../../components/ProjLink';
 import { BadgeDisplay } from '../../../components/BadgeDisplay';
+import { CollapsibleSection } from '../../../components/CollapsibleSection';
 
 export default function ProjectsPage() {
   const t = useTranslations();
@@ -20,8 +21,11 @@ export default function ProjectsPage() {
     <div className="p-6 max-w-4xl mx-auto">
       <h1 className="text-3xl font-bold mb-6">{t('title')}</h1>
       <p className="mb-6">{t('projIntro')}</p>
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-4" id="ci-assessment">{t('section1.title')}</h2>
+
+      <CollapsibleSection
+        id="ci-assessment"
+        title={t('section1.title')}
+      >
         <p className="mb-4">{t('section1.description')}</p>
         <ul className="space-y-4">
           <li>
@@ -80,10 +84,12 @@ export default function ProjectsPage() {
             </ProjLink>
           </li>
         </ul>
-      </section>
+      </CollapsibleSection>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-4" id="independent">{t('section2.title')}</h2>
+      <CollapsibleSection
+        id="independent"
+        title={t('section2.title')}
+      >
         <p className="mb-4">{t('section2.description')}</p>
         <ul className="space-y-4">
           <li>
@@ -110,10 +116,12 @@ export default function ProjectsPage() {
             </ProjLink>
           </li>
         </ul>
-      </section>
+      </CollapsibleSection>
 
-      <section className='mb-10'>
-        <h2 className="text-2xl font-semibold mb-4" id="hackathons">{t('section3.title')}</h2>
+      <CollapsibleSection
+        id="hackathons"
+        title={t('section3.title')}
+      >
         <p className="mb-4">{t('section3.description1')}</p>
         <p className="mb-4">{t('section3.description2')}</p>
         <ul className="space-y-6">
@@ -136,7 +144,7 @@ export default function ProjectsPage() {
             <div className="flex space-x-2 ml-4">
               <BadgeDisplay
                 badgePaths={['/images/May-2025-Hackathon-2nd.png']}
-                altTexts={['May 2025 2nd place']}
+                altTexts={[t('badges.may2025_2nd')]}
               />
             </div>
           </li>
@@ -161,10 +169,7 @@ export default function ProjectsPage() {
                   '/images/March-2025-Hackathon-3rd.png',
                   '/images/March-hackathon-peoples-choice.png'
                 ]}
-                altTexts={[
-                  'March 2025 3rd place',
-                  'March 2025 People&apos;s choice for innovation'
-                ]}
+                altTexts={[t('badges.march2025_3rd'), t('badges.march2025_people')]}
               />
           </li>
           <li className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
@@ -186,7 +191,7 @@ export default function ProjectsPage() {
             <div className="flex space-x-2 ml-4">
               <BadgeDisplay
                 badgePaths={['/images/February_2025_Hackathon_2nd.png']}
-                altTexts={['March 2025 3rd place']}
+                altTexts={[t('badges.feb2025_2nd')]}
               />
             </div>
           </li>
@@ -205,7 +210,7 @@ export default function ProjectsPage() {
             </div>
           </li>
         </ul>
-      </section>
+      </CollapsibleSection>
     </div>
   );
 }

@@ -2,9 +2,9 @@
 
 import { useTranslations, useLocale } from 'next-intl';
 import React from 'react';
-import { CvHeading } from '../../../components/CvHeading';
 import { ProjLink } from '../../../components/ProjLink';
 import { CollapsibleSection } from '../../../components/CollapsibleSection';
+
 
 
 export default function CVPage() {

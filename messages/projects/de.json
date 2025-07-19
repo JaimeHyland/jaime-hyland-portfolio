@@ -111,5 +111,11 @@
         "role": "Meine Rolle: Wireframes, Django-Modelle und Swagger-APIs. Ich habe in kurzer Zeit viel über die Trennung von Frontend- und Backend-Logik sowie über kollaboratives Arbeiten mit Git gelernt."
       }
     }
+  },
+  "badges": {
+    "may2025_2nd": "Zweiter Platz – Hackathon, Mai 2025",
+    "march2025_3rd": "Dritter Platz – Hackathon, März 2025 ",
+    "march2025_people": "'People's Choice' – Hackathon, März 2025",
+    "feb2025_2nd": "Zweiter Platz – Hackathon, Februar 2025 "
   }
 }

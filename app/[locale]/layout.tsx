@@ -27,12 +27,14 @@ export default async function LocaleLayout({ children, params}: { children:
     <>
       <GDPRConsent />
       <NextIntlClientProvider locale={locale} messages={messages}>
-        <Header
-          lang={locale as Locale}
-          labels={localizedLabels[locale as Locale]}
-          paths={localizedPaths[locale as Locale]}
-        />
-        <main className="p-6">{children}</main>
+        <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+          <Header
+            lang={locale as Locale}
+            labels={localizedLabels[locale as Locale]}
+            paths={localizedPaths[locale as Locale]}
+          />
+        </div>
+        <main className="pt-20 p-6">{children}</main>
       </NextIntlClientProvider>
     </>
   );
