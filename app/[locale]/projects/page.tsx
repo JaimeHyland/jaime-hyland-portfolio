@@ -115,6 +115,16 @@ export default function ProjectsPage() {
               {t('section2.projects.language.codebaseText')}
             </ProjLink>
           </li>
+          <li>
+            <strong>
+                {t('section2.projects.pdf-merger.name')}
+            </strong>
+            <p className="mb-4">{t('section2.projects.pdf-merger.desc1')}</p>
+            <p>{t('section2.projects.pdf-merger.desc2')}</p>
+            <ProjLink href={t('section2.projects.pdf-merger.codebaseURL')}>
+              {t('section2.projects.pdf-merger.codebaseText')}
+            </ProjLink>
+          </li>
         </ul>
       </CollapsibleSection>
 

@@ -60,6 +60,14 @@
         "codebaseURL": "https://github.com/JaimeHyland/language-landscapes",
         "desc1": "This is a legacy CakePHP project. It was originally designed and developed more than a decade ago by a skilled third party following my instructions. I now manage it. I have broken and fixed it again several times. At some stage in the future I intend to refactor it to a more modern framework, but at the moment it is not responsive.",
         "desc2": "It is currently hosted by GoDaddy, but for reasons of price and customer service, I intend to move it to another provider as part of my refactoring effort."
+      },
+      "pdf-merger": {
+        "name": "Local PDF Merger",
+        "siteURL": "https://language-landscapes.com",
+        "codebaseText": "GitHub repository",
+        "codebaseURL": "https://github.com/JaimeHyland/pdf_merge_app/",
+        "desc1": "This project is in its very early stages. Inspired by some mixed experiences I have recently had trying to merge pdf files for my job search effort and by the strong interest in privacy that German consumers in particular have, I have decided to attempt to build an app that merges pdf files without requiring the user to upload their private files and then download the final merged file.",
+        "desc2": "Even the name is primitive at the moment. This too will change. You can follow my progress by watching this space."
       }
     }
   },
