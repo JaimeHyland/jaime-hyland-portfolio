@@ -4,13 +4,13 @@
     "tagline": "Developer. Storyteller. Teacher.",
     "intro": "I'm a full-stack developer with a background in languages and education who enjoys building clean, attractive and scalable web apps that inform, educate, increase productivity and improve quality of life.",
     "techsTitle": "Some of the technologies I work with",
-    "educationTitle": "Some of the places where I've done my learning",
+    "educationTitle": "Some of the places I've been doing my learning",
     "buttonLabel": "Looking for a collaborator or developer?",
     "buttonText": "Get in touch"
   },
   
   "learningSection": {
-    "heading": "Some of the places where I&apos;ve done my learning",
+    "heading": "Some of the places I've been doing my learning",
 
     "FASTitle": "FÁS",
     "fasModalContent": "FÁS was the Irish National Vocational Training Authority at the time I did my foundational training in IT there. It has since been replaced by <link>Solas</link>.",
