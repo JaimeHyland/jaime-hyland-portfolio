@@ -117,7 +117,9 @@ export default function ProjectsPage() {
           </li>
           <li>
             <strong>
+              <ProjLink href={t('section2.projects.pdf-merger.siteURL')}>
                 {t('section2.projects.pdf-merger.name')}
+              </ProjLink>
             </strong>
             <p className="mb-4">{t('section2.projects.pdf-merger.desc1')}</p>
             <p>{t('section2.projects.pdf-merger.desc2')}</p>

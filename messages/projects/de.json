@@ -63,11 +63,11 @@
       },
       "pdf-merger": {
         "name": "Local PDF Merger",
-        "siteURL": "https://language-landscapes.com",
+        "siteURL": "https://pdf-merge-app-five.vercel.app/",
         "codebaseText": "GitHub-Repository",
         "codebaseURL": "https://github.com/JaimeHyland/pdf_merge_app/",
-        "desc1": "Dieses Projekt befindet sich noch in einem sehr frühen Stadium. Inspiriert von einigen gemischten Erfahrungen, die ich kürzlich beim Versuch gemacht habe, PDF-Dateien für meine Jobsuche zusammenzuführen, sowie vom starken Interesse deutscher Verbraucher an Datenschutz, habe ich mich entschieden, eine App zu entwickeln, die PDF-Dateien zusammenführt, ohne dass der Benutzer seine privaten Dateien hochladen oder die zusammengeführte Datei herunterladen muss.",
-        "desc2": "Sogar der Name ist momentan noch sehr einfach. Auch das wird sich ändern. Du kannst meinen Fortschritt hier mitverfolgen."
+        "desc1": "Dieses Projekt befindet sich noch in einem sehr frühen Stadium. Derzeit handelt es sich lediglich um ein minimales Next.js-Gerüst für eine Routine, die auf pdf-lib basiert (pdf-lib ist eine TypeScript-Bibliothek mit nützlichen Komponenten zum Umgang mit PDF-Dateien). Auch wenn die App noch einfach ist, funktioniert sie. Du kannst sie gerne ausprobieren (verwende die Umschalt- oder Steuerungstaste, um mehr als eine PDF-Datei mittlerer Größe auszuwählen). Inspiriert durch einige gemischte Erfahrungen beim Versuch, PDF-Dateien für meine Jobsuche zusammenzuführen, und durch das ausgeprägte Interesse vieler deutscher Verbraucher am Datenschutz, habe ich mich dazu entschlossen, eine App zu entwickeln, die PDF-Dateien zusammenführt, ohne dass Nutzer ihre privaten Dateien hochladen oder die zusammengeführte Datei herunterladen müssen.",
+        "desc2": "Die App wird sich mit der Zeit weiterentwickeln. Du kannst meinen Fortschritt hier mitverfolgen."
       }
     }
   },

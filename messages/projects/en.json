@@ -63,11 +63,11 @@
       },
       "pdf-merger": {
         "name": "Local PDF Merger",
-        "siteURL": "https://language-landscapes.com",
+        "siteURL": "https://pdf-merge-app-five.vercel.app/",
         "codebaseText": "GitHub repository",
         "codebaseURL": "https://github.com/JaimeHyland/pdf_merge_app/",
-        "desc1": "This project is in its very early stages. Inspired by some mixed experiences I have recently had trying to merge pdf files for my job search effort and by the strong interest in privacy that German consumers in particular have, I have decided to attempt to build an app that merges pdf files without requiring the user to upload their private files and then download the final merged file.",
-        "desc2": "Even the name is primitive at the moment. This too will change. You can follow my progress by watching this space."
+        "desc1": "This project is in its very early stages. At present it's simply a minimal Next.js harness for a pdf-lib routine (pdf-lib itself being a typescript library containing useful components for handling pdf files). While primitive, the app works. You can try it out if you like (use the shift or control key to choose more than one modestly sized pdf file). Inspired by some mixed experiences I have recently had trying to merge pdf files for my job search effort and by the strong interest in privacy of German consumers in particular, I've decided to attempt to build an app that merges pdf files without requiring the user to upload their private files and then download the final merged file.",
+        "desc2": "It will develop over time. You can follow my progress by watching this space."
       }
     }
   },

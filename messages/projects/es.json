@@ -63,11 +63,11 @@
             },
             "pdf-merger": {
                 "name": "Local PDF Merger",
-                "siteURL": "https://language-landscapes.com",
-                "codebaseText": "GitHub repository",
+                "siteURL": "https://pdf-merge-app-five.vercel.app/",
+                "codebaseText": "Repositorio en GitHub",
                 "codebaseURL": "https://github.com/JaimeHyland/pdf_merge_app/",
-                "desc1": "Este proyecto está aún en una etapa muy temprana. Inspirado por algunas experiencias mixtas que tuve recientemente al intentar fusionar archivos PDF para mi búsqueda de empleo y por el gran interés en la privacidad que tienen especialmente los consumidores alemanes, he decidido intentar crear una aplicación que fusione archivos PDF sin requerir que el usuario cargue sus archivos privados ni que tenga que descargar el archivo fusionado final.",
-                "desc2": "Incluso el nombre es muy básico por ahora. Esto también cambiará. Puedes seguir mi progreso observando este espacio."
+                "desc1": "Este proyecto está aún en una etapa muy temprana. Actualmente es simplemente una estructura mínima en Next.js para una rutina basada en pdf-lib (una biblioteca de TypeScript con componentes útiles para manejar archivos PDF). Aunque es primitiva, la aplicación funciona. Puedes probarla si quieres (usa la tecla shift o control para seleccionar más de un archivo PDF de tamaño moderado). Inspirado por algunas experiencias mixtas que tuve recientemente al intentar fusionar archivos PDF para mi búsqueda de empleo, y por el gran interés en la privacidad que tienen especialmente los consumidores alemanes, he decidido intentar crear una aplicación que fusione archivos PDF sin requerir que el usuario cargue sus archivos privados ni que tenga que descargar el archivo fusionado final.",
+                "desc2": "La aplicación irá evolucionando con el tiempo. Puedes seguir mi progreso observando este espacio."
             }
         }
     },
