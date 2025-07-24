@@ -141,6 +141,17 @@
       }
     ]
   },
+  "seasonalWork": {
+    "heading": "Saisonarbeit in der Jugend",
+    "items": [
+      {
+        "period": "April 1977 – Juni 1988",
+        "text": "Saisonarbeiter im Gartenbau",
+        "blurb1": "Ich zog Sommerblumen, Gemüsesetzlinge und Schnittblumen vom Frühling bis zum Sommer jedes Jahr – von der Schulzeit bis zum Studienabschluss.",
+        "blurb2": "Ich habe viel über den intensiven Pflanzenanbau gelernt; diese Arbeit finanzierte einen Großteil meines Studiums."
+      }
+    ]
+  },
 
   "portfolio": {
     "heading": "Portfolio-Projekte",

@@ -174,6 +174,37 @@ export default function CVPage() {
         </div>
       </CollapsibleSection>
 
+      <CollapsibleSection id="seasonalWork" title={t('seasonalWork.heading')} defaultOpen={false}>
+        <div id="seasonalWork" className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
+          {t.raw('seasonalWork.items').map((
+            item: {
+              period: string;
+              text: string;
+              blurbTitle?: string;
+              blurb1?: string;
+              blurb2?: string;
+            },
+            i: number
+          ) => (
+            <React.Fragment key={i}>
+              <div className="font-semibold">{item.period}</div>
+              <div>{item.text}</div>
+
+              {/* Blurb content: shown in a single full-width row */}
+              {(item.blurbTitle || item.blurb1 || item.blurb2) && (
+                <div className="col-span-2 space-y-1 pl-24 my-4">
+                  {item.blurbTitle && <div><em>{item.blurbTitle}</em></div>}
+                  <ul className="list-disc list-outside pl-6 space-y-1">
+                    {item.blurb1 && <li>{item.blurb1}</li>}
+                    {item.blurb2 && <li>{item.blurb2}</li>}
+                  </ul>
+                </div>
+              )}          
+            </React.Fragment>
+          ))}
+        </div>
+      </CollapsibleSection>
+
       <CollapsibleSection title={t('workRelevantSkills.heading')}>
         <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
           <div className="font-semibold">{t('workRelevantSkills.languagesPt')}</div>

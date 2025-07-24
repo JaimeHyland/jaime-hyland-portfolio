@@ -141,6 +141,17 @@
       }
     ]
   },
+  "seasonalWork": {
+    "heading": "Trabajo estacional en la juventud",
+    "items": [
+      {
+        "period": "abril de 1977 – junio de 1988",
+        "text": "Trabajador hortícola estacional",
+        "blurb1": "Cultivé plantas de temporada, plántulas de hortalizas y flores cortadas cada primavera y verano desde que empecé la secundaria hasta terminar la universidad.",
+        "blurb2": "Aprendí mucho sobre el cultivo intensivo de plantas; este trabajo financió gran parte de mis estudios universitarios."
+      }
+    ]
+  },
 
   "portfolio": {
     "heading": "Proyectos del portafolio",
