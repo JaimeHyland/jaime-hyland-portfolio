@@ -68,6 +68,22 @@
                 "codebaseURL": "https://github.com/JaimeHyland/pdf_merge_app/",
                 "desc1": "Este proyecto está aún en una etapa muy temprana. Actualmente es simplemente una estructura mínima en Next.js para una rutina basada en pdf-lib (una biblioteca de TypeScript con componentes útiles para manejar archivos PDF). Aunque es primitiva, la aplicación funciona. Puedes probarla si quieres (usa la tecla shift o control para seleccionar más de un archivo PDF de tamaño moderado). Inspirado por algunas experiencias mixtas que tuve recientemente al intentar fusionar archivos PDF para mi búsqueda de empleo, y por el gran interés en la privacidad que tienen especialmente los consumidores alemanes, he decidido intentar crear una aplicación que fusione archivos PDF sin requerir que el usuario cargue sus archivos privados ni que tenga que descargar el archivo fusionado final.",
                 "desc2": "La aplicación irá evolucionando con el tiempo. Puedes seguir mi progreso observando este espacio."
+            },
+            "shopify-prototype": {
+            "name": "Prototipo de Shopify",
+            "siteURL": "https://language-landscapes.myshopify.com/",
+            "codebaseText": "Repositorio en GitHub",
+            "codebaseURL": "https://github.com/JaimeHyland/pdf_merge_app/",
+            "desc1": "Este proyecto también está en una etapa muy temprana. Hasta ahora, he conseguido lo siguiente:",
+            "items": [
+                "Creé una estructura inicial para una aplicación de Shopify con Node.js/Next.js usando la CLI de Shopify",
+                "Creé una tienda básica y la conecté a la aplicación",
+                "Configuré el archivo shopify.app.toml de la app para darle identidad y crear el vínculo con la tienda",
+                "Preparé el entorno de desarrollo local con un túnel de Cloudflare",
+                "Conecté la aplicación a un repositorio de GitHub para control de versiones y colaboración",
+                "Actualmente estoy explorando cómo Shopify hace pull requests a mi repositorio de GitHub y cómo debería gestionarlos."
+            ],
+            "desc2": "Seguirá desarrollándose con el tiempo. Puedes seguir mi progreso echando un vistazo por aquí, y tal vez visitando mi tienda y el repositorio de vez en cuando."
             }
         }
     },

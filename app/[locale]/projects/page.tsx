@@ -8,14 +8,19 @@ export default function ProjectsPage() {
   const t = useTranslations();
   const locale = useLocale();
 
-  const anchors = t.raw('portfolioAnchors') as Record<string, string>;
+  const items = t.raw('section2.projects.shopify-prototype.items') as string[];
 
-  const urls = [
-    `/${locale}/projects#${anchors.ciAssessment}`,
-    `/${locale}/projects#${anchors.independent}`,
-    `/${locale}/projects#${anchors.hackathons}`
-  ];
+  const MyComponent = () => {
+    const t = useTranslations();
 
+    const anchors = t.raw('portfolioAnchors') as Record<string, string>;
+
+    const urls = [
+      `/${locale}/projects#${anchors.ciAssessment}`,
+      `/${locale}/projects#${anchors.independent}`,
+      `/${locale}/projects#${anchors.hackathons}`
+    ];
+  }
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
@@ -32,23 +37,23 @@ export default function ProjectsPage() {
             <strong>
               <ProjLink href={t('section1.projects.farming.siteURL')}>
                 {t('section1.projects.farming.name')}
-              </ProjLink>              
-            </strong> – {t('section1.projects.farming.desc')}
-              <br />
-              <ProjLink href={t('section1.projects.farming.codebaseURL')}>
-                {t('section1.projects.farming.codebaseText')}
               </ProjLink>
+            </strong> – {t('section1.projects.farming.desc')}
+            <br />
+            <ProjLink href={t('section1.projects.farming.codebaseURL')}>
+              {t('section1.projects.farming.codebaseText')}
+            </ProjLink>
           </li>
           <li>
             <strong>
               <ProjLink href={t('section1.projects.acento.siteURL')}>
                 {t('section1.projects.acento.name')}
-              </ProjLink>            
+              </ProjLink>
             </strong> – {t('section1.projects.acento.desc')}
             <br />
             <ProjLink href={t('section1.projects.acento.codebaseURL')}>
               {t('section1.projects.acento.codebaseText')}
-            </ProjLink> 
+            </ProjLink>
           </li>
           <li>
             <strong>
@@ -58,19 +63,19 @@ export default function ProjectsPage() {
             </strong> – {t('section1.projects.witch.desc')}
             <br />
             <ProjLink href={t('section1.projects.witch.codebaseURL')}>
-                {t('section1.projects.witch.codebaseText')}
-              </ProjLink>
+              {t('section1.projects.witch.codebaseText')}
+            </ProjLink>
           </li>
           <li>
             <strong>
               <ProjLink href={t('section1.projects.family.siteURL')}>
                 {t('section1.projects.family.name')}
-              </ProjLink> 
+              </ProjLink>
             </strong> – {t('section1.projects.family.desc')}
             <br />
             <ProjLink href={t('section1.projects.family.codebaseURL')}>
               {t('section1.projects.family.codebaseText')}
-            </ProjLink> 
+            </ProjLink>
           </li>
           <li>
             <strong>
@@ -127,6 +132,27 @@ export default function ProjectsPage() {
               {t('section2.projects.pdf-merger.codebaseText')}
             </ProjLink>
           </li>
+          <li>
+            <strong>
+              <ProjLink href={t('section2.projects.shopify-prototype.siteURL')}>
+                {t('section2.projects.shopify-prototype.name')}
+              </ProjLink>
+            </strong>
+            <p className="mb-4">{t('section2.projects.shopify-prototype.desc1')}</p>
+
+            {Array.isArray(items) && (
+              <ul className="list-disc list-inside mb-4">
+                {items.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            )}
+
+            <p className="mb-4">{t('section2.projects.shopify-prototype.desc2')}</p>
+            <ProjLink href={t('section2.projects.shopify-prototype.codebaseURL')}>
+              {t('section2.projects.shopify-prototype.codebaseText')}
+            </ProjLink>
+          </li>
         </ul>
       </CollapsibleSection>
 
@@ -176,13 +202,13 @@ export default function ProjectsPage() {
                 {t('section3.projects.shegitsit.codebaseText')}
               </ProjLink>
             </div>
-              <BadgeDisplay
-                badgePaths={[
-                  '/images/March-2025-Hackathon-3rd.png',
-                  '/images/March-hackathon-peoples-choice.png'
-                ]}
-                altTexts={[t('badges.march2025_3rd'), t('badges.march2025_people')]}
-              />
+            <BadgeDisplay
+              badgePaths={[
+                '/images/March-2025-Hackathon-3rd.png',
+                '/images/March-hackathon-peoples-choice.png'
+              ]}
+              altTexts={[t('badges.march2025_3rd'), t('badges.march2025_people')]}
+            />
           </li>
           <li className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
             <div>

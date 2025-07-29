@@ -39,6 +39,7 @@
       "redirección",
       "Releasenotes",
       "rimraf",
+      "shopify",
       "singlesource",
       "spain",
       "telco",
@@ -52,6 +53,14 @@
       "wireframes",
       "youtube"
     ],
-    "css.customData": [".vscode/tailwind-custom-data.json"]
+    "css.customData": [
+      ".vscode/tailwind-custom-data.json"
+    ],
+    "i18n-ally.localesPaths": [
+      "messages",
+      "app/i18n"
+    ],
+    "i18n-ally.diagnostics.enabled": false,
+    "i18n-ally.pathMatcher": "**/{en,de,es}.json"
   }
   

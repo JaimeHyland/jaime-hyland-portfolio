@@ -3,7 +3,7 @@
   "projIntro": "This page lists a number of the projects I have been involved in recently. I have divided it into three sections...",
   "section1": {
     "title": "Portfolio Projects for my CI full-stack qualification",
-    "description": "These projects were created by me alone as part of my full-stack programming course. Some of them have been further developed since, but they were all originally designed simply to satisfy the assessors' requirements",
+    "description": "These projects were created by me alone as part of my full-stack programming course. Some of them have been further developed since, but they were all originally designed simply to satisfy the assessors' requirements.",
     "projects": {
       "farming": {
         "name": "Farming Futures",
@@ -68,6 +68,22 @@
         "codebaseURL": "https://github.com/JaimeHyland/pdf_merge_app/",
         "desc1": "This project is in its very early stages. At present it's simply a minimal Next.js harness for a pdf-lib routine (pdf-lib itself being a typescript library containing useful components for handling pdf files). While primitive, the app works. You can try it out if you like (use the shift or control key to choose more than one modestly sized pdf file). Inspired by some mixed experiences I have recently had trying to merge pdf files for my job search effort and by the strong interest in privacy of German consumers in particular, I've decided to attempt to build an app that merges pdf files without requiring the user to upload their private files and then download the final merged file.",
         "desc2": "It will develop over time. You can follow my progress by watching this space."
+      },
+      "shopify-prototype": {
+        "name": "Shopify prototype",
+        "siteURL": "https://language-landscapes.myshopify.com/",
+        "codebaseText": "GitHub repository",
+        "codebaseURL": "https://github.com/JaimeHyland/pdf_merge_app/",
+        "desc1": "This project is in its very early stages too. So far, I've managed to do the following:",
+        "items": [
+          "Created an initial Shopify app scaffold with Node.js/Next.js, using the Shopify CLI",
+          "Created a bare-bones shop and connected it up to the app",
+          "Configured the app's shopify.app.toml to give an identity to the app identity and create the link to the store",
+          "Ready to run the local dev environment using a Cloudflare tunnel",
+          "Connected the app to a GitHub repository for version control and collaboration",
+          "Currently exploring how Shopify makes pull requests to my GitHub repo and how I should merge them."
+        ],
+        "desc2": "It will develop further over time. You can follow my progress by watching this space, and perhaps visiting my shop and my repository every now and then."
       }
     }
   },
