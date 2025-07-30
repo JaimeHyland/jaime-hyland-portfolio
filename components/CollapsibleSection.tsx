@@ -17,14 +17,10 @@ export function CollapsibleSection({ title, children, defaultOpen, id }: Props) 
   const userToggled = useRef(false);
 
   useEffect(() => {
-    if (!userToggled.current && id) {
-      if (activeId === 'ALL') {
-        setIsOpen(true);
-      } else {
-        setIsOpen(activeId === id);
+    if (!userToggled.current && id && activeId !== 'ALL') {
+      setIsOpen(activeId === 'ALL');
       }
-    }
-  }, [activeId, id]);
+    },  [activeId, id]);
 
   return (
     <section>

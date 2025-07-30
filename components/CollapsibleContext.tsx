@@ -15,11 +15,25 @@ export function AnchorAwareCollapsibleController({
 }) {
   const [activeId, setActiveId] = useState<string>('ALL');
 
+  // Handles hash on initial page load
   useEffect(() => {
     const hash = typeof window !== 'undefined' ? window.location.hash : '';
     if (hash) {
       setActiveId(hash.replace(/^#/, ''));
     }
+  }, []);
+
+  // Handles hash changes after load (e.g. user clicks anchor links)
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        setActiveId(hash.replace(/^#/, ''));
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
   return (

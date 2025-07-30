@@ -113,7 +113,7 @@ export default function CVPage() {
       </CollapsibleSection>
 
       <CollapsibleSection  id="ireland-experience" title={t('workExperienceIreland.heading')} defaultOpen={false}>
-        <div id="ireland-experience" className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
+        <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
           {t.raw('workExperienceIreland.items').map((
             item: {
               period: string;
@@ -144,7 +144,7 @@ export default function CVPage() {
       </CollapsibleSection>
 
       <CollapsibleSection id="spain-experience" title={t('workExperienceSpain.heading')} defaultOpen={false}>
-        <div id="spain-experience" className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
+        <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
           {t.raw('workExperienceSpain.items').map((
             item: {
               period: string;
@@ -175,7 +175,7 @@ export default function CVPage() {
       </CollapsibleSection>
 
       <CollapsibleSection id="seasonalWork" title={t('seasonalWork.heading')} defaultOpen={false}>
-        <div id="seasonalWork" className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
+        <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
           {t.raw('seasonalWork.items').map((
             item: {
               period: string;
