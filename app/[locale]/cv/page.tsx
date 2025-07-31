@@ -37,11 +37,11 @@ export default function CVPage() {
         <div className="flex-shrink-0">
           <img
             src="/images/small_photo.jpg"
-            alt="Portrait of CV owner"
+            alt="Jaime Hyland only a few short years ago."
             className="w-32 h-32 rounded-full object-cover shadow-md"
           />
       </div>
-      <div className="flex-grow max-w-full text-center md:text-left md:flex md:flex-col md:justify-center">
+      <div className="flex-grow max-w-full text-center md:text-left md:flex md:flex-col md:justify-center md:ml-8 lg:ml-20 xl:ml-[100px]">
         <h1 className="text-3xl font-bold">{t('cvOwner')}</h1>
         <p className="text-lg italic">
           <ProjLink href={t('emailURL')}>{t('emailText')}</ProjLink> |{' '}
