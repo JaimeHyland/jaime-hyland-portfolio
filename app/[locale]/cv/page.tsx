@@ -33,7 +33,8 @@ export default function CVPage() {
 
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-6">
-      <div className="flex flex-col md:flex-row items-center md:items-center gap-6">
+      <div className="flex flex-col md:flex-row items-center
+                gap-12 md:gap-18 lg:gap-24">
         <div className="flex-shrink-0">
           <img
             src="/images/small_photo.jpg"
@@ -41,13 +42,19 @@ export default function CVPage() {
             className="w-32 h-32 rounded-full object-cover shadow-md"
           />
       </div>
-      <div className="flex-grow max-w-full text-center md:text-left md:flex md:flex-col md:justify-center md:ml-8 lg:ml-20 xl:ml-[100px]">
-        <h1 className="text-3xl font-bold">{t('cvOwner')}</h1>
-        <p className="text-lg italic">
-          <ProjLink href={t('emailURL')}>{t('emailText')}</ProjLink> |{' '}
-          <ProjLink href={t('githubURL')}>{t('githubText')}</ProjLink> |{' '}
-          <ProjLink href={t('linkedinURL')}>{t('linkedinText')}</ProjLink>
-        </p>
+      <div 
+        className="
+          md:flex md:flex-col md:justify-center
+          text-left inline-block
+      ">
+        <div className="text-center">
+          <h1 className="text-3xl font-bold">{t('cvOwner')}</h1>
+          <p className="text-lg italic whitespace-nowrap mt-2">
+            <ProjLink href={t('emailURL')}>{t('emailText')}</ProjLink> |{' '}
+            <ProjLink href={t('githubURL')}>{t('githubText')}</ProjLink> |{' '}
+            <ProjLink href={t('linkedinURL')}>{t('linkedinText')}</ProjLink>
+          </p>
+        </div>
       </div>
     </div>
 
