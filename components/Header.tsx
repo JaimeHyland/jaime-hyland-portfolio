@@ -69,9 +69,20 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
             <Menu size={24} />
           </button>
         </div>
+        <div className="flex items-center gap-2">
+          {/* Bee icon */}
+          <img
+            src="/images/bee-favicon.svg"
+            alt="Bee icon"
+            className="w-6 h-6 md:w-8 md:h-8"
+          />
 
-        {/* Center: Jaime Hyland (desktop only) */}
-        <h1 className="text-xl font-bold hidden md:block">Jaime Hyland</h1>
+          {(pageKey === 'projects' || pageKey === 'contact') && (
+            <span className="hidden md:inline text-xl font-bold text-gray-800">
+              Jaime Hyland
+            </span>
+          )}
+        </div>
 
         {/* Right: Language selector */}
         <div className="flex items-center gap-2">

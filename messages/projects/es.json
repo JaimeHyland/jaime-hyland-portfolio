@@ -1,8 +1,8 @@
 {
-    "title": "Proyectos",
+    "title": "Los proyectos de Jaime",
     "projIntro": "Esta página lista varios de los proyectos en los que he estado involucrado recientemente. Los he dividido en tres secciones...",
     "section1": {
-        "title": "Proyectos de Portafolio para mi certificación full-stack de CI",
+        "title": "Proyectos de Portafolio para mi certificación full-stack de Code Institute",
         "description": "Estos proyectos fueron creados de forma independiente como parte de mi curso de programación full-stack. Algunos se han desarrollado aún más desde entonces, pero todos fueron originalmente diseñados simplemente para satisfacer los requisitos de los evaluadores.",
         "projects": {
             "farming": {

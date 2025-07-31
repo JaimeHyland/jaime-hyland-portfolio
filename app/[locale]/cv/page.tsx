@@ -33,10 +33,24 @@ export default function CVPage() {
 
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-6">
-      <div className="text-center">
-        <h1 className="text-3xl font-bold">{t('cvOwner')}</h1>
-        <p className="text-lg italic"><ProjLink href={t('emailURL')}>{t('emailText')}</ProjLink> | <ProjLink href={t('githubURL')}>{t('githubText')}</ProjLink> | <ProjLink href={t('linkedinURL')}>{t('linkedinText')}</ProjLink></p>
+      <div className="flex flex-col md:flex-row items-center md:items-center gap-6">
+        <div className="flex-shrink-0">
+          <img
+            src="/images/small_photo.jpg"
+            alt="Portrait of CV owner"
+            className="w-32 h-32 rounded-full object-cover shadow-md"
+          />
       </div>
+      <div className="flex-grow max-w-full text-center md:text-left md:flex md:flex-col md:justify-center">
+        <h1 className="text-3xl font-bold">{t('cvOwner')}</h1>
+        <p className="text-lg italic">
+          <ProjLink href={t('emailURL')}>{t('emailText')}</ProjLink> |{' '}
+          <ProjLink href={t('githubURL')}>{t('githubText')}</ProjLink> |{' '}
+          <ProjLink href={t('linkedinURL')}>{t('linkedinText')}</ProjLink>
+        </p>
+      </div>
+    </div>
+
       <CollapsibleSection title={t('summary.title')}>
         <p>{t('summary.text')}</p>
       </CollapsibleSection>
