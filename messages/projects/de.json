@@ -80,9 +80,8 @@
           "Einen einfachen Shop erstellt und mit der App verbunden",
           "Die Datei shopify.app.toml konfiguriert, um der App eine Identität zu geben und die Verbindung zum Shop herzustellen",
           "Die lokale Entwicklungsumgebung mit einem Cloudflare-Tunnel eingerichtet",
-          "Die App mit einem GitHub-Repository für Versionskontrolle und Zusammenarbeit verbunden",
-          "Ich untersuche derzeit, wie Shopify Pull-Requests an mein GitHub-Repo stellt und wie ich diese am besten zusammenführe."
-        ],
+          "Die App mit einem GitHub-Repository für Versionskontrolle und Zusammenarbeit verbunden"
+          ],
         "desc2": "Das Projekt wird sich mit der Zeit weiterentwickeln. Du kannst meinen Fortschritt hier verfolgen – oder hin und wieder meinen Shop und das Repository besuchen."
       }
     }

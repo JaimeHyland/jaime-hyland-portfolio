@@ -80,9 +80,8 @@
                 "Creé una tienda básica y la conecté a la aplicación",
                 "Configuré el archivo shopify.app.toml de la app para darle identidad y crear el vínculo con la tienda",
                 "Preparé el entorno de desarrollo local con un túnel de Cloudflare",
-                "Conecté la aplicación a un repositorio de GitHub para control de versiones y colaboración",
-                "Actualmente estoy explorando cómo Shopify hace pull requests a mi repositorio de GitHub y cómo debería gestionarlos."
-            ],
+                "Conecté la aplicación a un repositorio de GitHub para control de versiones y colaboración"
+                ],
             "desc2": "Seguirá desarrollándose con el tiempo. Puedes seguir mi progreso echando un vistazo por aquí, y tal vez visitando mi tienda y el repositorio de vez en cuando."
             }
         }
