@@ -73,15 +73,14 @@
         "name": "Shopify prototype",
         "siteURL": "https://language-landscapes.myshopify.com/",
         "codebaseText": "GitHub repository",
-        "codebaseURL": "https://github.com/JaimeHyland/pdf_merge_app/",
+        "codebaseURL": "https://github.com/JaimeHyland/shop-prototype/",
         "desc1": "This project is in its very early stages too. So far, I've managed to do the following:",
         "items": [
           "Created an initial Shopify app scaffold with Node.js/Next.js, using the Shopify CLI",
           "Created a bare-bones shop and connected it up to the app",
           "Configured the app's shopify.app.toml to give an identity to the app identity and create the link to the store",
           "Ready to run the local dev environment using a Cloudflare tunnel",
-          "Connected the app to a GitHub repository for version control and collaboration",
-          "Currently exploring how Shopify makes pull requests to my GitHub repo and how I should merge them."
+          "Connected the app to a GitHub repository for version control and collaboration"
         ],
         "desc2": "It will develop further over time. You can follow my progress by watching this space, and perhaps visiting my shop and my repository every now and then."
       }

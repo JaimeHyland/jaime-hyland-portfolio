@@ -73,7 +73,7 @@
             "name": "Prototipo de Shopify",
             "siteURL": "https://language-landscapes.myshopify.com/",
             "codebaseText": "Repositorio en GitHub",
-            "codebaseURL": "https://github.com/JaimeHyland/pdf_merge_app/",
+            "codebaseURL": "https://github.com/JaimeHyland/shop-prototype/",
             "desc1": "Este proyecto también está en una etapa muy temprana. Hasta ahora, he conseguido lo siguiente:",
             "items": [
                 "Creé una estructura inicial para una aplicación de Shopify con Node.js/Next.js usando la CLI de Shopify",
