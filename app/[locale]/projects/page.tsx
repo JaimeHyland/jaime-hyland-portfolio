@@ -9,6 +9,8 @@ export default function ProjectsPage() {
   const locale = useLocale();
 
   const items = t.raw('section2.projects.shopify-prototype.items') as string[];
+  const problems = t.raw('section4.projects.microbus-l10n.problems') as string[];
+  const solutions = t.raw('section4.projects.microbus-l10n.solutions') as string[];
 
   const MyComponent = () => {
     const t = useTranslations();
@@ -92,6 +94,36 @@ export default function ProjectsPage() {
       </CollapsibleSection>
 
       <CollapsibleSection
+        id="workProjects"
+        title={t('section4.title')}
+      >
+        <ul>
+          <li>
+            <strong>
+                {t('section4.projects.microbus-l10n.name')}
+            </strong>
+            <p className="mb-4">{t('section4.projects.microbus-l10n.desc1')}</p>
+            <p className="mb-4">{t('section4.projects.microbus-l10n.desc2')}</p>
+            {Array.isArray(problems) && (
+              <ul className="list-disc list-inside mb-4">
+                {problems.map((problem, index) => (
+                  <li key={index}>{problem}</li>
+                ))}
+              </ul>
+            )}
+            <p className="mb-4">{t('section4.projects.microbus-l10n.desc3')}</p>
+                        {Array.isArray(solutions) && (
+              <ul className="list-disc list-inside mb-4">
+                {solutions.map((solution, index) => (
+                  <li key={index}>{solution}</li>
+                ))}
+              </ul>
+            )}
+          </li>
+        </ul>
+      </CollapsibleSection>
+
+      <CollapsibleSection
         id="independent"
         title={t('section2.title')}
       >
@@ -147,7 +179,6 @@ export default function ProjectsPage() {
                 ))}
               </ul>
             )}
-
             <p className="mb-4">{t('section2.projects.shopify-prototype.desc2')}</p>
             <ProjLink href={t('section2.projects.shopify-prototype.codebaseURL')}>
               {t('section2.projects.shopify-prototype.codebaseText')}
