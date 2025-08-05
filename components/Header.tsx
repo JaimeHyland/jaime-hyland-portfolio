@@ -69,19 +69,26 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
             <Menu size={24} />
           </button>
         </div>
-        <div className="flex items-center gap-2">
-          {/* Bee icon */}
-          <img
-            src="/images/bee-favicon.svg"
-            alt="Bee icon"
-            className="w-6 h-6 md:w-8 md:h-8"
-          />
+        <div>
+          <HeaderLink 
+            href={`/${lang}/${paths.home}`}
+            pageKey="home"
+            currentKey={pageKey}
+            className="flex items-center gap-2"
+          >
+            {/* Bee icon */}
+            <img
+              src="/images/bee-favicon.svg"
+              alt="Bee icon"
+              className="w-6 h-6 md:w-8 md:h-8"
+            />
 
-          {(pageKey === 'projects' || pageKey === 'contact') && (
-            <span className="hidden md:inline text-xl font-bold text-gray-800">
-              Jaime Hyland
-            </span>
-          )}
+            {(pageKey === 'projects' || pageKey === 'contact') && (
+              <span className="hidden md:inline whitespace-nowrap text-xl font-bold text-gray-800">
+                Jaime Hyland
+              </span>
+            )}
+          </HeaderLink>
         </div>
 
         {/* Right: Language selector */}
