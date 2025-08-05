@@ -18,13 +18,12 @@ export async function generateMetadata() {
 
 interface LayoutProps {
   children: ReactNode;
-  params: { lang: string };
 }
 
 
-export default function RootLayout({ children, params }: LayoutProps ) {
+export default function RootLayout({ children }: LayoutProps ) {
   return (
-    <html  lang={params.lang}>
+    <html>
       <body className="font-sans bg-white text-gray-800">
         <GDPRConsent />
         <ScrollToTopButton />
