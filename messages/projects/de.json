@@ -3,7 +3,7 @@
   "projIntro": "Diese Seite listet eine Reihe von Projekten auf, an denen ich kürzlich beteiligt war. Ich habe sie in drei Abschnitte unterteilt...",
   "section1": {
     "title": "Portfolio-Projekte für meine Code-Institute-Full-Stack-Zertifizierung",
-    "description": "Diese Projekte habe ich im Rahmen meines Full-Stack-Programmierkurses selbstständig erstellt. Einige davon wurden inzwischen weiterentwickelt, ursprünglich wurden sie jedoch mit dem Ziel entworfen, die Anforderungen der Bewertung zu erfüllen.",
+    "description": "Diese Projekte habe ich ursprünglich im Rahmen meines Full-Stack-Programmierkurses selbstständig erstellt.",
     "projects": {
       "farming": {
         "name": "Farming Futures",
