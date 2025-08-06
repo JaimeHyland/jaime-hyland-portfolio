@@ -7,6 +7,7 @@ import Header from '@/components/Header';
 import { localizedPaths } from '@/lib/paths';
 import { localizedLabels } from '@/lib/labels';
 import '@/app/globals.css';
+
 import GDPRConsent from '@/app/gdpr-consent';
 
 export async function generateStaticParams() {

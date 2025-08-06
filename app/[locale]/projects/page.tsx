@@ -1,28 +1,21 @@
 'use client';
-import { useTranslations, useLocale } from 'next-intl';
+
 import { ProjLink } from '../../../components/ProjLink';
 import { BadgeDisplay } from '../../../components/BadgeDisplay';
 import { CollapsibleSection } from '../../../components/CollapsibleSection';
+import { useTranslations } from 'next-intl';
+import { Trans } from 'react-i18next';
+
+
 
 export default function ProjectsPage() {
-  const t = useTranslations();
-  const locale = useLocale();
+  const  t  = useTranslations();
+  const title = t('title');
 
   const items = t.raw('section2.projects.shopify-prototype.items') as string[];
   const problems = t.raw('section4.projects.microbus-l10n.problems') as string[];
   const solutions = t.raw('section4.projects.microbus-l10n.solutions') as string[];
 
-  const MyComponent = () => {
-    const t = useTranslations();
-
-    const anchors = t.raw('portfolioAnchors') as Record<string, string>;
-
-    const urls = [
-      `/${locale}/projects#${anchors.ciAssessment}`,
-      `/${locale}/projects#${anchors.independent}`,
-      `/${locale}/projects#${anchors.hackathons}`
-    ];
-  }
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
@@ -102,20 +95,32 @@ export default function ProjectsPage() {
             <strong>
                 {t('section4.projects.microbus-l10n.name')}
             </strong>
-            <p className="mb-4">{t('section4.projects.microbus-l10n.desc1')}</p>
-            <p className="mb-4">{t('section4.projects.microbus-l10n.desc2')}</p>
+            <p className="mb-4">{t.rich('section4.projects.microbus-l10n.desc1', {
+              bold: (chunks) => <strong>{chunks}</strong>
+          })}</p>
+            <p className="mb-4">{t.rich('section4.projects.microbus-l10n.desc2', {
+              bold: (chunks) => <strong>{chunks}</strong>
+          })}</p>
             {Array.isArray(problems) && (
-              <ul className="list-disc list-inside mb-4">
+              <ul className="list-disc list-outside pl-5 mb-4">
                 {problems.map((problem, index) => (
-                  <li key={index}>{problem}</li>
+                  <li key={index} className="pl-2 -text-indent text-indent-hang">
+                    {t.rich(`section4.projects.microbus-l10n.problems.${index}`, {
+                      bold: (chunks) => <strong>{chunks}</strong>,
+                    })}
+                  </li>
                 ))}
               </ul>
             )}
             <p className="mb-4">{t('section4.projects.microbus-l10n.desc3')}</p>
-                        {Array.isArray(solutions) && (
-              <ul className="list-disc list-inside mb-4">
+            {Array.isArray(solutions) && (
+              <ul className="list-disc list-outside pl-5 mb-4">
                 {solutions.map((solution, index) => (
-                  <li key={index}>{solution}</li>
+                  <li key={index} className="pl-2 -text-indent text-indent-hang">
+                    {t.rich(`section4.projects.microbus-l10n.solutions.${index}`, {
+                      bold: (chunks) => <strong>{chunks}</strong>,
+                    })}
+                  </li>
                 ))}
               </ul>
             )}
@@ -179,7 +184,7 @@ export default function ProjectsPage() {
                 ))}
               </ul>
             )}
-            <p className="mb-4">{t('section2.projects.shopify-prototype.desc2')}</p>
+            <p>{t('section2.projects.shopify-prototype.desc2')}</p>
             <ProjLink href={t('section2.projects.shopify-prototype.codebaseURL')}>
               {t('section2.projects.shopify-prototype.codebaseText')}
             </ProjLink>

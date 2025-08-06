@@ -136,36 +136,36 @@
     }
   },
   "section4": {
-    "title": "Major professional achievement",
+    "title": "Major professional achievements",
     "projects": {
       "microbus-l10n": {
       "name": "Microbus (IVU suite) localization",
-      "desc1": "Before I came to them, IVU Traffic Technologies had developed or acquired major suite of closely related but technologically very different software packages for public transport planning, scheduling, dispatch and accounting over a number of years. By the time I arrived it had grown into a suite of products based on C, C++, Java and others, all communicating with a large Oracle DB, and all needing JIT localization of software UIs and documentation into 14 languages and dialects. A complex localization system had developed organically at the company over the years, responsibility for which is what I inherited when I joined the company in 2004.",
-      "desc2": "Apart from the organizational issues due to the history and complexity of this suite of software that I faced in common with other technical staff members, I was confronted with a battery of specialized i18n and l10n conundrums, including the following:",
-      "desc3": "I made a large contribution to resolving these problems, combining my process and software development work with my responsibility for translation, localization and coordination with freelance and customer-side translators.",
+      "desc1": "When I joined <bold>IVU Traffic Technologies</bold> in 2004, I inherited responsibility for the localization (l10n) of a large and organically grown suite of software tools for public transport planning, scheduling, dispatch, and accounting. The suite was built over many years in C, C++, Java, and more, all communicating with a central <bold>Oracle</bold> DB, and all requiring ongoing UI and documentation l10n into 14 languages and dialects.",
+      "desc2": "The l10n landscape faced some important challenges at the time:",
+      "desc3": "Both in conjunction with my colleagues and on my own, I addressed these and other challenges through a mix of process redesign, tool integration, and software development:",
       "problems": [
-          "A highly complex, and not always adequately documented software bundle",
-          "No less than six different sources of UI language resources (java resources, json and xml files, excel tables, database entries, windows dialog resources",
-          "Several separate historical sets of terminology, often incompatible with one another",
-          "A large HTML-based help bundle (generated from MS word docs using Doc2Help) that required much manual manipulation for correct localization ",
-          "A variety of bespoke and market-adjusted packages, each requiring different locale combinations",
-          "A good deal of less-than-perfect internationalization work in the source code (unclear concatenations, hard-coded numerical formats, unexplained text fragments, etc.)",
-          "Each new build of the suite of programs required a new, human-initiated localization round",
-          "Incomplete use of translation memory and terminology management technology",
-          "Locales often ignored in formatting currencies, dates and times, and so on",
-          "etc."
+          "Multiple UI resource formats and locations (Java resource files, JSON, XML, Excel, DB entries, Windows MFC dialogs)",
+          "Conflicting (sometimes contradictory) legacy terminology",
+          "Tracing code source of UI texts often difficult",
+          "A large, labour-intensive HTML-based help system (generated from MS Word via Doc2Help)",
+          "Numerous localized product variants requiring different locale combinations",
+          "Inconsistent internationalization (i18n) in the codebase (hard-coded formats, unclear concatenations)",
+          "New round of manual l10n required by each new build",
+          "Patchy leverage of translation memory and terminology tools",
+          "Locale-sensitive formats (currency, date, time) often mishandled",
+          "Poor or non-existent locale-dependent formatting"
         ],
         "solutions": [
-          "Designed, coordinated and enforced a terminology management system (using custom software and Termstar) to remove confusing synonyms and contradictory nomenclature",
-          "Improved, unified, formatted and promulgated a revised German glossary",
-          "Moved from a ms-doc->html paradigm for help documentation (using doc2help) to single-source model, using Author-it",
-          "Changed to doc localization from source (Author-it db)",
-          "Leveraged Author-it's one-source approach to customize documentation by locale, and even individual customer, almost entirely eliminating 'versioning hell'",
-          "Used Passolo with Java Swing to resolve locale-based formatting issues in software UIs",
-          "Leveraged translation memory (Transit) to ensure no semantically identical strings needed repeated localization",
-          "Integrated automatic software translation into newly introduced nightly build, using Maven/Ant (using pom.xml files) together with Passolo App to identify what needed localization into which locales",
-          "Communicated with large development team to underline the importance of thorough, consistent i18n practices",
-          "Developed and enforced a system to catch and repair such incorrect and unclear i18n in code"
+          "Introduced and enforced terminology management using <bold>Termstar</bold> and custom tools",
+          "Consolidated and standardized the German glossary",
+          "Replaced the Doc2Help workflow with <bold>Author-it</bold>, adopting a single-source model for help content",
+          "Enabled customized documentation per locale or customer, greatly reducing “versioning hell”",
+          "Used <bold>Passolo</bold> and <bold>Transit</bold> to streamline UI translation, ensuring no semantically identical strings needed translating twice",
+          "Integrated Transit UI translation memory into documentation generation and l10n routines",
+          "Integrated automatic software translation into newly introduced nightly build, using <bold>Maven/Ant</bold> and Passolo",
+          "Worked closely with developers to improve and enforce i18n best practices",
+          "Developed systems to detect and correct inconsistent terminology and poor i18n in code",
+          "Adjusted UI sizing using <bold>MFC</bold> and <bold>Java Swing</bold> with Passolo"
         ]
       }
     }

@@ -4,6 +4,7 @@ import { ReactNode } from 'react';
 import GDPRConsent from './gdpr-consent';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 
+
 export async function generateMetadata() {
   return {
     title: 'Jaime Hyland Portfolio',
