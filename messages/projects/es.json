@@ -96,7 +96,7 @@
         "name": "TechBuddy",
         "hackathonName": "Branching Out: A family hackathon",
         "hackathonURL": "https://hackathon.codeinstitute.net/hackathon/public/60/",
-        "siteURL": "",
+        "siteURL": "https://support-squad-tech-buddy-9d4a4ad47301.herokuapp.com/",
         "codebaseText": "Repositorio en GitHub",
         "codebaseURL": "https://github.com/apeskinian/tech_buddy",
         "desc": "Aplicación de ayuda técnica para toda la familia, desarrollada por un equipo de seis personas en tan solo tres días. El equipo trabajó de forma presencial el último día. TechBuddy obtuvo el segundo premio en el hackathon de mayo del CI.",
