@@ -51,7 +51,15 @@
         "siteURL": "https://jaime-hyland.com/",
         "codebaseText": "GitHub-Repository",
         "codebaseURL": "https://github.com/JaimeHyland/jaime-hyland-portfolio",
-        "desc": "Diese Website ist das dreisprachige Portfolio, das Sie gerade ansehen – ein persönliches Projekt, das ich eigenständig mit Next.js entwickelt habe."
+        "desc1": "Dieses Projekt ist die Seite, die Sie sich gerade ansehen. Es handelt sich um ein professionelles, mehrsprachiges Portfolio, das in <bold>TypeScript</bold> mit <bold>Next.js</bold>, <bold>Tailwind CSS</bold> und <bold>next-intl</bold> entwickelt wurde und meinen Hintergrund in Softwarelokalisierung, Technischem Schreiben und Softwareentwicklung präsentiert.",
+        "desc2": "Die Seite bietet:",
+        "features": [
+          "Einen strukturierten, interaktiven Lebenslauf",
+          "Ein detailliertes Portfolio meiner Projekte mit Schwerpunkt auf neuen Arbeiten",
+          "Unaufdringliche, durchdachte <bold>i18n</bold>-Unterstützung, mit Lokalisierung in Englisch, Deutsch und Spanisch",
+          "Klares, barrierefreies Design"
+        ],
+        "desc3": "Beim Aufbau der Seite habe ich besonderen Wert auf klare Strukturen, Wartbarkeit, Reaktionsfähigkeit und Sprachkonsistenz gelegt. Sie verwendet typisierte <bold>React</bold>-Komponenten mit <bold>Server-seitigem Rendering</bold> und entspricht den hohen Standards, die ich auch in meine Einzel- und Teamarbeit einbringe. Die Seite ist vollständig responsiv, SEO-freundlich und zeigt meine Fähigkeit, robuste, skalierbare Inhaltsplattformen mit modernen Frontend-Tools zu entwickeln."
       },
       "language": {
         "name": "language-landscapes.com",

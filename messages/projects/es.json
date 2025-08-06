@@ -47,19 +47,19 @@
         "description": "Estos proyectos fueron creados de forma independiente por iniciativa propia; todos deben considerarse trabajo en curso.",
         "projects": {
             "portfolio": {
-                "name": "Portafolio de Jaime Hyland",
-                "siteURL": "https://jaime-hyland.com/",
-                "codebaseText": "Repositorio GitHub",
-                "codebaseURL": "https://github.com/JaimeHyland/jaime-hyland-portfolio",
-                "desc": "Este proyecto es el sitio trilingüe que estás viendo ahora. Es un proyecto personal mío. Su estructura es original. Lo construí usando Next.js."
-            },
-            "language": {
-                "name": "language-landscapes.com",
-                "siteURL": "https://language-landscapes.com",
-                "codebaseText": "Repositorio GitHub",
-                "codebaseURL": "https://github.com/JaimeHyland/language-landscapes",
-                "desc1": "Este es un proyecto legado en CakePHP. Fue diseñado y desarrollado hace más de una década por un profesional cualificado siguiendo mis indicaciones. Actualmente lo gestiono yo. Lo he roto y arreglado varias veces. En el futuro tengo intención de migrarlo a un framework más moderno, pero por ahora no es responsive.",
-                "desc2": "Actualmente está alojado en GoDaddy, pero por motivos de precio y atención al cliente, tengo pensado trasladarlo a otro proveedor como parte de la reestructuración."
+            "name": "Portfolio de Jaime Hyland",
+            "siteURL": "https://jaime-hyland.com/",
+            "codebaseText": "Repositorio en GitHub",
+            "codebaseURL": "https://github.com/JaimeHyland/jaime-hyland-portfolio",
+            "desc1": "Este proyecto es el sitio que estás viendo ahora mismo. Es un portafolio profesional y multilingüe desarrollado en <bold>TypeScript</bold> utilizando <bold>Next.js</bold>, <bold>Tailwind CSS</bold> y <bold>next-intl</bold>, diseñado para mostrar mi experiencia en localización de software, redacción técnica y desarrollo de software.",
+            "desc2": "El sitio incluye:",
+            "features": [
+                "Un currículum estructurado e interactivo",
+                "Un portafolio detallado de mis proyectos, con énfasis en los más recientes",
+                "Compatibilidad <bold>i18n</bold> elegante y sin interrupciones, con localización en inglés, alemán y español",
+                "Diseño limpio y accesible"
+            ],
+            "desc3": "Al desarrollarlo, he dado prioridad a la claridad sin complicaciones, la mantenibilidad, la capacidad de respuesta y la coherencia entre idiomas. Utiliza componentes <bold>React</bold> tipados con <bold>renderizado del lado del servidor</bold>, y refleja los mismos estándares que aplico en mi trabajo individual y en equipo. Es totalmente adaptable, optimizado para SEO y demuestra mi capacidad para construir plataformas de contenido robustas y escalables con herramientas modernas de frontend."
             },
             "pdf-merger": {
                 "name": "Local PDF Merger",
