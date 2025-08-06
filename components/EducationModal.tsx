@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React, { useRef } from 'react';
-import Draggable from 'react-draggable';
+import React, { useRef } from "react";
+import Draggable from "react-draggable";
 
 interface EducationModalProps {
   open: boolean;
@@ -20,11 +20,7 @@ export default function EducationModal({ open, onClose, title, content }: Educat
       className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
       onClick={onClose}
     >
-      <Draggable
-        nodeRef={nodeRef}
-        handle=".modal-header"
-        cancel=".modal-close"
-      >
+      <Draggable nodeRef={nodeRef} handle=".modal-header" cancel=".modal-close">
         <div
           ref={nodeRef}
           onClick={(e) => e.stopPropagation()}

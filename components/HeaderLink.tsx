@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
+import Link from "next/link";
 
 interface HeaderLinkProps {
   href: string;
@@ -10,13 +10,20 @@ interface HeaderLinkProps {
   className?: string;
 }
 
-export function HeaderLink({ href, children, pageKey, currentKey, className = '' }: HeaderLinkProps) {
+export function HeaderLink({
+  href,
+  children,
+  pageKey,
+  currentKey,
+  className = ""
+}: HeaderLinkProps) {
   const isActive = pageKey === currentKey;
 
   return (
     <Link
       href={href}
-      className={`transition-transform duration-200 transform hover:scale-105 ${ isActive ? 'font-bold' : ''
+      className={`transition-transform duration-200 transform hover:scale-105 ${
+        isActive ? "font-bold" : ""
       } ${className}`}
     >
       {children}

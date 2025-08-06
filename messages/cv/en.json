@@ -95,7 +95,7 @@
       }
     ]
   },
-  "workExperienceIreland":{
+  "workExperienceIreland": {
     "heading": "Professional experience, Dublin",
     "items": [
       {
@@ -109,16 +109,15 @@
         "period": "Feb –July 1999",
         "text": "Air Freight Forwarder, Aerly Bird Trans Global, Santry, Dublin 9"
       },
-       {
+      {
         "period": "Dec 1997 – Feb 1999",
         "text": "Exploitation of business opportunity in importation of landscaping materials"
       }
     ]
   },
-  "workExperienceSpain":{
+  "workExperienceSpain": {
     "heading": "Professional experience, Basque Country",
     "items": [
-      
       {
         "period": "Jan 1994 – Nov 1997",
         "text": "Self-employed translator (es -> en)"
@@ -129,7 +128,7 @@
       },
       {
         "period": "1990 – June 1992",
-        "text":  "Owner/Director of a small language school in Zarautz, Spain",
+        "text": "Owner/Director of a small language school in Zarautz, Spain",
         "blurbTitle": "Major achievements:",
         "blurb1": "Provided employment to two teachers and an admin",
         "blurb2": "Sold school profitably as going concern in the summer of 1992"
@@ -140,7 +139,7 @@
       }
     ]
   },
-    "seasonalWork":{
+  "seasonalWork": {
     "heading": "Seasonal work as a youth",
     "items": [
       {
@@ -161,7 +160,7 @@
       "CI Hackathon projects built as part of a team – <link>Go to the full list</link>"
     ]
   },
- 
+
   "hobbies": {
     "heading": "Hobbies & Interests",
     "line1": "Code Institute hackathons; ongoing professional development with brilliant.org, LinkedIn Learning, and KodeKloud, etc.; experimenting with Dart/Flutter, and learning Linux.",
@@ -169,8 +168,8 @@
   },
 
   "portfolioAnchors": {
-  "ciAssessment": "ci-assessment",
-  "independent": "independent",
-  "hackathons": "hackathons"
+    "ciAssessment": "ci-assessment",
+    "independent": "independent",
+    "hackathons": "hackathons"
   }
 }

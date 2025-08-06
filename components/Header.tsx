@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import { usePathname, useRouter } from 'next/navigation';
-import Cookies from 'js-cookie';
-import { useState } from 'react';
-import { Menu, MessageCircle } from 'lucide-react';
-import { localizedPaths } from '@/lib/paths';
-import { localizedLabels } from '@/lib/labels';
-import { HeaderLink } from '../components/HeaderLink';
+import { usePathname, useRouter } from "next/navigation";
+import Cookies from "js-cookie";
+import { useState } from "react";
+import { Menu, MessageCircle } from "lucide-react";
+import { localizedPaths } from "@/lib/paths";
+import { localizedLabels } from "@/lib/labels";
+import { HeaderLink } from "../components/HeaderLink";
 
 type HeaderProps = {
-  lang: 'en' | 'es' | 'de';
-  labels: (typeof localizedLabels)['en'];
+  lang: "en" | "es" | "de";
+  labels: (typeof localizedLabels)["en"];
   paths: {
     home: string;
     cv: string;
@@ -29,13 +29,13 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
   const pageKey =
     (Object.keys(paths) as (keyof typeof paths)[]).find(
       (key) => pathname === `/${lang}/${paths[key]}`
-    ) ?? 'home';
+    ) ?? "home";
 
-  const handleLanguageChange = (lng: 'en' | 'es' | 'de') => {
-    Cookies.set('NEXT_LOCALE', lng, { expires: 365 });
+  const handleLanguageChange = (lng: "en" | "es" | "de") => {
+    Cookies.set("NEXT_LOCALE", lng, { expires: 365 });
 
     const translatedPath = localizedPaths[lng][pageKey];
-    const newPath = `/${lng}${translatedPath ? `/${translatedPath}` : ''}`;
+    const newPath = `/${lng}${translatedPath ? `/${translatedPath}` : ""}`;
 
     router.push(newPath);
   };
@@ -70,20 +70,16 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
           </button>
         </div>
         <div>
-          <HeaderLink 
+          <HeaderLink
             href={`/${lang}/${paths.home}`}
             pageKey="home"
             currentKey={pageKey}
             className="flex items-center gap-2"
           >
             {/* Bee icon */}
-            <img
-              src="/images/bee-favicon.svg"
-              alt="Bee icon"
-              className="w-6 h-6 md:w-8 md:h-8"
-            />
+            <img src="/images/bee-favicon.svg" alt="Bee icon" className="w-6 h-6 md:w-8 md:h-8" />
 
-            {(pageKey === 'projects' || pageKey === 'contact') && (
+            {(pageKey === "projects" || pageKey === "contact") && (
               <span className="hidden md:inline whitespace-nowrap text-xl font-bold text-gray-800">
                 Jaime Hyland
               </span>
@@ -95,12 +91,12 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
         <div className="flex items-center gap-2">
           {/* Desktop */}
           <div className="hidden md:flex gap-2 text-sm text-gray-600">
-            {(['en', 'es', 'de'] as const).map((lng) => (
+            {(["en", "es", "de"] as const).map((lng) => (
               <button
                 key={lng}
                 onClick={() => handleLanguageChange(lng)}
                 className={`transition-transform duration-200 transform hover:scale-105 ${
-                  lang === lng ? 'font-bold' : 'font-normal'
+                  lang === lng ? "font-bold" : "font-normal"
                 }`}
               >
                 {labels?.[lng]}
@@ -119,7 +115,7 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
             </button>
             {langOpen && (
               <div className="absolute right-0 mt-2 bg-white border shadow-md rounded-md flex flex-col py-1 text-sm z-50">
-                {(['en', 'es', 'de'] as const).map((lng) => (
+                {(["en", "es", "de"] as const).map((lng) => (
                   <button
                     key={lng}
                     onClick={() => {
@@ -127,7 +123,7 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                       setLangOpen(false);
                     }}
                     className={`px-4 py-2 text-left hover:bg-gray-100 ${
-                      lang === lng ? 'font-bold' : 'font-normal'
+                      lang === lng ? "font-bold" : "font-normal"
                     }`}
                   >
                     {labels?.[lng]}

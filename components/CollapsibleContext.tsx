@@ -1,25 +1,21 @@
-'use client';
+"use client";
 
-import { createContext, useContext, useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from "react";
 
-const CollapsibleContext = createContext<string>('ALL');
+const CollapsibleContext = createContext<string>("ALL");
 
 export function useActiveId() {
   return useContext(CollapsibleContext);
 }
 
-export function AnchorAwareCollapsibleController({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  const [activeId, setActiveId] = useState<string>('ALL');
+export function AnchorAwareCollapsibleController({ children }: { children: React.ReactNode }) {
+  const [activeId, setActiveId] = useState<string>("ALL");
 
   // Handles hash on initial page load
   useEffect(() => {
-    const hash = typeof window !== 'undefined' ? window.location.hash : '';
+    const hash = typeof window !== "undefined" ? window.location.hash : "";
     if (hash) {
-      setActiveId(hash.replace(/^#/, ''));
+      setActiveId(hash.replace(/^#/, ""));
     }
   }, []);
 
@@ -28,17 +24,13 @@ export function AnchorAwareCollapsibleController({
     const handleHashChange = () => {
       const hash = window.location.hash;
       if (hash) {
-        setActiveId(hash.replace(/^#/, ''));
+        setActiveId(hash.replace(/^#/, ""));
       }
     };
 
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
 
-  return (
-    <CollapsibleContext.Provider value={activeId}>
-      {children}
-    </CollapsibleContext.Provider>
-  );
+  return <CollapsibleContext.Provider value={activeId}>{children}</CollapsibleContext.Provider>;
 }

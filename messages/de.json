@@ -1,13 +1,13 @@
-{ 
+{
   "homeInline": {
-  "name": "Jaime Hyland",
-  "tagline": "Entwickler. Texter. Trainer.",
-  "intro": "Ich bin ein Full-Stack-Entwickler mit einem Hintergrund in Sprachen und Bildung und entwickle gerne saubere, ansprechende und skalierbare Webanwendungen, die informieren, bilden, die Produktivität steigern und die Lebensqualität verbessern.",
-  "techsTitle": "Einige der Technologien, mit denen ich arbeite",
-  "educationTitle": "Einige der Orte, an denen ich gelernt habe",
-  "buttonLabel": "Suchen Sie einen Entwickler oder Mitstreiter?",
-  "buttonText": "Kontakt aufnehmen"
-},
+    "name": "Jaime Hyland",
+    "tagline": "Entwickler. Texter. Trainer.",
+    "intro": "Ich bin ein Full-Stack-Entwickler mit einem Hintergrund in Sprachen und Bildung und entwickle gerne saubere, ansprechende und skalierbare Webanwendungen, die informieren, bilden, die Produktivität steigern und die Lebensqualität verbessern.",
+    "techsTitle": "Einige der Technologien, mit denen ich arbeite",
+    "educationTitle": "Einige der Orte, an denen ich gelernt habe",
+    "buttonLabel": "Suchen Sie einen Entwickler oder Mitstreiter?",
+    "buttonText": "Kontakt aufnehmen"
+  },
   "learningSection": {
     "heading": "Einige der Orte, an denen ich gelernt habe, und noch lerne",
 

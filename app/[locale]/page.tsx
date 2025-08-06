@@ -1,18 +1,43 @@
-import messagesEn from '../../messages/en.json';
-import messagesEs from '../../messages/es.json';
-import messagesDe from '../../messages/de.json';
-import { getLocale } from 'next-intl/server';
+import messagesEn from "../../messages/en.json";
+import messagesEs from "../../messages/es.json";
+import messagesDe from "../../messages/de.json";
+import { getLocale } from "next-intl/server";
 
 import {
-  SiPython, SiDjango, SiPostgresql, SiMysql, SiGithub, SiGodaddy, SiHeroku,
-  SiVercel, SiNextdotjs, SiTypescript, SiTailwindcss, SiStripe, SiAmazonaws,
-  SiBootstrap, SiFlask, SiJira, SiJupyter, SiHtml5, SiCss3, SiDart,
-  SiFlutter, SiSwagger, SiDotnet, SiNodedotjs, SiReact, SiVisualstudiocode,
-  SiCplusplus, SiVisualstudio, SiAndroidstudio, SiEclipseide, SiGit
-} from 'react-icons/si';
-import { FaJava } from 'react-icons/fa';
-import LearningSection from '@/components/LearningSection';
-
+  SiPython,
+  SiDjango,
+  SiPostgresql,
+  SiMysql,
+  SiGithub,
+  SiGodaddy,
+  SiHeroku,
+  SiVercel,
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiStripe,
+  SiAmazonaws,
+  SiBootstrap,
+  SiFlask,
+  SiJira,
+  SiJupyter,
+  SiHtml5,
+  SiCss3,
+  SiDart,
+  SiFlutter,
+  SiSwagger,
+  SiDotnet,
+  SiNodedotjs,
+  SiReact,
+  SiVisualstudiocode,
+  SiCplusplus,
+  SiVisualstudio,
+  SiAndroidstudio,
+  SiEclipseide,
+  SiGit
+} from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import LearningSection from "@/components/LearningSection";
 
 const messagesMap = {
   en: messagesEn,
@@ -23,20 +48,13 @@ const messagesMap = {
 export default async function HomePage() {
   const locale = await getLocale();
 
-  const messages = (messagesMap[locale as 'en' | 'es' | 'de'] || messagesEn) as {
+  const messages = (messagesMap[locale as "en" | "es" | "de"] || messagesEn) as {
     homeInline: any;
   };
 
   const rawLocale = await getLocale();
 
-  const {
-    name,
-    tagline,
-    intro,
-    techsTitle,
-    buttonLabel,
-    buttonText
-  } = messages.homeInline;
+  const { name, tagline, intro, techsTitle, buttonLabel, buttonText } = messages.homeInline;
 
   return (
     <main className="px-6 py-10 max-w-6xl mx-auto">
@@ -55,9 +73,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-
       <section className="mb-16">
-        
         <h2 className="text-2xl font-semibold text-center mb-8">{techsTitle}</h2>
         <div className="grid grid-cols-3 sm:grid-cols-5 gap-6 justify-items-center text-gray-800">
           {/* Languages */}
@@ -83,13 +99,18 @@ export default async function HomePage() {
           <SiPostgresql className="w-10 h-10" title="PostgreSQL" />
           <SiMysql className="w-10 h-10" title="MySQL" />
 
-           {/* Deployment / Hosting */}
+          {/* Deployment / Hosting */}
           <SiHeroku className="w-10 h-10" title="Heroku" />
           <SiVercel className="w-10 h-10" title="Vercel" />
           <SiGodaddy className="w-10 h-10" title="GoDaddy" />
           <SiAmazonaws className="w-10 h-10" title="AWS" />
           <div className="flex items-center justify-center w-10 h-10">
-            <img src="/images/cloudinary_cloud.png" alt="Cloudinary" className="max-h-full max-w-full object-contain" title="Cloudinary" />
+            <img
+              src="/images/cloudinary_cloud.png"
+              alt="Cloudinary"
+              className="max-h-full max-w-full object-contain"
+              title="Cloudinary"
+            />
           </div>
 
           {/* Payments and APIs */}
@@ -105,12 +126,11 @@ export default async function HomePage() {
           <SiGit className="w-10 h-10" title="Git" />
           <SiJira className="w-10 h-10" title="Jira" />
           <SiJupyter className="w-10 h-10" title="Jupyter" />
-          
+
           {/* Runtime Environment */}
           <SiNodedotjs className="w-10 h-10" title="Node.js" />
         </div>
       </section>
-
 
       {/* Training / Education */}
       <LearningSection locale={locale} />
@@ -120,7 +140,6 @@ export default async function HomePage() {
         <p className="text-lg text-gray-700 mb-4">{buttonLabel}</p>
         <a
           href={`/${locale}/contact`}
-
           className="inline-block px-6 py-3 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700 transition"
         >
           {buttonText}

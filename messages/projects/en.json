@@ -147,11 +147,11 @@
     "title": "Major professional achievements",
     "projects": {
       "microbus-l10n": {
-      "name": "Microbus (IVU suite) localization",
-      "desc1": "When I joined <bold>IVU Traffic Technologies</bold> in 2004, I inherited responsibility for the localization (l10n) of a large and organically grown suite of software tools for public transport planning, scheduling, dispatch, and accounting. The suite was built over many years in C, C++, Java, and more, all communicating with a central <bold>Oracle</bold> DB, and all requiring ongoing UI and documentation l10n into 14 languages and dialects.",
-      "desc2": "The l10n landscape faced some important challenges at the time:",
-      "desc3": "Both in conjunction with my colleagues and on my own, I addressed these and other challenges through a mix of process redesign, tool integration, and software development:",
-      "problems": [
+        "name": "Microbus (IVU suite) localization",
+        "desc1": "When I joined <bold>IVU Traffic Technologies</bold> in 2004, I inherited responsibility for the localization (l10n) of a large and organically grown suite of software tools for public transport planning, scheduling, dispatch, and accounting. The suite was built over many years in C, C++, Java, and more, all communicating with a central <bold>Oracle</bold> DB, and all requiring ongoing UI and documentation l10n into 14 languages and dialects.",
+        "desc2": "The l10n landscape faced some important challenges at the time:",
+        "desc3": "Both in conjunction with my colleagues and on my own, I addressed these and other challenges through a mix of process redesign, tool integration, and software development:",
+        "problems": [
           "Multiple UI resource formats and locations (Java resource files, JSON, XML, Excel, DB entries, Windows MFC dialogs)",
           "Conflicting (sometimes contradictory) legacy terminology",
           "Tracing code source of UI texts often difficult",

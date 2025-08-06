@@ -10,8 +10,8 @@ export function BadgeDisplay({ badgePaths, altTexts = [] }: BadgeDisplayProps) {
         <img
           key={index}
           src={path}
-          alt={altTexts[index] || 'Hackathon badge'}
-          title={altTexts[index] || ''}
+          alt={altTexts[index] || "Hackathon badge"}
+          title={altTexts[index] || ""}
           className="w-16 h-16 sm:w-20 sm:h-20 object-cover block bg-white border border-gray-300 rounded"
         />
       ))}

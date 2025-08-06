@@ -17,7 +17,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "autoprefixer": "^10.4.21",
@@ -41,6 +42,7 @@
     "@types/node": "^22.15.30",
     "@types/react": "^19.1.6",
     "@types/react-dom": "^19.1.6",
-    "eslint": "^8.57.1"
+    "eslint": "^8.57.1",
+    "prettier": "^3.6.2"
   }
 }

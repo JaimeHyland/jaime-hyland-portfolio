@@ -1,8 +1,8 @@
-import { notFound } from 'next/navigation';
-import type { JSX } from 'react';
-import CV from '@/app/[locale]/cv/page';
-import Projects from '@/app/[locale]/projects/page';
-import Contact from '@/app/[locale]/contact/page';
+import { notFound } from "next/navigation";
+import type { JSX } from "react";
+import CV from "@/app/[locale]/cv/page";
+import Projects from "@/app/[locale]/projects/page";
+import Contact from "@/app/[locale]/contact/page";
 
 type PageProps = {
   params: {
@@ -22,18 +22,18 @@ export default async function PageRouter({ params }: PageParams): Promise<JSX.El
     en: {
       cv: <CV />,
       projects: <Projects />,
-      contact: <Contact />,
+      contact: <Contact />
     },
     es: {
       curriculum: <CV />,
       proyectos: <Projects />,
-      contacto: <Contact />,
+      contacto: <Contact />
     },
     de: {
       lebenslauf: <CV />,
       projekte: <Projects />,
-      kontakt: <Contact />,
-    },
+      kontakt: <Contact />
+    }
   };
 
   const pageComponent = canonicalRoutes[locale]?.[page];

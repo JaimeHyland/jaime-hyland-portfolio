@@ -1,4 +1,4 @@
 const config = {
-  locales: ['en', 'es', 'de'],
-  defaultLocale: 'en'
+  locales: ["en", "es", "de"],
+  defaultLocale: "en"
 };
