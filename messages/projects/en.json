@@ -51,7 +51,15 @@
         "siteURL": "https://jaime-hyland.com/",
         "codebaseText": "GitHub repository",
         "codebaseURL": "https://github.com/JaimeHyland/jaime-hyland-portfolio",
-        "desc": "This project is the trilingual site you're looking at now. It's a personal project of mine. Its structure is original to me. I built it using next.js."
+        "desc1": "This project is the site you're looking at now. It's a professional, multilingual portfolio built in <bold>TypeScript</bold> using <bold>Next.js</bold>, <bold>Tailwind CSS</bold>, and <bold>next-intl</bold>, designed to showcase my background in software localization, technical writing, and software development.",
+        "desc2": "The site features:",
+        "features": [
+          "A structured, interactive CV",
+          "A detailed portfolio of my projects, with an emphasis on the new",
+          "Unintrusive, polished <bold>i18n</bold> support, with l10n in English, German and Spanish",
+          "Clean, accessible design"
+        ],
+        "desc3": "In building it, I've emphasized fuss-free clarity, maintainability, responsiveness, and cross-language consistency. It uses typed <bold>React</bold> components with <bold>server-side rendering</bold> and reflects the same standards I bring to my individual and collaborative work. It's fully responsive, SEO-friendly, and demonstrates my ability to deliver robust, scalable content platforms with modern frontend tooling."
       },
       "language": {
         "name": "language-landscapes.com",
@@ -59,7 +67,7 @@
         "codebaseText": "GitHub repository",
         "codebaseURL": "https://github.com/JaimeHyland/language-landscapes",
         "desc1": "This is a legacy CakePHP project. It was originally designed and developed more than a decade ago by a skilled third party following my instructions. I now manage it. I have broken and fixed it again several times. At some stage in the future I intend to refactor it to a more modern framework, but at the moment it is not responsive.",
-        "desc2": "It is currently hosted by GoDaddy, but for reasons of price and customer service, I intend to move it to another provider as part of my refactoring effort."
+        "desc2": "It is currently hosted by GoDaddy, but for reasons of price and customer service, I intend to move it to another provider as part of my wider refactoring effort."
       },
       "pdf-merger": {
         "name": "Local PDF Merger",

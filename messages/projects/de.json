@@ -152,14 +152,14 @@
           "Inkonsistente Internationalisierung (i18n) im Code (harte Formatierungen, unklare Verkettungen)",
           "Jeder neue Build erforderte neue manuelle Lokalisierungsrunden",
           "Uneinheitliche Nutzung von Translation-Memory- und Terminologiewerkzeugen",
-          "Lokalspezifische Formate (Währung, Datum, Zeit) oft falsch gehandhabt",
-          "Schlechte oder fehlende lokalspezifische Formatierung"
+          "Lokale-spezifische Formate (Währung, Datum, Zeit) oft falsch gehandhabt",
+          "Schlechte oder fehlende Lokale-spezifische Formatierung"
         ],
         "solutions": [
           "Einführung und Durchsetzung von Terminologieverwaltung mit <bold>Termstar</bold> und eigenen Tools",
           "Konsolidierung und Standardisierung des deutschen Glossars",
           "Ablösung des Doc2Help-Workflows durch <bold>Author-it</bold> mit Single-Source-Prinzip",
-          "Ermöglichung kundenspezifischer Dokumentation je nach Sprache und Kunde – deutlich weniger „Versioning Hell“",
+          "Ermöglichung kundenspezifischer Dokumentation je nach Sprache und Kunde – deutlich weniger „Versionierungschaos“",
           "UI-Übersetzung mit <bold>Passolo</bold> und <bold>Transit</bold> optimiert – gleiche Texte nur einmal übersetzen",
           "Transit-Übersetzungsspeicher in Doku-Generierung und l10n-Prozesse integriert",
           "Automatische Softwareübersetzung in nächtlichen Build integriert (<bold>Maven/Ant</bold> + Passolo)",

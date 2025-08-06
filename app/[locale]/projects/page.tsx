@@ -13,6 +13,7 @@ export default function ProjectsPage() {
   const title = t('title');
 
   const items = t.raw('section2.projects.shopify-prototype.items') as string[];
+  const features = t.raw('section2.projects.portfolio.features') as string[];
   const problems = t.raw('section4.projects.microbus-l10n.problems') as string[];
   const solutions = t.raw('section4.projects.microbus-l10n.solutions') as string[];
 
@@ -140,7 +141,26 @@ export default function ProjectsPage() {
                 {t('section2.projects.portfolio.name')}
               </ProjLink>
             </strong>
-            <p>{t('section2.projects.portfolio.desc')}</p>
+            <p>{t.rich('section2.projects.portfolio.desc1', {
+              bold: (chunks) => <strong>{chunks}</strong>
+            })}</p>
+            <p>{t.rich('section2.projects.portfolio.desc2', {
+              bold: (chunks) => <strong>{chunks}</strong>
+            })}</p>
+            {Array.isArray(features) && (
+              <ul className="list-disc list-outside pl-5 mb-4">
+                {features.map((feature, index) => (
+                  <li key={index} className="pl-2 -text-indent text-indent-hang">
+                    {t.rich(`section2.projects.portfolio.features.${index}`, {
+                      bold: (chunks) => <strong>{chunks}</strong>,
+                    })}
+                  </li>
+                ))}
+              </ul>
+            )}
+            <p>{t.rich('section2.projects.portfolio.desc3', {
+              bold: (chunks) => <strong>{chunks}</strong>
+            })}</p>
             <ProjLink href={t('section2.projects.portfolio.codebaseURL')}>
               {t('section2.projects.portfolio.codebaseText')}
             </ProjLink>
