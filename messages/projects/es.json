@@ -135,6 +135,41 @@
             } 
         }
     },
+    "section4": {
+        "title": "Logros profesionales destacados",
+        "projects": {
+            "microbus-l10n": {
+            "name": "Localización de Microbus (suite IVU)",
+            "desc1": "Cuando me incorporé a <bold>IVU Traffic Technologies</bold> en 2004, asumí la responsabilidad de la localización (l10n) de una amplia suite de herramientas de software para planificación, programación, despacho y contabilidad del transporte público. Esta suite, desarrollada a lo largo de muchos años en C, C++, Java y otros lenguajes, se comunicaba con una base de datos central <bold>Oracle</bold> y requería una localización continua de la interfaz de usuario y la documentación en 14 idiomas y dialectos.",
+            "desc2": "El panorama de la localización presentaba importantes retos en ese momento:",
+            "desc3": "Tanto en colaboración con mis colegas como de forma independiente, abordé estos y otros desafíos mediante rediseño de procesos, integración de herramientas y desarrollo de software:",
+            "problems": [
+                "Múltiples formatos y ubicaciones de recursos de UI (archivos de recursos Java, JSON, XML, Excel, entradas en BD, diálogos MFC de Windows)",
+                "Terminología heredada conflictiva o incluso contradictoria",
+                "Difícil rastreo del origen de los textos de UI en el código",
+                "Un sistema de ayuda HTML extenso y laborioso (generado desde MS Word con Doc2Help)",
+                "Numerosas variantes de productos localizados con combinaciones diferentes de idiomas",
+                "Internacionalización (i18n) inconsistente en el código (formatos codificados, concatenaciones poco claras)",
+                "Cada compilación requería nueva ronda de localización manual",
+                "Aprovechamiento limitado de herramientas de memoria de traducción y terminología",
+                "Formatos sensibles al idioma (moneda, fecha, hora) mal gestionados",
+                "Formatos dependientes del idioma ausentes o mal implementados"
+            ],
+            "solutions": [
+                "Implementación y aplicación de gestión terminológica con <bold>Termstar</bold> y herramientas propias",
+                "Consolidación y estandarización del glosario alemán",
+                "Sustitución del flujo de trabajo Doc2Help por <bold>Author-it</bold>, adoptando modelo de fuente única",
+                "Documentación personalizable por idioma o cliente – gran reducción del “infierno de versiones”",
+                "Traducción de UI optimizada con <bold>Passolo</bold> y <bold>Transit</bold> – sin repetir traducciones de cadenas idénticas",
+                "Integración de memoria de traducción de Transit en generación de documentación y procesos de l10n",
+                "Traducción automática de software integrada en compilación nocturna (con <bold>Maven/Ant</bold> y Passolo)",
+                "Colaboración estrecha con desarrolladores para mejorar y aplicar buenas prácticas de i18n",
+                "Desarrollo de sistemas para detectar y corregir problemas terminológicos y de i18n en el código",
+                "Ajuste de tamaños de UI con <bold>MFC</bold> y <bold>Java Swing</bold> usando Passolo"
+            ]
+            }
+        }
+    },
     "badges": {
         "may2025_2nd": "Segundo premio – Hackathon, mayo de 2015",
         "march2025_3rd": "Tercer premio – Hackathon, marzo de 2025",

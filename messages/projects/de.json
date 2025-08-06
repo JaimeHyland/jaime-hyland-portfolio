@@ -135,6 +135,41 @@
       }
     }
   },
+  "section4": {
+    "title": "Wichtige berufliche Erfolge",
+    "projects": {
+      "microbus-l10n": {
+        "name": "Lokalisierung für Microbus (IVU-Suite)",
+        "desc1": "Als ich 2004 bei <bold>IVU Traffic Technologies</bold> anfing, übernahm ich die Verantwortung für die Lokalisierung (l10n) einer großen und organisch gewachsenen Softwaresuite für Planung, Disposition und Abrechnung im öffentlichen Verkehr. Diese Suite war über viele Jahre in C, C++, Java und weiteren Sprachen entstanden, alle mit einer zentralen <bold>Oracle</bold>-Datenbank verbunden, und erforderte eine kontinuierliche Lokalisierung der Benutzeroberflächen und Dokumentation in 14 Sprachen und Dialekten.",
+        "desc2": "Das l10n-Umfeld stellte damals einige wichtige Herausforderungen dar:",
+        "desc3": "Gemeinsam mit meinen Kolleg:innen und auch eigenständig begegnete ich diesen und weiteren Herausforderungen durch Prozessoptimierung, Tool-Integration und Softwareentwicklung:",
+        "problems": [
+          "Mehrere UI-Ressourcenformate und -orte (Java-Resource-Dateien, JSON, XML, Excel, Datenbankeinträge, Windows-MFC-Dialoge)",
+          "Widersprüchliche und inkonsistente Terminologie aus Altsystemen",
+          "Herkunft von UI-Texten im Code oft schwer nachvollziehbar",
+          "Großes, arbeitsintensives HTML-Hilfesystem (generiert aus MS Word mit Doc2Help)",
+          "Zahlreiche lokalisierte Produktvarianten mit unterschiedlichen Sprachkombinationen",
+          "Inkonsistente Internationalisierung (i18n) im Code (harte Formatierungen, unklare Verkettungen)",
+          "Jeder neue Build erforderte neue manuelle Lokalisierungsrunden",
+          "Uneinheitliche Nutzung von Translation-Memory- und Terminologiewerkzeugen",
+          "Lokalspezifische Formate (Währung, Datum, Zeit) oft falsch gehandhabt",
+          "Schlechte oder fehlende lokalspezifische Formatierung"
+        ],
+        "solutions": [
+          "Einführung und Durchsetzung von Terminologieverwaltung mit <bold>Termstar</bold> und eigenen Tools",
+          "Konsolidierung und Standardisierung des deutschen Glossars",
+          "Ablösung des Doc2Help-Workflows durch <bold>Author-it</bold> mit Single-Source-Prinzip",
+          "Ermöglichung kundenspezifischer Dokumentation je nach Sprache und Kunde – deutlich weniger „Versioning Hell“",
+          "UI-Übersetzung mit <bold>Passolo</bold> und <bold>Transit</bold> optimiert – gleiche Texte nur einmal übersetzen",
+          "Transit-Übersetzungsspeicher in Doku-Generierung und l10n-Prozesse integriert",
+          "Automatische Softwareübersetzung in nächtlichen Build integriert (<bold>Maven/Ant</bold> + Passolo)",
+          "Mit Entwickler:innen zusammengearbeitet, um i18n-Best-Practices zu verbessern und durchzusetzen",
+          "Systeme entwickelt, um Terminologie-Inkonsistenzen und schlechte i18n im Code zu erkennen und zu beheben",
+          "UI-Größenanpassung mit <bold>MFC</bold> und <bold>Java Swing</bold> unter Einsatz von Passolo umgesetzt"
+        ]
+      }
+    }
+  },
   "badges": {
     "may2025_2nd": "Zweiter Platz – Hackathon, Mai 2025",
     "march2025_3rd": "Dritter Platz – Hackathon, März 2025 ",
