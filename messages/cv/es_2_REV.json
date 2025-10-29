@@ -1,0 +1,167 @@
+{
+  "cvOwner": "Jaime Hyland",
+  "subtitle": "Desarrollador de software, formador, narrador — Berlín",
+  "emailText": "Correo electrónico",
+  "emailURL": "mailto:%20jaime.hyland@language-landscapes.com",
+  "githubText": "GitHub",
+  "githubURL": "https://github.com/JaimeHyland/",
+  "linkedinText": "LinkedIn",
+  "linkedinURL": "https://www.linkedin.com/in/language-landscapes/",
+  "summary": {
+    "title": "Perfil personal",
+    "text": "Soy un desarrollador de software, formador y narrador altamente versátil. Acabo de finalizar un curso a distancia de desarrollo Full-Stack en el Code Institute (Dublín). Cuento con una amplia experiencia en los campos de la localización, la traducción y la redacción técnica, y una sólida capacidad para afrentar retos complejos en entornos especializados diversos. Deseo formar parte de un equipo de desarrollo innovador y competente y colaborar en la creación de un producto innovador."
+  },
+  "technologies": {
+    "heading": "Tecnologías clave",
+    "programmingPt": "Lenguajes de programación:",
+    "programmingText": "HTML, CSS, JavaScript, Python, Java, VB.NET, Dart/Flutter",
+    "databasesPt": "Bases de datos:",
+    "databasesText": "MySQL, PostgreSQL, Oracle, Access",
+    "deploymentPt": "Implementación:",
+    "deploymentText": "AWS, Heroku, Cloudinary, GoDaddy, Vercel",
+    "versionControlPt": "Control de versiones:",
+    "versionControlText": "GitHub, Git, Subversion (un poco)",
+    "frameworksPt": "Frameworks/Librerías:",
+    "frameworksText": "Flask, Django, Next.js, Typescript, Bootstrap, Tailwind, Stripe",
+    "xlationPt": "Traducción, localización, internacionalización:",
+    "xlationText": "Trados, Passolo, Transit/Termstar, MemoQ, Déjà Vu, Django-i18n, next-intl",
+    "singlesourcePt": "Herramientas de fuente única:",
+    "singlesourceText": "Author-it, Doc2Help"
+  },
+  "workRelevantSkills": {
+    "heading": "Otras competencias profesionales",
+    "languagesPt": "Idiomas y culturas:",
+    "languagesText": "Lengua materna: inglés. Dominio del alemán (certificado C1) y el español. He vivido 9 años en España y los últimos 23 en Berlín. Conocimientos pasivos de francés, italiano e irlandés.",
+    "mgtPt": "Gestión:",
+    "mgtText": "Gestión de proyectos, metodologías ágiles, planificación estratégica",
+    "xlationPt": "Ámbitos de traducción:",
+    "xlationText": "Del español y el alemán al inglés. Mis campos de especialización son la TI, transporte público y telecomunicaciones. Cuento con una amplia experiencia en textos periodísticos, médicos, sociológicos e históricos.",
+    "l10nPt": "Campo de la localización:",
+    "l10nText": "Memorias de traducción, gestión terminológica (incluida la migración de datos vía XML), localización automática de software y documentación",
+    "docuPt": "Documentación:",
+    "docuText": "Notas de versión, materiales de formación y ayuda, integración documental en entornos ágiles, documentación multilingüe, manipulación automatizada de archivos y recursos",
+    "accountancyPt": "Contabilidad:",
+    "accountancyText": "Familiarizado con los procesos y estándares contables para autónomos en Irlanda, España y Alemania"
+  },
+  "education": {
+    "heading": "Formación",
+    "items": [
+      {
+        "period": "Ago. 2023 – Dic. 2024:",
+        "text": "Code Institute: – Curso de diploma en desarrollo Full-Stack"
+      },
+      {
+        "period": "2000:",
+        "text": "FÁS CITP – Diplomado en Programación informática"
+      },
+      {
+        "period": "1984–1988:",
+        "text": "Universidad de Dublín (Trinity College Dublin) – Licenciatura en Filosofía"
+      }
+    ]
+  },
+  "workExperienceGermany": {
+    "heading": "Experiencia profesional, Berlín",
+    "items": [
+      {
+        "period": "2022 – Jul. 2023:",
+        "text": "Proyecto de software para el aprendizaje de idiomas en línea. App web y móvil, MySQL, Java Swing, Flutter/Dart."
+      },
+      {
+        "period": "2020 – 2022:",
+        "text": "Traducción y localización, formación profesional independiente, enseñanza de idiomas"
+      },
+      {
+        "period": "Sept 2010 – 2020:",
+        "text": "Traductor técnico/localizador freelance de español y alemán al inglés bajo el nombre language-landscapes.com",
+        "blurb1": "Del español y el alemán al inglés. TI, transporte público y telecomunicaciones, textos sociológicos e históricos",
+        "blurb2": "Internacionalización/localización: Trados Studio (incl. Passolo), Déjà Vu, Transit/Termstar, memoQ"
+      },
+      {
+        "period": "Abr. 2004 – Sept. 2010",
+        "text": "Responsable de localización técnica de software y materiales de formación para el sistema de gestión de transporte público IVU Suite en IVU Traffic Technologies, Friedenau (Berlín).",
+        "blurbTitle": "Logros destacados:",
+        "blurb1": "Diseño, documentación e implementación de un flujo de trabajo automatizado para la localización de software y ayuda, con integración total en el ciclo de desarrollo y el sistema de compilación diaria (VB).",
+        "blurb2": "Gestión de los procesos de traducción y localización en 14 combinaciones de idiomas y dialectos."
+      },
+      {
+        "period": "Jun. 2002 – Abr. 2004",
+        "text": "Profesor de inglés y traductor autónomo (es > en)"
+      }
+    ]
+  },
+  "workExperienceIreland": {
+    "heading": "Experiencia profesional, Dublín",
+    "items": [
+      {
+        "period": "Dic. 2000 – Sept. 2002",
+        "text": "Consultor en KPMG Consulting (actualmente Bearing Point), integrador especializado en CRM",
+        "blurbTitle": "Logros destacados:",
+        "blurb1": "Desarrollo de un sistema CRM para An Post (el servicio postal irlandés), incluyendo sistema de redirección de correo para el público general.",
+        "blurb2": "Coordinación y desarrollo de diversos sistemas informáticos en un entorno tecnológico complejo para EirCell (un nuevo operador líder de telecomunicaciones por entonces)."
+      },
+      {
+        "period": "Feb. – Jul. 1999",
+        "text": "Agente de carga aérea, Aerly Bird Trans Global, Santry, Dublín 9."
+      },
+      {
+        "period": "Dic. 1997 – Feb. 1999",
+        "text": "Desarrollo de un negocio de importación de materiales para jardinería paisajista."
+      }
+    ]
+  },
+  "workExperienceSpain": {
+    "heading": "Experiencia profesional, País Vasco",
+    "items": [
+      {
+        "period": "Ene. 1994 – Nov. 1997",
+        "text": "Traductor autónomo (es > en)"
+      },
+      {
+        "period": "Mar. 1992 – Ene. 1994",
+        "text": "Técnico especializado en planificación estratégica en el Instituto Vasco de Prospectiva (Prospektiker), Zarautz, España."
+      },
+      {
+        "period": "1990 – Jun. 1992",
+        "text": "Propietario y director de una academia de idiomas en Zarautz, España.",
+        "blurbTitle": "Logros destacados:",
+        "blurb1": "Creación de empleo para dos profesores y una persona de administración.",
+        "blurb2": "Venta exitosa del negocio como empresa en funcionamiento en verano de 1992."
+      },
+      {
+        "period": "1988 – Ene 1990",
+        "text": "Profesor de inglés en Vitoria-Gasteiz y Zarautz, España."
+      }
+    ]
+  },
+  "seasonalWork": {
+    "heading": "Trabajo estacional duramte mi juventud",
+    "items": [
+      {
+        "period": "Abr. 1977 – Jun. 1988",
+        "text": "Trabajador hortícola estacional",
+        "blurb1": "Cultivé plantas de temporada, plántulas de hortalizas y flores cortadas cada primavera y verano desde que empecé la enseñanza secundaria hasta terminar la universidad.",
+        "blurb2": "Aprendí mucho sobre el cultivo intensivo de plantas; este trabajo financió gran parte de mis estudios universitarios."
+      }
+    ]
+  },
+  "portfolio": {
+    "heading": "Proyectos del portafolio",
+    "intro": "Cuento con numerosas aplicaciones web full-stack, que agrupo en las siguientes categorías:",
+    "items": [
+      "Proyectos para la evaluación de Code Institute – <link>Ver lista completa</link>",
+      "Proyectos independientes desarrollados por mí – <link>Ver lista completa</link>",
+      "Proyectos de hackathon del CI en equipo – <link>Ver lista completa</link>"
+    ]
+  },
+  "hobbies": {
+    "heading": "Aficiones e intereses",
+    "line1": "Hackathons del Code Institute; formación continua en brilliant.org, LinkedIn Learning y KodeKloud; experimentación con Dart/Flutter y aprendizaje de Linux.",
+    "line2": "Me gusta cultivar mi jardín y cocinar (ver <link>mi vídeo en YouTube</link>). También practico la apicultura y la fabricación de moldes de silicona."
+  },
+  "portfolioAnchors": {
+    "ciAssessment": "ci-evaluacion",
+    "independent": "independiente",
+    "hackathons": "hackathons"
+  }
+}
