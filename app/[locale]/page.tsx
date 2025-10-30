@@ -3,6 +3,8 @@ import messagesEs from "../../messages/es.json";
 import messagesDe from "../../messages/de.json";
 import { getLocale } from "next-intl/server";
 
+import { generateMetadata as headMetadata } from "./head";
+
 import {
   SiPython,
   SiDjango,
@@ -44,6 +46,13 @@ const messagesMap = {
   es: messagesEs,
   de: messagesDe
 };
+
+
+// --- Generate Metadata for Next.js ---
+export async function generateMetadata() {
+  const locale = await getLocale();
+  return await headMetadata({ params: { locale } });
+}
 
 export default async function HomePage() {
   const locale = await getLocale();
@@ -119,7 +128,6 @@ export default async function HomePage() {
 
           {/* Tools, IDEs & Dev Workflow */}
           <SiVisualstudiocode className="w-10 h-10" title="Visual Studio Code" />
-          <SiVisualstudio className="w-10 h-10" title="Visual Studio" />
           <SiAndroidstudio className="w-10 h-10" title="Android Studio" />
           <SiEclipseide className="w-10 h-10" title="Eclipse" />
           <SiGithub className="w-10 h-10" title="GitHub" />
@@ -128,6 +136,8 @@ export default async function HomePage() {
           <SiJupyter className="w-10 h-10" title="Jupyter" />
 
           {/* Runtime Environment */}
+          <SiNodedotjs className="w-10 h-10" title="Node.js" />
+          {/* Translation/Localization */}
           <SiNodedotjs className="w-10 h-10" title="Node.js" />
         </div>
       </section>

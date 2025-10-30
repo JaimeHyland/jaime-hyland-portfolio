@@ -6,7 +6,22 @@
     "techsTitle": "Some of the technologies I work with",
     "educationTitle": "Some of the places I've been doing my learning",
     "buttonLabel": "Looking for a collaborator or developer?",
-    "buttonText": "Get in touch"
+    "buttonText": "Get in touch",
+    "keywords": [
+      "Full-stack Developer",
+      "Python",
+      "TypeScript",
+      "Django",
+      "Next.js",
+      "Flutter",
+      "Frontend Developer",
+      "Frontend Developer",
+      "Web Development",
+      "Software Engineer",
+      "Portfolio",
+      "Hiring",
+      "Remote Developer"
+    ]
   },
 
   "learningSection": {

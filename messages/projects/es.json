@@ -61,6 +61,14 @@
         ],
         "desc3": "Al desarrollarlo, he dado prioridad a la claridad sin complicaciones, la mantenibilidad, la capacidad de respuesta y la coherencia entre idiomas. Utiliza componentes <bold>React</bold> tipados con <bold>renderizado del lado del servidor</bold>, y refleja los mismos estándares que aplico en mi trabajo individual y en equipo. Es totalmente adaptable, optimizado para SEO y demuestra mi capacidad para construir plataformas de contenido robustas y escalables con herramientas modernas de frontend."
       },
+      "language": {
+        "name": "language-landscapes.com",
+        "siteURL": "https://language-landscapes.com",
+        "codebaseText": "Repositorio de GitHub",
+        "codebaseURL": "https://github.com/JaimeHyland/language-landscapes",
+        "desc1": "Este es un proyecto heredado de CakePHP. Fue diseñado y desarrollado originalmente hace más de una década por un tercero cualificado siguiendo mis instrucciones. Ahora lo gestiono yo. Lo he roto y arreglado varias veces. En algún momento del futuro tengo la intención de refactorizarlo hacia un marco más moderno, pero por el momento no es responsivo a pantallas de teléfonos móviles.",
+        "desc2": "Actualmente está alojado por GoDaddy, pero por razones de precio y servicio al cliente, tengo la intención de trasladarlo a otro proveedor como parte de mi esfuerzo de refactorización más amplio."
+      },
       "pdf-merger": {
         "name": "Local PDF Merger",
         "siteURL": "https://pdf-merge-app-five.vercel.app/",
