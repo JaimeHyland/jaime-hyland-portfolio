@@ -1,0 +1,13 @@
+{
+  "heading": "Impressum",
+  "nameLabel": "Name",
+  "addressLabel": "Anschrift",
+  "emailLabel": "E-Mail",
+  "phoneLabel": "Telefon",
+  "vatLabel": "Umsatzsteuer-ID",
+  "extraHeading": "Zusätzliche Informationen",
+  "hostLabel": "Website-Host",
+  "repoLabel": "Öffentliches Code-Repository",
+  "repoURLText": "https://github.com/JaimeHyland/jaime-hyland-portfolio",
+  "repoLicense": "Der Quellcode wird unter der MIT-Lizenz veröffentlicht. Sie können ihn frei verwenden, solange die Anerkennung der originellen Autor erfolgt."
+}

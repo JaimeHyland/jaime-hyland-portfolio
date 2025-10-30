@@ -3,19 +3,22 @@ export const localizedPaths = {
     home: "",
     projects: "projects",
     cv: "cv",
-    contact: "contact"
+    contact: "contact",
+    impressum: "legal"
   },
   es: {
     home: "",
     projects: "proyectos",
     cv: "curriculum",
-    contact: "contacto"
+    contact: "contacto",
+    impressum: "aviso"
   },
   de: {
     home: "",
     projects: "projekte",
     cv: "lebenslauf",
-    contact: "kontakt"
+    contact: "kontakt",
+    impressum: "impressum"
   }
 } as const;
 

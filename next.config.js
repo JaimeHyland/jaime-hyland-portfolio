@@ -17,11 +17,16 @@ const nextConfig = {
       { source: "/es/curriculum", destination: "/es/cv" },
       { source: "/es/proyectos", destination: "/es/projects" },
       { source: "/es/contacto", destination: "/es/contact" },
+      { source: "/es/aviso", destination: "/es/impressum" },
+
 
       // German rewrites
       { source: "/de/lebenslauf", destination: "/de/cv" },
       { source: "/de/projekte", destination: "/de/projects" },
-      { source: "/de/kontakt", destination: "/de/contact" }
+      { source: "/de/kontakt", destination: "/de/contact" },
+      { source: "/de/impressum", destination: "/de/impressum" },
+
+      { source: "/en/legal", destination: "/en/impressum" },
     ];
   }
 };

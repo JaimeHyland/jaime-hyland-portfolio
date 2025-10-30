@@ -1,0 +1,13 @@
+{
+  "heading": "Legal disclosure",
+  "nameLabel": "Name",
+  "addressLabel": "Address",
+  "emailLabel": "Email",
+  "phoneLabel": "Phone",
+  "vatLabel": "VAT ID",
+  "extraHeading": "Additional Information",
+  "hostLabel": "Website host",
+  "repoLabel": "Public code repository",
+  "repoURLText": "https://github.com/JaimeHyland/jaime-hyland-portfolio",
+  "repoLicense": "The source code is released under the MIT License. You may use it freely as long as credit is given."
+}

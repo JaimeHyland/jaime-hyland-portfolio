@@ -16,6 +16,7 @@ if (!locale) {
   const cv = (await import(`../../messages/cv/${locale}.json`)).default;  
   const projects = (await import(`../../messages/projects/${locale}.json`)).default;
   const contact = (await import(`../../messages/contact/${locale}.json`)).default;
+  const impressum = (await import(`../../messages/impressum/${locale}.json`)).default;
   
 
   return {
@@ -24,7 +25,8 @@ if (!locale) {
       ...base,
       ...cv,
       ...projects,
-      ...contact
+      ...contact,
+      ...impressum
     }
   };
 });
