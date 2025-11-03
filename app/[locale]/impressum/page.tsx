@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { ProjLink } from "../../../components/ProjLink";
 
-export default function LegalPage() {
+export default function ImpressumPage() {
   const t = useTranslations();
 
   return (

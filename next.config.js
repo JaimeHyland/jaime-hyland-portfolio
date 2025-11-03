@@ -1,5 +1,5 @@
 const withNextIntl = require("next-intl/plugin")(
-  "./app/i18n/request.ts", // your intl config file
+  "./app/i18n/request.ts",
   {
     messages: {
       path: "./messages",

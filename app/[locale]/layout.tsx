@@ -1,6 +1,5 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { notFound } from "next/navigation";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -8,7 +7,7 @@ import { localizedPaths } from "@/lib/paths";
 import { localizedLabels } from "@/lib/labels";
 import "@/app/globals.css";
 
-import GDPRConsent from "@/app/gdpr-consent";
+import GDPRConsent from "@/app/GDPRConsent";
 
 export async function generateStaticParams() {
   return [{ locale: "en" }, { locale: "es" }, { locale: "de" }];
@@ -29,8 +28,8 @@ export default async function LocaleLayout({
 
   return (
     <>
-      <GDPRConsent />
       <NextIntlClientProvider locale={locale} messages={messages}>
+        <GDPRConsent />
         <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
           <Header
             lang={locale as Locale}
