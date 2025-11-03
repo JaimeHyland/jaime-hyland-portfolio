@@ -44,6 +44,5 @@ export default function GDPRConsent() {
         </button>
       </div>
     </div>
-
   );
 }
