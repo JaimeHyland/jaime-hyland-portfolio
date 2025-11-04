@@ -3,29 +3,30 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 
+const CONSENT_KEY = "gdpr_consent";
+
 export default function GDPRConsent() {
   const t = useTranslations(); // load translations
   const [visible, setVisible] = useState(false);
   const [analyticsConsent, setAnalyticsConsent] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem("cookie-consent");
-    const analytics = localStorage.getItem("analytics-consent") === "accepted";
-
-    if (!consent) setVisible(true);
-    if (analytics) setAnalyticsConsent(true);
+    const consent = localStorage.getItem(CONSENT_KEY);
+    if (!consent) {
+      setVisible(true);
+    } else if (consent === "accepted") {
+      setAnalyticsConsent(true);
+    }
   }, []);
 
   const accept = () => {
-    localStorage.setItem("cookie-consent", "accepted");
-    localStorage.setItem("analytics-consent", "accepted");
+    localStorage.setItem(CONSENT_KEY, "accepted");
     setAnalyticsConsent(true);
     setVisible(false);
   };
 
   const reject = () => {
-    localStorage.setItem("cookie-consent", "rejected");
-    localStorage.setItem("analytics-consent", "rejected");
+    localStorage.setItem(CONSENT_KEY, "rejected");
     setAnalyticsConsent(false);
     setVisible(false);
   };

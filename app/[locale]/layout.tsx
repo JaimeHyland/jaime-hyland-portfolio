@@ -6,40 +6,42 @@ import Footer from "@/components/Footer";
 import { localizedPaths } from "@/lib/paths";
 import { localizedLabels } from "@/lib/labels";
 import "@/app/globals.css";
-
-import GDPRConsent from "@/app/GDPRConsent";
+import AnalyticsAndConsent from "@/app/AnalyticsAndConsent";
 
 export async function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "es" }, { locale: "de" }];
+  return [
+    { locale: "en" },
+    { locale: "es" },
+    { locale: "de" },
+  ];
 }
 
 type Locale = "en" | "es" | "de";
 
 export default async function LocaleLayout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-
   const messages = await getMessages();
 
   return (
-    <>
-      <NextIntlClientProvider locale={locale} messages={messages}>
-        <GDPRConsent />
-        <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
-          <Header
-            lang={locale as Locale}
-            labels={localizedLabels[locale as Locale]}
-            paths={localizedPaths[locale as Locale]}
-          />
-        </div>
-        <main className="pt-20 p-6">{children}</main>
-        <Footer locale={locale as Locale} />
-      </NextIntlClientProvider>
-    </>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <AnalyticsAndConsent />
+
+      <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+        <Header
+          lang={locale as Locale}
+          labels={localizedLabels[locale as Locale]}
+          paths={localizedPaths[locale as Locale]}
+        />
+      </div>
+
+      <main className="pt-20 p-6">{children}</main>
+      <Footer locale={locale as Locale} />
+    </NextIntlClientProvider>
   );
 }
