@@ -9,14 +9,15 @@ export default function AnalyticsAndConsent() {
 
   useEffect(() => {
     // Check localStorage for stored consent
-    const analyticsConsent = localStorage.getItem("analytics-consent");
+    const analyticsConsent = localStorage.getItem("analytics_consent");
+    console.log("DEBUG: Entered AnalyticsAndConsent.useEffect");
     if (analyticsConsent === "accepted") {
       setConsentGiven(true);
     }
 
     // Watch for consent changes (in case user accepts later)
     const handleStorageChange = () => {
-      const updatedConsent = localStorage.getItem("analytics-consent");
+      const updatedConsent = localStorage.getItem("analytics_consent");
       setConsentGiven(updatedConsent === "accepted");
     };
 
