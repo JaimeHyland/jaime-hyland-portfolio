@@ -29,10 +29,10 @@ export default function GDPRConsent() {
       <p className="mb-2 md:mb-0 flex-1">{t("analyticsConsent_message")}</p>
       <div className="flex flex-wrap gap-2">
         <button className="bg-green-600 px-3 py-1 rounded" onClick={accept}>
-          {t("gdprConsent_acceptAll")}
+          {t("analyticsConsent_acceptAll")}
         </button>
         <button className="bg-red-600 px-3 py-1 rounded" onClick={reject}>
-          {t("gdprConsent_reject")}
+          {t("analyticsConsent_reject")}
         </button>
       </div>
     </div>
