@@ -54,12 +54,23 @@
         "desc1": "Dieses Projekt ist die Seite, die Sie sich gerade ansehen. Es handelt sich um ein professionelles, mehrsprachiges Portfolio, das in <bold>TypeScript</bold> mit <bold>Next.js</bold>, <bold>Tailwind CSS</bold> und <bold>next-intl</bold> entwickelt wurde und meinen Hintergrund in Softwarelokalisierung, Technischem Schreiben und Softwareentwicklung präsentiert.",
         "desc2": "Die Seite bietet:",
         "features": [
-          "Einen strukturierten, interaktiven Lebenslauf",
-          "Ein detailliertes Portfolio meiner Projekte mit Schwerpunkt auf neuen Arbeiten",
-          "Unaufdringliche, durchdachte <bold>i18n</bold>-Unterstützung, mit Lokalisierung in Englisch, Deutsch und Spanisch",
-          "Klares, barrierefreies Design"
+          "einen strukturierten, interaktiven Lebenslauf",
+          "ein detailliertes Portfolio meiner Projekte mit Schwerpunkt auf neuen Arbeiten",
+          "unaufdringliche, durchdachte <bold>i18n</bold>-Unterstützung, mit Lokalisierung in Englisch, Deutsch und Spanisch",
+          "klares, barrierefreies Design",
+          "responsives Webdesign",
+          "automatische Generierung von meta nodes auf der Startseite für SEO; eine sitemap und robots.txt",
+          "Impressum, auch vollständig lokalisiert",
+          "Integrierte Vercel-Analytik, mit Banner-Einwilligungsformular und Modal-Dialog zur Datenschutzverwaltung"
         ],
         "desc3": "Beim Aufbau der Seite habe ich besonderen Wert auf klare Strukturen, Wartbarkeit, Reaktionsfähigkeit und Sprachkonsistenz gelegt. Sie verwendet typisierte <bold>React</bold>-Komponenten mit <bold>Server-seitigem Rendering</bold> und entspricht den hohen Standards, die ich auch in meine Einzel- und Teamarbeit einbringe. Die Seite ist vollständig responsiv, SEO-freundlich und zeigt meine Fähigkeit, robuste, skalierbare Inhaltsplattformen mit modernen Frontend-Tools zu entwickeln."
+      },
+      "djangoFlutterI18n": {
+        "name": "Django-Flutter i18n template",
+        "codebaseText": "GitHub-Repository",
+        "codebaseURL": "https://github.com/JaimeHyland/django-flutter-i18n-template",
+        "desc1": "Dieses laufende Projekt ist dafür ausgelegt, eine Vorlage für die Entwicklung mobiler Apps mit Flutter im Frontend und Django im Backend bereitzustellen. Es integriert das i18n-System von Flutter und nutzt vollständig die ISO-Codes für Locales, die aus language_country Teile bestehen. Es entspricht dem, was ein Wikipedia-Beitragender als Stub bezeichnen würde, aber ich kann Ihnen versichern, dass unter der Oberfläche deutlich mehr steckt, als in der Benutzeroberfläche sichtbar ist.",
+        "desc2": "Es wird die Grundlage für zwei Projekte bilden, mit denen ich Mitte November beginnen möchte: eine stark KI-unterstützte mobile App zum Lernen von Sprachgrammatik und eine mehrsprachige mobile App-Version eines meiner Projekte, die ich als Web-App für mein Code Institute Zertifikat erstellt habe; 'Family Shopping List' (siehe oben)."
       },
       "language": {
         "name": "language-landscapes.com",

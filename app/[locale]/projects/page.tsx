@@ -166,6 +166,22 @@ export default function ProjectsPage() {
             </ProjLink>
           </li>
           <li>
+              <strong>{t("section2.projects.djangoFlutterI18n.name")}</strong>
+            <p>
+              {t.rich("section2.projects.djangoFlutterI18n.desc1", {
+                bold: (chunks) => <strong>{chunks}</strong>
+              })}
+            </p>
+            <p>
+              {t.rich("section2.projects.djangoFlutterI18n.desc2", {
+                bold: (chunks) => <strong>{chunks}</strong>
+              })}
+            </p>
+            <ProjLink href={t("section2.projects.djangoFlutterI18n.codebaseURL")}>
+              {t("section2.projects.djangoFlutterI18n.codebaseText")}
+            </ProjLink>
+          </li>
+          <li>
             <strong>
               <ProjLink href={t("section2.projects.language.siteURL")}>
                 {t("section2.projects.language.name")}

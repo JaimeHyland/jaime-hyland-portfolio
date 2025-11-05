@@ -57,9 +57,20 @@
           "A structured, interactive CV",
           "A detailed portfolio of my projects, with an emphasis on the new",
           "Unintrusive, polished <bold>i18n</bold> support, with l10n in English, German and Spanish",
-          "Clean, accessible design"
+          "Clean, accessible design",
+          "Fully responsive",
+          "Automatic generation of meta nodes on homepage for SEO; a sitemap and robots.txt",
+          "Impressum (Legal disclosure), also fully localized",
+          "Integrated Vercel analytics, with banner consent form and data privacy management modal"
         ],
         "desc3": "In building it, I've emphasized fuss-free clarity, maintainability, responsiveness, and cross-language consistency. It uses typed <bold>React</bold> components with <bold>server-side rendering</bold> and reflects the same standards I bring to my individual and collaborative work. It's fully responsive, SEO-friendly, and demonstrates my ability to deliver robust, scalable content platforms with modern frontend tooling."
+      },
+      "djangoFlutterI18n": {
+        "name": "Django-Flutter i18n template",
+        "codebaseText": "GitHub-Repository",
+        "codebaseURL": "https://github.com/JaimeHyland/django-flutter-i18n-template",
+        "desc1": "This ongoing project is designed to provide a template for developing mobile apps using Flutter on the frontend, with Django at the back. It integrates Flutter's i18n system, making full use of ISO codes for locales consisting of language_country codes. It is equivalent to what a Wikipedia contributor would call a stub, but I can assure you it has quite a lot more under the hood than can be seen from the UI.",
+        "desc2": "It will form the basis of two projects I intend to begin work by the middle of November: a heavily AI-supported mobile app for learning language grammar and a multilingual mobile app version of one of the projects I created as a web app for my Code Institute certificate; 'Family Shopping List' (see above)."
       },
       "language": {
         "name": "language-landscapes.com",

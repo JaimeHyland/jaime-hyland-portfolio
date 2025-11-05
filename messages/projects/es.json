@@ -58,11 +58,19 @@
           "Un portafolio detallado de mis proyectos, con énfasis en los más recientes",
           "Compatibilidad <bold>i18n</bold> elegante y sin interrupciones, con localización en inglés, alemán y español",
           "Diseño limpio y accesible",
-          "Generación automática de nodos <meta> en la página principal para SEO; un sitemap y robots.txt",
+          "diseño web responsivo",
+          "Generación automática de nodos meta en la página principal para SEO; un sitemap y robots.txt",
           "Impressum (aviso legal), también completamente localizado",
           "Analítica integrada de Vercel, con formulario de consentimiento en banner y modal de gestión de privacidad de datos"
         ],
         "desc3": "Al desarrollarlo, he dado prioridad a la claridad sin complicaciones, la mantenibilidad, la capacidad de respuesta y la coherencia entre idiomas. Utiliza componentes <bold>React</bold> tipados con <bold>renderizado del lado del servidor</bold>, y refleja los mismos estándares que aplico en mi trabajo individual y en equipo. Es totalmente adaptable, optimizado para SEO y demuestra mi capacidad para construir plataformas de contenido robustas y escalables con herramientas modernas de frontend."
+      },
+      "djangoFlutterI18n": {
+        "name": "Plantilla de Django-Flutter con i18n",
+        "codebaseText": "Repositorio en GitHub",
+        "codebaseURL": "https://github.com/JaimeHyland/django-flutter-i18n-template",
+        "desc1": "Este proyecto en curso está diseñado para proporcionar una plantilla para desarrollar aplicaciones móviles usando Flutter en el frontend y Django en el backend. Integra el sistema i18n de Flutter, haciendo uso completo de los códigos ISO para locales compuestos por códigos idioma_país. Es equivalente a lo que un contribuyente de Wikipedia llamaría un stub, pero puedo asegurarle que tiene bastante más bajo el capó de lo que se ve en la interfaz de usuario.",
+        "desc2": "Formará la base de dos proyectos con los que pretendo comenzar a trabajar para mediados de noviembre: una aplicación móvil muy soportada por IA para aprender gramática de idiomas y una versión móvil multilingüe de uno de los proyectos que creé como aplicación web para mi certificado del Code Institute; 'Family Shopping List' (ver arriba)."
       },
       "language": {
         "name": "language-landscapes.com",
