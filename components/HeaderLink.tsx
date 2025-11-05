@@ -1,22 +1,41 @@
 // components/HeaderLink.tsx
+"use client";
 
-import Link, { LinkProps } from 'next/link';
-import { ReactNode } from 'react';
+import Link from "next/link";
 
-interface HeaderLinkProps extends LinkProps {
+interface HeaderLinkProps {
+  href: string;
+  children: React.ReactNode;
   pageKey: string;
   currentKey: string;
-  children: ReactNode;
-  onClick?: () => void; // optional click handler
+  className?: string;
+  onClick?: () => void; // optional callback (e.g. to close mobile menu)
 }
 
-export function HeaderLink({ href, pageKey, currentKey, children, onClick, ...props }: HeaderLinkProps) {
+export function HeaderLink({
+  href,
+  children,
+  pageKey,
+  currentKey,
+  className = "",
+  onClick,
+}: HeaderLinkProps) {
+  const isActive = pageKey === currentKey;
+
   const handleClick = () => {
-    if (onClick) onClick(); // close menu or other actions
+    // call optional parent handler (closing mobile menu, etc.)
+    if (onClick) onClick();
+    // don't prevent default — let Next.js handle navigation
   };
 
   return (
-    <Link href={href} {...props} onClick={handleClick} className={`transition-colors ${pageKey === currentKey ? 'font-bold text-blue-600' : 'font-normal text-gray-800 hover:text-gray-600'}`}>
+    <Link
+      href={href}
+      onClick={handleClick}
+      className={`transition-transform duration-200 transform hover:scale-105 ${
+        isActive ? "font-bold" : ""
+      } ${className}`}
+    >
       {children}
     </Link>
   );

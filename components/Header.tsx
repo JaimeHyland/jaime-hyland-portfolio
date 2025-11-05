@@ -137,7 +137,7 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
 
       {/* Mobile nav dropdown */}
       {navOpen && (
-        <div className="md:hidden mt-2 px-4 flex flex-col gap-2 text-lg text-gray-800">
+        <div className="md:hidden absolute top-16 left-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-lg rounded-lg p-4 flex flex-col gap-2 text-lg text-gray-800 w-48 z-50">
           <HeaderLink href={`/${lang}/${paths.home}`} pageKey="home" currentKey={pageKey} onClick={closeMenu}>
             {labels?.home}
           </HeaderLink>
