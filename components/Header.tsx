@@ -1,9 +1,10 @@
+// components/Header.tsx
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
 import Cookies from "js-cookie";
 import { useState } from "react";
-import { Menu, MessageCircle } from "lucide-react";
+import { Menu, MessageCircle, X } from "lucide-react";
 import { localizedPaths } from "@/lib/paths";
 import { localizedLabels } from "@/lib/labels";
 import { HeaderLink } from "../components/HeaderLink";
@@ -38,7 +39,10 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
     const newPath = `/${lng}${translatedPath ? `/${translatedPath}` : ""}`;
 
     router.push(newPath);
+    setNavOpen(false); // Close mobile nav after language change
   };
+
+  const closeMenu = () => setNavOpen(false);
 
   return (
     <header className="border-b p-4">
@@ -64,21 +68,20 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
           <button
             onClick={() => setNavOpen(!navOpen)}
             className="text-gray-600 hover:text-gray-900"
-            aria-label="Open navigation"
+            aria-label="Toggle navigation"
           >
-            <Menu size={24} />
+            {navOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
-        <div>
-          <HeaderLink
-            href={`/${lang}/${paths.home}`}
-            pageKey="home"
-            currentKey={pageKey}
-            className="flex items-center gap-2"
-          >
-            {/* Bee icon */}
-            <img src="/images/bee-favicon.svg" alt="Bee icon" className="w-6 h-6 md:w-8 md:h-8" />
 
+        {/* Logo and site title */}
+        <div>
+          <HeaderLink href={`/${lang}/${paths.home}`}
+          pageKey="home" 
+          currentKey={pageKey}
+          onClick={() => setNavOpen(false)}
+          className="flex items-center gap-2">
+            <img src="/images/bee-favicon.svg" alt="Bee icon" className="w-6 h-6 md:w-8 md:h-8" />
             {(pageKey === "projects" || pageKey === "contact") && (
               <span className="hidden md:inline whitespace-nowrap text-xl font-bold text-gray-800">
                 Jaime Hyland
@@ -118,10 +121,7 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                 {(["en", "es", "de"] as const).map((lng) => (
                   <button
                     key={lng}
-                    onClick={() => {
-                      handleLanguageChange(lng);
-                      setLangOpen(false);
-                    }}
+                    onClick={() => handleLanguageChange(lng)}
                     className={`px-4 py-2 text-left hover:bg-gray-100 ${
                       lang === lng ? "font-bold" : "font-normal"
                     }`}
@@ -138,16 +138,16 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
       {/* Mobile nav dropdown */}
       {navOpen && (
         <div className="md:hidden mt-2 px-4 flex flex-col gap-2 text-lg text-gray-800">
-          <HeaderLink href={`/${lang}/${paths.home}`} pageKey="home" currentKey={pageKey}>
+          <HeaderLink href={`/${lang}/${paths.home}`} pageKey="home" currentKey={pageKey} onClick={closeMenu}>
             {labels?.home}
           </HeaderLink>
-          <HeaderLink href={`/${lang}/${paths.cv}`} pageKey="cv" currentKey={pageKey}>
+          <HeaderLink href={`/${lang}/${paths.cv}`} pageKey="cv" currentKey={pageKey} onClick={closeMenu}>
             {labels?.cv}
           </HeaderLink>
-          <HeaderLink href={`/${lang}/${paths.projects}`} pageKey="projects" currentKey={pageKey}>
+          <HeaderLink href={`/${lang}/${paths.projects}`} pageKey="projects" currentKey={pageKey} onClick={closeMenu}>
             {labels?.projects}
           </HeaderLink>
-          <HeaderLink href={`/${lang}/${paths.contact}`} pageKey="contact" currentKey={pageKey}>
+          <HeaderLink href={`/${lang}/${paths.contact}`} pageKey="contact" currentKey={pageKey} onClick={closeMenu}>
             {labels?.contact}
           </HeaderLink>
         </div>
