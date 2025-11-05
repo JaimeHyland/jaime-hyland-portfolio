@@ -57,7 +57,10 @@
           "Un currículum estructurado e interactivo",
           "Un portafolio detallado de mis proyectos, con énfasis en los más recientes",
           "Compatibilidad <bold>i18n</bold> elegante y sin interrupciones, con localización en inglés, alemán y español",
-          "Diseño limpio y accesible"
+          "Diseño limpio y accesible",
+          "Generación automática de nodos <meta> en la página principal para SEO; un sitemap y robots.txt",
+          "Impressum (aviso legal), también completamente localizado",
+          "Analítica integrada de Vercel, con formulario de consentimiento en banner y modal de gestión de privacidad de datos"
         ],
         "desc3": "Al desarrollarlo, he dado prioridad a la claridad sin complicaciones, la mantenibilidad, la capacidad de respuesta y la coherencia entre idiomas. Utiliza componentes <bold>React</bold> tipados con <bold>renderizado del lado del servidor</bold>, y refleja los mismos estándares que aplico en mi trabajo individual y en equipo. Es totalmente adaptable, optimizado para SEO y demuestra mi capacidad para construir plataformas de contenido robustas y escalables con herramientas modernas de frontend."
       },
