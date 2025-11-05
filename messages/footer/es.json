@@ -1,4 +1,14 @@
 {
     "impressum": "Aviso legal",
-    "copyright": "© 2025 Jaime Hyland. Todos los derechos reservados."
+    "copyright": "© 2025 Jaime Hyland. Todos los derechos reservados.",
+    "managePrivacySettings": "Gestiona tus ajustes de protección de datos",
+    "close": "Cerrar",
+    "analyticsAllowed": "Se permite en este momento la recopilación anónima de datos",
+    "analyticsNotAllowed": "No se permite en este momento la recopilación anónima de datos",
+    "willAllow": "Al tocar 'Guardar', se permitirá la recopilación de datos anónimos.",
+    "willNotAllow": "Al tocar 'Guardar', se prohibirá la recopilación de datos anónimos.",
+    "allowDataCollection": "Permite recopilación",
+    "prohibitDataCollection": "Prohíbe recopilación",
+    "cancel": "Cancelar",
+    "save": "Guardar"
 }

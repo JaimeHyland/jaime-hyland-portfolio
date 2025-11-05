@@ -2,23 +2,24 @@
 
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+import { setAnalyticsConsent, getAnalyticsConsent } from '@/lib/analyticsConsent';
 
 export default function GDPRConsent() {
   const t = useTranslations(); // load translations
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem("analytics_consent");
-    if (!consent) setVisible(true); // show banner if user hasn't made a choice
+    const consent = getAnalyticsConsent();;
+    if (!consent) setVisible(true);
   }, []);
 
   const accept = () => {
-    localStorage.setItem("analytics_consent", "accepted");
+    setAnalyticsConsent('accepted');
     setVisible(false);
   };
 
   const reject = () => {
-    localStorage.setItem("analytics_consent", "rejected");
+    setAnalyticsConsent('rejected');
     setVisible(false);
   };
 

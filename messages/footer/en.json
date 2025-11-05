@@ -1,4 +1,14 @@
 {
     "impressum": "Legal disclosure",
-    "copyright": "© 2025 Jaime Hyland. All rights reserved."
+    "copyright": "© 2025 Jaime Hyland. All rights reserved.",
+    "managePrivacySettings": "Manage your data privacy settings",
+    "close": "Close",
+    "analyticsAllowed": "Anonymous data collection is currently allowed.",
+    "analyticsNotAllowed": "Anonymous data collection is currently not allowed.",
+    "willAllow": "Tapping 'Save' will enable anonymous data collection.",
+    "willNotAllow": "Tapping 'Save' will disable anonymous data collection.",
+    "allowDataCollection": "Allow collection",
+    "prohibitDataCollection": "Prohibit collection",
+    "cancel": "Cancel",
+    "save": "Save"
 }
