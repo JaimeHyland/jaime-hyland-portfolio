@@ -18,6 +18,7 @@ if (!locale) {
   const contact = (await import(`../../messages/contact/${locale}.json`)).default;
   const impressum = (await import(`../../messages/impressum/${locale}.json`)).default;
   const analytics_consent = (await import(`../../messages/gdpr_consent/${locale}.json`)).default;
+  const footer = (await import(`../../messages/footer/${locale}.json`)).default;
   
 
   return {
@@ -28,7 +29,8 @@ if (!locale) {
       ...projects,
       ...contact,
       ...impressum,
-      ...analytics_consent
+      ...analytics_consent,
+      ...footer
     }
   };
 });
