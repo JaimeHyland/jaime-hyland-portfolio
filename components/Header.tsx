@@ -61,6 +61,28 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
           <HeaderLink href={`/${lang}/${paths.contact}`} pageKey="contact" currentKey={pageKey}>
             {labels?.contact}
           </HeaderLink>
+
+          <div className="relative group">
+            <span className="cursor-pointer">{labels.download}</span>
+              <div className="absolute left-0 mt-2 bg-white border shadow-md rounded-md flex flex-col py-1 text-sm opacity-0 group-hover:opacity-100 transition-opacity z-50">
+              <a
+                  href="/files/JaimeHyland_CV_de_DE_HR_FullStack_20251107.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-1 hover:underline"
+                >
+                  {labels.downloadPdf}
+                </a>
+                <a
+                  href="/files/JaimeHyland_CV_en_GB_ATS_FullStack_20251107.txt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-1 hover:underline"
+                >
+                  {labels.downloadTxt}
+                </a>
+            </div>
+          </div>
         </nav>
 
         {/* Left: Mobile burger */}
@@ -150,6 +172,25 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
           <HeaderLink href={`/${lang}/${paths.contact}`} pageKey="contact" currentKey={pageKey} onClick={closeMenu}>
             {labels?.contact}
           </HeaderLink>
+          <div className="mt-2 flex flex-col gap-1">
+            <span className="font-medium">{labels.download}</span>
+            <a
+                href="/files/JaimeHyland_CV_de_DE_HR_FullStack_20251107.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-1 hover:underline"
+              >
+                {labels.downloadPdf}
+              </a>
+              <a
+                href="/files/JaimeHyland_CV_en_GB_ATS_FullStack_20251107.txt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-1 hover:underline"
+              >
+                {labels.downloadTxt}
+              </a>
+          </div>
         </div>
       )}
     </header>

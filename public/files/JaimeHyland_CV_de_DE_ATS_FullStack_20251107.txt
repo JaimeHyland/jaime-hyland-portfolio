@@ -1,0 +1,52 @@
+Jaime Hyland | Full-Stack-Webentwickler | Berlin
+Email: mailto:jaime.hyland@language-landscapes.com | GitHub: https://github.com/JaimeHyland
+Webseite: https://jaime-hyland.com | LinkedIn: https://www.linkedin.com/in/language-landscapes/
+
+Persönliches Profil
+Full-Stack-Softwareentwickler mit Erfahrung in Frontend (React, JavaScript, HTML, CSS)
+und Backend (Python, Django, Flask, Node.js). Erfahren in mobiler App-Entwicklung
+mit Flutter und Dart. Fundierter Hintergrund in Internationalisierung (i18n),
+Lokalisierung (l10n) und mehrsprachiger Softwaredokumentation. Nachgewiesene
+Fähigkeit, komplexe Anforderungen in klar strukturierte, einsatzfähige Lösungen umzusetzen.
+
+Technische Kompetenzen
+Programmiersprachen | HTML | CSS | JavaScript | Python | Java | VB.NET | Dart
+Frameworks & Bibliotheken | Flask | Django | Bootstrap | Stripe | Flutter
+Datenbanken & APIs | MySQL | PostgreSQL | Oracle | REST APIs
+Deployment & Cloud | AWS | Heroku | Cloudinary | GoDaddy | Vercel
+i18n & l10n | Trados | Passolo | Transit | Django-i18n | i18next
+Tools & Projektmanagement | Jira | Jupyter | Author-it | https://www.author-it.com/ 
+| Doc2Help | https://www.doctohelp.com/ | Agile Workflows
+Versionskontrolle | Git | GitHub | Subversion | CI/CD-Pipelines
+
+Ausbildung
+Aug. 2023 – Sept. 2024 | Code Institute, Dublin | Diplom Full-Stack
+2000 | FAS CITP | Diplomkurs Computer Programming
+1984 – 1988 | Trinity College Dublin | BA Philosophie
+
+Aktuelle/Abgeschlossene Projekte
+Kursportfolio | https://www.jaime-hyland.com/de/projects#ci-assessment
+Fünf Full-Stack-Projekte mit HTML, CSS, JavaScript, JSON, Bootstrap, Python,
+Django, Flask, React, Stripe. Heroku, Daphne/Channels, Redis, AWS; asynchrone
+Kommunikation über Channels.
+
+Hackathon-Beiträge | https://www.jaime-hyland.com/de/projects#hackathons
+Teilnahme an vier 5-Tages- und einem 3-Tages-Hackathon des Code Institute
+- Django/Channels/Redis-Websites mit Live-AI-Chatbots und Swagger-API-Dokumentation
+entwickelt
+- Mehrfache Auszeichnungen: 2× zweiter Platz, 1× dritter Platz, 1× Publikumspreis
+- Vier von fünf Projekten erfolgreich online bereitgestellt
+
+Persönliche Projekte | https://www.jaime-hyland.com/de/projects#independent
+- Mehrsprachige (de/en/es) CV-Website mit Next.js, TypeScript, React und i18next
+- Django-Flutter-i18n-Vorlage für Web/Mobile-Integration erstellt
+- Aktuelles Projekt: Sprachlern-App auf Basis der Django-Flutter-i18n-Vorlage
+
+Berufserfahrung
+2022 – Juli 2023 | Freiberuflicher Softwareentwickler | Berlin
+- Mobile Sprachlern-App: MySQL DB, Java Swing Admin, Flutter/Dart
+- Technische und akademische Übersetzungen
+
+2020 – 2022 | Freiberuflicher Übersetzer & Trainer | Berlin
+- Übersetzung, Lokalisierung, Sprachunterricht
+- Fokus auf technische Inhalte und Lokalisierung in Projek

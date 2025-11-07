@@ -1,0 +1,77 @@
+Jaime Hyland | Fullstack Software Developer | Berlin
+Email: mailto:jaime.hyland@language-landscapes.com | GitHub: https://github.com/JaimeHyland
+Website: https://jaime-hyland.com | LinkedIn: https://www.linkedin.com/in/language-landscapes/
+
+Personal profile
+Full-stack software developer skilled in frontend (React, JavaScript, HTML, CSS)
+and backend (Python, Django, Flask, Node.js). Experienced in mobile app development
+with Flutter and Dart. Strong background in internationalization (i18n),
+localization (l10n), and multilingual software documentation. Proven ability to
+translate complex requirements into well-structured, deployable solutions.
+
+Technical skills
+Programming languages | HTML | CSS | JavaScript | Python | Java | VB.NET | Dart
+Frameworks & Libraries | React | Flask | Django | Bootstrap | Stripe | Flutter
+Databases & APIs | MySQL | PostgreSQL | Oracle | REST APIs
+Deployment & Cloud | AWS | Heroku | Cloudinary | GoDaddy | Vercel
+i18n & Localization | Trados | Passolo | Transit | Django-i18n | i18next
+Tools & Project Management | Jira | Jupyter | Author-it | https://www.author-it.com/
+| Doc2Help | https://www.doctohelp.com/ | Agile workflows
+Version Control | Git | GitHub | Subversion | CI/CD pipelines
+
+Education
+Aug. 2023 – Sept. 2024 | Code Institute, Dublin | Diploma Full-Stack
+Aug. – Oct. 2000 | FAS CITP | Diploma Computer Programming
+1984 – 1988 | Trinity College Dublin | Bachelor of Arts in Philosophy
+
+Recent independent projects
+Course portfolio | https://www.jaime-hyland.com/en/projects#ci-assessment
+Five fullstack projects with HTML, CSS, JavaScript, JSON, Bootstrap, Python,
+Django, Flask, React, Stripe. Heroku, Daphne/Channels, Redis, AWS; asynchronous
+communication using Channels.
+
+Hackathon contributions | https://www.jaime-hyland.com/en/projects#hackathons
+Participated in four 5-day and one 3-day hackathons organised by Code Institute
+- Developed Django/Channels/Redis sites with live AI chatbots and Swagger API documentation
+- Multiple awards: 2× second place, 1× third place, 1× People’s Choice Award
+- Four of five projects successfully deployed online
+
+Personal projects | https://www.jaime-hyland.com/en/projects#independent
+- Built multilingual (de/en/es) CV website with Next.js, TypeScript, React and i18next
+- Created Django-Flutter-i18n template for full-stack web/mobile integration
+- Current project: Language-learning mobile app based on Django-Flutter-i18n template
+
+Professional experience
+2022 – July 2023 | Freelance Software Developer | Berlin
+- Mobile language app: MySQL DB, Java Swing admin, Flutter/Dart UI
+- Technical and academic translations
+
+2020 – 2022 | Freelance Translator & Trainer | Berlin
+- Translation, localization, language teaching
+- Focus on technical content and localization workflows
+
+2010 – 2020 | Freelance Technical Translator/Localization Specialist | language-landscapes.com
+- Translated Spanish/German → English, IT, telecom, transport, sociology,
+history, medical
+- Tools: Trados Studio | Passolo | Déjà Vu | Transit/Termstar | memoQ
+
+April 2004 – Sept. 2010 | IVU Traffic Technologies | Berlin | https://www.ivu.de/
+- Technical localization and documentation specialist for IVU.suite
+- Automated workflow for software localization and help documentation
+(VB.NET, Ant, Passolo API)
+- Integrated into development lifecycle & daily build
+- Localization lead for 14 locales
+
+Additional skills
+Project Management | Agile Methodologies | Strategic Planning | Technical Documentation
+| Release Notes | Training & Help Systems | Multi-language Content Integration
+| Single-source Publishing
+
+Languages
+English (Native) | Spanish (Fluent, 9 years in Spain) | German (C1, long-time resident)
+| French (Basic) | Italian (Basic) | Irish (Basic)
+
+Hobbies & Interests
+- Hackathons, continuous learning: Code Institute | Brilliant.org | LinkedIn Learning
+| KodeKloud; Focus on Dart & Flutter
+- Gardening | Cooking | Beekeeping | Silicone mould creation
