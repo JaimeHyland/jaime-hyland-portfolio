@@ -2,35 +2,30 @@
 
 import { useState, useEffect } from "react";
 import { X } from "lucide-react";
+import { localizedLabels } from "@/lib/labels";
 
 interface CVTxtModalProps {
-  lang: "en" | "de" | "es";
+  filePath: string;
   labels: {
-    downloadTxtDe: string;
-    downloadTxtEn: string;
-    downloadTxtEs: string;
+    downloadTxt: string;
     close: string;
     txtReassurance: string;
+    errorText: string;
+    loadingText: string;
   };
 }
 
-export function CVTxtModal({ lang, labels }: CVTxtModalProps) {
+export function CVTxtModal({ filePath, labels }: CVTxtModalProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const [txtContent, setTxtContent] = useState<string>("");
+  const [txtContent, setTxtContent] = useState("");
 
-  const filePath =
-    lang === "de"
-      ? "/files/JaimeHyland_CV_de_DE_ATS_FullStack_20251107.txt"
-      : lang === "es"
-      ? "/files/JaimeHyland_CV_es_ES_ATS_FullStack_20251107.txt"
-      : "/files/JaimeHyland_CV_en_GB_ATS_FullStack_20251107.txt";
 
   useEffect(() => {
     if (isOpen) {
       fetch(filePath)
         .then((res) => res.text())
         .then(setTxtContent)
-        .catch(() => setTxtContent("Fehler beim Laden der Datei."));
+        .catch(() => setTxtContent(labels.errorText));
     }
   }, [isOpen, filePath]);
 
@@ -70,7 +65,7 @@ export function CVTxtModal({ lang, labels }: CVTxtModalProps) {
             {/* Modal body */}
             <div className="flex-1 overflow-auto p-4 bg-gray-50">
               <pre className="whitespace-pre-wrap font-mono text-sm">
-                {txtContent || "Lade..."}
+                {txtContent || labels.loadingText}
               </pre>
               <p className="mt-2 text-xs text-gray-500">{labels.txtReassurance}</p>
             </div>

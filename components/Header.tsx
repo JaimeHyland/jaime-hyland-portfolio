@@ -77,43 +77,49 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
               </a>
               <div className="px-4 py-1">
                 <CVTxtModal
-                  lang={lang === "de" ? "de" : "en"}
+                  filePath="/files/JaimeHyland_CV_de_DE_ATS_FullStack_20251107.txt"
                   labels={{
                     downloadTxt: labels.downloadTxtDe,
                     close: labels.close,
                     txtReassurance: labels.txtReassurance,
+                    errorText: labels.errorText,
+                    loadingText: labels.loadingText
                   }}
                 />
                 <a
-                  href="/files/JaimeHyland_CV_de_DE_HR_FullStack_20251107.pdf"
+                  href="/files/JaimeHyland_CV_en_GB_HR_FullStack_20251107.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-1 hover:underline"
                 >
-                  {labels.downloadPdfDe}
+                  {labels.downloadPdfEn}
                 </a>
                 <CVTxtModal
-                  lang={lang === "de" ? "de" : "en"}
+                  filePath="/files/JaimeHyland_CV_en_GB_ATS_FullStack_20251107.txt"
                   labels={{
-                    downloadTxt: labels.downloadTxtDe,
+                    downloadTxt: labels.downloadTxtEn,
                     close: labels.close,
                     txtReassurance: labels.txtReassurance,
+                    errorText: labels.errorText,
+                    loadingText: labels.loadingText
                   }}
                 />
                 <a
-                  href="/files/JaimeHyland_CV_de_DE_HR_FullStack_20251107.pdf"
+                  href="/files/JaimeHyland_CV_es_ES_HR_FullStack_20251107.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-1 hover:underline"
                 >
-                  {labels.downloadPdfDe}
+                  {labels.downloadPdfEs}
                 </a>
                 <CVTxtModal
-                  lang={lang === "de" ? "de" : "en"}
+                  filePath="/files/JaimeHyland_CV_es_ES_ATS_FullStack_20251107.txt"
                   labels={{
-                    downloadTxt: labels.downloadTxtDe,
+                    downloadTxt: labels.downloadTxtEs,
                     close: labels.close,
                     txtReassurance: labels.txtReassurance,
+                    errorText: labels.errorText,
+                    loadingText: labels.loadingText
                   }}
                 />
               </div>
@@ -219,11 +225,13 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                 {labels.downloadPdfDe}
               </a>
               <CVTxtModal
-                lang={lang === "de" ? "de" : "en"}
+                filePath="/files/JaimeHyland_CV_de_DE_ATS_FullStack_20251107.txt"
                 labels={{
                   downloadTxt: labels.modalTxtDownloadDe,
                   close: labels.close,
                   txtReassurance: labels.txtReassurance,
+                  errorText: labels.errorText,
+                  loadingText: labels.loadingText
                 }}
               />
               <a
@@ -235,11 +243,13 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                 {labels.downloadPdfEn}
               </a>
               <CVTxtModal
-                lang={lang === "en"  ? "en" : "de"}
+                filePath="/files/JaimeHyland_CV_en_GB_ATS_FullStack_20251107.txt"
                 labels={{
                   downloadTxt: labels.modalTxtDownloadEn,
                   close: labels.close,
                   txtReassurance: labels.txtReassurance,
+                  errorText: labels.errorText,
+                  loadingText: labels.loadingText
                 }}
               />
               <a
@@ -251,11 +261,13 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                 {labels.downloadPdfEn}
               </a>
               <CVTxtModal
-                lang={lang === "es"  ? "es" : "en"}
+                filePath="/files/JaimeHyland_CV_es_ES_ATS_FullStack_20251107.txt"
                 labels={{
                   downloadTxt: labels.modalTxtDownloadEs,
                   close: labels.close,
                   txtReassurance: labels.txtReassurance,
+                  errorText: labels.errorText,
+                  loadingText: labels.loadingText
                 }}
               />
           </div>

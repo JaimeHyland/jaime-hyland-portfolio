@@ -10,6 +10,8 @@ export type LabelSet = {
   downloadPdfEn: string;
   downloadTxtEs: string;
   downloadPdfEs: string;
+  loadingText: string;
+  errorText: string;
   close: string;
   txtReassurance: string;
   modalTxtDownloadDe: string;
@@ -33,11 +35,13 @@ export const localizedLabels: Record<"en" | "es" | "de", LabelSet> = {
     downloadPdfEn: "PDF cv in English",
     downloadTxtEs: "TXT cv in Spanish",
     downloadPdfEs: "PDF cv in Spanish",
+    loadingText: "Loading ...",
+    errorText: "Error while loading the file.",
     close: "Close",
     txtReassurance: "This plain-text (txt) file is safe and contains no executable code.",
-    modalTxtDownloadDe: "Download txt cv in German",
-    modalTxtDownloadEn: "Download txt cv in English",
-    modalTxtDownloadEs: "Download txt cv in Spanish",
+    modalTxtDownloadDe: "TXT cv in German",
+    modalTxtDownloadEn: "TXT cv in English",
+    modalTxtDownloadEs: "TXT cv in Spanish",
     en: "English",
     es: "Spanish",
     de: "German"
@@ -47,18 +51,20 @@ export const localizedLabels: Record<"en" | "es" | "de", LabelSet> = {
     projects: "Proyectos",
     cv: "Currículum",
     contact: "Contacto",
-    download: "Descargos",
+    download: "Descargas",
     downloadTxtDe: "Currículum txt cv en alemán",
     downloadPdfDe: "Currículum pdf en alemán",
     downloadTxtEn: "Currículum txt en inglés",
     downloadPdfEn: "Currículum pdf en inglés",
     downloadTxtEs: "Currículum txt en español",
     downloadPdfEs: "Curriculum pdf en español",
+    loadingText: "Cargando ...",
+    errorText: "Error al cargar el fichero.",
     close: "Cerrar",
     txtReassurance: "Este archivo de texto plano (txt) es seguro y no contiene código ejecutable.",
-    modalTxtDownloadDe: "Descargar archivo txt en alemán",
-    modalTxtDownloadEn: "Descargar archivo txt en inglés",
-    modalTxtDownloadEs: "Descargar archivo txt en español",
+    modalTxtDownloadDe: "Archivo txt en alemán",
+    modalTxtDownloadEn: "Archivo txt en inglés",
+    modalTxtDownloadEs: "Archivo txt en español",
     en: "inglés",
     es: "español",
     de: "alemán"
@@ -75,11 +81,13 @@ export const localizedLabels: Record<"en" | "es" | "de", LabelSet> = {
     downloadPdfEn: "PDF-Lebenslauf auf Englisch",
     downloadTxtEs: "TXT-Lebenslauf auf Spanisch",
     downloadPdfEs: "PDF-Lebenslauf auf Spanisch",
-    close: "Close",
+    loadingText: "Lade ...",
+    errorText: "Fehler beim Laden der Datei.",
+    close: "Schließen",
     txtReassurance: "Diese Klartextdatei (txt) ist sicher und enthält keinen ausführbaren Code.",
-    modalTxtDownloadDe: "TXT-Datei auf Deutsch herunterladen",
-    modalTxtDownloadEn: "TXT-Datei auf Englisch herunterladen",
-    modalTxtDownloadEs: "TXT-Datei auf Spanisch herunterladen",
+    modalTxtDownloadDe: "TXT-Datei auf Deutsch",
+    modalTxtDownloadEn: "TXT-Datei auf Englisch",
+    modalTxtDownloadEs: "TXT-Datei auf Spanisch",
     en: "Englisch",
     es: "Spanisch",
     de: "Deutsch"
