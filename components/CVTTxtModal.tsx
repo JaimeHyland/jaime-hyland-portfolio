@@ -4,9 +4,11 @@ import { useState, useEffect } from "react";
 import { X } from "lucide-react";
 
 interface CVTxtModalProps {
-  lang: "en" | "de";
+  lang: "en" | "de" | "es";
   labels: {
-    downloadTxt: string;
+    downloadTxtDe: string;
+    downloadTxtEn: string;
+    downloadTxtEs: string;
     close: string;
     txtReassurance: string;
   };
@@ -19,6 +21,8 @@ export function CVTxtModal({ lang, labels }: CVTxtModalProps) {
   const filePath =
     lang === "de"
       ? "/files/JaimeHyland_CV_de_DE_ATS_FullStack_20251107.txt"
+      : lang === "es"
+      ? "/files/JaimeHyland_CV_es_ES_ATS_FullStack_20251107.txt"
       : "/files/JaimeHyland_CV_en_GB_ATS_FullStack_20251107.txt";
 
   useEffect(() => {

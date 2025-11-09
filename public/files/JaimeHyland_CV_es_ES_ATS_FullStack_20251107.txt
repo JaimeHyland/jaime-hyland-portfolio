@@ -1,0 +1,77 @@
+Jaime Hyland | Desarrollador de Software Fullstack | Berlín
+Correo: mailto:jaime.hyland@language-landscapes.com | GitHub: https://github.com/JaimeHyland
+Web: https://jaime-hyland.com | LinkedIn: https://www.linkedin.com/in/language-landscapes/
+
+Perfil personal
+Desarrollador de software full-stack con experiencia en frontend (React, JavaScript, HTML, CSS)
+y backend (Python, Django, Flask, Node.js). Experiencia en desarrollo de aplicaciones móviles
+con Flutter y Dart. Amplia formación en internacionalización (i18n),
+localización (l10n) y documentación de software multilingüe. Capacidad demostrada para
+traducir requisitos complejos en soluciones bien estructuradas y listas para desplegar.
+
+Competencias técnicas
+Lenguajes de programación | HTML | CSS | JavaScript | Python | Java | VB.NET | Dart
+Frameworks y librerías | React | Flask | Django | Bootstrap | Stripe | Flutter
+Bases de datos y APIs | MySQL | PostgreSQL | Oracle | APIs REST
+Despliegue y Cloud | AWS | Heroku | Cloudinary | GoDaddy | Vercel
+i18n y Localización | Trados | Passolo | Transit | Django-i18n | i18next
+Herramientas y Gestión de Proyectos | Jira | Jupyter | Author-it | https://www.author-it.com/
+| Doc2Help | https://www.doctohelp.com/ | Workflows ágiles
+Control de versiones | Git | GitHub | Subversion | Pipelines CI/CD
+
+Formación
+Ago. 2023 – Sept. 2024 | Code Institute, Dublín | Diploma Full-Stack
+Ago. – Oct. 2000 | FAS CITP | Diploma en Programación Informática
+1984 – 1988 | Trinity College Dublin | Licenciatura en Filosofía
+
+Proyectos recientes independientes
+Portafolio de cursos | https://www.jaime-hyland.com/en/projects#ci-assessment
+Cinco proyectos fullstack con HTML, CSS, JavaScript, JSON, Bootstrap, Python,
+Django, Flask, React, Stripe. Heroku, Daphne/Channels, Redis, AWS; comunicación
+asíncrona utilizando Channels.
+
+Contribuciones en hackathons | https://www.jaime-hyland.com/en/projects#hackathons
+Participación en cuatro hackathons de 5 días y uno de 3 días organizados por Code Institute
+- Desarrollo de sitios Django/Channels/Redis con chatbots de IA en vivo y documentación API Swagger
+- Múltiples premios: 2× segundo lugar, 1× tercer lugar, 1× Premio del Público
+- Cuatro de cinco proyectos desplegados con éxito en línea
+
+Proyectos personales | https://www.jaime-hyland.com/en/projects#independent
+- Desarrollo de sitio web CV multilingüe (de/en/es) con Next.js, TypeScript, React e i18next
+- Creación de plantilla Django-Flutter-i18n para integración full-stack web/móvil
+- Proyecto actual: aplicación móvil para aprendizaje de idiomas basada en la plantilla Django-Flutter-i18n
+
+Experiencia profesional
+2022 – Julio 2023 | Desarrollador de Software Freelance | Berlín
+- Aplicación móvil de idiomas: Base de datos MySQL, administración Java Swing, UI Flutter/Dart
+- Traducciones técnicas y académicas
+
+2020 – 2022 | Traductor y Formador Freelance | Berlín
+- Traducción, localización, enseñanza de idiomas
+- Enfoque en contenido técnico y flujos de trabajo de localización
+
+2010 – 2020 | Traductor Técnico/Especialista en Localización Freelance | language-landscapes.com
+- Traducción Español/Alemán → Inglés, IT, telecomunicaciones, transporte, sociología,
+historia, medicina
+- Herramientas: Trados Studio | Passolo | Déjà Vu | Transit/Termstar | memoQ
+
+Abril 2004 – Sept. 2010 | IVU Traffic Technologies | Berlín | https://www.ivu.de/
+- Especialista en localización técnica y documentación de IVU.suite
+- Automatización de flujo de trabajo para localización de software y documentación de ayuda
+(VB.NET, Ant, API Passolo)
+- Integrado en el ciclo de desarrollo y compilación diaria
+- Responsable de localización para 14 idiomas
+
+Habilidades adicionales
+Gestión de proyectos | Metodologías ágiles | Planificación estratégica | Documentación técnica
+| Notas de versión | Sistemas de ayuda y formación | Integración de contenidos multilingües
+| Publicación desde fuente única
+
+Idiomas
+Inglés (Nativo) | Español (Fluido, 9 años en España) | Alemán (C1, residente prolongado)
+| Francés (Básico) | Italiano (Básico) | Irlandés (Básico)
+
+Hobbies e intereses
+- Hackathons, aprendizaje continuo: Code Institute | Brilliant.org | LinkedIn Learning
+| KodeKloud; Especialización en Dart y Flutter
+- Jardinería | Cocina | Apicultura | Creación de moldes de silicona

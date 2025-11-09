@@ -8,6 +8,8 @@ import { Menu, MessageCircle, X } from "lucide-react";
 import { localizedPaths } from "@/lib/paths";
 import { localizedLabels } from "@/lib/labels";
 import { HeaderLink } from "../components/HeaderLink";
+import { CVTxtModal } from "../components/CVTTxtModal";
+
 
 type HeaderProps = {
   lang: "en" | "es" | "de";
@@ -71,16 +73,50 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                   rel="noopener noreferrer"
                   className="px-4 py-1 hover:underline"
                 >
-                  {labels.downloadPdf}
-                </a>
+                  {labels.downloadPdfDe}
+              </a>
+              <div className="px-4 py-1">
+                <CVTxtModal
+                  lang={lang === "de" ? "de" : "en"}
+                  labels={{
+                    downloadTxt: labels.downloadTxtDe,
+                    close: labels.close,
+                    txtReassurance: labels.txtReassurance,
+                  }}
+                />
                 <a
-                  href="/files/JaimeHyland_CV_en_GB_ATS_FullStack_20251107.txt"
+                  href="/files/JaimeHyland_CV_de_DE_HR_FullStack_20251107.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-1 hover:underline"
                 >
-                  {labels.downloadTxt}
+                  {labels.downloadPdfDe}
                 </a>
+                <CVTxtModal
+                  lang={lang === "de" ? "de" : "en"}
+                  labels={{
+                    downloadTxt: labels.downloadTxtDe,
+                    close: labels.close,
+                    txtReassurance: labels.txtReassurance,
+                  }}
+                />
+                <a
+                  href="/files/JaimeHyland_CV_de_DE_HR_FullStack_20251107.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-1 hover:underline"
+                >
+                  {labels.downloadPdfDe}
+                </a>
+                <CVTxtModal
+                  lang={lang === "de" ? "de" : "en"}
+                  labels={{
+                    downloadTxt: labels.downloadTxtDe,
+                    close: labels.close,
+                    txtReassurance: labels.txtReassurance,
+                  }}
+                />
+              </div>
             </div>
           </div>
         </nav>
@@ -180,16 +216,48 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                 rel="noopener noreferrer"
                 className="px-4 py-1 hover:underline"
               >
-                {labels.downloadPdf}
+                {labels.downloadPdfDe}
               </a>
+              <CVTxtModal
+                lang={lang === "de" ? "de" : "en"}
+                labels={{
+                  downloadTxt: labels.modalTxtDownloadDe,
+                  close: labels.close,
+                  txtReassurance: labels.txtReassurance,
+                }}
+              />
               <a
-                href="/files/JaimeHyland_CV_en_GB_ATS_FullStack_20251107.txt"
+                href="/files/JaimeHyland_CV_en_GB_HR_FullStack_20251107.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-1 hover:underline"
               >
-                {labels.downloadTxt}
+                {labels.downloadPdfEn}
               </a>
+              <CVTxtModal
+                lang={lang === "en"  ? "en" : "de"}
+                labels={{
+                  downloadTxt: labels.modalTxtDownloadEn,
+                  close: labels.close,
+                  txtReassurance: labels.txtReassurance,
+                }}
+              />
+              <a
+                href="/files/JaimeHyland_CV_en_GB_HR_FullStack_20251107.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-1 hover:underline"
+              >
+                {labels.downloadPdfEn}
+              </a>
+              <CVTxtModal
+                lang={lang === "es"  ? "es" : "en"}
+                labels={{
+                  downloadTxt: labels.modalTxtDownloadEs,
+                  close: labels.close,
+                  txtReassurance: labels.txtReassurance,
+                }}
+              />
           </div>
         </div>
       )}
