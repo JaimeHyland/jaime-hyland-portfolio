@@ -1,3 +1,5 @@
+Dies ist eine deutsche Version meines Lebenslaufs, die für Maschinen lesbar ist. Eine für Menschen lesbare Version ist hier verfügbar: https://www.jaime-hyland.com/files/JaimeHyland_CV_en_GB_HR_FullStack_20251107.pdf
+
 Jaime Hyland | Full-Stack-Webentwickler | Berlin
 Email: jaime.hyland@language-landscapes.com
 GitHub: https://github.com/JaimeHyland
