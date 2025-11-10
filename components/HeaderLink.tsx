@@ -8,7 +8,7 @@ interface HeaderLinkProps {
   pageKey: string;
   currentKey: string;
   className?: string;
-  onClick?: () => void; // optional callback (e.g. to close mobile menu)
+  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void; // optional callback (e.g. to close mobile menu)
 }
 
 export function HeaderLink({
@@ -21,9 +21,9 @@ export function HeaderLink({
 }: HeaderLinkProps) {
   const isActive = pageKey === currentKey;
 
-  const handleClick = () => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     // call optional parent handler (closing mobile menu, etc.)
-    if (onClick) onClick();
+    if (onClick) onClick(e);
     // don't prevent default — let Next.js handle navigation
   };
 
@@ -31,9 +31,7 @@ export function HeaderLink({
     <Link
       href={href}
       onClick={handleClick}
-      className={`transition-transform duration-200 transform hover:scale-105 ${
-        isActive ? "font-bold" : ""
-      } ${className}`}
+      className={`transform hover:scale-105 ${isActive ? "font-bold" : ""} ${className}`}
     >
       {children}
     </Link>

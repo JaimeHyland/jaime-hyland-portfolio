@@ -29,6 +29,8 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
   const [langOpen, setLangOpen] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
 
+  const [downloadOpen, setDownloadOpen] = useState(false);
+
   const pageKey =
     (Object.keys(paths) as (keyof typeof paths)[]).find(
       (key) => pathname === `/${lang}/${paths[key]}`
@@ -65,17 +67,18 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
           </HeaderLink>
 
           <div className="relative group">
-            <span className="cursor-pointer">{labels.download}</span>
-              <div className="absolute left-0 mt-2 bg-white border shadow-md rounded-md flex flex-col py-1 text-sm opacity-0 group-hover:opacity-100 transition-opacity z-50">
+            <span className="inline-block cursor-pointer transform transition duration-200 hover:scale-105">
+              {labels.downloads}
+            </span>
+              <div className="absolute left-0 mt-2 bg-white border shadow-md rounded-md flex flex-col py-1 text-sm opacity-0 group-hover:opacity-100 transition-opacity w-56 z-50">
               <a
                   href="/files/JaimeHyland_CV_de_DE_HR_FullStack_20251107.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-1 hover:underline"
+                  className="px-4 py-2 transform hover:scale-105 rounded transition text-sm"
                 >
-                  {labels.downloadPdfDe}
+                {labels.downloadPdfDe}
               </a>
-              <div className="px-4 py-1">
                 <CVTxtModal
                   filePath="/files/JaimeHyland_CV_de_DE_ATS_FullStack_20251107.txt"
                   labels={{
@@ -83,14 +86,15 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                     close: labels.close,
                     txtReassurance: labels.txtReassurance,
                     errorText: labels.errorText,
-                    loadingText: labels.loadingText
+                    loadingText: labels.loadingText, 
+                    buttonDownload: labels.buttonDownload
                   }}
                 />
                 <a
                   href="/files/JaimeHyland_CV_en_GB_HR_FullStack_20251107.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-1 hover:underline"
+                  className="px-4 py-2 transform hover:scale-105 hover:bg-gray-100 rounded transition text-sm"
                 >
                   {labels.downloadPdfEn}
                 </a>
@@ -101,14 +105,15 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                     close: labels.close,
                     txtReassurance: labels.txtReassurance,
                     errorText: labels.errorText,
-                    loadingText: labels.loadingText
+                    loadingText: labels.loadingText, 
+                    buttonDownload: labels.buttonDownload
                   }}
                 />
                 <a
                   href="/files/JaimeHyland_CV_es_ES_HR_FullStack_20251107.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-1 hover:underline"
+                  className="px-4 py-2 transform hover:scale-105 hover:bg-gray-100 rounded transition text-sm"
                 >
                   {labels.downloadPdfEs}
                 </a>
@@ -119,10 +124,10 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                     close: labels.close,
                     txtReassurance: labels.txtReassurance,
                     errorText: labels.errorText,
-                    loadingText: labels.loadingText
+                    loadingText: labels.loadingText, 
+                    buttonDownload: labels.buttonDownload
                   }}
                 />
-              </div>
             </div>
           </div>
         </nav>
@@ -201,7 +206,7 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
 
       {/* Mobile nav dropdown */}
       {navOpen && (
-        <div className="md:hidden absolute top-16 left-4 bg-white border border-gray-200 shadow-lg rounded-lg p-4 flex flex-col gap-2 text-lg text-gray-800 w-48 z-50">
+        <div className="md:hidden absolute top-16 left-4 bg-white border border-gray-200 shadow-lg rounded-lg p-4 flex flex-col gap-2 text-lg text-gray-800 w-72 z-50">
           <HeaderLink href={`/${lang}/${paths.home}`} pageKey="home" currentKey={pageKey} onClick={closeMenu}>
             {labels?.home}
           </HeaderLink>
@@ -214,13 +219,28 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
           <HeaderLink href={`/${lang}/${paths.contact}`} pageKey="contact" currentKey={pageKey} onClick={closeMenu}>
             {labels?.contact}
           </HeaderLink>
-          <div className="mt-2 flex flex-col gap-1">
-            <span className="font-medium">{labels.download}</span>
-            <a
+          {/* Downloads toggle */}
+          <HeaderLink
+            href="#"
+            pageKey="download"
+            currentKey={pageKey}
+            onClick={(e) => {
+              e.preventDefault();
+              setDownloadOpen(!downloadOpen);
+            }}
+            className={`text-left w-full transform hover:scale-105 transition ${downloadOpen ? "font-medium" : "font-normal"}`}
+          >
+            {labels.downloads}
+          </HeaderLink>
+
+          {/* Sub-menu items */}
+          {downloadOpen && (
+            <div className="flex flex-col gap-1">
+              <a
                 href="/files/JaimeHyland_CV_de_DE_HR_FullStack_20251107.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-1 hover:underline"
+                className="pl-4 transform rounded transition text-sm"
               >
                 {labels.downloadPdfDe}
               </a>
@@ -231,14 +251,16 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                   close: labels.close,
                   txtReassurance: labels.txtReassurance,
                   errorText: labels.errorText,
-                  loadingText: labels.loadingText
+                  loadingText: labels.loadingText, 
+                  buttonDownload: labels.buttonDownload
                 }}
               />
+
               <a
                 href="/files/JaimeHyland_CV_en_GB_HR_FullStack_20251107.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-1 hover:underline"
+                className="pl-4 transform rounded transition text-sm"
               >
                 {labels.downloadPdfEn}
               </a>
@@ -249,28 +271,35 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                   close: labels.close,
                   txtReassurance: labels.txtReassurance,
                   errorText: labels.errorText,
-                  loadingText: labels.loadingText
+                  loadingText: labels.loadingText, 
+                  buttonDownload: labels.buttonDownload
                 }}
+                
               />
+
               <a
-                href="/files/JaimeHyland_CV_en_GB_HR_FullStack_20251107.pdf"
+                href="/files/JaimeHyland_CV_es_ES_HR_FullStack_20251107.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-1 hover:underline"
+                className="rounded pl-4 transition text-sm"
               >
-                {labels.downloadPdfEn}
+                {labels.downloadPdfEs}
               </a>
               <CVTxtModal
                 filePath="/files/JaimeHyland_CV_es_ES_ATS_FullStack_20251107.txt"
+
                 labels={{
                   downloadTxt: labels.modalTxtDownloadEs,
                   close: labels.close,
                   txtReassurance: labels.txtReassurance,
                   errorText: labels.errorText,
-                  loadingText: labels.loadingText
+                  loadingText: labels.loadingText, 
+                  buttonDownload: labels.buttonDownload
                 }}
               />
-          </div>
+            </div>
+          )}
+
         </div>
       )}
     </header>

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { X } from "lucide-react";
-import { localizedLabels } from "@/lib/labels";
+
 
 interface CVTxtModalProps {
   filePath: string;
@@ -12,11 +12,13 @@ interface CVTxtModalProps {
     txtReassurance: string;
     errorText: string;
     loadingText: string;
+    buttonDownload: string;
   };
+  isMobile?: boolean;
 }
 
-export function CVTxtModal({ filePath, labels }: CVTxtModalProps) {
-  const [isOpen, setIsOpen] = useState(false);
+export function CVTxtModal({ filePath, labels, isMobile = false }: CVTxtModalProps) {
+  const [isOpen, setIsOpen] = useState(false)
   const [txtContent, setTxtContent] = useState("");
 
 
@@ -31,21 +33,22 @@ export function CVTxtModal({ filePath, labels }: CVTxtModalProps) {
 
   const downloadTxt = () => {
     fetch(filePath)
-      .then((res) => res.blob())
-      .then((blob) => {
-        const link = document.createElement("a");
-        link.href = URL.createObjectURL(blob);
-        link.download = filePath.split("/").pop()!;
-        link.click();
-      });
+    .then((res) => res.blob())
+    .then((blob) => {
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = filePath.split("/").pop()!;
+      link.click();
+    });
   };
 
   return (
     <>
-      {/* Trigger button example: could be inside your menu */}
       <button
         onClick={() => setIsOpen(true)}
-        className="hover:underline text-sm font-medium"
+        className={`hover:bg-gray-100 rounded transform hover:scale-105 transition text-left text-sm whitespace-nowrap ${
+          isMobile ? "px-2 w-full" : "px-4 py-1"
+        }`}
       >
         {labels.downloadTxt}
       </button>
@@ -76,7 +79,7 @@ export function CVTxtModal({ filePath, labels }: CVTxtModalProps) {
                 onClick={downloadTxt}
                 className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
               >
-                {labels.downloadTxt}
+                {labels.buttonDownload}
               </button>
               <button
                 onClick={() => setIsOpen(false)}

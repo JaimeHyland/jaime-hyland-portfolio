@@ -3,7 +3,7 @@ export type LabelSet = {
   projects: string;
   cv: string;
   contact: string;
-  download: string;
+  downloads: string;
   downloadTxtDe: string;
   downloadPdfDe: string;
   downloadTxtEn: string;
@@ -17,6 +17,7 @@ export type LabelSet = {
   modalTxtDownloadDe: string;
   modalTxtDownloadEn: string;
   modalTxtDownloadEs: string;
+  buttonDownload: string;
   en: string;
   es: string;
   de: string;
@@ -28,9 +29,9 @@ export const localizedLabels: Record<"en" | "es" | "de", LabelSet> = {
     projects: "Projects",
     cv: "CV",
     contact: "Contact",
-    download: "Downloads",
-    downloadTxtDe: "txt cv in German",
-    downloadPdfDe: "pdf cv in German",
+    downloads: "Downloads",
+    downloadTxtDe: "TXT cv in German",
+    downloadPdfDe: "PDF cv in German",
     downloadTxtEn: "TXT cv in English",
     downloadPdfEn: "PDF cv in English",
     downloadTxtEs: "TXT cv in Spanish",
@@ -42,6 +43,7 @@ export const localizedLabels: Record<"en" | "es" | "de", LabelSet> = {
     modalTxtDownloadDe: "TXT cv in German",
     modalTxtDownloadEn: "TXT cv in English",
     modalTxtDownloadEs: "TXT cv in Spanish",
+    buttonDownload: "Download",
     en: "English",
     es: "Spanish",
     de: "German"
@@ -51,8 +53,8 @@ export const localizedLabels: Record<"en" | "es" | "de", LabelSet> = {
     projects: "Proyectos",
     cv: "Currículum",
     contact: "Contacto",
-    download: "Descargas",
-    downloadTxtDe: "Currículum txt cv en alemán",
+    downloads: "Descargas",
+    downloadTxtDe: "Currículum txt en alemán",
     downloadPdfDe: "Currículum pdf en alemán",
     downloadTxtEn: "Currículum txt en inglés",
     downloadPdfEn: "Currículum pdf en inglés",
@@ -62,9 +64,10 @@ export const localizedLabels: Record<"en" | "es" | "de", LabelSet> = {
     errorText: "Error al cargar el fichero.",
     close: "Cerrar",
     txtReassurance: "Este archivo de texto plano (txt) es seguro y no contiene código ejecutable.",
-    modalTxtDownloadDe: "Archivo txt en alemán",
-    modalTxtDownloadEn: "Archivo txt en inglés",
-    modalTxtDownloadEs: "Archivo txt en español",
+    modalTxtDownloadDe: "Fichero txt en alemán",
+    modalTxtDownloadEn: "Fichero txt en inglés",
+    modalTxtDownloadEs: "Fichero txt en español",
+    buttonDownload: "Descargar",
     en: "inglés",
     es: "español",
     de: "alemán"
@@ -74,7 +77,7 @@ export const localizedLabels: Record<"en" | "es" | "de", LabelSet> = {
     projects: "Projekte",
     cv: "Lebenslauf",
     contact: "Kontakt",
-    download: "Downloads",
+    downloads: "Downloads",
     downloadTxtDe: "TXT-Lebenslauf auf Deutsch",
     downloadPdfDe: "PDF-Lebenslauf auf Deutsch",
     downloadTxtEn: "TXT-Lebenslauf auf Englisch",
@@ -88,6 +91,7 @@ export const localizedLabels: Record<"en" | "es" | "de", LabelSet> = {
     modalTxtDownloadDe: "TXT-Datei auf Deutsch",
     modalTxtDownloadEn: "TXT-Datei auf Englisch",
     modalTxtDownloadEs: "TXT-Datei auf Spanisch",
+    buttonDownload: "Herunterladen",
     en: "Englisch",
     es: "Spanisch",
     de: "Deutsch"
