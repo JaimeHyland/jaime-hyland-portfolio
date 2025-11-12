@@ -137,8 +137,7 @@ export default async function HomePage() {
 
           {/* Runtime Environment */}
           <SiNodedotjs className="w-10 h-10" title="Node.js" />
-          {/* Translation/Localization */}
-          <SiNodedotjs className="w-10 h-10" title="Node.js" />
+
         </div>
       </section>
 
