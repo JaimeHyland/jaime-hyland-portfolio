@@ -64,7 +64,7 @@ export default async function HomePage() {
       </section>
 
       {/* Tech Section */}
-      <TechSection techsTitle={techsTitle} />
+      <TechSection locale={locale} />
 
       {/* Learning / Education */}
       <LearningSection locale={locale} />
