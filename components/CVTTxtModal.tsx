@@ -55,8 +55,8 @@ export function CVTxtModal({ filePath, labels, isMobile = false }: CVTxtModalPro
 
       {/* Modal overlay */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-lg shadow-lg max-w-3xl w-full max-h-[80vh] overflow-hidden flex flex-col">
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={() => setIsOpen(false)}>
+          <div className="bg-white rounded-lg shadow-lg max-w-3xl w-full max-h-[80vh] overflow-hidden flex flex-col" onClick={(e) => e.stopPropagation()}>
             {/* Modal header */}
             <div className="flex justify-between items-center p-4 border-b">
               <h2 className="text-lg font-bold">{labels.downloadTxt}</h2>
@@ -72,7 +72,7 @@ export function CVTxtModal({ filePath, labels, isMobile = false }: CVTxtModalPro
               </pre>
               <p className="mt-2 text-xs text-gray-500">{labels.txtReassurance}</p>
             </div>
-
+s
             {/* Modal footer */}
             <div className="flex justify-end p-4 border-t gap-2">
               <button
