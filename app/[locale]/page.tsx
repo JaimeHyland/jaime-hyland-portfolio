@@ -48,7 +48,6 @@ export default async function HomePage() {
 
   const { name, tagline, intro, buttonLabel, buttonText } = messages.homeInline;
   const techsTitle = messages.techSection.heading;
-  const techItems = messages.techSection.items;
 
   return (
     <main className="px-6 py-10 max-w-6xl mx-auto">
