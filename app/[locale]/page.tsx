@@ -14,6 +14,24 @@ const messagesMap = {
   de: messagesDe
 };
 
+type HomeInline = {
+  name: string;
+  tagline: string;
+  intro: string;
+  buttonLabel: string;
+  buttonText: string;
+};
+
+type TechItem = {
+  title: string;
+  description: string;
+};
+
+type TechSectionType = {
+  heading: string;
+  items: Record<string, TechItem>;
+};
+
 
 export async function generateMetadata() {
   const locale = await getLocale();
@@ -24,17 +42,13 @@ export default async function HomePage() {
   const locale = await getLocale();
 
   const messages = (messagesMap[locale as "en" | "es" | "de"] || messagesEn) as {
-    homeInline: {
-      name: string;
-      tagline: string;
-      intro: string;
-      techsTitle: string;
-      buttonLabel: string;
-      buttonText: string;
-    };
+    homeInline: HomeInline;
+    techSection: TechSectionType;
   };
 
-  const { name, tagline, intro, techsTitle, buttonLabel, buttonText } = messages.homeInline;
+  const { name, tagline, intro, buttonLabel, buttonText } = messages.homeInline;
+  const techsTitle = messages.techSection.heading;
+  const techItems = messages.techSection.items;
 
   return (
     <main className="px-6 py-10 max-w-6xl mx-auto">

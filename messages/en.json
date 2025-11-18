@@ -3,8 +3,6 @@
     "name": "Jaime Hyland",
     "tagline": "Full-stack developer specializing in i18n and l10n",
     "intro": "I'm a full-stack developer with a background in languages and education who enjoys building clean, attractive and scalable web apps that inform, educate, increase productivity and improve quality of life.",
-    "techsTitle": "Some of the technologies I work with",
-    "educationTitle": "Some of the places I've been doing my learning",
     "buttonLabel": "Looking for a collaborator or developer?",
     "buttonText": "Get in touch",
     "keywords": [
@@ -23,7 +21,139 @@
       "Remote Developer"
     ]
   },
-
+  "techSection": {
+    "heading": "Some of the technologies I work with",
+    "items": {
+      "python": {
+        "title": "Python",
+        "description": "I use Python mainly in Django coding, in Flask and for scripting."
+      },
+      "typescript": {
+        "title": "TypeScript",
+        "description": "Used extensively in React and Next.js projects."
+      },
+      "dart": {
+        "title": "Dart",
+        "description": "Used with Flutter for cross-platform mobile development."
+      },
+      "java": {
+        "title": "Java Swing",
+        "description": "Built desktop GUI apps during training."
+      },
+      "cpp": {
+        "title": "C++",
+        "description": "Systems programming fundamentals."
+      },
+      "dotnet": {
+        "title": "Visual Basic .NET",
+        "description": "Built Windows apps during early dev work."
+      },
+      "html5": {
+        "title": "HTML5",
+        "description": "Semantic, accessible markup for web pages."
+      },
+      "css3": {
+        "title": "CSS3",
+        "description": "Custom styling and layout techniques."
+      },
+      "django": {
+        "title": "Django",
+        "description": "Full-stack web apps with REST APIs."
+      },
+      "flask": {
+        "title": "Flask",
+        "description": "Lightweight Python apps and APIs."
+      },
+      "react": {
+        "title": "React",
+        "description": "Modern front-end development."
+      },
+      "nextjs": {
+        "title": "Next.js",
+        "description": "App Router, server actions, API routes."
+      },
+      "flutter": {
+        "title": "Flutter",
+        "description": "Cross-platform mobile apps."
+      },
+      "bootstrap": {
+        "title": "Bootstrap",
+        "description": "Rapid prototyping with prebuilt UI components."
+      },
+      "tailwind": {
+        "title": "Tailwind CSS",
+        "description": "Utility-first UI development."
+      },
+      "postgresql": {
+        "title": "PostgreSQL",
+        "description": "Primary database for Django and analytics apps."
+      },
+      "mysql": {
+        "title": "MySQL",
+        "description": "Experience with relational schema design."
+      },
+      "heroku": {
+        "title": "Heroku",
+        "description": "Deployment of Django and Node.js apps."
+      },
+      "vercel": {
+        "title": "Vercel",
+        "description": "Deployment of Next.js apps."
+      },
+      "godaddy": {
+        "title": "GoDaddy",
+        "description": "DNS, hosting, and email configuration."
+      },
+      "aws": {
+        "title": "AWS",
+        "description": "S3, IAM, and CloudFront basics."
+      },
+      "stripe": {
+        "title": "Stripe",
+        "description": "Payment processing API integration."
+      },
+      "swagger": {
+        "title": "Swagger",
+        "description": "API documentation generation."
+      },
+      "vscode": {
+        "title": "Visual Studio Code",
+        "description": "Primary IDE for development."
+      },
+      "androidstudio": {
+        "title": "Android Studio",
+        "description": "Flutter and native Android testing."
+      },
+      "eclipse": {
+        "title": "Eclipse",
+        "description": "Legacy Java development."
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Version control and CI integration."
+      },
+      "git": {
+        "title": "Git",
+        "description": "Branching, merging, and PR workflows."
+      },
+      "jira": {
+        "title": "Jira",
+        "description": "Agile boards and sprint planning."
+      },
+      "jupyter": {
+        "title": "Jupyter",
+        "description": "Data exploration notebooks."
+      },
+      "nodejs": {
+        "title": "Node.js",
+        "description": "Runtime for tools and servers."
+      },
+      "cloudinary": {
+        "title": "Cloudinary",
+        "description": "Media storage, transformations, and delivery."
+      }
+    }
+  },
   "learningSection": {
     "heading": "Some of the places I've been doing my learning",
 

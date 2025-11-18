@@ -3,8 +3,6 @@
     "name": "Jaime Hyland",
     "tagline": "Desarrollador full-stack especializado en i18n y l10n",
     "intro": "Soy un desarrollador full-stack con experiencia en lenguas y educación, y disfruto creando aplicaciones web limpias, atractivas y escalables que informan, educan, aumentan la productividad y mejoran la calidad de vida.",
-    "techsTitle": "Algunas de las tecnologías con las que trabajo",
-    "educationTitle": "Algunos de los lugares donde he estado aprendiendo",
     "buttonLabel": "¿Buscas un colaborador o desarrollador?",
     "buttonText": "Ponte en contacto",
     "keywords": [
@@ -23,8 +21,141 @@
       "Desarrollador remoto"
     ]
   },
-  "learningSection": {
-    "heading": "Algunos de los lugares donde he estado aprendiendo",
+    "techSection": {
+    "heading": "Algunas de las tecnologías con las que trabajo",
+    "items": {
+      "python": {
+        "title": "Python",
+        "description": "Uso Python principalmente en desarrollo con Django, en Flask y para scripting."
+      },
+      "typescript": {
+        "title": "TypeScript",
+        "description": "Usado extensivamente en proyectos con React y Next.js."
+      },
+      "dart": {
+        "title": "Dart",
+        "description": "Usado con Flutter para desarrollo móvil multiplataforma."
+      },
+      "java": {
+        "title": "Java Swing",
+        "description": "Creé aplicaciones de escritorio con GUI durante mi formación."
+      },
+      "cpp": {
+        "title": "C++",
+        "description": "Fundamentos de programación de sistemas."
+      },
+      "dotnet": {
+        "title": "Visual Basic .NET",
+        "description": "Desarrollé aplicaciones de Windows en trabajos iniciales."
+      },
+      "html5": {
+        "title": "HTML5",
+        "description": "Marcado semántico y accesible para páginas web."
+      },
+      "css3": {
+        "title": "CSS3",
+        "description": "Técnicas personalizadas de diseño y estilo."
+      },
+      "django": {
+        "title": "Django",
+        "description": "Aplicaciones web full-stack con APIs REST."
+      },
+      "flask": {
+        "title": "Flask",
+        "description": "Aplicaciones y APIs ligeras en Python."
+      },
+      "react": {
+        "title": "React",
+        "description": "Desarrollo moderno de front-end."
+      },
+      "nextjs": {
+        "title": "Next.js",
+        "description": "App Router, acciones del servidor, rutas API."
+      },
+      "flutter": {
+        "title": "Flutter",
+        "description": "Aplicaciones móviles multiplataforma."
+      },
+      "bootstrap": {
+        "title": "Bootstrap",
+        "description": "Prototipado rápido con componentes predefinidos."
+      },
+      "tailwind": {
+        "title": "Tailwind CSS",
+        "description": "Desarrollo de UI centrado en utilidades."
+      },
+      "postgresql": {
+        "title": "PostgreSQL",
+        "description": "Base de datos principal para Django y apps de análisis."
+      },
+      "mysql": {
+        "title": "MySQL",
+        "description": "Experiencia con diseño de esquemas relacionales."
+      },
+      "heroku": {
+        "title": "Heroku",
+        "description": "Despliegue de apps Django y Node.js."
+      },
+      "vercel": {
+        "title": "Vercel",
+        "description": "Despliegue de apps Next.js."
+      },
+      "godaddy": {
+        "title": "GoDaddy",
+        "description": "Configuración de DNS, hosting y correo electrónico."
+      },
+      "aws": {
+        "title": "AWS",
+        "description": "Conceptos básicos de S3, IAM y CloudFront."
+      },
+      "stripe": {
+        "title": "Stripe",
+        "description": "Integración de API de procesamiento de pagos."
+      },
+      "swagger": {
+        "title": "Swagger",
+        "description": "Generación de documentación de APIs."
+      },
+      "vscode": {
+        "title": "Visual Studio Code",
+        "description": "IDE principal para desarrollo."
+      },
+      "androidstudio": {
+        "title": "Android Studio",
+        "description": "Pruebas en Flutter y nativo de Android."
+      },
+      "eclipse": {
+        "title": "Eclipse",
+        "description": "Desarrollo Java legacy."
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Control de versiones e integración continua."
+      },
+      "git": {
+        "title": "Git",
+        "description": "Ramas, fusiones y flujo de trabajo con PR."
+      },
+      "jira": {
+        "title": "Jira",
+        "description": "Tableros ágiles y planificación de sprints."
+      },
+      "jupyter": {
+        "title": "Jupyter",
+        "description": "Cuadernos para exploración de datos."
+      },
+      "nodejs": {
+        "title": "Node.js",
+        "description": "Entorno de ejecución para herramientas y servidores."
+      },
+      "cloudinary": {
+        "title": "Cloudinary",
+        "description": "Almacenamiento de medios, transformaciones y entrega."
+      }
+    }
+  },
+    "learningSection": {
+    "heading": "Algunos de los lugares donde he aprendido, o estoy todavía aprendiendo",
 
     "FASTitle": "FÁS",
     "fasModalContent": "FÁS fue la Autoridad Nacional Irlandesa de Formación Profesional en el momento en que hice mi formación básica en Informática allí. Desde entonces ha sido reemplazada por <link>Solas</link>.",

@@ -3,8 +3,6 @@
     "name": "Jaime Hyland",
     "tagline": "Full-stack developer mit Spezialisierung auf i18n und l10n",
     "intro": "Ich bin ein Full-Stack-Entwickler mit einem Hintergrund in Sprachen und Bildung und entwickle gerne saubere, ansprechende und skalierbare Webanwendungen, die informieren, bilden, die Produktivität steigern und die Lebensqualität verbessern.",
-    "techsTitle": "Einige der Technologien, mit denen ich arbeite",
-    "educationTitle": "Einige der Orte, an denen ich gelernt habe",
     "buttonLabel": "Suchen Sie einen Entwickler oder Mitstreiter?",
     "buttonText": "Kontakt aufnehmen",
     "keywords": [
@@ -22,6 +20,139 @@
       "Personalbeschaffung",
       "Remote-Entwickler"
     ]
+  },
+  "techSection": {
+    "heading": "Einige der Technologien, mit denen ich arbeite",
+    "items": {
+      "python": {
+        "title": "Python",
+        "description": "Ich nutze Python hauptsächlich für Django, Flask und Scripting."
+      },
+      "typescript": {
+        "title": "TypeScript",
+        "description": "Intensiv verwendet in React- und Next.js-Projekten."
+      },
+      "dart": {
+        "title": "Dart",
+        "description": "Verwendet mit Flutter für plattformübergreifende mobile Apps."
+      },
+      "java": {
+        "title": "Java Swing",
+        "description": "Desktop-GUI-Anwendungen während der Ausbildung erstellt."
+      },
+      "cpp": {
+        "title": "C++",
+        "description": "Grundlagen der Systemprogrammierung."
+      },
+      "dotnet": {
+        "title": "Visual Basic .NET",
+        "description": "Windows-Anwendungen in frühen Entwicklungsprojekten erstellt."
+      },
+      "html5": {
+        "title": "HTML5",
+        "description": "Semantisches und barrierefreies Markup."
+      },
+      "css3": {
+        "title": "CSS3",
+        "description": "Individuelle Layout- und Stiltechniken."
+      },
+      "django": {
+        "title": "Django",
+        "description": "Full-Stack-Webapps mit REST-APIs."
+      },
+      "flask": {
+        "title": "Flask",
+        "description": "Leichte Python-Anwendungen und APIs."
+      },
+      "react": {
+        "title": "React",
+        "description": "Moderne Frontend-Entwicklung."
+      },
+      "nextjs": {
+        "title": "Next.js",
+        "description": "App-Router, Server-Aktionen, API-Routen."
+      },
+      "flutter": {
+        "title": "Flutter",
+        "description": "Plattformübergreifende mobile Apps."
+      },
+      "bootstrap": {
+        "title": "Bootstrap",
+        "description": "Schnelles Prototyping mit vorgefertigten UI-Komponenten."
+      },
+      "tailwind": {
+        "title": "Tailwind CSS",
+        "description": "Utility-first UI-Entwicklung."
+      },
+      "postgresql": {
+        "title": "PostgreSQL",
+        "description": "Primäre Datenbank für Django- und Analyse-Apps."
+      },
+      "mysql": {
+        "title": "MySQL",
+        "description": "Erfahrung im relationalen Schema-Design."
+      },
+      "heroku": {
+        "title": "Heroku",
+        "description": "Deployment von Django- und Node.js-Apps."
+      },
+      "vercel": {
+        "title": "Vercel",
+        "description": "Deployment von Next.js-Apps."
+      },
+      "godaddy": {
+        "title": "GoDaddy",
+        "description": "DNS-, Hosting- und E-Mail-Konfiguration."
+      },
+      "aws": {
+        "title": "AWS",
+        "description": "Grundlagen von S3, IAM und CloudFront."
+      },
+      "stripe": {
+        "title": "Stripe",
+        "description": "Integration der Zahlungs-API."
+      },
+      "swagger": {
+        "title": "Swagger",
+        "description": "API-Dokumentation erstellen."
+      },
+      "vscode": {
+        "title": "Visual Studio Code",
+        "description": "Haupt-IDE für Entwicklung."
+      },
+      "androidstudio": {
+        "title": "Android Studio",
+        "description": "Flutter- und native Android-Tests."
+      },
+      "eclipse": {
+        "title": "Eclipse",
+        "description": "Legacy Java-Entwicklung."
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Versionskontrolle und CI-Integration."
+      },
+      "git": {
+        "title": "Git",
+        "description": "Branches, Merges und PR-Workflows."
+      },
+      "jira": {
+        "title": "Jira",
+        "description": "Agile Boards und Sprintplanung."
+      },
+      "jupyter": {
+        "title": "Jupyter",
+        "description": "Notebooks für Datenexploration."
+      },
+      "nodejs": {
+        "title": "Node.js",
+        "description": "Runtime für Tools und Server."
+      },
+      "cloudinary": {
+        "title": "Cloudinary",
+        "description": "Medien-Speicherung, Transformationen und Auslieferung."
+      }
+    }
   },
   "learningSection": {
     "heading": "Einige der Orte, an denen ich gelernt habe, und noch lerne",
