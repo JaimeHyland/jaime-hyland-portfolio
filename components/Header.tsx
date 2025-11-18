@@ -3,7 +3,7 @@
 
 import { usePathname, useRouter } from "next/navigation";
 import Cookies from "js-cookie";
-import { useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Menu, MessageCircle, X } from "lucide-react";
 import { localizedPaths } from "@/lib/paths";
 import { localizedLabels } from "@/lib/labels";
@@ -30,6 +30,23 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
   const [navOpen, setNavOpen] = useState(false);
 
   const [downloadOpen, setDownloadOpen] = useState(false);
+  const downloadRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        downloadRef.current &&
+        !downloadRef.current.contains(event.target as Node)
+      ) {
+        setDownloadOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const pageKey =
     (Object.keys(paths) as (keyof typeof paths)[]).find(
@@ -38,10 +55,8 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
 
   const handleLanguageChange = (lng: "en" | "es" | "de") => {
     Cookies.set("NEXT_LOCALE", lng, { expires: 365 });
-
     const translatedPath = localizedPaths[lng][pageKey];
     const newPath = `/${lng}${translatedPath ? `/${translatedPath}` : ""}`;
-
     router.push(newPath);
     setNavOpen(false); // Close mobile nav after language change
   };
@@ -51,7 +66,6 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
   return (
     <header className="border-b p-4">
       <div className="max-w-5xl mx-auto flex items-center justify-between">
-        {/* Left: Nav Menu (desktop) */}
         <nav className="hidden md:flex gap-4 text-lg text-gray-800">
           <HeaderLink href={`/${lang}/${paths.home}`} pageKey="home" currentKey={pageKey}>
             {labels?.home}
@@ -66,11 +80,14 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
             {labels?.contact}
           </HeaderLink>
 
-          <div className="relative group">
-            <span className="inline-block cursor-pointer transform transition duration-200 hover:scale-105">
+          <div className="relative" ref={downloadRef}>
+            <span 
+              onClick={() => setDownloadOpen(!downloadOpen)}
+              className="inline-block cursor-pointer transform transition duration-200 hover:scale-105">
               {labels.downloads}
             </span>
-              <div className="absolute left-0 mt-2 bg-white border shadow-md rounded-md flex flex-col py-1 text-sm opacity-0 group-hover:opacity-100 transition-opacity w-56 z-50">
+            {downloadOpen && (
+              <div className="absolute left-0 mt-2 bg-white border shadow-md rounded-md flex flex-col py-1 text-sm w-56 z-50">
               <a
                   href="/files/JaimeHyland_CV_de_DE_HR_FullStack_20251107.pdf"
                   target="_blank"
@@ -129,6 +146,7 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                   }}
                 />
             </div>
+            )}
           </div>
         </nav>
 
