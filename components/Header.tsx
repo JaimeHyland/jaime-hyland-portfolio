@@ -244,24 +244,26 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
             {labels?.contact}
           </HeaderLink>
           {/* Downloads toggle */}
-          <HeaderLink
-            href="#"
-            pageKey="download"
-            currentKey={pageKey}
-            onClick={(e) => {
-              e.preventDefault();
-              setDownloadOpen(!downloadOpen);
-            }}
-            className={`text-left w-full transform hover:scale-105 transition ${downloadOpen ? "font-medium" : "font-normal"}`}
-          >
-            {labels.downloads}
-          </HeaderLink>
+          <div className="relative">
+            <HeaderLink
+              href="#"
+              pageKey="download"
+              currentKey={pageKey}
+              onClick={(e) => {
+                e.preventDefault();
+                setDownloadOpen(!downloadOpen);
+              }}
+              className={`text-left w-full transform hover:scale-105 transition ${downloadOpen ? "font-medium" : "font-normal"}`}
+            >
+              {labels.downloads}
+            </HeaderLink>
+          </div>
 
           {/* Mobile Downloads Submenu */}
           {downloadOpen && (
             <div
               ref={downloadRef} // so click-outside works
-              className="absolute left-0 mt-2 bg-white border shadow-md rounded-md flex flex-col py-1 text-sm w-56 z-50"
+              className="absolute left-2 top-full mt-1 bg-white border shadow-md rounded-md flex flex-col py-1 text-sm w-56 z-50"
             >
               <a
                 href="/files/JaimeHyland_CV_de_DE_HR_FullStack_20251107.pdf"
