@@ -30,25 +30,27 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
   const [navOpen, setNavOpen] = useState(false);
 
   const [downloadOpen, setDownloadOpen] = useState(false);
-  const downloadRef = useRef<HTMLDivElement>(null);
 
+  const downloadRef = useRef<HTMLDivElement>(null);
   const mobileNavRef = useRef<HTMLDivElement>(null);
   const toggleRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-  function handlePointerDownNav(e: PointerEvent) {
-    if (
-      mobileNavRef.current &&
-      !mobileNavRef.current.contains(e.target as Node) &&
-      !toggleRef.current?.contains(e.target as Node)
-    ) {
-      setNavOpen(false);
+    function handleClickOutsideDownloads(e: PointerEvent) {
+      const target = e.target as Node;
+      if (
+        downloadRef.current &&
+        toggleRef.current &&
+        !downloadRef.current.contains(target) &&
+        !toggleRef.current.contains(target)
+      ) {
+        setDownloadOpen(false);
+      }
     }
-  }
 
-  document.addEventListener("pointerdown", handlePointerDownNav);
-  return () => document.removeEventListener("pointerdown", handlePointerDownNav);
-}, []);
+    document.addEventListener("pointerdown", handleClickOutsideDownloads);
+    return () => document.removeEventListener("pointerdown", handleClickOutsideDownloads);
+  }, []);
 
   const pageKey =
     (Object.keys(paths) as (keyof typeof paths)[]).find(
@@ -121,6 +123,7 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 transform hover:scale-105 hover:bg-gray-100 rounded transition text-sm"
+                  onClick={() => setDownloadOpen(false)}
                 >
                   {labels.downloadPdfEn}
                 </a>
@@ -141,6 +144,7 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 transform hover:scale-105 hover:bg-gray-100 rounded transition text-sm"
+                  onClick={() => setDownloadOpen(false)}
                 >
                   {labels.downloadPdfEs}
                 </a>
