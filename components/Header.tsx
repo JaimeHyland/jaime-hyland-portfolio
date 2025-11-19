@@ -262,7 +262,7 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
           {/* Mobile Downloads Submenu */}
           {downloadOpen && (
             <div
-              ref={downloadRef} // so click-outside works
+              ref={downloadRef}
               className="absolute left-2 top-full mt-1 bg-white border shadow-md rounded-md flex flex-col py-1 text-sm w-56 z-50"
             >
               <a

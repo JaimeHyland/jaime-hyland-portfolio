@@ -4,7 +4,6 @@ import { ProjLink } from "../../../components/ProjLink";
 import { BadgeDisplay } from "../../../components/BadgeDisplay";
 import { CollapsibleSection } from "../../../components/CollapsibleSection";
 import { useTranslations } from "next-intl";
-import { Trans } from "react-i18next";
 
 export default function ProjectsPage() {
   const t = useTranslations();
@@ -12,6 +11,7 @@ export default function ProjectsPage() {
 
   const items = t.raw("section2.projects.shopify-prototype.items") as string[];
   const features = t.raw("section2.projects.portfolio.features") as string[];
+  const nextSteps = t.raw("section2.projects.portfolio.nextSteps") as string[];
   const problems = t.raw("section4.projects.microbus-l10n.problems") as string[];
   const solutions = t.raw("section4.projects.microbus-l10n.solutions") as string[];
 
@@ -161,6 +161,22 @@ export default function ProjectsPage() {
                 bold: (chunks) => <strong>{chunks}</strong>
               })}
             </p>
+            <p>
+              {t.rich("section2.projects.portfolio.desc4", {
+                bold: (chunks) => <strong>{chunks}</strong>
+              })}
+            </p>
+            {Array.isArray(nextSteps) && (
+              <ul className="list-disc list-outside pl-5 mb-4">
+                {nextSteps.map((nextStep, index) => (
+                  <li key={index} className="pl-2 -text-indent text-indent-hang">
+                    {t.rich(`section2.projects.portfolio.nextSteps.${index}`, {
+                      bold: (chunks) => <strong>{chunks}</strong>
+                    })}
+                  </li>
+                ))}
+              </ul>
+            )}
             <ProjLink href={t("section2.projects.portfolio.codebaseURL")}>
               {t("section2.projects.portfolio.codebaseText")}
             </ProjLink>

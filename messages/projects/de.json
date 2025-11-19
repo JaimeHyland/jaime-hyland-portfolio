@@ -63,7 +63,12 @@
           "Impressum, auch vollständig lokalisiert",
           "Integrierte Vercel-Analytik, mit Banner-Einwilligungsformular und Modal-Dialog zur Datenschutzverwaltung"
         ],
-        "desc3": "Beim Aufbau der Seite habe ich besonderen Wert auf klare Strukturen, Wartbarkeit, Reaktionsfähigkeit und Sprachkonsistenz gelegt. Sie verwendet typisierte <bold>React</bold>-Komponenten mit <bold>Server-seitigem Rendering</bold> und entspricht den hohen Standards, die ich auch in meine Einzel- und Teamarbeit einbringe. Die Seite ist vollständig responsiv, SEO-freundlich und zeigt meine Fähigkeit, robuste, skalierbare Inhaltsplattformen mit modernen Frontend-Tools zu entwickeln."
+        "desc3": "Beim Aufbau der Seite habe ich besonderen Wert auf klare Strukturen, Wartbarkeit, Bildschirm-Responsivität, Sprachkonsistenz und Rechtskonformität gelegt. Sie verwendet typisierte <bold>React</bold>-Komponenten mit <bold>Server-seitigem Rendering</bold> und entspricht den hohen Standards, die ich auch in meine Einzel- und Teamarbeit einbringe. Die Seite ist vollständig responsiv, SEO-freundlich und zeigt meine Fähigkeit, robuste, skalierbare Inhaltsplattformen mit modernen Frontend-Tools zu entwickeln.",
+        "desc4": "Die Seite ist allerdings noch stark in Arbeit. Sobald die Grundstruktur des Projekts steht, ergeben sich zwei offensichtliche nächste Schritte:",
+        "nextSteps": [
+          "Die Sprachressourcen in eine Datenbank überführen, als erster Schritt zur Schaffung eines einfachen, mehrsprachigen Single-Source-Publishing-Systems, sodass Änderungen im Text gleichzeitig Word/OpenOffice-Dokumente, PDFs und die Webseite am Ursprung einfließen",
+          "Mit einer Refactoring-Initiative beginnen, um die Wiederverwendbarkeit des Codes zu erleichtern, mit dem möglichen langfristigen Ziel, anderen Nutzern einen einfachen persönlichen Online-Portfolio-Generator zur Verfügung zu stellen"
+        ]
       },
       "djangoFlutterI18n": {
         "name": "Django-Flutter i18n template",
