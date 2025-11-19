@@ -15,6 +15,7 @@ interface CVTxtModalProps {
     buttonDownload: string;
   };
   isMobile?: boolean;
+  onOpen?: () => void;
 }
 
 export function CVTxtModal({ filePath, labels, isMobile = false }: CVTxtModalProps) {
