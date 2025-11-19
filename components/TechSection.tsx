@@ -62,7 +62,7 @@ const iconMap: Record<string, IconType> = {
   stripe: SiStripe,
   swagger: SiSwagger,
   vscode: SiVisualstudiocode,
-  androidstudio: SiAndroidstudio,
+  androidStudio: SiAndroidstudio,
   eclipse: SiEclipseide,
   github: SiGithub,
   git: SiGit,

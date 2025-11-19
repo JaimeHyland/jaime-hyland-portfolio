@@ -25,7 +25,7 @@
     "heading": "Some of the technologies I work with",
     "items": {
       "python": {
-        "title": "Python",
+        "title": "Python: select for more info!",
         "description": "I use Python mainly in Django coding, in Flask and for scripting."
       },
       "typescript": {
@@ -120,7 +120,7 @@
         "title": "Visual Studio Code",
         "description": "Primary IDE for development."
       },
-      "androidstudio": {
+      "androidStudio": {
         "title": "Android Studio",
         "description": "Flutter and native Android testing."
       },

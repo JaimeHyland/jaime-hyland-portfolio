@@ -16,9 +16,10 @@ interface CVTxtModalProps {
   };
   isMobile?: boolean;
   onOpen?: () => void;
+  onClose?: () => void;
 }
 
-export function CVTxtModal({ filePath, labels, isMobile = false }: CVTxtModalProps) {
+export function CVTxtModal({ filePath, labels, isMobile = false, onOpen, onClose }: CVTxtModalProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [txtContent, setTxtContent] = useState("");
 
@@ -43,6 +44,11 @@ export function CVTxtModal({ filePath, labels, isMobile = false }: CVTxtModalPro
     });
   };
 
+  const handleClose = () => {
+  setIsOpen(false);
+  if (onClose) onClose();  // <-- close the menu here
+};
+
   return (
     <>
       <button
@@ -56,12 +62,12 @@ export function CVTxtModal({ filePath, labels, isMobile = false }: CVTxtModalPro
 
       {/* Modal overlay */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={() => setIsOpen(false)}>
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={handleClose}>
           <div className="bg-white rounded-lg shadow-lg max-w-3xl w-full max-h-[80vh] overflow-hidden flex flex-col" onClick={(e) => e.stopPropagation()}>
             {/* Modal header */}
             <div className="flex justify-between items-center p-4 border-b">
               <h2 className="text-lg font-bold">{labels.downloadTxt}</h2>
-              <button onClick={() => setIsOpen(false)}>
+              <button onClick={handleClose}>
                 <X size={20} />
               </button>
             </div>
@@ -73,7 +79,7 @@ export function CVTxtModal({ filePath, labels, isMobile = false }: CVTxtModalPro
               </pre>
               <p className="mt-2 text-xs text-gray-500">{labels.txtReassurance}</p>
             </div>
-s
+
             {/* Modal footer */}
             <div className="flex justify-end p-4 border-t gap-2">
               <button
@@ -83,7 +89,7 @@ s
                 {labels.buttonDownload}
               </button>
               <button
-                onClick={() => setIsOpen(false)}
+                onClick={handleClose}
                 className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300 transition"
               >
                 {labels.close}

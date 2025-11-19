@@ -32,17 +32,23 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
   const [downloadOpen, setDownloadOpen] = useState(false);
   const downloadRef = useRef<HTMLDivElement>(null);
 
+  const mobileNavRef = useRef<HTMLDivElement>(null);
+  const toggleRef = useRef<HTMLButtonElement>(null);
+
   useEffect(() => {
-    function handlePointerDown(e: PointerEvent) {
-      if (downloadRef.current && !downloadRef.current.contains(e.target as Node)) {
-        setDownloadOpen(false);
-      }
+  function handlePointerDownNav(e: PointerEvent) {
+    if (
+      mobileNavRef.current &&
+      !mobileNavRef.current.contains(e.target as Node) &&
+      !toggleRef.current?.contains(e.target as Node)
+    ) {
+      setNavOpen(false);
     }
+  }
 
-    document.addEventListener("pointerdown", handlePointerDown);
-    return () => document.removeEventListener("pointerdown", handlePointerDown);
-  }, []);
-
+  document.addEventListener("pointerdown", handlePointerDownNav);
+  return () => document.removeEventListener("pointerdown", handlePointerDownNav);
+}, []);
 
   const pageKey =
     (Object.keys(paths) as (keyof typeof paths)[]).find(
@@ -59,6 +65,7 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
 
 
   const closeMenu = () => setNavOpen(false);
+
 
   return (
     <header className="border-b p-4">
@@ -88,15 +95,15 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                 ref={downloadRef}
                 className="absolute left-0 mt-2 bg-white border shadow-md rounded-md flex flex-col py-1 text-sm w-56 z-50"
               >
-              <a
-                  href="/files/JaimeHyland_CV_de_DE_HR_FullStack_20251107.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 transform hover:scale-105 rounded transition text-sm"
-                  onClick={() => setDownloadOpen(false)}
-                >
-                {labels.downloadPdfDe}
-              </a>
+                <a
+                    href="/files/JaimeHyland_CV_de_DE_HR_FullStack_20251107.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 transform hover:scale-105 rounded transition text-sm"
+                    onClick={() => setDownloadOpen(false)}
+                  >
+                  {labels.downloadPdfDe}
+                </a>
                 <CVTxtModal
                   filePath="/files/JaimeHyland_CV_de_DE_ATS_FullStack_20251107.txt"
                   labels={{
@@ -107,14 +114,13 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                     loadingText: labels.loadingText, 
                     buttonDownload: labels.buttonDownload
                   }}
-                  onOpen={() => setDownloadOpen(false)}
+                  onClose={() => setDownloadOpen(false)}
                 />
                 <a
                   href="/files/JaimeHyland_CV_en_GB_HR_FullStack_20251107.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 transform hover:scale-105 hover:bg-gray-100 rounded transition text-sm"
-                  onClick={() => setDownloadOpen(false)}
                 >
                   {labels.downloadPdfEn}
                 </a>
@@ -128,14 +134,13 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                     loadingText: labels.loadingText, 
                     buttonDownload: labels.buttonDownload
                   }}
-                  onOpen={() => setDownloadOpen(false)}
+                  onClose={() => setDownloadOpen(false)}
                 />
                 <a
                   href="/files/JaimeHyland_CV_es_ES_HR_FullStack_20251107.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 transform hover:scale-105 hover:bg-gray-100 rounded transition text-sm"
-                  onClick={() => setDownloadOpen(false)}
                 >
                   {labels.downloadPdfEs}
                 </a>
@@ -149,7 +154,7 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                     loadingText: labels.loadingText, 
                     buttonDownload: labels.buttonDownload
                   }}
-                  onOpen={() => setDownloadOpen(false)}
+                  onClose={() => setDownloadOpen(false)}
                 />
             </div>
             )}
@@ -159,6 +164,7 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
         {/* Left: Mobile burger */}
         <div className="md:hidden flex items-center gap-2">
           <button
+            ref={toggleRef}
             onClick={() => setNavOpen(!navOpen)}
             className="text-gray-600 hover:text-gray-900"
             aria-label="Toggle navigation"
@@ -230,7 +236,9 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
 
       {/* Mobile nav dropdown */}
       {navOpen && (
-        <div className="md:hidden absolute top-16 left-4 bg-white border border-gray-200 shadow-lg rounded-lg p-4 flex flex-col gap-2 text-lg text-gray-800 w-72 z-50">
+        <div 
+          ref={mobileNavRef}
+          className="md:hidden absolute top-16 left-4 bg-white border border-gray-200 shadow-lg rounded-lg p-4 flex flex-col gap-2 text-lg text-gray-800 w-72 z-50" onClick={(e) => e.stopPropagation()}>
           <HeaderLink href={`/${lang}/${paths.home}`} pageKey="home" currentKey={pageKey} onClick={closeMenu}>
             {labels?.home}
           </HeaderLink>
@@ -286,6 +294,7 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                     buttonDownload: labels.buttonDownload,
                   }}
                   isMobile={true}
+                  onClose={() => setDownloadOpen(false)}
                 />
               </div>
 
@@ -310,6 +319,7 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                     buttonDownload: labels.buttonDownload,
                   }}
                   isMobile={true}
+                  onClose={() => setDownloadOpen(false)}
                 />
               </div>
               <a
@@ -333,6 +343,7 @@ export default function Header({ lang, labels, paths }: HeaderProps) {
                     buttonDownload: labels.buttonDownload,
                   }}
                   isMobile={true}
+                  onClose={() => setDownloadOpen(false)}
                 />
               </div>
             </div>

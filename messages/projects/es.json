@@ -64,7 +64,7 @@
           "Analítica integrada de Vercel, con formulario de consentimiento en banner y modal de gestión de privacidad de datos"
         ],
         "desc3": "Al desarrollarlo, he dado prioridad a la claridad sin complicaciones, la mantenibilidad, la responsividad a pantallas diferentes, la coherencia entre idiomas y la conformidad legal. Utiliza componentes <bold>React</bold> tipados con <bold>renderizado del lado del servidor</bold>, y refleja los mismos estándares que aplico en mi trabajo individual y en equipo. Es totalmente adaptable, optimizado para SEO y demuestra mi capacidad para construir plataformas de contenido robustas y escalables con herramientas modernas de frontend.",
-        "desc4": "Sin embargo, el sitio sigue siendo un proyecto en desarrollo. Ahora que se ha establecido la estructura básica del proyecto, hay dos pasos siguientes evidentes:",
+        "desc4": "Sin embargo, el sitio sigue siendo un proyecto en desarrollo. Ahora que se ha establecido la estructura básica del proyecto, evidentes como posibles próximos pasos son las dos opciones siguientes:",
         "nextSteps": [
           "Mover los recursos de idioma a una base de datos como primer paso para crear un sistema de publicación multilingüe de fuente única sencillo, de modo que los cambios en el texto afecten simultáneamente a los documentos Word/OpenOffice, PDFs y el sitio web en su origen",
           "Iniciar un esfuerzo de refactorización para facilitar la reutilización del código, con el posible objetivo a largo plazo de proporcionar a otros usuarios un simple generador de portafolios personales online"
