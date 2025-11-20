@@ -7,6 +7,7 @@ import { localizedPaths } from "@/lib/paths";
 import { localizedLabels } from "@/lib/labels";
 import "@/app/globals.css";
 import AnalyticsAndConsent from "@/app/AnalyticsAndConsent";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export async function generateStaticParams() {
   return [
@@ -42,6 +43,7 @@ export default async function LocaleLayout({
 
       <main className="pt-20 p-6">{children}</main>
       <Footer locale={locale as Locale} />
+      <ScrollToTopButton />
     </NextIntlClientProvider>
   );
 }

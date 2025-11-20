@@ -66,7 +66,7 @@
         "desc3": "In building it, I've emphasized fuss-free clarity, maintainability, responsiveness, cross-language consistency and legal conformity. It uses typed <bold>React</bold> components with <bold>server-side rendering</bold> and reflects the same standards I bring to my individual and collaborative work. It's fully responsive, SEO-friendly, and demonstrates my ability to deliver robust, scalable content platforms with modern frontend tooling.",
         "desc4": "The site is, however, very much a work-in-progress. Now that the basic structure of the project is in place, there are two obvious next steps:",
         "nextSteps": [
-          "Move language resources to a DB as first step to creating a simple, multilingual single-source publishing system, so that changes in text affect Word/OpenOffice documents, pdfs and the website simultaneously at source",
+          "Move language resources to a DB as first step to creating a simple, multilingual single-source publishing system, so that changes in text affect Word/OpenOffice documents, PDFs and the website simultaneously at source",
           "Begin a refactoring effort to make it easier to reuse code, with the possible eventual goal of providing a simple personal online portfolio-maker for other users"
         ]
       },
