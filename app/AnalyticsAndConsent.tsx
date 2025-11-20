@@ -11,7 +11,6 @@ export default function AnalyticsAndConsent() {
   useEffect(() => {
     // Check localStorage for stored consent
     const analyticsConsent = getAnalyticsConsent();
-    console.log("DEBUG: Entered AnalyticsAndConsent.useEffect");
     if (analyticsConsent === "accepted") {
       setConsentGiven(true);
     }
