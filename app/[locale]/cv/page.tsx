@@ -23,7 +23,7 @@ export default function CVPage() {
       link: (chunks) => <ProjLink href={urls[i]}>{chunks}</ProjLink>
     })
   );
-
+  
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-6">
       <div
@@ -39,9 +39,7 @@ export default function CVPage() {
         </div>
         <div
           className="
-          md:flex md:flex-col md:justify-center
-          text-left inline-block
-      "
+          md:flex md:flex-col md:justify-center text-left inline-block"
         >
           <div className="text-center">
             <h1 className="text-3xl font-bold">{t("cvOwner")}</h1>
@@ -59,29 +57,36 @@ export default function CVPage() {
       </CollapsibleSection>
 
       <CollapsibleSection title={t("technologies.heading")}>
-        <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
-          <div className="font-semibold">{t("technologies.programmingPt")}</div>
+        <div className="grid grid-cols-[35%,1fr] md:grid-cols-[auto,1fr] gap-x-4 gap-y-2">
+          <div lang={locale} className="font-semibold break-words hyphens-auto">{t("technologies.programmingPt")}</div>
           <div>{t("technologies.programmingText")}</div>
-          <div className="font-semibold">{t("technologies.databasesPt")}</div>
+          <div lang={locale} className="font-semibold break-words hyphens-auto">{t("technologies.databasesPt")}</div>
           <div>{t("technologies.databasesText")}</div>
-          <div className="font-semibold">{t("technologies.deploymentPt")}</div>
+          <div lang={locale} className="font-semibold break-words">{t("technologies.deploymentPt")}</div>
           <div>{t("technologies.deploymentText")}</div>
-          <div className="font-semibold">{t("technologies.versionControlPt")}</div>
+          <div lang={locale} className="font-semibold break-words hyphens-auto">{t("technologies.versionControlPt")}</div>
           <div>{t("technologies.versionControlText")}</div>
-          <div className="font-semibold">{t("technologies.frameworksPt")}</div>
+          <div lang={locale} className="font-semibold break-words hyphens-auto">
+            {t("technologies.frameworksPt")}
+            /<wbr />
+            {t("technologies.librariesPt")}:
+          </div>
           <div>{t("technologies.frameworksText")}</div>
-          <div className="font-semibold">{t("technologies.xlationPt")}</div>
+          <div lang={locale} className="font-semibold break-words hyphens-auto">
+            <span className="block md:hidden">{t("technologies.xlationPtMobile")}</span>
+            <span className="hidden md:block">{t("technologies.xlationPtDesktop")}</span>
+          </div>
           <div>{t("technologies.xlationText")}</div>
-          <div className="font-semibold">{t("technologies.singlesourcePt")}</div>
+          <div lang={locale} className="font-semibold break-words hyphens-auto">{t("technologies.singlesourcePt")}</div>
           <div>{t("technologies.singlesourceText")}</div>
         </div>
       </CollapsibleSection>
 
       <CollapsibleSection title={t("education.heading")}>
-        <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
+        <div className="grid grid-cols-[25%,1fr] md:grid-cols-[auto,1fr] gap-x-4 gap-y-2">
           {educationItems.map((item: { period: string; text: string }, i: number) => (
             <React.Fragment key={i}>
-              <div className="font-semibold">{item.period}</div>
+              <div lang={locale} className="font-semibold break-words hyphens-auto">{item.period}</div>
               <div>{item.text}</div>
             </React.Fragment>
           ))}
@@ -98,7 +103,7 @@ export default function CVPage() {
       </CollapsibleSection>
 
       <CollapsibleSection id="germany-experience" title={t("workExperienceGermany.heading")}>
-        <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
+        <div className="grid grid-cols-[25%,1fr] md:grid-cols-[auto,1fr] gap-x-4 gap-y-2">
           {t.raw("workExperienceGermany.items").map(
             (
               item: {
@@ -111,18 +116,18 @@ export default function CVPage() {
               i: number
             ) => (
               <React.Fragment key={i}>
-                <div className="font-semibold">{item.period}</div>
+                <div lang={locale} className="font-semibold break-words hyphens-auto">{item.period}</div>
                 <div>{item.text}</div>
 
                 {/* Blurb content: shown in a single full-width row */}
                 {(item.blurbTitle || item.blurb1 || item.blurb2) && (
-                  <div className="col-span-2 space-y-1 pl-24 my-4">
+                  <div lang={locale} className="col-span-2 space-y-1 pl-10 my-4 break-words hyphens-auto">
                     {item.blurbTitle && (
                       <div>
                         <em>{item.blurbTitle}</em>
                       </div>
                     )}
-                    <ul className="list-disc list-outside pl-6 space-y-1">
+                    <ul lang={locale} className="list-disc list-outside pl-6 space-y-1 break-words hyphens-auto">
                       {item.blurb1 && <li>{item.blurb1}</li>}
                       {item.blurb2 && <li>{item.blurb2}</li>}
                     </ul>
@@ -139,7 +144,7 @@ export default function CVPage() {
         title={t("workExperienceIreland.heading")}
         defaultOpen={false}
       >
-        <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
+        <div className="grid grid-cols-[25%,1fr] md:grid-cols-[auto,1fr] gap-x-4 gap-y-2">
           {t.raw("workExperienceIreland.items").map(
             (
               item: {
@@ -152,12 +157,12 @@ export default function CVPage() {
               i: number
             ) => (
               <React.Fragment key={i}>
-                <div className="font-semibold">{item.period}</div>
+                <div lang={locale} className="font-semibold break-words hyphens-auto">{item.period}</div>
                 <div>{item.text}</div>
 
                 {/* Blurb content: shown in a single full-width row */}
                 {(item.blurbTitle || item.blurb1 || item.blurb2) && (
-                  <div className="col-span-2 space-y-1 pl-24 my-4">
+                  <div className="col-span-2 space-y-1 pl-10 my-4">
                     {item.blurbTitle && (
                       <div>
                         <em>{item.blurbTitle}</em>
@@ -180,7 +185,7 @@ export default function CVPage() {
         title={t("workExperienceSpain.heading")}
         defaultOpen={false}
       >
-        <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
+        <div className="grid grid-cols-[25%,1fr] md:grid-cols-[auto,1fr] gap-x-4 gap-y-2">
           {t.raw("workExperienceSpain.items").map(
             (
               item: {
@@ -193,18 +198,18 @@ export default function CVPage() {
               i: number
             ) => (
               <React.Fragment key={i}>
-                <div className="font-semibold">{item.period}</div>
+                <div className="font-semibold break-words hyphens-auto">{item.period}</div>
                 <div>{item.text}</div>
 
                 {/* Blurb content: shown in a single full-width row */}
                 {(item.blurbTitle || item.blurb1 || item.blurb2) && (
-                  <div className="col-span-2 space-y-1 pl-24 my-4">
+                  <div lang={locale} className="col-span-2 space-y-1 pl-10 my-4 break-words hyphens-auto">
                     {item.blurbTitle && (
                       <div>
                         <em>{item.blurbTitle}</em>
                       </div>
                     )}
-                    <ul className="list-disc list-outside pl-6 space-y-1">
+                    <ul lang={locale} className="list-disc list-outside pl-6 space-y-1 break-words hyphens-auto">
                       {item.blurb1 && <li>{item.blurb1}</li>}
                       {item.blurb2 && <li>{item.blurb2}</li>}
                     </ul>
@@ -217,7 +222,7 @@ export default function CVPage() {
       </CollapsibleSection>
 
       <CollapsibleSection id="seasonalWork" title={t("seasonalWork.heading")} defaultOpen={false}>
-        <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
+        <div className="grid grid-cols-[40%,1fr] md:grid-cols-[auto,1fr] gap-x-4 gap-y-2">
           {t.raw("seasonalWork.items").map(
             (
               item: {
@@ -230,18 +235,18 @@ export default function CVPage() {
               i: number
             ) => (
               <React.Fragment key={i}>
-                <div className="font-semibold">{item.period}</div>
+                <div className="font-semibold break-words hyphens-auto">{item.period}</div>
                 <div>{item.text}</div>
 
                 {/* Blurb content: shown in a single full-width row */}
                 {(item.blurbTitle || item.blurb1 || item.blurb2) && (
-                  <div className="col-span-2 space-y-1 pl-24 my-4">
+                  <div className="col-span-2 space-y-1 pl-10 my-4 break-words hyphens-auto">
                     {item.blurbTitle && (
                       <div>
                         <em>{item.blurbTitle}</em>
                       </div>
                     )}
-                    <ul className="list-disc list-outside pl-6 space-y-1">
+                    <ul className="list-disc list-outside pl-6 space-y-1 break-words hyphens-auto">
                       {item.blurb1 && <li>{item.blurb1}</li>}
                       {item.blurb2 && <li>{item.blurb2}</li>}
                     </ul>
@@ -254,23 +259,24 @@ export default function CVPage() {
       </CollapsibleSection>
 
       <CollapsibleSection title={t("workRelevantSkills.heading")}>
-        <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2">
-          <div className="font-semibold">{t("workRelevantSkills.languagesPt")}</div>
+        <div className="grid grid-cols-[25%,1fr] md:grid-cols-[auto,1fr] gap-x-4 gap-y-2">
+          <div lang={locale} className="font-semibold break-words hyphens-auto">{t("workRelevantSkills.languagesPt")}</div>
+          
           <div>{t("workRelevantSkills.languagesText")}</div>
 
-          <div className="font-semibold">{t("workRelevantSkills.mgtPt")}</div>
+          <div lang={locale} className="font-semibold break-words hyphens-auto">{t("workRelevantSkills.mgtPt")}</div>
           <div>{t("workRelevantSkills.mgtText")}</div>
 
-          <div className="font-semibold">{t("workRelevantSkills.xlationPt")}</div>
+          <div lang={locale} className="font-semibold break-words hyphens-auto">{t("workRelevantSkills.xlationPt")}</div>
           <div>{t("workRelevantSkills.xlationText")}</div>
 
-          <div className="font-semibold">{t("workRelevantSkills.l10nPt")}</div>
+          <div lang={locale} className="font-semibold break-words hyphens-auto">{t("workRelevantSkills.l10nPt")}</div>
           <div>{t("workRelevantSkills.l10nText")}</div>
 
-          <div className="font-semibold">{t("workRelevantSkills.docuPt")}</div>
+          <div lang={locale} className="font-semibold break-words hyphens-auto">{t("workRelevantSkills.docuPt")}</div>
           <div>{t("workRelevantSkills.docuText")}</div>
 
-          <div className="font-semibold">{t("workRelevantSkills.accountancyPt")}</div>
+          <div lang={locale} className="font-semibold break-words hyphens-auto">{t("workRelevantSkills.accountancyPt")}</div>
           <div>{t("workRelevantSkills.accountancyText")}</div>
         </div>
       </CollapsibleSection>

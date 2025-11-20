@@ -23,9 +23,12 @@
     "deploymentText": "AWS, Heroku, Cloudinary, GoDaddy, Vercel",
     "versionControlPt": "Control de versiones:",
     "versionControlText": "GitHub, Git, Subversion (un poco)",
-    "frameworksPt": "Frameworks/Librerías:",
+    "frameworksPt": "Frameworks",
+    "librariesPt": "Librerías",
     "frameworksText": "Flask, Django, Next.js, Typescript, Bootstrap, Tailwind, Stripe",
     "xlationPt": "Traducción, localización, internacionalización:",
+    "xlationPtMobile": "Traducción, l10n, i18n",
+    "xlationPtDesktop": "Traducción, localización, internacionalización:",
     "xlationText": "Trados, Passolo, Transit/Termstar, MemoQ, Déjà Vu, Django-i18n, next-intl",
     "singlesourcePt": "Herramientas de fuente única:",
     "singlesourceText": "Author-it, Doc2Help"
