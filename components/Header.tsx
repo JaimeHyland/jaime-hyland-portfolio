@@ -29,7 +29,8 @@ type HeaderProps = {
     const [langOpen, setLangOpen] = useState(false);
     const [navOpen, setNavOpen] = useState(false);
 
-    const [downloadsOpen, setDownloadOpen] = useState(false);
+    const [desktopDownloadsOpen, setDesktopDownloadsOpen] = useState(false);
+    const [mobileDownloadsOpen, setMobileDownloadsOpen] = useState(false);
 
     const desktopDownloadRef = useRef<HTMLDivElement>(null);
     const desktopDownloadToggleRef = useRef<HTMLSpanElement>(null);
@@ -39,36 +40,27 @@ type HeaderProps = {
     const mobileToggleRef = useRef<HTMLButtonElement>(null);
     
 
-  useEffect(() => {
+    useEffect(() => {
     function handleClickOutsideMenus(e: PointerEvent) {
-      const target = e.target as Node;
+      const target = e.target as HTMLElement;
 
+      // ------------------------------------
       // 1️ Desktop Downloads submenu
+      // ------------------------------------
       if (
         desktopDownloadRef.current &&
         desktopDownloadToggleRef.current &&
         !desktopDownloadRef.current.contains(target) &&
         !desktopDownloadToggleRef.current.contains(target)
       ) {
-        setDownloadOpen(false);
+        setDesktopDownloadsOpen(false);
       }
 
-      // 2️ Mobile Downloads submenu
-      if (
-        navOpen &&               // mobile nav is open
-        downloadsOpen &&          // mobile Downloads is open
-        mobileNavRef.current &&
-        mobileDownloadRef.current &&
-        !mobileDownloadRef.current.contains(target)
-      ) {
-        setDownloadOpen(false);
-        return;
-      }
-
-      // 3️ Mobile main nav menu
+      // ------------------------------------
+      // 2️ Mobile main nav menu and Downloads submenu
+      // ------------------------------------
       if (
         navOpen &&
-        !downloadsOpen &&         // only if Downloads is already closed
         mobileNavRef.current &&
         mobileToggleRef.current &&
         !mobileNavRef.current.contains(target) &&
@@ -79,9 +71,8 @@ type HeaderProps = {
     }
 
     document.addEventListener("pointerdown", handleClickOutsideMenus);
-    return () =>
-      document.removeEventListener("pointerdown", handleClickOutsideMenus);
-  }, [navOpen, downloadsOpen]);
+    return () => document.removeEventListener("pointerdown", handleClickOutsideMenus);
+  }, [navOpen, desktopDownloadsOpen]);
 
   const pageKey =
     (Object.keys(paths) as (keyof typeof paths)[]).find(
@@ -120,11 +111,11 @@ type HeaderProps = {
           <div className="relative" ref={desktopDownloadRef}>
             <span
               ref={desktopDownloadToggleRef}
-              onClick={() => setDownloadOpen(!downloadsOpen)}
+              onClick={() => setDesktopDownloadsOpen(!desktopDownloadsOpen)}
               className="inline-block cursor-pointer transform transition duration-200 hover:scale-105">
               {labels.downloads}
             </span>
-            {downloadsOpen && (
+            {desktopDownloadsOpen && (
               <div 
                 className="absolute left-0 mt-2 bg-white border shadow-md rounded-md flex flex-col py-1 text-sm w-56 z-50"
               >
@@ -133,7 +124,7 @@ type HeaderProps = {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 transform hover:scale-105 rounded transition text-sm"
-                    onClick={() => setDownloadOpen(false)}
+                    onClick={() => setDesktopDownloadsOpen(false)}
                   >
                   {labels.downloadPdfDe}
                 </a>
@@ -147,14 +138,14 @@ type HeaderProps = {
                     loadingText: labels.loadingText, 
                     buttonDownload: labels.buttonDownload
                   }}
-                  onClose={() => setDownloadOpen(false)}
+                  onClose={() => setDesktopDownloadsOpen(false)}
                 />
                 <a
                   href="/files/JaimeHyland_CV_en_GB_HR_FullStack_20251107.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 transform hover:scale-105 hover:bg-gray-100 rounded transition text-sm"
-                  onClick={() => setDownloadOpen(false)}
+                  onClick={() => setDesktopDownloadsOpen(false)}
                 >
                   {labels.downloadPdfEn}
                 </a>
@@ -168,14 +159,14 @@ type HeaderProps = {
                     loadingText: labels.loadingText, 
                     buttonDownload: labels.buttonDownload
                   }}
-                  onClose={() => setDownloadOpen(false)}
+                  onClose={() => setDesktopDownloadsOpen(false)}
                 />
                 <a
                   href="/files/JaimeHyland_CV_es_ES_HR_FullStack_20251107.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 transform hover:scale-105 hover:bg-gray-100 rounded transition text-sm"
-                  onClick={() => setDownloadOpen(false)}
+                  onClick={() => setDesktopDownloadsOpen(false)}
                 >
                   {labels.downloadPdfEs}
                 </a>
@@ -189,7 +180,7 @@ type HeaderProps = {
                     loadingText: labels.loadingText, 
                     buttonDownload: labels.buttonDownload
                   }}
-                  onClose={() => setDownloadOpen(false)}
+                  onClose={() => setDesktopDownloadsOpen(false)}
                 />
             </div>
             )}
@@ -273,7 +264,9 @@ type HeaderProps = {
       {navOpen && (
         <div 
           ref={mobileNavRef}
-          className="md:hidden absolute top-16 left-4 bg-white border border-gray-200 shadow-lg rounded-lg p-4 flex flex-col gap-2 text-lg text-gray-800 w-72 z-50" onClick={(e) => e.stopPropagation()}>
+          className="md:hidden absolute top-16 left-4 bg-white border border-gray-200 shadow-lg rounded-lg p-4 flex flex-col gap-2 text-lg text-gray-800 w-72 z-50"
+          // onClick={(e) => e.stopPropagation()}
+        >
           <HeaderLink href={`/${lang}/${paths.home}`} pageKey="home" currentKey={pageKey} onClick={closeMenu}>
             {labels?.home}
           </HeaderLink>
@@ -286,25 +279,26 @@ type HeaderProps = {
           <HeaderLink href={`/${lang}/${paths.contact}`} pageKey="contact" currentKey={pageKey} onClick={closeMenu}>
             {labels?.contact}
           </HeaderLink>
-          <div className="relative" ref={mobileDownloadRef}>
-            {/* Downloads toggle */}
-            <div className="relative">
-              <HeaderLink
-                href="#"
-                pageKey="download"
-                currentKey={pageKey}
-                onClick={(e) => {
-                  e.preventDefault();
-                  setDownloadOpen(!downloadsOpen);
-                }}
-                className={`text-left w-full transform hover:scale-105 transition ${downloadsOpen ? "font-medium" : "font-normal"}`}
-              >
-                {labels.downloads}
-              </HeaderLink>
-            </div>
 
-            {/* Mobile Downloads Submenu */}
-            {downloadsOpen && (
+          <div className="relative" ref={mobileDownloadRef}>
+
+            <HeaderLink
+              href="#"
+              pageKey="download"
+              currentKey={pageKey}
+              className={`text-left w-full transform hover:scale-105 transition ${
+                mobileDownloadsOpen ? "font-medium" : "font-normal"
+              }`}
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                setMobileDownloadsOpen((prev) => !prev);
+              }}
+            >
+              {labels.downloads}
+            </HeaderLink>
+            
+            {mobileDownloadsOpen && (
               <div
                 className="absolute left-2 top-full mt-1 bg-white border shadow-md rounded-md flex flex-col py-1 text-sm w-56 z-50"
               >
@@ -313,10 +307,11 @@ type HeaderProps = {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 transform hover:scale-105 hover:bg-gray-100 rounded transition text-sm"
-                  onClick={() => setDownloadOpen(false)}
+                  onClick={() => setMobileDownloadsOpen(false)}
                 >
                   {labels.downloadPdfDe}
                 </a>
+
                 <div className="pl-2">
                   <CVTxtModal
                     filePath="/files/JaimeHyland_CV_de_DE_ATS_FullStack_20251107.txt"
@@ -329,7 +324,7 @@ type HeaderProps = {
                       buttonDownload: labels.buttonDownload,
                     }}
                     isMobile={true}
-                    onClose={() => setDownloadOpen(false)}
+                    onClose={() => setMobileDownloadsOpen(false)}
                   />
                 </div>
 
@@ -338,10 +333,11 @@ type HeaderProps = {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 transform hover:scale-105 hover:bg-gray-100 rounded transition text-sm"
-                  onClick={() => setDownloadOpen(false)}
+                  onClick={() => setMobileDownloadsOpen(false)}
                 >
                   {labels.downloadPdfEn}
                 </a>
+
                 <div className="pl-2">
                   <CVTxtModal
                     filePath="/files/JaimeHyland_CV_en_GB_ATS_FullStack_20251107.txt"
@@ -354,18 +350,20 @@ type HeaderProps = {
                       buttonDownload: labels.buttonDownload,
                     }}
                     isMobile={true}
-                    onClose={() => setDownloadOpen(false)}
+                    onClose={() => setMobileDownloadsOpen(false)}
                   />
                 </div>
+
                 <a
                   href="/files/JaimeHyland_CV_es_ES_HR_FullStack_20251107.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 transform hover:scale-105 hover:bg-gray-100 rounded transition text-sm"
-                  onClick={() => setDownloadOpen(false)}
+                  onClick={() => setMobileDownloadsOpen(false)}
                 >
                   {labels.downloadPdfEs}
                 </a>
+
                 <div className="pl-2">
                   <CVTxtModal
                     filePath="/files/JaimeHyland_CV_es_ES_ATS_FullStack_20251107.txt"
@@ -378,7 +376,7 @@ type HeaderProps = {
                       buttonDownload: labels.buttonDownload,
                     }}
                     isMobile={true}
-                    onClose={() => setDownloadOpen(false)}
+                    onClose={() => setMobileDownloadsOpen(false)}
                   />
                 </div>
               </div>

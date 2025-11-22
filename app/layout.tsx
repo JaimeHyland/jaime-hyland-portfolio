@@ -2,7 +2,6 @@
 
 import "./globals.css";
 import { ReactNode } from "react";
-import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 
 
