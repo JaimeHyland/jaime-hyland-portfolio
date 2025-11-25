@@ -23,7 +23,7 @@ interface InstitutionProps {
 
 export default function LearningSection({ locale }: { locale: string }) {
   const messages = (messagesMap[locale as "en" | "es" | "de"] || messagesEn) as {
-    homeInline: any
+    pageInline: any
     learningSection: { heading: string; [key: string]: any };
     };
 
