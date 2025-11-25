@@ -1,8 +1,8 @@
 {
-  "homeInline": {
-    "name": "Jaime Hyland",
+  "pageInline": {
+    "title": "Jaime Hyland",
     "tagline": "Full-stack developer specializing in i18n and l10n",
-    "intro": "I'm a full-stack developer with a background in languages and education who enjoys building clean, attractive and scalable web apps that inform, educate, increase productivity and improve quality of life.",
+    "description": "I'm a full-stack developer with a background in languages and education who enjoys building clean, attractive and scalable web apps that inform, educate, increase productivity and improve quality of life.",
     "buttonLabel": "Looking for a collaborator or developer?",
     "buttonText": "Get in touch",
     "keywords": [
@@ -21,7 +21,7 @@
       "Remote Developer"
     ]
   },
-  "techSection": {
+  "techsSection": {
     "heading": "Some of the technologies I work with",
     "items": {
       "python": {

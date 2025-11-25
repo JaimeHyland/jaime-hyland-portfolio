@@ -7,8 +7,13 @@ import { CollapsibleSection } from "../../../components/CollapsibleSection";
 
 export default function CVPage() {
   const t = useTranslations();
+  const locale =useLocale();
+
+  console.log("[DEBUG] CVPage locale:", locale);
+  
   const educationItems = t.raw("education.items");
-  const locale = useLocale();
+  const rawPortfolioItems = t.raw("portfolio.items") as string[];
+
 
   const urls = [
     `/${locale}/projects#ci-assessment`,
@@ -16,9 +21,7 @@ export default function CVPage() {
     `/${locale}/projects#hackathons`
   ];
 
-  const rawItems = t.raw("portfolio.items") as string[];
-
-  const richItems = rawItems.map((_, i) =>
+  const richPortfolioItems = rawPortfolioItems.map((_, i) =>
     t.rich(`portfolio.items.${i}`, {
       link: (chunks) => <ProjLink href={urls[i]}>{chunks}</ProjLink>
     })
@@ -96,7 +99,7 @@ export default function CVPage() {
       <CollapsibleSection title={t("portfolio.heading")}>
         <p>{t("portfolio.intro")}</p>
         <ul className="list-disc list-outside pl-6">
-          {richItems.map((item, i) => (
+          {richPortfolioItems.map((item, i) => (
             <li key={i}>{item}</li>
           ))}
         </ul>

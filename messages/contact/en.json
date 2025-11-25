@@ -1,4 +1,27 @@
 {
+  "pageInline": {
+    "title": "Contact",
+    "name": "Jaime Hyland",
+    "tagline": "Full-stack developer – Contact details",
+    "description": "How to get in touch with me.",
+    "keywords": [
+      "Contact Jaime Hyland",
+      "Email Jaime Hyland",
+      "Phone Jaime Hyland",
+      "Mobile Jaime Hyland",
+      "Berlin address",
+      "Professional contact",
+      "Portfolio website",
+      "LinkedIn profile",
+      "Reach Jaime Hyland",
+      "Software developer contact",
+      "Web developer contact",
+      "Full-stack developer contact",
+      "Jaime Hyland portfolio",
+      "Contact information",
+      "Business email"
+    ]
+  },
   "heading": "How to contact me:",
   "intro": "You can reach me using the following contact details:",
   "emailLabel": "Email",

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { IconType } from "react-icons";
 
-type TechIconProps = {
+type TechsIconProps = {
   Icon?: IconType;
   imgSrc?: string;
   title: string;
@@ -9,7 +9,7 @@ type TechIconProps = {
 };
 
 
-export default function TechIcon({ Icon, imgSrc, title, description}: TechIconProps ) {
+export default function TechsIcon({ Icon, imgSrc, title, description}: TechsIconProps ) {
   const [isDesktop, setIsDesktop] = useState(true);
 
   useEffect(() => {

@@ -1,8 +1,9 @@
 {
-  "homeInline": {
-    "name": "Jaime Hyland",
+  
+  "pageInline": {
+    "title": "Jaime Hyland",
     "tagline": "Desarrollador full-stack especializado en i18n y l10n",
-    "intro": "Soy un desarrollador full-stack con experiencia en lenguas y educación, y disfruto creando aplicaciones web limpias, atractivas y escalables que informan, educan, aumentan la productividad y mejoran la calidad de vida.",
+    "description": "Soy un desarrollador full-stack con experiencia en lenguas y educación, y disfruto creando aplicaciones web limpias, atractivas y escalables que informan, educan, aumentan la productividad y mejoran la calidad de vida.",
     "buttonLabel": "¿Buscas un colaborador o desarrollador?",
     "buttonText": "Ponte en contacto",
     "keywords": [
@@ -21,7 +22,7 @@
       "Desarrollador remoto"
     ]
   },
-    "techSection": {
+    "techsSection": {
     "heading": "Algunas de las tecnologías con las que trabajo",
     "items": {
       "python": {

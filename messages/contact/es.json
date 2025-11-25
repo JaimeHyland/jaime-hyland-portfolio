@@ -1,4 +1,27 @@
 {
+  "pageInline": {
+    "title": "Contacto",
+    "name": "Jaime Hyland",
+    "tagline": "Desarrollador Full-stack – Datos de contacto",
+    "description": "Cómo ponerse en contacto conmigo.",
+    "keywords": [
+      "Contacto Jaime Hyland",
+      "Correo electrónico Jaime Hyland",
+      "Teléfono Jaime Hyland",
+      "Móvil Jaime Hyland",
+      "Dirección Berlín",
+      "Contacto profesional",
+      "Sitio web de portfolio",
+      "Perfil de LinkedIn",
+      "Contactar con Jaime Hyland",
+      "Contacto desarrollador de software",
+      "Contacto desarrollador web",
+      "Contacto desarrollador Full-stack",
+      "Portfolio de Jaime Hyland",
+      "Información de contacto",
+      "Correo electrónico profesional"
+    ]
+  },
   "heading": "Cómo contactarme",
   "intro": "Puedes contactarme usando los siguientes datos.",
   "emailLabel": "Correo electrónico",

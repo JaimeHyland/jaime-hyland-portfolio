@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import TechIcon from "./TechIcon";
-import TechModal from "./TechModal";
+import TechsIcon from "./TechsIcon";
+import TechsModal from "./TechsModal";
 
 import { IconType } from "react-icons";
 
@@ -26,14 +26,14 @@ const messagesMap = {
   de: messagesDe
 };
 
-interface TechItem {
+interface TechsItem {
   Icon?: IconType;
   imgSrc?: string;
   title: string;
   description: string;
 }
 
-interface TechSectionProps {
+interface TechsSectionProps {
   locale: string;
 }
 
@@ -71,9 +71,9 @@ const iconMap: Record<string, IconType> = {
   nodejs: SiNodedotjs
 };
 
-export default function TechSection({ locale }: TechSectionProps ) {
+export default function TechsSection({ locale }: TechsSectionProps ) {
   const messages = messagesMap[locale as "en" | "es" | "de"] || messagesEn;
-  const techSection = messages.techSection;
+  const techsSection = messages.techsSection;
 
   const [modal, setModal] = useState({ open: false, title: "", description: "" });
 
@@ -88,25 +88,25 @@ export default function TechSection({ locale }: TechSectionProps ) {
     return () => window.removeEventListener("techModal-open", handler);
   }, []);
 
-  const techItems: TechItem[] = Object.keys(techSection.items).map((key) => {
-    const techKey = key as keyof typeof techSection.items;
+  const techItems: TechsItem[] = Object.keys(techsSection.items).map((key) => {
+    const techKey = key as keyof typeof techsSection.items;
     return {
       Icon: iconMap[techKey],
-      title: techSection.items[techKey].title,
-      description: techSection.items[techKey].description
+      title: techsSection.items[techKey].title,
+      description: techsSection.items[techKey].description
     };
   });
 
 return (
     <section className="mb-16">
-      <h2 className="text-2xl font-semibold text-center mb-8">{techSection.heading}</h2>
+      <h2 className="text-2xl font-semibold text-center mb-8">{techsSection.heading}</h2>
       <div className="grid grid-cols-3 sm:grid-cols-5 gap-6 justify-items-center text-gray-800">
         {techItems.map((item, i) => (
-          <TechIcon key={i} {...item} />
+          <TechsIcon key={i} {...item} />
         ))}
       </div>
 
-      <TechModal
+      <TechsModal
         open={modal.open}
         title={modal.title}
         description={modal.description}

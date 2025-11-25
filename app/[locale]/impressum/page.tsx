@@ -8,7 +8,7 @@ export default function ImpressumPage() {
 
   return (
     <div className="p-6 max-w-xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4">{t("heading")}</h1>
+      <h1 className="text-3xl font-bold mb-4">{t("headingImpressum")}</h1>
 
       <p className="mb-2">
         <strong>{t("nameLabel")}:</strong> James Hyland

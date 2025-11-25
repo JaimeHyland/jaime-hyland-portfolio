@@ -1,4 +1,27 @@
 {
+  "pageInline": {
+    "title": "Kontakt",
+    "name": "Jaime Hyland",
+    "tagline": "Full-Stack-Entwickler – Kontaktdaten",
+    "description": "So können Sie mich erreichen.",
+    "keywords": [
+      "Kontakt Jaime Hyland",
+      "E-Mail Jaime Hyland",
+      "Telefon Jaime Hyland",
+      "Mobil Jaime Hyland",
+      "Adresse Berlin",
+      "Professioneller Kontakt",
+      "Portfolio-Website",
+      "LinkedIn-Profil",
+      "Jaime Hyland erreichen",
+      "Softwareentwickler Kontakt",
+      "Webentwickler Kontakt",
+      "Full-Stack-Entwickler Kontakt",
+      "Jaime Hyland Portfolio",
+      "Kontaktinformationen",
+      "Geschäftliche E-Mail"
+    ]
+  },
   "heading": "So erreichen Sie mich:",
   "intro": "Sie können mich unter den folgenden Kontaktdaten erreichen.",
   "emailLabel": "E-Mail",

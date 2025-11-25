@@ -1,13 +1,13 @@
 import { X } from "lucide-react";
 
-interface TechModalProps {
+interface TechsModalProps {
   open: boolean;
   onClose: () => void;
   title: string;
   description: string;
 }
 
-export default function TechModal({ open, onClose, title, description }: TechModalProps) {
+export default function TechsModal({ open, onClose, title, description }: TechsModalProps) {
   if (!open) return null;
 
   return (

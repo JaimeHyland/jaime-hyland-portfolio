@@ -3,7 +3,7 @@ import messagesEn from "../../messages/en.json";
 import messagesEs from "../../messages/es.json";
 import messagesDe from "../../messages/de.json";
 
-import TechSection from "@/components/TechSection";
+import TechsSection from "@/components/TechsSection";
 import LearningSection from "@/components/LearningSection";
 
 import { generateMetadata as headMetadata } from "./head";
@@ -14,22 +14,22 @@ const messagesMap = {
   de: messagesDe
 };
 
-type HomeInline = {
-  name: string;
+type PageInline = {
+  title: string;
   tagline: string;
-  intro: string;
+  description: string;
   buttonLabel: string;
   buttonText: string;
 };
 
-type TechItem = {
+type TechsItem = {
   title: string;
   description: string;
 };
 
-type TechSectionType = {
+type TechsSectionType = {
   heading: string;
-  items: Record<string, TechItem>;
+  items: Record<string, TechsItem>;
 };
 
 
@@ -42,12 +42,11 @@ export default async function HomePage() {
   const locale = await getLocale();
 
   const messages = (messagesMap[locale as "en" | "es" | "de"] || messagesEn) as {
-    homeInline: HomeInline;
-    techSection: TechSectionType;
+    pageInline: PageInline;
+    techsSection: TechsSectionType;
   };
 
-  const { name, tagline, intro, buttonLabel, buttonText } = messages.homeInline;
-  const techsTitle = messages.techSection.heading;
+  const { title, tagline, description, buttonLabel, buttonText } = messages.pageInline;
 
   return (
     <main className="px-6 py-10 max-w-6xl mx-auto">
@@ -57,14 +56,14 @@ export default async function HomePage() {
           <img src="/images/small_photo.jpg" alt="Jaime Hyland" className="w-48 h-48 rounded-full" />
         </div>
         <div className="flex-1 flex flex-col items-center text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4">{name}</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4">{title}</h1>
           <p className="text-xl text-gray-700 mb-2">{tagline}</p>
-          <p className="text-lg text-gray-600 max-w-2xl">{intro}</p>
+          <p className="text-lg text-gray-600 max-w-2xl">{description}</p>
         </div>
       </section>
 
       {/* Tech Section */}
-      <TechSection locale={locale} />
+      <TechsSection locale={locale} />
 
       {/* Learning / Education */}
       <LearningSection locale={locale} />
