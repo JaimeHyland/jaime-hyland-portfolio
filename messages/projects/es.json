@@ -117,6 +117,7 @@
           "diseño web responsivo",
           "Generación automática de nodos meta en la página principal para SEO; un sitemap y robots.txt",
           "Impressum (aviso legal), también completamente localizado",
+          "Se puede ver la correcta localización de las URLs de la interfaz. Debido a las limitaciones de Next.js, esto requirió una solución híbrida cliente-servidor que combina redirecciones, rendering en el servidor y ajustes finales en el lado del cliente.",
           "Analítica integrada de Vercel, con formulario de consentimiento en banner y modal de gestión de privacidad de datos"
         ],
         "desc3": "Al desarrollarlo, he dado prioridad a la claridad sin complicaciones, la mantenibilidad, la responsividad a pantallas diferentes, la coherencia entre idiomas y la conformidad legal. Utiliza componentes <bold>React</bold> tipados con <bold>renderizado del lado del servidor</bold>, y refleja los mismos estándares que aplico en mi trabajo individual y en equipo. Es totalmente adaptable, optimizado para SEO y demuestra mi capacidad para construir plataformas de contenido robustas y escalables con herramientas modernas de frontend.",

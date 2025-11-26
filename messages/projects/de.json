@@ -117,6 +117,7 @@
           "responsives Webdesign",
           "automatische Generierung von meta nodes auf der Startseite für <bold>SEO</bold>; eine sitemap und robots.txt",
           "Impressum, auch vollständig lokalisiert",
+          "Man kann die korrekte Lokalisierung der UI-URLs sehen. Aufgrund der Einschränkungen von Next.js war dazu eine hybride Lösung aus Client- und Server-Seite erforderlich, die Redirects, Server-Rendering und eine finale clientseitige Anpassung kombiniert.",
           "Integrierte Vercel-Analytik, mit Banner-Einwilligungsformular und Modal-Dialog zur Datenschutzverwaltung"
         ],
         "desc3": "Beim Aufbau der Seite habe ich besonderen Wert auf klare Strukturen, Wartbarkeit, Bildschirm-Responsivität, Sprachkonsistenz und Rechtskonformität gelegt. Sie verwendet typisierte <bold>React</bold>-Komponenten mit <bold>Server-seitigem Rendering</bold> und entspricht den hohen Standards, die ich auch in meine Einzel- und Teamarbeit einbringe. Die Seite ist vollständig responsiv, SEO-freundlich und zeigt meine Fähigkeit, robuste, skalierbare Inhaltsplattformen mit modernen Frontend-Tools zu entwickeln.",
