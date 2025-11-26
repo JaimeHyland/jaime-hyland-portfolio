@@ -73,7 +73,7 @@ export default async function HomePage() {
         <p className="text-lg text-gray-700 mb-4">{buttonLabel}</p>
         <a
           href={`/${locale}/contact`}
-          className="inline-block px-6 py-3 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700 transition"
+          className="inline-block px-6 py-3 bg-slate-600 text-white rounded-xl shadow hover:bg-blue-700 transition"
         >
           {buttonText}
         </a>

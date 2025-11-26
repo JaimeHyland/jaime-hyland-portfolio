@@ -84,7 +84,7 @@ export function CVTxtModal({ filePath, labels, isMobile = false, onOpen, onClose
             <div className="flex justify-end p-4 border-t gap-2">
               <button
                 onClick={downloadTxt}
-                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+                className="bg-slate-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
               >
                 {labels.buttonDownload}
               </button>
