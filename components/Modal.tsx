@@ -1,5 +1,12 @@
-// components/Modal.tsx
-export default function Modal({ children, onClose, showClose = true}) {
+import { ReactNode } from "react";
+
+interface ModalProps {
+  children: ReactNode;
+  onClose: () => void;
+  showClose?: boolean;
+}
+
+export default function Modal({ children, onClose, showClose = true}: ModalProps) {
   return (
     <div
       className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
