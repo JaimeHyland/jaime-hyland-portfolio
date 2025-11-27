@@ -6,8 +6,11 @@ import { useState, useEffect } from "react";
 import { getAnalyticsConsent, setAnalyticsConsent as saveAnalyticsConsent } from '@/lib/analyticsConsent';
 import Modal from "./Modal";
 
+interface FooterProps {
+  locale: string;
+}
 
-export default function Footer({ locale }: { locale: string }) {
+export default function Footer({ locale }: FooterProps) {
   const t = useTranslations();
   const [showPrivacyModal, setShowPrivacyModal] = useState(false);
   const [showConfirmDialog, setShowConfirmDialog] = useState(false);
@@ -16,8 +19,7 @@ export default function Footer({ locale }: { locale: string }) {
 
   // Initialize consent from localStorage
   useEffect(() => {
-    const storedConsent = getAnalyticsConsent();
-    setAnalyticsConsentState(storedConsent);
+    setAnalyticsConsentState(getAnalyticsConsent());
   }, []);
 
   const openPrivacyModal = () => {
@@ -26,18 +28,6 @@ export default function Footer({ locale }: { locale: string }) {
   };
 
   const closePrivacyModal = () => setShowPrivacyModal(false);
-
-  const toggleConsent = () => {
-    setTempConsent(prev => prev === 'accepted' ? 'rejected' : 'accepted');
-  };
-
-  const saveConsent = () => {
-    if (tempConsent === 'accepted' || tempConsent === 'rejected') {
-      saveAnalyticsConsent(tempConsent);
-      setAnalyticsConsentState(tempConsent);
-    }
-    closePrivacyModal();
-  };
 
   const consentChanged = tempConsent !== analyticsConsent;
 
@@ -50,7 +40,8 @@ export default function Footer({ locale }: { locale: string }) {
 
   return (
     <>
-      <footer className="mt-auto border-t p-8 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1),0_-2px_4px_-2px_rgba(0,0,0,0.1)] border-gray-200 py-8 text-center text-sm text-gray-600">
+      {/* Footer */}
+      <footer className="mt-auto border-t py-8 text-center text-sm text-gray-600 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1),0_-2px_4px_-2px_rgba(0,0,0,0.1)] border-gray-200">
         <div className="space-x-4">
           <Link
             href={`/${locale}/impressum`}
@@ -60,7 +51,7 @@ export default function Footer({ locale }: { locale: string }) {
           </Link>
           <button
             onClick={openPrivacyModal}
-            className="px-3 py-1 bg-slate-600 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-1 transition-colors duration-150"
+            className="px-3 py-1 bg-slate-600 text-white rounded hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-1 transition-colors duration-150"
           >
             {t("managePrivacySettings")}
           </button>
@@ -68,12 +59,11 @@ export default function Footer({ locale }: { locale: string }) {
         <p className="mt-2">{t("copyright")}</p>
       </footer>
 
+      {/* Privacy Modal */}
       {showPrivacyModal && (
         <Modal onClose={closePrivacyModal}>
           <h2 className="text-xl font-semibold mb-4">{t("managePrivacySettings")}</h2>
           <p className="mb-6">{getConsentMessage()}</p>
-
-          <div className="flex-grow"></div>
 
           <div className="flex justify-center mt-4">
             <button
@@ -91,6 +81,8 @@ export default function Footer({ locale }: { locale: string }) {
           </div>
         </Modal>
       )}
+
+      {/* Confirm Modal */}
       {showConfirmDialog && (
         <Modal onClose={() => setShowConfirmDialog(false)} showClose={false}>
           <h2 className="text-xl font-semibold mb-4">{t("confirmConsentChange")}</h2>
@@ -110,13 +102,10 @@ export default function Footer({ locale }: { locale: string }) {
 
             <button
               onClick={() => {
-                const newConsent =
-                  tempConsent === "accepted" ? "rejected" : "accepted";
-
+                const newConsent = tempConsent === 'accepted' ? 'rejected' : 'accepted';
                 saveAnalyticsConsent(newConsent);
                 setAnalyticsConsentState(newConsent);
                 setTempConsent(newConsent);
-
                 setShowConfirmDialog(false);
                 setShowPrivacyModal(false);
               }}
@@ -131,7 +120,6 @@ export default function Footer({ locale }: { locale: string }) {
           </div>
         </Modal>
       )}
-
     </>
   );
 }
