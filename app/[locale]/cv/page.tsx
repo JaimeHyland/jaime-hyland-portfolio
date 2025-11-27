@@ -8,8 +8,6 @@ import { CollapsibleSection } from "../../../components/CollapsibleSection";
 export default function CVPage() {
   const t = useTranslations();
   const locale =useLocale();
-
-  console.log("[DEBUG] CVPage locale:", locale);
   
   const educationItems = t.raw("education.items");
   const rawPortfolioItems = t.raw("portfolio.items") as string[];

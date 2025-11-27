@@ -19,8 +19,6 @@ export function getPageContent(page: string, locale: string): { pageInline: Page
         filePath = path.join(process.cwd(), "messages", page, `${locale}.json`);
     }
 
-    console.log(`[DEBUG] Looking for JSON file: ${filePath}`);
-
     try {
         const fileContents = fs.readFileSync(filePath, "utf8");
         return JSON.parse(fileContents);
@@ -42,8 +40,6 @@ export function generatePageMetadata(page: string, locale: string): Metadata {
   const fullTitle = tagline ? `${title} – ${tagline}` : title;
   const ogImage = pageContent.imageUrl || "/images/small_photo.jpg";
   const pathSuffix = page === "home" ? "" : `/${page}`;
-
-  console.log(`[DEBUG] generatePageMetadata called for page="${page}", locale="${locale}"`);
 
   return {
     title: fullTitle,

@@ -2,10 +2,8 @@
 
 import { useEffect, useState } from "react";
 import TechsIcon from "./TechsIcon";
-import TechsModal from "./TechsModal";
-
+import  TechsModal  from "./TechsModal";
 import { IconType } from "react-icons";
-
 import {
   SiPython, SiTypescript, SiDart, SiCplusplus, SiDotnet,
   SiHtml5, SiCss3, SiDjango, SiFlask, SiReact, SiNextdotjs,
@@ -35,6 +33,12 @@ interface TechsItem {
 
 interface TechsSectionProps {
   locale: string;
+}
+
+interface ModalState {
+  open: boolean;
+  title: string;
+  description: string;
 }
 
 const iconMap: Record<string, IconType> = {
@@ -71,13 +75,15 @@ const iconMap: Record<string, IconType> = {
   nodejs: SiNodedotjs
 };
 
-export default function TechsSection({ locale }: TechsSectionProps ) {
+export default function TechsSection({ locale }: TechsSectionProps) {
   const messages = messagesMap[locale as "en" | "es" | "de"] || messagesEn;
   const techsSection = messages.techsSection;
 
-  const [modal, setModal] = useState({ open: false, title: "", description: "" });
-
-
+  const [modal, setModal] = useState<ModalState>({
+    open: false,
+    title: "",
+    description: ""
+  });
 
   useEffect(() => {
     const handler = (e: Event) => {
@@ -97,7 +103,7 @@ export default function TechsSection({ locale }: TechsSectionProps ) {
     };
   });
 
-return (
+  return (
     <section className="mb-16">
       <h2 className="text-2xl font-semibold text-center mb-8">{techsSection.heading}</h2>
       <div className="grid grid-cols-3 sm:grid-cols-5 gap-6 justify-items-center text-gray-800">
@@ -106,6 +112,7 @@ return (
         ))}
       </div>
 
+      {/* Modal now inherits from reusable Modal component */}
       <TechsModal
         open={modal.open}
         title={modal.title}

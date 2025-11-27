@@ -8,7 +8,7 @@ import { Menu, MessageCircle, X } from "lucide-react";
 import { localizedPaths } from "@/lib/paths";
 import { localizedLabels } from "@/lib/labels";
 import { HeaderLink } from "../components/HeaderLink";
-import { CVTxtModal } from "../components/CVTTxtModal";
+import { CVTxtModal } from "./CVTxtModal";
 
 
 type HeaderProps = {

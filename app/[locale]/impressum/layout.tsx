@@ -4,7 +4,6 @@ import SlugRedirector from "../SlugRedirector";
 
 export async function generateMetadata({ params }: { params: { locale: string } }) {
   const resolved = await params;
-  console.log("[DEBUG] generateMetadata locale:", resolved.locale);
 
   return generatePageMetadata("impressum", resolved.locale);
 }
