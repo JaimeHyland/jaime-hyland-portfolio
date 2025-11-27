@@ -4,10 +4,13 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { useState, useEffect } from "react";
 import { getAnalyticsConsent, setAnalyticsConsent as saveAnalyticsConsent } from '@/lib/analyticsConsent';
+import Modal from "./Modal";
+
 
 export default function Footer({ locale }: { locale: string }) {
   const t = useTranslations();
   const [showPrivacyModal, setShowPrivacyModal] = useState(false);
+  const [showConfirmDialog, setShowConfirmDialog] = useState(false);
   const [analyticsConsent, setAnalyticsConsentState] = useState<string | null>(null);
   const [tempConsent, setTempConsent] = useState<string | null>(null);
 
@@ -66,65 +69,69 @@ export default function Footer({ locale }: { locale: string }) {
       </footer>
 
       {showPrivacyModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white d p-6 rounded shadow-lg max-w-md w-full relative">
-            {/* Close X */}
+        <Modal onClose={closePrivacyModal}>
+          <h2 className="text-xl font-semibold mb-4">{t("managePrivacySettings")}</h2>
+          <p className="mb-6">{getConsentMessage()}</p>
+
+          <div className="flex-grow"></div>
+
+          <div className="flex justify-center mt-4">
             <button
-              onClick={closePrivacyModal}
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-lg font-bold"
+              onClick={() => setShowConfirmDialog(true)}
+              className={`px-4 py-2 rounded transform transition-transform duration-150 hover:scale-105 ${
+                tempConsent === "accepted"
+                  ? "bg-red-400 text-white hover:bg-red-500"
+                  : "bg-green-400 text-white hover:bg-green-500"
+              }`}
             >
-              &times;
+              {tempConsent === "accepted"
+                ? t("prohibitDataCollection")
+                : t("allowDataCollection")}
+            </button>
+          </div>
+        </Modal>
+      )}
+      {showConfirmDialog && (
+        <Modal onClose={() => setShowConfirmDialog(false)} showClose={false}>
+          <h2 className="text-xl font-semibold mb-4">{t("confirmConsentChange")}</h2>
+          <p className="mb-6">
+            {tempConsent === "accepted"
+              ? t("confirmProhibitMessage")
+              : t("confirmAllowMessage")}
+          </p>
+
+          <div className="flex justify-end space-x-2">
+            <button
+              onClick={() => setShowConfirmDialog(false)}
+              className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 transition-colors"
+            >
+              {t("cancel")}
             </button>
 
-            {/* Heading */}
-            <h2 className="text-xl font-semibold mb-4">{t("managePrivacySettings")}</h2>
-            <p className="mb-4">{getConsentMessage()}</p>
+            <button
+              onClick={() => {
+                const newConsent =
+                  tempConsent === "accepted" ? "rejected" : "accepted";
 
-              {/* Spacer */}    
-            <div className ="flex-grow"></div>
+                saveAnalyticsConsent(newConsent);
+                setAnalyticsConsentState(newConsent);
+                setTempConsent(newConsent);
 
-            <div className="flex flex-col h-full">
-              {/* Top centered button */}
-              <div className="flex justify-center mb-6">
-                <button
-                  onClick={toggleConsent}
-                  className={
-                    `px-4 py-2 bg-blue-600 text-white rounded transform transition-transform duration-150 hover:scale-105"${
-                      tempConsent === "accepted"
-                        ? "bg-red-400 text-white hover:bg-red-500"
-                        : "bg-green-400 text-white hover:bg-green-500"
-                    }
-                  `}
-                >
-                  {tempConsent === "accepted" ? t("prohibitDataCollection") : t("allowDataCollection")}
-                </button>
-              </div>
-
-              {/* Spacer */}    
-              <div className ="flex-grow"></div>
-
-              <div className="flex justify-end space-x-2">
-                <button
-                  onClick={closePrivacyModal}
-                  className="px-4 py-2 bg-gray-200 rounded transform transition-transform duration-150 hover:scale-105"
-                >
-                  {t("cancel")}
-                </button>
-                <button
-                  onClick={saveConsent}
-                  className={`px-4 py-2 rounded transform transition-transform duration-150 hover:scale-105 ${
-                    consentChanged ? 'bg-green-600 text-white hover:bg-green-700' : 'bg-gray-400 text-gray-200 cursor-not-allowed'
-                  }`}
-                  disabled={!consentChanged}
-                >
-                  {t("save")}
-                </button>
-              </div>
-            </div>
-
+                setShowConfirmDialog(false);
+                setShowPrivacyModal(false);
+              }}
+              className={`px-4 py-2 rounded ${
+                tempConsent === "accepted"
+                  ? "bg-red-500 text-white hover:bg-red-600"
+                  : "bg-green-500 text-white hover:bg-green-600"
+              } transition-colors`}
+            >
+              {t("confirm")}
+            </button>
           </div>
-        </div>
+        </Modal>
       )}
+
     </>
   );
 }

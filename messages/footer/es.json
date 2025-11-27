@@ -10,5 +10,8 @@
     "allowDataCollection": "Permite recopilación",
     "prohibitDataCollection": "Prohíbe recopilación",
     "cancel": "Cancelar",
-    "save": "Guardar"
+    "confirm": "Confirmar",
+    "confirmConsentChange": "Confirmar",
+    "confirmProhibitMessage": "¿Seguro que quiere prohibir la colección anónime de datos?",
+    "confirmAllowMessage": "¿Seguro que quiere permitir la colección anónime de datos?"
 }

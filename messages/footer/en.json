@@ -10,5 +10,8 @@
     "allowDataCollection": "Allow collection",
     "prohibitDataCollection": "Prohibit collection",
     "cancel": "Cancel",
-    "save": "Save"
+    "confirm": "Confirm",
+    "confirmConsentChange": "Yes, I'm sure",
+    "confirmProhibitMessage": "Are you sure you want to prohibit anonymized data collection?",
+    "confirmAllowMessage": "Are you sure you want to allow anonymized data collection?"
 }

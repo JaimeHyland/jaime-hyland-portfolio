@@ -10,5 +10,8 @@
     "allowDataCollection": "Erfassung erlauben",
     "prohibitDataCollection": "Erfassung untersagen",
     "cancel": "Stornieren",
-    "save": "Speichern"
+    "confirm": "Bestätigen",
+    "confirmConsentChange": "Bestätigen",
+    "confirmProhibitMessage": "Sind Sie sicher, Sie will Anonyme Datensammlung verbieten?",
+    "confirmAllowMessage": "Sind Sie sicher, Sie will Anonyme Datensammlung erlauben?"
 }
