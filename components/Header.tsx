@@ -120,7 +120,7 @@ type HeaderProps = {
                 className="absolute left-0 mt-2 bg-white border shadow-md rounded-md flex flex-col py-1 text-sm w-56 z-50"
               >
                 <a
-                    href="/files/JaimeHyland_CV_de_DE_HR_FullStack_20251107.pdf"
+                    href="/files/JaimeHyland_CV_de_DE_HR_FullStack_latest.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 transform hover:scale-105 rounded transition text-sm"
@@ -129,7 +129,7 @@ type HeaderProps = {
                   {labels.downloadPdfDe}
                 </a>
                 <CVTxtModal
-                  filePath="/files/JaimeHyland_CV_de_DE_ATS_FullStack_20251107.txt"
+                  filePath="/files/JaimeHyland_CV_de_DE_ATS_FullStack_latest.txt"
                   labels={{
                     downloadTxt: labels.downloadTxtDe,
                     close: labels.close,
@@ -141,7 +141,7 @@ type HeaderProps = {
                   onClose={() => setDesktopDownloadsOpen(false)}
                 />
                 <a
-                  href="/files/JaimeHyland_CV_en_GB_HR_FullStack_20251107.pdf"
+                  href="/files/JaimeHyland_CV_en_GB_HR_FullStack_latest.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 transform hover:scale-105 hover:bg-gray-100 rounded transition text-sm"
@@ -150,7 +150,7 @@ type HeaderProps = {
                   {labels.downloadPdfEn}
                 </a>
                 <CVTxtModal
-                  filePath="/files/JaimeHyland_CV_en_GB_ATS_FullStack_20251107.txt"
+                  filePath="/files/JaimeHyland_CV_en_GB_ATS_FullStack_latest.txt"
                   labels={{
                     downloadTxt: labels.downloadTxtEn,
                     close: labels.close,
@@ -162,7 +162,7 @@ type HeaderProps = {
                   onClose={() => setDesktopDownloadsOpen(false)}
                 />
                 <a
-                  href="/files/JaimeHyland_CV_es_ES_HR_FullStack_20251107.pdf"
+                  href="/files/JaimeHyland_CV_es_ES_HR_FullStack_latest.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 transform hover:scale-105 hover:bg-gray-100 rounded transition text-sm"
@@ -171,7 +171,7 @@ type HeaderProps = {
                   {labels.downloadPdfEs}
                 </a>
                 <CVTxtModal
-                  filePath="/files/JaimeHyland_CV_es_ES_ATS_FullStack_20251107.txt"
+                  filePath="/files/JaimeHyland_CV_es_ES_ATS_FullStack_latest.txt"
                   labels={{
                     downloadTxt: labels.downloadTxtEs,
                     close: labels.close,
@@ -303,7 +303,7 @@ type HeaderProps = {
                 className="absolute left-2 top-full mt-1 bg-white border shadow-md rounded-md flex flex-col py-1 text-sm w-56 z-50"
               >
                 <a
-                  href="/files/JaimeHyland_CV_de_DE_HR_FullStack_20251107.pdf"
+                  href="/files/JaimeHyland_CV_de_DE_HR_FullStack_latest.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 transform hover:scale-105 hover:bg-gray-100 rounded transition text-sm"
@@ -314,7 +314,7 @@ type HeaderProps = {
 
                 <div className="pl-2">
                   <CVTxtModal
-                    filePath="/files/JaimeHyland_CV_de_DE_ATS_FullStack_20251107.txt"
+                    filePath="/files/JaimeHyland_CV_de_DE_ATS_FullStack_latest.txt"
                     labels={{
                       downloadTxt: labels.modalTxtDownloadDe,
                       close: labels.close,
@@ -329,7 +329,7 @@ type HeaderProps = {
                 </div>
 
                 <a
-                  href="/files/JaimeHyland_CV_en_GB_HR_FullStack_20251107.pdf"
+                  href="/files/JaimeHyland_CV_en_GB_HR_FullStack_latest.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 transform hover:scale-105 hover:bg-gray-100 rounded transition text-sm"
@@ -340,7 +340,7 @@ type HeaderProps = {
 
                 <div className="pl-2">
                   <CVTxtModal
-                    filePath="/files/JaimeHyland_CV_en_GB_ATS_FullStack_20251107.txt"
+                    filePath="/files/JaimeHyland_CV_en_GB_ATS_FullStack_latest.txt"
                     labels={{
                       downloadTxt: labels.modalTxtDownloadEn,
                       close: labels.close,
@@ -355,7 +355,7 @@ type HeaderProps = {
                 </div>
 
                 <a
-                  href="/files/JaimeHyland_CV_es_ES_HR_FullStack_20251107.pdf"
+                  href="/files/JaimeHyland_CV_es_ES_HR_FullStack_latest.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 transform hover:scale-105 hover:bg-gray-100 rounded transition text-sm"
@@ -366,7 +366,7 @@ type HeaderProps = {
 
                 <div className="pl-2">
                   <CVTxtModal
-                    filePath="/files/JaimeHyland_CV_es_ES_ATS_FullStack_20251107.txt"
+                    filePath="/files/JaimeHyland_CV_es_ES_ATS_FullStack_latest.txt"
                     labels={{
                       downloadTxt: labels.modalTxtDownloadEs,
                       close: labels.close,

@@ -53,8 +53,9 @@
       "Proyectos de portfolio"
     ]
   },
+  "pageName": "Lebenslauf",
   "cvOwner": "Jaime Hyland",
-  "subtitle": "Desarrollador de software, formador, narrador — Berlín",
+  "tagline": "Desarrollador Full-stack – i18n con Django y next.js",
   "emailText": "Correo electrónico",
   "emailURL": "mailto:%20jaime.hyland@language-landscapes.com",
   "githubText": "GitHub",

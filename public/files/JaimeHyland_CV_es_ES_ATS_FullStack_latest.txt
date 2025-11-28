@@ -1,4 +1,4 @@
-Esta es una versión en alemán de mi currículum diseñada para ser leída por máquinas. Una versión legible para humanos está disponible aquí: https://www.jaime-hyland.com/files/JaimeHyland_CV_es_ES_HR_FullStack_20251107.pdf
+Esta es una versión en alemán de mi currículum diseñada para ser leída por máquinas. La fecha de su ultima actualización es el 28.11.2025. Una versión legible para humanos está disponible aquí: https://www.jaime-hyland.com/files/JaimeHyland_CV_es_ES_HR_FullStack_latest.pdf
 
 Jaime Hyland | Desarrollador de Software Fullstack | Berlín
 Correo: mailto:jaime.hyland@language-landscapes.com | GitHub: https://github.com/JaimeHyland

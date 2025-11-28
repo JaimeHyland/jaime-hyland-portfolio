@@ -53,8 +53,9 @@
       "Portfolio projects"
     ]
   },
+  "pageName": "Curriculum Vitae",
   "cvOwner": "Jaime Hyland",
-  "subtitle": "Software Developer, Trainer, Storyteller — Berlin",
+  "tagline": "Fullstack developer — i18n with Django & Next.js",
   "emailText": "E-Mail",
   "emailURL": "mailto:%20jaime.hyland@language-landscapes.com",
   "githubText": "GitHub",

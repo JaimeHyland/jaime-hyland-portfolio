@@ -1,4 +1,4 @@
-This is an English-language version of my CV designed to be read by machine. A human-friendly version is available here: https://www.jaime-hyland.com/files/JaimeHyland_CV_en_GB_HR_FullStack_20251107.pdf
+This is an English-language version of my CV designed to be read by machine. It was last updated on 28/11/2025. A human-friendly version is available here: https://www.jaime-hyland.com/files/JaimeHyland_CV_en_GB_HR_FullStack_latest.pdf
 
 Jaime Hyland | Fullstack Software Developer | Berlin
 Email: mailto:jaime.hyland@language-landscapes.com | GitHub: https://github.com/JaimeHyland

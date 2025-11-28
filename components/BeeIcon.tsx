@@ -1,7 +1,7 @@
 export function BeeIcon({ size = 24 }: { size?: number }) {
   return (
     <img
-      src="/icons/bee-favicon.gif" // or /favicon.svg or wherever your vector lives
+      src="/icons/bee-favicon.gif"
       alt="Bee icon"
       width={size}
       height={size}

@@ -7,7 +7,7 @@ import { CollapsibleSection } from "../../../components/CollapsibleSection";
 
 export default function CVPage() {
   const t = useTranslations();
-  const locale =useLocale();
+  const locale = useLocale();
   
   const educationItems = t.raw("education.items");
   const rawPortfolioItems = t.raw("portfolio.items") as string[];
@@ -26,32 +26,42 @@ export default function CVPage() {
   );
   
   return (
-    <div className="max-w-4xl mx-auto p-6 space-y-6">
-      <div
-        className="flex flex-col md:flex-row items-center
-                gap-12 md:gap-18 lg:gap-24"
-      >
-        <div className="flex-shrink-0">
-          <img
-            src="/images/small_photo.jpg"
-            alt="Jaime Hyland only a few short years ago."
-            className="w-32 h-32 rounded-full object-cover shadow-md"
-          />
-        </div>
-        <div
-          className="
-          md:flex md:flex-col md:justify-center text-left inline-block"
-        >
-          <div className="text-center">
-            <h1 className="text-3xl font-bold">{t("cvOwner")}</h1>
-            <p className="text-lg italic whitespace-nowrap mt-2">
-              <ProjLink href={t("emailURL")}>{t("emailText")}</ProjLink> |{" "}
-              <ProjLink href={t("githubURL")}>{t("githubText")}</ProjLink> |{" "}
-              <ProjLink href={t("linkedinURL")}>{t("linkedinText")}</ProjLink>
-            </p>
-          </div>
-        </div>
+    <div className="max-w-4xl mx-auto px-4 md:px-6 space-y-4">
+<div className="w-full max-w-6xl mx-auto p-4">
+  <div className="flex flex-col md:grid md:grid-cols-[3fr_10fr_3fr] md:items-center gap-4 md:gap-8 lg:gap-12 w-full">
+    {/* LEFT COLUMN — PHOTO */}
+    <div className="flex justify-center md:justify-center items-center mb-4 md:mb-0">
+      <img
+        src="/images/small_photo.jpg"
+        alt="Jaime Hyland only a few short years ago."
+        className="w-32 h-32 rounded-full object-cover shadow-md"
+      />
+    </div>
+
+    {/* CENTER COLUMN — TEXT */}
+    <div className="flex flex-col items-center justify-center text-center md:text-center">
+      <h2 className="mb-1 font-medium text-2xl italic">{t("pageName")}</h2>
+      <h1 className="text-2xl md:text-3xl font-bold mb-1">{t("cvOwner")}</h1>
+      <h2 className="mb-2 text-lg md:text-xl italic">{t("tagline")}</h2>
+
+      {/* MOBILE LINKS — under text */}
+      <div className="flex md:hidden justify-center gap-2 mt-1 text-lg font-medium">
+        <ProjLink href={t("emailURL")}>{t("emailText")}</ProjLink>
+        <span>|</span>
+        <ProjLink href={t("githubURL")}>{t("githubText")}</ProjLink>
+        <span>|</span>
+        <ProjLink href={t("linkedinURL")}>{t("linkedinText")}</ProjLink>
       </div>
+    </div>
+
+    {/* RIGHT COLUMN — DESKTOP LINKS */}
+    <div className="hidden md:flex flex-col justify-center items-center gap-1 text-lg font-medium">
+      <ProjLink href={t("emailURL")}>{t("emailText")}</ProjLink>
+      <ProjLink href={t("githubURL")}>{t("githubText")}</ProjLink>
+      <ProjLink href={t("linkedinURL")}>{t("linkedinText")}</ProjLink>
+    </div>
+  </div>
+</div>
 
       <CollapsibleSection title={t("summary.title")}>
         <p>{t("summary.text")}</p>

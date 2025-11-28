@@ -1,4 +1,4 @@
-Dies ist eine deutsche Version meines Lebenslaufs, die für Maschinen lesbar ist. Eine für Menschen lesbare Version ist hier verfügbar: https://www.jaime-hyland.com/files/JaimeHyland_CV_en_GB_HR_FullStack_20251107.pdf
+Dies ist eine deutsche Version meines Lebenslaufs, die für Maschinen lesbar ist. Es wurde zuletzt 28.11.2025 aktualisiert. Eine für Menschen lesbare Version ist hier verfügbar: https://www.jaime-hyland.com/files/JaimeHyland_CV_en_GB_HR_FullStack_latest.pdf
 
 Jaime Hyland | Full-Stack-Webentwickler | Berlin
 Email: jaime.hyland@language-landscapes.com
