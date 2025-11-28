@@ -1,7 +1,4 @@
-"use client";
-
-import { useState, useEffect, useRef } from "react";
-import Draggable from "react-draggable";
+import { useState, useEffect } from "react";
 import Modal from "./Modal";
 
 interface CVTxtModalProps {
@@ -19,10 +16,15 @@ interface CVTxtModalProps {
   onClose?: () => void;
 }
 
-export function CVTxtModal({ filePath, labels, isMobile = false, onOpen, onClose }: CVTxtModalProps) {
+export function CVTxtModal({
+  filePath,
+  labels,
+  isMobile = false,
+  onOpen,
+  onClose,
+}: CVTxtModalProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [txtContent, setTxtContent] = useState("");
-  const nodeRef = useRef(null);
 
   useEffect(() => {
     if (isOpen) {
@@ -38,7 +40,9 @@ export function CVTxtModal({ filePath, labels, isMobile = false, onOpen, onClose
     if (onClose) onClose();
   };
 
-  const downloadTxt = () => {
+  const downloadTxt = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.currentTarget.blur();
+
     fetch(filePath)
       .then((res) => res.blob())
       .then((blob) => {
@@ -61,43 +65,43 @@ export function CVTxtModal({ filePath, labels, isMobile = false, onOpen, onClose
       </button>
 
       {isOpen && (
-        <Modal onClose={handleClose} showClose={false}>
-          <Draggable nodeRef={nodeRef} handle=".modal-header" cancel="">
-            <div
-              ref={nodeRef}
-              onClick={(e) => e.stopPropagation()}
-              className="bg-white rounded-lg w-full max-w-3xl max-h-[80vh] overflow-hidden flex flex-col"
-            >
-              {/* Header */}
-              <div className="modal-header cursor-move flex justify-between items-center p-4 border-b">
-                <h2 className="text-lg font-bold">{labels.downloadTxt}</h2>
-              </div>
-
-              {/* Body */}
-              <div className="flex-1 overflow-auto p-4 bg-gray-50">
-                <pre className="whitespace-pre-wrap font-mono text-sm">
-                  {txtContent || labels.loadingText}
-                </pre>
-                <p className="mt-2 text-xs text-gray-500">{labels.txtReassurance}</p>
-              </div>
-
-              {/* Footer with Download + Close */}
-              <div className="flex justify-end p-4 border-t gap-2">
-                <button
-                  onClick={downloadTxt}
-                  className="bg-slate-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-                >
-                  {labels.buttonDownload}
-                </button>
-                <button
-                  onClick={handleClose}
-                  className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300 transition"
-                >
-                  {labels.close}
-                </button>
-              </div>
+        <Modal
+          onClose={handleClose}
+          resizable={!isMobile}
+          maximizable={isMobile}
+          draggable={!isMobile}
+          initialSize={{
+            width: isMobile ? "80%" : "33%",
+            height: "70%",
+          }}
+        >
+          <div className="flex flex-col h-full min-h-0">
+            <div className="flex-shrink-0 px-4 py-2 border-b">
+              <h2 className="text-lg font-bold">{labels.downloadTxt}</h2>
             </div>
-          </Draggable>
+
+            <div className="flex-1 min-h-0 overflow-auto p-4">
+              <pre className="whitespace-pre-wrap font-mono text-sm">
+                {txtContent || labels.loadingText}
+              </pre>
+              <p className="mt-2 text-xs text-gray-500">{labels.txtReassurance}</p>
+            </div>
+
+            <div className="flex-shrink-0 flex justify-end p-4 border-t gap-2 bg-gray-50">
+              <button
+                onClick={downloadTxt}
+                className="bg-slate-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+              >
+                {labels.buttonDownload}
+              </button>
+              <button
+                onClick={handleClose}
+                className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300 transition"
+              >
+                {labels.close}
+              </button>
+            </div>
+          </div>
         </Modal>
       )}
     </>
