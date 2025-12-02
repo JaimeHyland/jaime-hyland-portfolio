@@ -25,7 +25,7 @@
     "heading": "Some of the technologies I work with",
     "items": {
       "python": {
-        "title": "Python: select for more info!",
+        "title": "Python",
         "description": "I use Python mainly in Django coding, in Flask and for scripting."
       },
       "typescript": {
