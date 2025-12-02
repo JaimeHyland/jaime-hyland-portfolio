@@ -65,45 +65,49 @@ export function CVTxtModal({
       </button>
 
       {isOpen && (
-        <Modal
-          onClose={handleClose}
-          resizable={!isMobile}
-          maximizable={isMobile}
-          draggable={!isMobile}
-          initialSize={{
-            width: isMobile ? "80%" : "33%",
-            height: "70%",
-          }}
+  <Modal
+    onClose={handleClose}
+    resizable={!isMobile}
+    maximizable={isMobile}
+    draggable={!isMobile}
+    initialSize={{
+      width: isMobile ? "80%" : "33%",
+      height: "400px", // fixed height so inner scroll works
+    }}
+  >
+    <div className="flex flex-col h-full min-h-0">
+      {/* Header */}
+      <div className="flex-shrink-0 px-4 py-2 border-b">
+        <h2 className="text-lg font-bold">{labels.downloadTxt}</h2>
+      </div>
+
+      {/* Scrollable content */}
+      <div className="flex-1 overflow-auto p-4 min-h-0">
+        <pre className="whitespace-pre-wrap font-mono text-sm">
+          {txtContent || labels.loadingText}
+        </pre>
+      </div>
+
+      {/* Footer */}
+      <p className="mt-2 text-xs text-gray-500 p-4">{labels.txtReassurance}</p>
+      <div className="flex-shrink-0 flex justify-end p-4 border-t gap-2 bg-gray-50">
+        <button
+          onClick={downloadTxt}
+          className="bg-slate-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
         >
-          <div className="flex flex-col h-full min-h-0">
-            <div className="flex-shrink-0 px-4 py-2 border-b">
-              <h2 className="text-lg font-bold">{labels.downloadTxt}</h2>
-            </div>
+          {labels.buttonDownload}
+        </button>
+        <button
+          onClick={handleClose}
+          className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300 transition"
+        >
+          {labels.close}
+        </button>
+      </div>
+    </div>
+  </Modal>
+)}
 
-            <div className="flex-1 min-h-0 overflow-auto p-4">
-              <pre className="whitespace-pre-wrap font-mono text-sm">
-                {txtContent || labels.loadingText}
-              </pre>
-              <p className="mt-2 text-xs text-gray-500">{labels.txtReassurance}</p>
-            </div>
-
-            <div className="flex-shrink-0 flex justify-end p-4 border-t gap-2 bg-gray-50">
-              <button
-                onClick={downloadTxt}
-                className="bg-slate-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-              >
-                {labels.buttonDownload}
-              </button>
-              <button
-                onClick={handleClose}
-                className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300 transition"
-              >
-                {labels.close}
-              </button>
-            </div>
-          </div>
-        </Modal>
-      )}
     </>
   );
 }

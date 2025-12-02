@@ -1,15 +1,15 @@
 "use client";
 
-import React, { useRef } from "react";
-import Draggable from "react-draggable";
+import React, { useState, useEffect, useRef } from "react";
 import Modal from "./Modal";
 
 interface TechsModalProps {
   open: boolean;
   title: string;
-  description: React.ReactNode; // allow links or other elements
+  description: React.ReactNode;
   onClose: () => void;
-  draggable?: boolean; // optional
+  draggable?: boolean;
+  resizable?: boolean;
 }
 
 export default function TechsModal({
@@ -18,27 +18,60 @@ export default function TechsModal({
   description,
   onClose,
   draggable = true,
+  resizable = true,
 }: TechsModalProps) {
-  const nodeRef = useRef(null);
+  const modalContentRef = useRef<HTMLDivElement>(null);
+  const [contentMaxHeight, setContentMaxHeight] = useState<number>(0);
+
+
+  const headerHeight = 32;
+  const footerHeight = 12;
+  const padding = 16;
+
+  const updateMaxHeight = () => {
+    const modalHeight = modalContentRef.current?.offsetHeight ?? 0;
+    setContentMaxHeight(modalHeight - headerHeight - footerHeight - padding);
+  };
+
+  useEffect(() => {
+  updateMaxHeight();
+
+  const observer = new ResizeObserver(() => updateMaxHeight());
+  if (modalContentRef.current?.parentElement) {
+    observer.observe(modalContentRef.current.parentElement);
+  }
+
+  window.addEventListener("resize", updateMaxHeight);
+  return () => {
+    observer.disconnect();
+    window.removeEventListener("resize", updateMaxHeight);
+  };
+}, []);
+
+
 
   if (!open) return null;
 
-  const content = (
-    <div
-      ref={nodeRef}
-      onClick={(e) => e.stopPropagation()}
-      className="bg-white rounded-lg p-6 w-full max-w-md cursor-move"
-    >
-      <div className="modal-header cursor-move">
-        <h3 className="text-lg font-semibold mb-4">{title}</h3>
-      </div>
-      <div className="text-sm text-gray-700">{description}</div>
-    </div>
-  );
-
   return (
-    <Modal onClose={onClose}>
-      {draggable ? <Draggable nodeRef={nodeRef} handle=".modal-header">{content}</Draggable> : content}
+    <Modal
+      onClose={onClose}
+      draggable={draggable}
+      resizable={resizable}
+      initialSize={{ width: "250px", height: "150px" }}
+
+    >
+      <div 
+        ref={modalContentRef} 
+        className="overflow-y-auto p-4"
+        style={{ maxHeight: `${contentMaxHeight}px` }} 
+      >
+        <div className="modal-header cursor-move mb-4">
+          <h3 className="text-lg font-semibold">{title}</h3>
+        </div>
+        <div className="text-sm text-gray-700">{description}</div>
+      </div>
+
+      <div style={{ height: "12px", backgroundColor: "white", flexShrink: 0 }} />
     </Modal>
   );
 }

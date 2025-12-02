@@ -16,7 +16,7 @@ export default function DraggableWrapper({ children, draggable = false, bounds }
   }
 
   return (
-    <Draggable nodeRef={nodeRef} handle=".modal-header" cancel="" bounds={bounds}>
+    <Draggable nodeRef={nodeRef} handle=".modal-header" cancel="" bounds={bounds} >
       <div ref={nodeRef}>
         {children}
       </div>

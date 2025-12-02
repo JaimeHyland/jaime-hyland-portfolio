@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import TechsIcon from "./TechsIcon";
-import  TechsModal  from "./TechsModal";
+import  TechsModal  from "./TechsModal_frozen";
 import { IconType } from "react-icons";
 import {
   SiPython, SiTypescript, SiDart, SiCplusplus, SiDotnet,

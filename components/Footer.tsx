@@ -61,7 +61,13 @@ export default function Footer({ locale }: FooterProps) {
 
       {/* Privacy Modal */}
       {showPrivacyModal && (
-        <Modal onClose={closePrivacyModal}>
+        <Modal 
+          onClose={closePrivacyModal}
+          resizable={false}
+          draggable={false}
+          maximizable={false}
+        >
+          <div className="p-4">
           <h2 className="text-xl font-semibold mb-4">{t("managePrivacySettings")}</h2>
           <p className="mb-6">{getConsentMessage()}</p>
 
@@ -79,12 +85,19 @@ export default function Footer({ locale }: FooterProps) {
                 : t("allowDataCollection")}
             </button>
           </div>
+          </div>
         </Modal>
       )}
 
       {/* Confirm Modal */}
       {showConfirmDialog && (
-        <Modal onClose={() => setShowConfirmDialog(false)} showClose={false}>
+        <Modal 
+          onClose={() => setShowConfirmDialog(false)}
+          resizable={false}
+          draggable={false}
+          maximizable={false}
+        >
+          <div className="p-4">
           <h2 className="text-xl font-semibold mb-4">{t("confirmConsentChange")}</h2>
           <p className="mb-6">
             {tempConsent === "accepted"
@@ -117,6 +130,7 @@ export default function Footer({ locale }: FooterProps) {
             >
               {t("confirm")}
             </button>
+          </div>
           </div>
         </Modal>
       )}
