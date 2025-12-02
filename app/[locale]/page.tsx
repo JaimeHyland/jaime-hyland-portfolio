@@ -4,7 +4,7 @@ import messagesEs from "../../messages/es.json";
 import messagesDe from "../../messages/de.json";
 
 import TechsSection from "@/components/TechsSection";
-import LearningSection from "@/components/LearningSection";
+import EducationSection from "@/components/EducationSection";
 
 import { generateMetadata as headMetadata } from "./head";
 
@@ -66,7 +66,7 @@ export default async function HomePage() {
       <TechsSection locale={locale} />
 
       {/* Learning / Education */}
-      <LearningSection locale={locale} />
+      <EducationSection locale={locale} />
 
       {/* CTA */}
       <section className="text-center">

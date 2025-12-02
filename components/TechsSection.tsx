@@ -112,7 +112,7 @@ export default function TechsSection({ locale }: TechsSectionProps) {
         ))}
       </div>
 
-      {/* Modal now inherits from reusable Modal component */}
+
       <TechsModal
         open={modal.open}
         title={modal.title}

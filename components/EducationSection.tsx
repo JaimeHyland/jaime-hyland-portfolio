@@ -21,15 +21,15 @@ interface InstitutionProps {
   content: React.ReactNode;
 }
 
-export default function LearningSection({ locale }: { locale: string }) {
+export default function EducationSection({ locale }: { locale: string }) {
   const messages = (messagesMap[locale as "en" | "es" | "de"] || messagesEn) as {
     pageInline: any
-    learningSection: { heading: string; [key: string]: any };
+    educationSection: { heading: string; [key: string]: any };
     };
 
-  const { heading: educationTitle } = messages.learningSection;
+  const { heading: educationTitle } = messages.educationSection;
 
-  const t = useTranslations("learningSection");
+  const t = useTranslations("educationSection");
   const [modalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState<InstitutionProps>({
     title: "",
