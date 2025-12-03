@@ -38,39 +38,39 @@
       },
       "dart": {
         "title": "Dart",
-        "description": "Used with Flutter for cross-platform mobile development."
+        "description": "Used with Flutter for cross-platform mobile development, Dart is a modern, class-based language inspired by JavaScript, Java, and C#. It compiles to native code for fast, smooth apps on iOS and Android, or to JavaScript for the web, and offers strong typing and powerful async support. Its hot reload feature saves waiting-around time time, making the development experience faster and less frustrating."
       },
       "java": {
         "title": "Java Swing",
-        "description": "Built desktop GUI apps during training."
+        "description": "Java Swing is a framework for building desktop graphical user interfaces. I used it on one occasion to create a simple desktop app to allow an admin to maintain data in a MySQL database. Earlier, I had to dabble in it to adapt complex UIs to support locales other than the original German."
       },
       "cpp": {
         "title": "C++",
-        "description": "Systems programming fundamentals."
+        "description": "I first encountered C++ during a three-month course, where I became acquainted with some of its basic features. I gained exposure to its benefits as a high-performance development language offering fine-grained control over memory. Later, I dabbled in it while troubleshooting stubborn internationalization issues."
       },
       "dotnet": {
         "title": "Visual Basic .NET",
-        "description": "Built Windows apps during early dev work."
+        "description": "VB .NET is an object-oriented programming language developed by Microsoft, designed to run on the .NET framework. I used it primarily to manipulate the Passolo object model in efforts to automate localization of resources. I also used it to examine source-language and localized strings for consistency, ensuring the absence of prohibited substrings and unlocalizable concatenations."
       },
       "html5": {
         "title": "HTML5",
-        "description": "Semantic, accessible markup for web pages."
+        "description": "The standard markup language for creating and structuring content on the web."
       },
       "css3": {
         "title": "CSS3",
-        "description": "Custom styling and layout techniques."
+        "description": "The style sheet language used to control the presentation, layout, and appearance of web content."
       },
       "django": {
         "title": "Django",
-        "description": "Full-stack web apps with REST APIs."
+        "description": "Django is a high-level Python web framework that facilitates startlingly rapid development and clean, pragmatic design. I have used it both as a pure backend (with Next.js or Flutter on the frontend, PostgreSQL as the database, and implementing RESTful APIs to bridge the backend and frontend), and also across the full stack, creating applications all the way to the user interface with the help of React, Bootstrap, and other tools."
       },
       "flask": {
         "title": "Flask",
-        "description": "Lightweight Python apps and APIs."
+        "description": "Flask is a lightweight Python web framework without any built-in ORM, admin panel, or templating system. I dabbled in it during hackathons to help create RESTful APIs."
       },
       "react": {
         "title": "React",
-        "description": "Modern front-end development."
+        "description": "React is a widely-used JavaScript library for building interactive user interfaces. It has a component-based architecture with reusable components and supports state management. I have mainly used it to create more or less complex modals, responsive buttons and similar controls."
       },
       "nextjs": {
         "title": "Next.js",

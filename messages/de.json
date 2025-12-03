@@ -38,35 +38,35 @@
       },
       "dart": {
         "title": "Dart",
-        "description": "Verwendet mit Flutter für plattformübergreifende mobile Apps."
+        "description": "In Verbindung mit Flutter für plattformübergreifende mobile Entwicklung ist Dart eine moderne, klassenbasierte Sprache, inspiriert von JavaScript, Java und C#. Es wird zu nativen Code kompiliert, um schnelle und flüssige Apps auf iOS und Android zu ermöglichen, oder zu JavaScript für das Web, und bietet starke Typisierung sowie leistungsstarke Async-Unterstützung. Die Hot-Reload-Funktion spart „waiting-around time“ und macht die Entwicklererfahrung schneller und weniger frustrierend."
       },
       "java": {
         "title": "Java Swing",
-        "description": "Desktop-GUI-Anwendungen während der Ausbildung erstellt."
+        "description": "Java Swing ist ein Framework zum Erstellen von Desktop-Grafikoberflächen. Ich habe es einmal verwendet, um eine einfache Anwendung zu erstellen, mit der ein Administrator Daten in einer MySQL-Datenbank pflegen konnte. Zuvor musste ich es einsetzen, um komplexe Benutzeroberflächen für andere Sprachen als das ursprüngliche Deutsch anzupassen."
       },
       "cpp": {
         "title": "C++",
-        "description": "Grundlagen der Systemprogrammierung."
+        "description": "Ich habe C++ erstmals während eines dreimonatigen Kurses kennengelernt, in dem ich einige seiner grundlegenden Funktionen erlernte. Ich gewann Einblick in seine Vorteile als leistungsstarke Programmiersprache mit feinkörniger Kontrolle über den Speicher. Später habe ich es gelegentlich verwendet, um hartnäckige Internationalisierungsprobleme zu beheben."
       },
       "dotnet": {
         "title": "Visual Basic .NET",
-        "description": "Windows-Anwendungen in frühen Entwicklungsprojekten erstellt."
+        "description": "VB .NET ist eine objektorientierte Programmiersprache, die von Microsoft entwickelt wurde und auf dem .NET-Framework ausgeführt wird. Ich habe es hauptsächlich verwendet, um das Passolo-Objektmodell zu manipulieren und die Automatisierung der Ressourcenlokalisierung zu unterstützen. Außerdem nutzte ich es, um Quell- und übersetzte Strings auf Konsistenz zu überprüfen und sicherzustellen, dass keine verbotenen Teilstrings oder nicht lokalisierbare Verkettungen enthalten sind."
       },
       "html5": {
         "title": "HTML5",
-        "description": "Semantisches und barrierefreies Markup."
+        "description": "Die standardisierte Auszeichnungssprache zum Erstellen und Strukturieren von Webinhalten."
       },
       "css3": {
         "title": "CSS3",
-        "description": "Individuelle Layout- und Stiltechniken."
+        "description": "Die Stylesheet-Sprache zur Steuerung von Darstellung, Layout und Erscheinungsbild von Webinhalten."
       },
       "django": {
         "title": "Django",
-        "description": "Full-Stack-Webapps mit REST-APIs."
+        "description": "Django ist ein hochentwickeltes Python-Webframework, das eine erstaunlich schnelle Entwicklung und sauberes, pragmatisches Design ermöglicht. Ich habe es sowohl als reines Backend eingesetzt (mit Next.js oder Flutter im Frontend, PostgreSQL als Datenbank und beim Erstellen von RESTful-APIs, um Backend und Frontend zu verbinden), als auch im gesamten Stack, wobei ich Anwendungen bis zur Benutzeroberfläche mit Hilfe von React, Bootstrap und anderen Tools aufgebaut habe."
       },
       "flask": {
         "title": "Flask",
-        "description": "Leichte Python-Anwendungen und APIs."
+        "description": "Flask ist ein leichtgewichtiges Python-Webframework ohne integriertes ORM, Admin-Panel oder Templatesystem. Ich habe es während Hackathons gelegentlich genutzt, um bei der Erstellung von RESTful-APIs zu helfen."
       },
       "react": {
         "title": "React",

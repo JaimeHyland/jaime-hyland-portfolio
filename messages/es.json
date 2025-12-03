@@ -1,5 +1,4 @@
 {
-  
   "pageInline": {
     "title": "Jaime Hyland",
     "tagline": "Desarrollador full-stack — Django y Next.js con i18n",
@@ -39,39 +38,39 @@
       },
       "dart": {
         "title": "Dart",
-        "description": "Usado con Flutter para desarrollo móvil multiplataforma."
+        "description": "Usado con Flutter para desarrollo móvil multiplataforma, Dart es un lenguaje moderno y orientado a clases, inspirado en JavaScript, Java y C#. Se compila a código nativo para aplicaciones rápidas y fluidas en iOS y Android, o a JavaScript para la web, y ofrece tipado fuerte y potente soporte de async. Su función de hot reload ahorra tiempo de espera, haciendo que la experiencia del desarrollador sea más rápida y menos frustrante."
       },
       "java": {
         "title": "Java Swing",
-        "description": "Creé aplicaciones de escritorio con GUI durante mi formación."
+        "description": "Java Swing es un framework para crear interfaces gráficas de escritorio. Lo utilicé en una ocasión para crear una aplicación sencilla que permitiera a un administrador mantener datos en una base de datos MySQL. Antes, tuve que trabajar con él para adaptar interfaces complejas a otros idiomas distintos del alemán original."
       },
       "cpp": {
         "title": "C++",
-        "description": "Fundamentos de programación de sistemas."
+        "description": "Me familiaricé por primera vez con C++ durante un curso de tres meses, donde aprendí algunas de sus funciones básicas. Obtuve exposición a sus ventajas como un lenguaje de desarrollo de alto rendimiento que ofrece un control detallado sobre la memoria. Más tarde, lo utilicé de manera ocasional mientras solucionaba problemas persistentes de internacionalización."
       },
       "dotnet": {
         "title": "Visual Basic .NET",
-        "description": "Desarrollé aplicaciones de Windows en trabajos iniciales."
+        "description": "VB .NET es un lenguaje de programación orientado a objetos desarrollado por Microsoft, diseñado para ejecutarse en el framework .NET. Lo utilicé principalmente para manipular el modelo de objetos de Passolo con el fin de automatizar la localización de recursos. También lo usé para examinar cadenas en el idioma original y localizadas, asegurando la consistencia y la ausencia de subcadenas prohibidas y concatenaciones no localizables."
       },
       "html5": {
         "title": "HTML5",
-        "description": "Marcado semántico y accesible para páginas web."
+        "description": "El lenguaje de marcado estándar para crear y estructurar contenido en la web."
       },
       "css3": {
         "title": "CSS3",
-        "description": "Técnicas personalizadas de diseño y estilo."
+        "description": "El lenguaje de hojas de estilo utilizado para controlar la presentación, el diseño y la apariencia del contenido web."
       },
       "django": {
         "title": "Django",
-        "description": "Aplicaciones web full-stack con APIs REST."
+        "description": "Django es un framework web de Python de alto nivel que facilita un desarrollo sorprendentemente rápido y un diseño limpio y pragmático. Lo he utilizado tanto como backend puro (con Next.js o Flutter en el frontend, PostgreSQL como base de datos y construyendo APIs RESTful para conectar el backend con el frontend), como en todo el stack, desarrollando aplicaciones hasta la interfaz de usuario con la ayuda de React, Bootstrap y otras herramientas."
       },
       "flask": {
         "title": "Flask",
-        "description": "Aplicaciones y APIs ligeras en Python."
+        "description": "Flask es un framework web ligero de Python, sin ORM, panel de administración ni sistema de plantillas incorporados. Lo utilicé de manera ocasional durante hackathons para ayudar a crear APIs RESTful."
       },
       "react": {
         "title": "React",
-        "description": "Desarrollo moderno de front-end."
+        "description": "React es una biblioteca de JavaScript utilizada popularmente para construir interfaces de usuario interactivas. Cuenta con una arquitectura basada en componentes con componentes reutilizables y soporta la gestión de estado. Principalmente lo he utilizado para crear modales más o menos complejos, botones responsivos y controles similares."
       },
       "nextjs": {
         "title": "Next.js",
