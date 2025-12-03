@@ -29,9 +29,13 @@
         "title": "Python",
         "description": "Uso Python principalmente en desarrollo con Django, en Flask y para scripting."
       },
+      "javascript": {
+        "title": "JavaScript",
+        "description": "JJavaScript es el lenguaje de programación más utilizado para crear interfaces web junto con HTML y CSS. Se usa para acceder y manipular datos, interactuar con el DOM y actualizar de forma dinámica el HTML y el CSS."
+      },
       "typescript": {
         "title": "TypeScript",
-        "description": "Usado extensivamente en proyectos con React y Next.js."
+        "description": "TypeScript es un superconjunto de JavaScript. Aplica un tipado más estricto y ofrece autocompletado, IntelliSense y sugerencias inteligentes, lo que lo hace muy útil para escribir, depurar y refactorizar código. Lo uso ampliamente en conjunto con next.js y React al construir y mantener este sitio."
       },
       "dart": {
         "title": "Dart",

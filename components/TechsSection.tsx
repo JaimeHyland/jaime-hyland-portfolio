@@ -5,7 +5,7 @@ import TechsIcon from "./TechsIcon";
 import  TechsModal  from "./TechsModal_frozen";
 import { IconType } from "react-icons";
 import {
-  SiPython, SiTypescript, SiDart, SiCplusplus, SiDotnet,
+  SiPython, SiJavascript, SiTypescript, SiDart, SiCplusplus, SiDotnet,
   SiHtml5, SiCss3, SiDjango, SiFlask, SiReact, SiNextdotjs,
   SiFlutter, SiBootstrap, SiTailwindcss, SiPostgresql, SiMysql,
   SiHeroku, SiVercel, SiGodaddy, SiAmazonaws, SiStripe, SiSwagger,
@@ -43,6 +43,7 @@ interface ModalState {
 
 const iconMap: Record<string, IconType> = {
   python: SiPython,
+  javascript: SiJavascript,
   typescript: SiTypescript,
   dart: SiDart,
   java: FaJava,

@@ -28,9 +28,13 @@
         "title": "Python",
         "description": "I use Python mainly in Django coding, in Flask and for scripting."
       },
+      "javascript": {
+        "title": "JavaScript",
+        "description": "JavaScript is the most commonly used programming language for creating website frontends together with HTML and CSS. It's used both to access and manipulate data and the DOM, and to modify HTML and CSS code."
+      },
       "typescript": {
         "title": "TypeScript",
-        "description": "Used extensively in React and Next.js projects."
+        "description": "TypeScript is a superset of JavaScript. It enforces stricter typing, provides autocomplete, IntelliSense, and smart hints, making it very useful for writing, debugging, and refactoring code. I use it pretty intensively together with Next.js and React when building and maintaining this site."
       },
       "dart": {
         "title": "Dart",
@@ -146,7 +150,7 @@
       },
       "nodejs": {
         "title": "Node.js",
-        "description": "Runtime for tools and servers."
+        "description": "Node.js is a runtime for tools and servers that allows you to use JavaScript elsewhere than directly on a browser. Among other things, it allows you develop website backends coding JavaScript. It's worth noting that Node.js is the harness in which Next.js and many other web framworks do their thing. It's also an essential toolkit when building stuff within the React ecosystem."
       },
       "cloudinary": {
         "title": "Cloudinary",

@@ -28,9 +28,13 @@
         "title": "Python",
         "description": "Ich nutze Python hauptsächlich für Django, Flask und Scripting."
       },
+      "javascript": {
+        "title": "JavaScript",
+        "description": "JavaScript ist die am häufigsten verwendete Programmiersprache zum Erstellen von Web-Frontends zusammen mit HTML und CSS. Sie wird verwendet, um auf Daten zuzugreifen, sie zu bearbeiten, mit dem DOM zu interagieren und HTML und CSS dynamisch zu aktualisieren."
+      },
       "typescript": {
         "title": "TypeScript",
-        "description": "Intensiv verwendet in React- und Next.js-Projekten."
+        "description": "TypeScript ist eine Obermenge von JavaScript. Es erzwingt strengere Typisierung und bietet Autovervollständigung, IntelliSense und intelligente Hinweise, was es sehr nützlich beim Schreiben, Debuggen und Refaktorisieren von Code macht. Ich verwende es umfangreich zusammen mit Next.js und React beim Erstellen und Pflegen dieser Website."
       },
       "dart": {
         "title": "Dart",
