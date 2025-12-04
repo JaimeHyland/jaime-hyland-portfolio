@@ -20,112 +20,6 @@ export default function ProjectsPage() {
       <h1 className="text-3xl font-bold mb-6">{t("title")}</h1>
       <p className="mb-6">{t("projIntro")}</p>
 
-      <CollapsibleSection id="ci-assessment" title={t("section1.title")}>
-        <p className="mb-4">{t("section1.description")}</p>
-        <ul className="space-y-4">
-          <li>
-            <strong>
-              <ProjLink href={t("section1.projects.farming.siteURL")}>
-                {t("section1.projects.farming.name")}
-              </ProjLink>
-            </strong>{" "}
-            – {t("section1.projects.farming.desc")}
-            <br />
-            <ProjLink href={t("section1.projects.farming.codebaseURL")}>
-              {t("section1.projects.farming.codebaseText")}
-            </ProjLink>
-          </li>
-          <li>
-            <strong>
-              <ProjLink href={t("section1.projects.acento.siteURL")}>
-                {t("section1.projects.acento.name")}
-              </ProjLink>
-            </strong>{" "}
-            – {t("section1.projects.acento.desc")}
-            <br />
-            <ProjLink href={t("section1.projects.acento.codebaseURL")}>
-              {t("section1.projects.acento.codebaseText")}
-            </ProjLink>
-          </li>
-          <li>
-            <strong>
-              <ProjLink href={t("section1.projects.witch.siteURL")}>
-                {t("section1.projects.witch.name")}
-              </ProjLink>
-            </strong>{" "}
-            – {t("section1.projects.witch.desc")}
-            <br />
-            <ProjLink href={t("section1.projects.witch.codebaseURL")}>
-              {t("section1.projects.witch.codebaseText")}
-            </ProjLink>
-          </li>
-          <li>
-            <strong>
-              <ProjLink href={t("section1.projects.family.siteURL")}>
-                {t("section1.projects.family.name")}
-              </ProjLink>
-            </strong>{" "}
-            – {t("section1.projects.family.desc")}
-            <br />
-            <ProjLink href={t("section1.projects.family.codebaseURL")}>
-              {t("section1.projects.family.codebaseText")}
-            </ProjLink>
-          </li>
-          <li>
-            <strong>
-              <ProjLink href={t("section1.projects.mellifera.siteURL")}>
-                {t("section1.projects.mellifera.name")}
-              </ProjLink>
-            </strong>
-            <p>{t("section1.projects.mellifera.desc")}</p>
-            <ProjLink href={t("section1.projects.mellifera.codebaseURL")}>
-              {t("section1.projects.mellifera.codebaseText")}
-            </ProjLink>
-          </li>
-        </ul>
-      </CollapsibleSection>
-
-      <CollapsibleSection id="workProjects" title={t("section4.title")}>
-        <ul>
-          <li>
-            <strong>{t("section4.projects.microbus-l10n.name")}</strong>
-            <p className="mb-4">
-              {t.rich("section4.projects.microbus-l10n.desc1", {
-                bold: (chunks) => <strong>{chunks}</strong>
-              })}
-            </p>
-            <p className="mb-4">
-              {t.rich("section4.projects.microbus-l10n.desc2", {
-                bold: (chunks) => <strong>{chunks}</strong>
-              })}
-            </p>
-            {Array.isArray(problems) && (
-              <ul className="list-disc list-outside pl-5 mb-4">
-                {problems.map((problem, index) => (
-                  <li key={index} className="pl-2 -text-indent text-indent-hang">
-                    {t.rich(`section4.projects.microbus-l10n.problems.${index}`, {
-                      bold: (chunks) => <strong>{chunks}</strong>
-                    })}
-                  </li>
-                ))}
-              </ul>
-            )}
-            <p className="mb-4">{t("section4.projects.microbus-l10n.desc3")}</p>
-            {Array.isArray(solutions) && (
-              <ul className="list-disc list-outside pl-5 mb-4">
-                {solutions.map((solution, index) => (
-                  <li key={index} className="pl-2 -text-indent text-indent-hang">
-                    {t.rich(`section4.projects.microbus-l10n.solutions.${index}`, {
-                      bold: (chunks) => <strong>{chunks}</strong>
-                    })}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
-        </ul>
-      </CollapsibleSection>
-
       <CollapsibleSection id="independent" title={t("section2.title")}>
         <p className="mb-4">{t("section2.description")}</p>
         <ul className="space-y-4">
@@ -243,6 +137,70 @@ export default function ProjectsPage() {
           </li>
         </ul>
       </CollapsibleSection>
+      <CollapsibleSection id="ci-assessment" title={t("section1.title")}>
+        <p className="mb-4">{t("section1.description")}</p>
+        <ul className="space-y-4">
+          <li>
+            <strong>
+              <ProjLink href={t("section1.projects.farming.siteURL")}>
+                {t("section1.projects.farming.name")}
+              </ProjLink>
+            </strong>{" "}
+            – {t("section1.projects.farming.desc")}
+            <br />
+            <ProjLink href={t("section1.projects.farming.codebaseURL")}>
+              {t("section1.projects.farming.codebaseText")}
+            </ProjLink>
+          </li>
+          <li>
+            <strong>
+              <ProjLink href={t("section1.projects.acento.siteURL")}>
+                {t("section1.projects.acento.name")}
+              </ProjLink>
+            </strong>{" "}
+            – {t("section1.projects.acento.desc")}
+            <br />
+            <ProjLink href={t("section1.projects.acento.codebaseURL")}>
+              {t("section1.projects.acento.codebaseText")}
+            </ProjLink>
+          </li>
+          <li>
+            <strong>
+              <ProjLink href={t("section1.projects.witch.siteURL")}>
+                {t("section1.projects.witch.name")}
+              </ProjLink>
+            </strong>{" "}
+            – {t("section1.projects.witch.desc")}
+            <br />
+            <ProjLink href={t("section1.projects.witch.codebaseURL")}>
+              {t("section1.projects.witch.codebaseText")}
+            </ProjLink>
+          </li>
+          <li>
+            <strong>
+              <ProjLink href={t("section1.projects.family.siteURL")}>
+                {t("section1.projects.family.name")}
+              </ProjLink>
+            </strong>{" "}
+            – {t("section1.projects.family.desc")}
+            <br />
+            <ProjLink href={t("section1.projects.family.codebaseURL")}>
+              {t("section1.projects.family.codebaseText")}
+            </ProjLink>
+          </li>
+          <li>
+            <strong>
+              <ProjLink href={t("section1.projects.mellifera.siteURL")}>
+                {t("section1.projects.mellifera.name")}
+              </ProjLink>
+            </strong>
+            <p>{t("section1.projects.mellifera.desc")}</p>
+            <ProjLink href={t("section1.projects.mellifera.codebaseURL")}>
+              {t("section1.projects.mellifera.codebaseText")}
+            </ProjLink>
+          </li>
+        </ul>
+      </CollapsibleSection>
 
       <CollapsibleSection id="hackathons" title={t("section3.title")}>
         <p className="mb-4">{t("section3.description1")}</p>
@@ -333,6 +291,47 @@ export default function ProjectsPage() {
           </li>
         </ul>
       </CollapsibleSection>
+      <CollapsibleSection id="workProjects" title={t("section4.title")}>
+        <ul>
+          <li>
+            <strong>{t("section4.projects.microbus-l10n.name")}</strong>
+            <p className="mb-4">
+              {t.rich("section4.projects.microbus-l10n.desc1", {
+                bold: (chunks) => <strong>{chunks}</strong>
+              })}
+            </p>
+            <p className="mb-4">
+              {t.rich("section4.projects.microbus-l10n.desc2", {
+                bold: (chunks) => <strong>{chunks}</strong>
+              })}
+            </p>
+            {Array.isArray(problems) && (
+              <ul className="list-disc list-outside pl-5 mb-4">
+                {problems.map((problem, index) => (
+                  <li key={index} className="pl-2 -text-indent text-indent-hang">
+                    {t.rich(`section4.projects.microbus-l10n.problems.${index}`, {
+                      bold: (chunks) => <strong>{chunks}</strong>
+                    })}
+                  </li>
+                ))}
+              </ul>
+            )}
+            <p className="mb-4">{t("section4.projects.microbus-l10n.desc3")}</p>
+            {Array.isArray(solutions) && (
+              <ul className="list-disc list-outside pl-5 mb-4">
+                {solutions.map((solution, index) => (
+                  <li key={index} className="pl-2 -text-indent text-indent-hang">
+                    {t.rich(`section4.projects.microbus-l10n.solutions.${index}`, {
+                      bold: (chunks) => <strong>{chunks}</strong>
+                    })}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        </ul>
+      </CollapsibleSection>
+
     </div>
   );
 }
