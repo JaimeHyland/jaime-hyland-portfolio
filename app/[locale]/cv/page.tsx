@@ -4,16 +4,17 @@ import { useTranslations, useLocale } from "next-intl";
 import React from "react";
 import { ProjLink } from "../../../components/ProjLink";
 import { CollapsibleSection } from "../../../components/CollapsibleSection";
-import { localizedPaths, Language, getAnchor } from "@/lib/paths";
+import { getAnchor } from "@/lib/paths";
+import { AnchorKey, LanguageKey } from "@/lib/keys";
 
 export default function CVPage() {
   const t = useTranslations();
-  const locale = useLocale() as Language;
+  const locale = useLocale() as LanguageKey;
   
   const educationItems = t.raw("education.items");
   const rawPortfolioItems = t.raw("portfolio.items") as string[];
 
-  const anchorKeys = ["ciProjects", "independent", "hackathons"];
+  const anchorKeys: AnchorKey[] = ["ciProjects", "independent", "hackathons"];
   const AnchorUrls = anchorKeys.map(key =>
     getAnchor({ t, locale, key })
   );

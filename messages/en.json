@@ -190,5 +190,12 @@
 
     "freecodecampModalTitle": "freecodecamp",
     "freecodecampModalContent": "<link>freecodecamp</link> is my original provider of many of my basic skills on web development.\nI've got enormous mileage out of its Certified Full Stack Developer Curriculum (though it's still in Beta testing at time of writing)."
+  },
+  "pages": {
+    "home": "",
+    "projects": "projects",
+    "cv": "cv",
+    "contact": "contact",
+    "impressum": "legal"
   }
 }

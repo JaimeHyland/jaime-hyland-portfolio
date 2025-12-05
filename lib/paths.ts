@@ -1,36 +1,22 @@
-export const localizedPaths = {
-  en: {
-    home: "",
-    projects: "projects",
-    cv: "cv",
-    contact: "contact",
-    impressum: "legal"
-  },
-  es: {
-    home: "",
-    projects: "proyectos",
-    cv: "curriculum",
-    contact: "contacto",
-    impressum: "aviso"
-  },
-  de: {
-    home: "",
-    projects: "projekte",
-    cv: "lebenslauf",
-    contact: "kontakt",
-    impressum: "impressum"
-  }
-} as const;
+import { LanguageKey, AnchorKey, PageKey } from "./keys";
 
-export type Language = keyof typeof localizedPaths;
-export type PageKey = keyof (typeof localizedPaths)["en"];
 
-interface GetAnchorProps {
-  t: ReturnType<typeof import("next-intl").useTranslations>; 
-  locale: Language;
-  key: string; // anchor key string
+// For getPagePath
+export interface GetPagePathProps {
+  t: (key: string, values?: Record<string, any>) => string;
+  key: PageKey;
 }
 
-export function getAnchor({t, locale, key}: GetAnchorProps) {
-  return `/${locale}/${localizedPaths[locale].projects}#${t(`portfolioAnchors.${key}`)}`;
+export function getPagePath(t: (key: string, values?: Record<string, any>) => string, key: PageKey) {
+  return t(`pages.${key}`);
+}
+
+export interface GetAnchorProps {
+  t: ReturnType<typeof import("next-intl").useTranslations>;
+  locale: LanguageKey;
+  key: AnchorKey;
+}
+
+export function getAnchor({ t, locale, key }: GetAnchorProps) {
+  return `/${locale}/${getPagePath(t, "projects")}#${t(`portfolioAnchors.${key}`)}`;
 }

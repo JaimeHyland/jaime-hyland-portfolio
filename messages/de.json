@@ -190,5 +190,12 @@
 
     "freecodecampModalTitle": "freecodecamp",
     "freecodecampModalContent": "<link>freecodecamp</link> ist mein ursprünglicher Anbieter vieler meiner Grundkenntnisse in der Webentwicklung.\nIch habe enorm von ihrem Certified Full Stack Developer Curriculum profitiert (obwohl es zum Zeitpunkt des Schreibens noch in der Beta-Phase ist)."
+  },
+  "pages": {
+    "home": "",
+    "projects": "projekte",
+    "cv": "lebenslauf",
+    "contact": "kontakt",
+    "impressum": "impressum"
   }
 }

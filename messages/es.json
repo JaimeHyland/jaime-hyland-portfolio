@@ -190,5 +190,12 @@
 
     "freecodecampModalTitle": "freecodecamp",
     "freecodecampModalContent": "<link>freecodecamp</link> es mi proveedor original de muchas de mis habilidades básicas en desarrollo web.\nHe sacado un enorme provecho de su Currículo Certificado de Desarrollador Full Stack (aunque aún estaba en fase Beta al momento de escribir esto)."
+  },
+  "pages": {
+    "home": "",
+    "projects": "proyectos",
+    "cv": "curriculum",
+    "contact": "contacto",
+    "impressum": "aviso"
   }
 }
