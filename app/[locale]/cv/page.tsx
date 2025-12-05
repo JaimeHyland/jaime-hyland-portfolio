@@ -4,20 +4,20 @@ import { useTranslations, useLocale } from "next-intl";
 import React from "react";
 import { ProjLink } from "../../../components/ProjLink";
 import { CollapsibleSection } from "../../../components/CollapsibleSection";
+import { localizedPaths, Language } from "@/lib/paths";
 
 export default function CVPage() {
   const t = useTranslations();
-  const locale = useLocale();
+  const locale = useLocale() as Language;
   
   const educationItems = t.raw("education.items");
   const rawPortfolioItems = t.raw("portfolio.items") as string[];
 
-
-  const urls = [
-    `/${locale}/projects#ci-assessment`,
-    `/${locale}/projects#independent`,
-    `/${locale}/projects#hackathons`
-  ];
+const urls = [
+  `/${locale}/${localizedPaths[locale].projects}#ci-assessment`,
+  `/${locale}/${localizedPaths[locale].projects}#independent`,
+  `/${locale}/${localizedPaths[locale].projects}#hackathons`
+];
 
   const richPortfolioItems = rawPortfolioItems.map((_, i) =>
     t.rich(`portfolio.items.${i}`, {

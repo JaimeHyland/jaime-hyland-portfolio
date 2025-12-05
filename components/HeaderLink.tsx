@@ -8,7 +8,7 @@ interface HeaderLinkProps {
   pageKey: string;
   currentKey: string;
   className?: string;
-  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void; // optional callback (e.g. to close mobile menu)
+  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void; 
 }
 
 export function HeaderLink({
