@@ -21,7 +21,7 @@ const urls = [
 
   const richPortfolioItems = rawPortfolioItems.map((_, i) =>
     t.rich(`portfolio.items.${i}`, {
-      link: (chunks) => <ProjLink href={urls[i]}>{chunks}</ProjLink>
+      link: (chunks) => <ProjLink href={urls[i]} newTab={false} >{chunks}</ProjLink>
     })
   );
   
