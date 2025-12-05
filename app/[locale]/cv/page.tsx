@@ -4,7 +4,7 @@ import { useTranslations, useLocale } from "next-intl";
 import React from "react";
 import { ProjLink } from "../../../components/ProjLink";
 import { CollapsibleSection } from "../../../components/CollapsibleSection";
-import { localizedPaths, Language } from "@/lib/paths";
+import { localizedPaths, Language, getAnchor } from "@/lib/paths";
 
 export default function CVPage() {
   const t = useTranslations();
@@ -13,15 +13,14 @@ export default function CVPage() {
   const educationItems = t.raw("education.items");
   const rawPortfolioItems = t.raw("portfolio.items") as string[];
 
-const urls = [
-  `/${locale}/${localizedPaths[locale].projects}#ci-assessment`,
-  `/${locale}/${localizedPaths[locale].projects}#independent`,
-  `/${locale}/${localizedPaths[locale].projects}#hackathons`
-];
+  const anchorKeys = ["ciProjects", "independent", "hackathons"];
+  const AnchorUrls = anchorKeys.map(key =>
+    getAnchor({ t, locale, key })
+  );
 
   const richPortfolioItems = rawPortfolioItems.map((_, i) =>
     t.rich(`portfolio.items.${i}`, {
-      link: (chunks) => <ProjLink href={urls[i]} newTab={false} >{chunks}</ProjLink>
+      link: (chunks) => <ProjLink href={AnchorUrls[i]} newTab={false} >{chunks}</ProjLink>
     })
   );
   

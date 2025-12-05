@@ -227,7 +227,7 @@
   },
 
   "portfolioAnchors": {
-    "ciAssessment": "ci-bewertung",
+    "ciProjects": "ci-projekte",
     "independent": "eigenständig",
     "hackathons": "hackathons"
   }

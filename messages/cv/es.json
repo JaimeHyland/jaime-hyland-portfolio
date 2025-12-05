@@ -228,8 +228,8 @@
   },
 
   "portfolioAnchors": {
-    "ciAssessment": "ci-evaluacion",
+    "ciProjects": "proyectos-ci",
     "independent": "independiente",
-    "hackathons": "hackathons"
+    "hackathons": "hackatones"
   }
 }

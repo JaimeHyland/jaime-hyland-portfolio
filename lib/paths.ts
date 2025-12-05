@@ -24,3 +24,13 @@ export const localizedPaths = {
 
 export type Language = keyof typeof localizedPaths;
 export type PageKey = keyof (typeof localizedPaths)["en"];
+
+interface GetAnchorProps {
+  t: ReturnType<typeof import("next-intl").useTranslations>; 
+  locale: Language;
+  key: string; // anchor key string
+}
+
+export function getAnchor({t, locale, key}: GetAnchorProps) {
+  return `/${locale}/${localizedPaths[locale].projects}#${t(`portfolioAnchors.${key}`)}`;
+}

@@ -28,7 +28,7 @@ Aug. 2023 – Sept. 2024: Code Institute, Dublin – Diplom in Full-Stack-Entwic
 1984 – 1988: Trinity College Dublin – Bachelor of Arts in Philosophie
 
 Aktuelle / Abgeschlossene Projekte
-Kursportfolio: https://www.jaime-hyland.com/de/projects#ci-assessment
+Kursportfolio: https://www.jaime-hyland.com/de/projects#ci-projects
 Abschluss von fünf Full-Stack-Projekten mit HTML, CSS, JavaScript, JSON, Bootstrap,
 Python, Django, Flask, React und Stripe-Integration.
 Einsatz von Heroku, Daphne/Channels, Redis und AWS; Entwicklung asynchroner Kommunikation

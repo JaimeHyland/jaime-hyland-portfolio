@@ -225,7 +225,7 @@
   },
 
   "portfolioAnchors": {
-    "ciAssessment": "ci-assessment",
+    "ciProjects": "ci-projects",
     "independent": "independent",
     "hackathons": "hackathons"
   }

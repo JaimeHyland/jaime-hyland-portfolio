@@ -20,7 +20,7 @@ export default function ProjectsPage() {
       <h1 className="text-3xl font-bold mb-6">{t("title")}</h1>
       <p className="mb-6">{t("projIntro")}</p>
 
-      <CollapsibleSection id="independent" title={t("section2.title")}>
+      <CollapsibleSection id={t("portfolioAnchors.independent")} title={t("section2.title")}>
         <p className="mb-4">{t("section2.description")}</p>
         <ul className="space-y-4">
           <li>
@@ -137,7 +137,8 @@ export default function ProjectsPage() {
           </li>
         </ul>
       </CollapsibleSection>
-      <CollapsibleSection id="ci-assessment" title={t("section1.title")}>
+
+      <CollapsibleSection id={t("portfolioAnchors.ciProjects")} title={t("section1.title")}>
         <p className="mb-4">{t("section1.description")}</p>
         <ul className="space-y-4">
           <li>
@@ -202,7 +203,7 @@ export default function ProjectsPage() {
         </ul>
       </CollapsibleSection>
 
-      <CollapsibleSection id="hackathons" title={t("section3.title")}>
+      <CollapsibleSection id={t("portfolioAnchors.hackathons")} title={t("section3.title")}>
         <p className="mb-4">{t("section3.description1")}</p>
         <p className="mb-4">{t("section3.description2")}</p>
         <ul className="space-y-6">

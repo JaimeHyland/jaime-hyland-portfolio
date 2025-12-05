@@ -142,7 +142,6 @@ type HeaderProps = {
                 />
                 <a
                   href="/files/JaimeHyland_CV_en_GB_HR_FullStack_latest.pdf"
-                  target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 transform hover:scale-105 hover:bg-gray-100 rounded transition text-sm"
                   onClick={() => setDesktopDownloadsOpen(false)}

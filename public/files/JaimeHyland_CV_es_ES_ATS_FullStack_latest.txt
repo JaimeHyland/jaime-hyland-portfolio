@@ -27,7 +27,7 @@ Ago. – Oct. 2000 | FAS CITP | Diploma en Programación Informática
 1984 – 1988 | Trinity College Dublin | Licenciatura en Filosofía
 
 Proyectos recientes independientes
-Portafolio de cursos | https://www.jaime-hyland.com/en/projects#ci-assessment
+Portafolio de cursos | https://www.jaime-hyland.com/en/projects#ci-projects
 Cinco proyectos fullstack con HTML, CSS, JavaScript, JSON, Bootstrap, Python,
 Django, Flask, React, Stripe. Heroku, Daphne/Channels, Redis, AWS; comunicación
 asíncrona utilizando Channels.
