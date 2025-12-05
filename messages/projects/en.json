@@ -118,7 +118,7 @@
           "Fully responsive",
           "Automatic generation of meta nodes on homepage for SEO; a sitemap and robots.txt",
           "Impressum (Legal disclosure), also fully localized",
-          "Note the correct localization of UI URLs. Due to next.js' limitations, this required a hybrid client-server-side solution combining redirects, server-rendering and client-side final adjustment.",
+          "Note the correct localization of UI URLs. Due to next.js' limitations, this required a hybrid client-server-side solution combining redirects, server-rendering and client-side final adjustment. All URLs, including for internal anchor-based links, are now fully localized.",
           "Integrated Vercel analytics, with banner consent form and data privacy management modal"
         ],
         "desc3": "In building it, I've emphasized fuss-free clarity, maintainability, responsiveness, cross-language consistency and legal conformity. It uses typed <bold>React</bold> components with <bold>server-side rendering</bold> and reflects the same standards I bring to my individual and collaborative work. It's fully responsive, SEO-friendly, and demonstrates my ability to deliver robust, scalable content platforms with modern frontend tooling.",
