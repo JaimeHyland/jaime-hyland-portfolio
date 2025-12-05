@@ -5,29 +5,25 @@ import { usePathname, useRouter } from "next/navigation";
 import Cookies from "js-cookie";
 import { useEffect, useState, useRef } from "react";
 import { Menu, MessageCircle, X } from "lucide-react";
-import { localizedPaths } from "@/lib/paths";
+import { getPagePath } from "@/lib/paths";
 import { localizedLabels } from "@/lib/labels";
 import { HeaderLink } from "../components/HeaderLink";
 import { CVTxtModal } from "./CVTxtModal";
+import { useTranslations } from "next-intl";
 
 
 type HeaderProps = {
   lang: "en" | "es" | "de";
   labels: (typeof localizedLabels)["en"];
-  paths: {
-    home: string;
-    cv: string;
-    projects: string;
-    contact: string;
-  };
 };
 
-  export default function Header({ lang, labels, paths }: HeaderProps) {
+  export default function Header({ lang, labels }: HeaderProps) {
     const router = useRouter();
     const pathname = usePathname();
 
     const [langOpen, setLangOpen] = useState(false);
     const [navOpen, setNavOpen] = useState(false);
+    const t = useTranslations();
 
     const [desktopDownloadsOpen, setDesktopDownloadsOpen] = useState(false);
     const [mobileDownloadsOpen, setMobileDownloadsOpen] = useState(false);
@@ -74,16 +70,14 @@ type HeaderProps = {
     return () => document.removeEventListener("pointerdown", handleClickOutsideMenus);
   }, [navOpen, desktopDownloadsOpen]);
 
-  const pageKey =
-    (Object.keys(paths) as (keyof typeof paths)[]).find(
-      (key) => pathname === `/${lang}/${paths[key]}`
+  const pageKey = (["home", "cv", "projects", "contact"] as const).find(
+      (key) => pathname === `/${lang}/${getPagePath(t, key)}`
     ) ?? "home";
 
   const handleLanguageChange = (lng: "en" | "es" | "de") => {
     Cookies.set("NEXT_LOCALE", lng, { expires: 365 });
-    const translatedPath = localizedPaths[lng][pageKey];
-    const newPath = `/${lng}${translatedPath ? `/${translatedPath}` : ""}`;
-    router.push(newPath);
+  const translatedSlug = getPagePath(t, pageKey);
+  router.push(`/${lng}/${translatedSlug}`);
     setNavOpen(false);
   };
 
@@ -95,16 +89,16 @@ type HeaderProps = {
     <header className="border-b p-4">
       <div className="max-w-5xl mx-auto flex items-center justify-between">
         <nav className="hidden md:flex gap-4 text-lg text-gray-800">
-          <HeaderLink href={`/${lang}/${paths.home}`} pageKey="home" currentKey={pageKey}>
+          <HeaderLink href={`/${lang}/${getPagePath(t, "home")}`} pageKey="home" currentKey={pageKey}>
             {labels?.home}
           </HeaderLink>
-          <HeaderLink href={`/${lang}/${paths.cv}`} pageKey="cv" currentKey={pageKey}>
+          <HeaderLink href={`/${lang}/${getPagePath(t, "cv")}`} pageKey="cv" currentKey={pageKey}>
             {labels?.cv}
           </HeaderLink>
-          <HeaderLink href={`/${lang}/${paths.projects}`} pageKey="projects" currentKey={pageKey}>
+          <HeaderLink href={`/${lang}/${getPagePath(t, "projects")}`} pageKey="projects" currentKey={pageKey}>
             {labels?.projects}
           </HeaderLink>
-          <HeaderLink href={`/${lang}/${paths.contact}`} pageKey="contact" currentKey={pageKey}>
+          <HeaderLink href={`/${lang}/${getPagePath(t, "contact")}`} pageKey="contact" currentKey={pageKey}>
             {labels?.contact}
           </HeaderLink>
 
@@ -200,7 +194,7 @@ type HeaderProps = {
 
         {/* Logo and site title */}
         <div>
-          <HeaderLink href={`/${lang}/${paths.home}`}
+          <HeaderLink href={`/${lang}/${getPagePath(t, "home")}`}
           pageKey="home" 
           currentKey={pageKey}
           onClick={() => setNavOpen(false)}
@@ -266,16 +260,16 @@ type HeaderProps = {
           className="md:hidden absolute top-16 left-4 bg-white border border-gray-200 shadow-lg rounded-lg p-4 flex flex-col gap-2 text-lg text-gray-800 w-72 z-50"
           // onClick={(e) => e.stopPropagation()}
         >
-          <HeaderLink href={`/${lang}/${paths.home}`} pageKey="home" currentKey={pageKey} onClick={closeMenu}>
+          <HeaderLink href={`/${lang}/${getPagePath(t, "home")}`} pageKey="home" currentKey={pageKey} onClick={closeMenu}>
             {labels?.home}
           </HeaderLink>
-          <HeaderLink href={`/${lang}/${paths.cv}`} pageKey="cv" currentKey={pageKey} onClick={closeMenu}>
+          <HeaderLink href={`/${lang}/${getPagePath(t, "cv")}`} pageKey="cv" currentKey={pageKey} onClick={closeMenu}>
             {labels?.cv}
           </HeaderLink>
-          <HeaderLink href={`/${lang}/${paths.projects}`} pageKey="projects" currentKey={pageKey} onClick={closeMenu}>
+          <HeaderLink href={`/${lang}/${getPagePath(t, "projects")}`} pageKey="projects" currentKey={pageKey} onClick={closeMenu}>
             {labels?.projects}
           </HeaderLink>
-          <HeaderLink href={`/${lang}/${paths.contact}`} pageKey="contact" currentKey={pageKey} onClick={closeMenu}>
+          <HeaderLink href={`/${lang}/${getPagePath(t, "contact")}`} pageKey="contact" currentKey={pageKey} onClick={closeMenu}>
             {labels?.contact}
           </HeaderLink>
 

@@ -3,7 +3,7 @@ import { getMessages } from "next-intl/server";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { localizedPaths } from "@/lib/paths";
+import { getPagePath } from "@/lib/paths";
 import { localizedLabels } from "@/lib/labels";
 import "@/app/globals.css";
 import AnalyticsAndConsent from "@/app/AnalyticsAndConsent";
@@ -37,7 +37,6 @@ export default async function LocaleLayout({
           <Header
             lang={locale as Locale}
             labels={localizedLabels[locale as Locale]}
-            paths={localizedPaths[locale as Locale]}
           />
         </div>
 
