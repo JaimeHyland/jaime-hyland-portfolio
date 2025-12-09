@@ -1,4 +1,4 @@
-import { ReactNode, useState, useRef, useEffect } from "react";
+import { ReactNode, useState, useRef } from "react";
 import DraggableWrapper from "./DraggableWrapper";
 
 interface ModalProps {
@@ -22,9 +22,8 @@ export default function Modal({
   const [isMaximized, setIsMaximized] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
 
-  
   const handleMaximize = (e: React.MouseEvent) => {
-    e.stopPropagation(); // prevent backdrop click
+    e.stopPropagation();
     if (isMaximized) {
       setSize(initialSize ?? {});
     } else {
@@ -34,8 +33,9 @@ export default function Modal({
   };
 
   return (
+    // ✅ CHANGE: removed flex centering, use plain fixed container
     <div
-      className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+      className="fixed inset-0 bg-black bg-opacity-50 z-50"
       onClick={onClose}
     >
       <DraggableWrapper draggable={draggable} bounds={undefined}>
@@ -43,6 +43,11 @@ export default function Modal({
           ref={modalRef}
           className="bg-white rounded shadow-lg flex flex-col relative min-h-0"
           style={{
+            position: "fixed",
+            top: "calc(50% + 300px)",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+
             width: size.width ?? "auto",
             height: size.height ?? "auto",
             maxWidth: "95vw",
@@ -50,7 +55,7 @@ export default function Modal({
             minWidth: "200px",
             minHeight: "0",
             resize: resizable ? "both" : "none",
-            overflow: "hidden",
+            overflow: "auto",
           }}
           onClick={(e) => e.stopPropagation()}
         >
