@@ -127,7 +127,7 @@ export default function Modal({
           </div>
 
           {/* Drag handle */}
-          <div className="modal-header cursor-move p-2 border-b flex-shrink-0 bg-slate-600" />
+          <div className="modal-header cursor-move p-2 border-b flex-shrink-0 bg-slate-600 select-none" />
 
           {/* Content */}
           <div className="flex-1 min-h-0 relative">{children}</div>
@@ -138,7 +138,7 @@ export default function Modal({
               className="resize-handle absolute bottom-0 right-0 w-5 h-5 cursor-se-resize flex items-end justify-end p-1"
               tabIndex={-1}
               onMouseDown={(e) => {
-                e.stopPropagation(); // ✅ Change: already stopping propagation here
+                e.stopPropagation();
                 const rect = modalRef.current!.getBoundingClientRect();
 
                 startSizeRef.current = {

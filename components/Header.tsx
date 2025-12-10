@@ -130,7 +130,8 @@ type HeaderProps = {
                     txtReassurance: labels.txtReassurance,
                     errorText: labels.errorText,
                     loadingText: labels.loadingText, 
-                    buttonDownload: labels.buttonDownload
+                    buttonDownload: labels.buttonDownload,
+                    buttonCopy: labels.buttonCopy,
                   }}
                   onClose={() => setDesktopDownloadsOpen(false)}
                 />
@@ -150,7 +151,8 @@ type HeaderProps = {
                     txtReassurance: labels.txtReassurance,
                     errorText: labels.errorText,
                     loadingText: labels.loadingText, 
-                    buttonDownload: labels.buttonDownload
+                    buttonDownload: labels.buttonDownload,
+                    buttonCopy: labels.buttonCopy,
                   }}
                   onClose={() => setDesktopDownloadsOpen(false)}
                 />
@@ -171,7 +173,8 @@ type HeaderProps = {
                     txtReassurance: labels.txtReassurance,
                     errorText: labels.errorText,
                     loadingText: labels.loadingText, 
-                    buttonDownload: labels.buttonDownload
+                    buttonDownload: labels.buttonDownload,
+                    buttonCopy: labels.buttonCopy,
                   }}
                   onClose={() => setDesktopDownloadsOpen(false)}
                 />
@@ -315,6 +318,7 @@ type HeaderProps = {
                       errorText: labels.errorText,
                       loadingText: labels.loadingText,
                       buttonDownload: labels.buttonDownload,
+                      buttonCopy: labels.buttonCopy,
                     }}
                     isMobile={true}
                     onClose={() => setMobileDownloadsOpen(false)}
@@ -341,6 +345,7 @@ type HeaderProps = {
                       errorText: labels.errorText,
                       loadingText: labels.loadingText,
                       buttonDownload: labels.buttonDownload,
+                      buttonCopy: labels.buttonCopy,
                     }}
                     isMobile={true}
                     onClose={() => setMobileDownloadsOpen(false)}
@@ -367,6 +372,7 @@ type HeaderProps = {
                       errorText: labels.errorText,
                       loadingText: labels.loadingText,
                       buttonDownload: labels.buttonDownload,
+                      buttonCopy: labels.buttonCopy,
                     }}
                     isMobile={true}
                     onClose={() => setMobileDownloadsOpen(false)}

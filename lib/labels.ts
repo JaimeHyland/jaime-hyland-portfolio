@@ -18,6 +18,7 @@ export type LabelSet = {
   modalTxtDownloadEn: string;
   modalTxtDownloadEs: string;
   buttonDownload: string;
+  buttonCopy: string;
   en: string;
   es: string;
   de: string;
@@ -44,6 +45,7 @@ export const localizedLabels: Record<"en" | "es" | "de", LabelSet> = {
     modalTxtDownloadEn: "TXT cv in English",
     modalTxtDownloadEs: "TXT cv in Spanish",
     buttonDownload: "Download",
+    buttonCopy: "Copy TXT",
     en: "English",
     es: "Spanish",
     de: "German"
@@ -68,6 +70,7 @@ export const localizedLabels: Record<"en" | "es" | "de", LabelSet> = {
     modalTxtDownloadEn: "Fichero txt en inglés",
     modalTxtDownloadEs: "Fichero txt en español",
     buttonDownload: "Descargar",
+    buttonCopy: "TXT copiar",
     en: "inglés",
     es: "español",
     de: "alemán"
@@ -92,6 +95,7 @@ export const localizedLabels: Record<"en" | "es" | "de", LabelSet> = {
     modalTxtDownloadEn: "TXT-Datei auf Englisch",
     modalTxtDownloadEs: "TXT-Datei auf Spanisch",
     buttonDownload: "Herunterladen",
+    buttonCopy: "TXT kopieren",
     en: "Englisch",
     es: "Spanisch",
     de: "Deutsch"

@@ -10,6 +10,7 @@ interface CVTxtModalProps {
     errorText: string;
     loadingText: string;
     buttonDownload: string;
+    buttonCopy: string;
   };
   isMobile?: boolean;
   onOpen?: () => void;
@@ -52,6 +53,9 @@ export function CVTxtModal({
       });
   };
 
+  console.log("DEBUG - Copy button label:", labels.buttonCopy)
+   console.log("DEBUG - Download button label:", labels.buttonDownload)
+
   return (
     <>
       <button
@@ -70,7 +74,7 @@ export function CVTxtModal({
           maximizable={isMobile}
           draggable={!isMobile}
           initialSize={{
-            width: isMobile ? "80%" : "33%",
+            width: isMobile ? "80%" : "33vw",
             height: "400px",
           }}
         >
@@ -90,6 +94,16 @@ export function CVTxtModal({
             {/* Footer */}
             <p className="mt-2 text-xs text-gray-500 p-4">{labels.txtReassurance}</p>
             <div className="flex-shrink-0 flex justify-end p-4 border-t gap-2 bg-gray-50">
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText(txtContent).catch(() => {
+                    console.error("Failed to copy to clipboard");
+                  });
+                }}
+                className="bg-slate-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+              >
+                {labels.buttonCopy}
+              </button>
               <button
                 onClick={downloadTxt}
                 className="bg-slate-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
