@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Modal from "./Modal";
+import CopySuccessModal from "./CopySuccessModal";
 
 interface CVTxtModalProps {
   filePath: string;
@@ -11,6 +12,8 @@ interface CVTxtModalProps {
     loadingText: string;
     buttonDownload: string;
     buttonCopy: string;
+    copySuccessTitle: string;
+    copySuccessMessage: string;
   };
   isMobile?: boolean;
   onOpen?: () => void;
@@ -52,9 +55,7 @@ export function CVTxtModal({
         link.click();
       });
   };
-
-  console.log("DEBUG - Copy button label:", labels.buttonCopy)
-   console.log("DEBUG - Download button label:", labels.buttonDownload)
+  const [showCopySuccess, setShowCopySuccess] = useState(false);
 
   return (
     <>
@@ -96,7 +97,12 @@ export function CVTxtModal({
             <div className="flex-shrink-0 flex justify-end p-4 border-t gap-2 bg-gray-50">
               <button
                 onClick={() => {
-                  navigator.clipboard.writeText(txtContent).catch(() => {
+                  navigator.clipboard.writeText(txtContent)
+                  .then(() => {
+                    setShowCopySuccess(true);
+                    setTimeout(() => setShowCopySuccess(false), 1500);
+                  })
+                  .catch(() => {
                     console.error("Failed to copy to clipboard");
                   });
                 }}
@@ -122,6 +128,14 @@ export function CVTxtModal({
           className="resize-handle w-5 h-5 bg-transparent absolute bottom-0 right-0 cursor-se-resize"
         />
         </Modal>
+      )}
+      {showCopySuccess && (
+        <CopySuccessModal
+          open={showCopySuccess}
+          onClose={() => setShowCopySuccess(false)}
+          title={labels.copySuccessTitle}
+          message={labels.copySuccessTitle}
+        />
       )}
     </>
   );

@@ -19,6 +19,8 @@ export type LabelSet = {
   modalTxtDownloadEs: string;
   buttonDownload: string;
   buttonCopy: string;
+  copySuccessTitle: string;
+  copySuccessMessage: string;
   en: string;
   es: string;
   de: string;
@@ -46,6 +48,8 @@ export const localizedLabels: Record<"en" | "es" | "de", LabelSet> = {
     modalTxtDownloadEs: "TXT cv in Spanish",
     buttonDownload: "Download",
     buttonCopy: "Copy TXT",
+    copySuccessTitle: "Copied successfully!",
+    copySuccessMessage: "The content of the Text file is on your clipboard!",
     en: "English",
     es: "Spanish",
     de: "German"
@@ -71,6 +75,8 @@ export const localizedLabels: Record<"en" | "es" | "de", LabelSet> = {
     modalTxtDownloadEs: "Fichero txt en español",
     buttonDownload: "Descargar",
     buttonCopy: "TXT copiar",
+    copySuccessTitle: "¡Copia hecha!",
+    copySuccessMessage: "El contenido del fichero txt ya está en tu portapapeles.",
     en: "inglés",
     es: "español",
     de: "alemán"
@@ -96,6 +102,8 @@ export const localizedLabels: Record<"en" | "es" | "de", LabelSet> = {
     modalTxtDownloadEs: "TXT-Datei auf Spanisch",
     buttonDownload: "Herunterladen",
     buttonCopy: "TXT kopieren",
+    copySuccessTitle: "Erfolgreich kopiert!",
+    copySuccessMessage: "Das Inhalt der TXT-Datei ist nun in der Zwischenablage!",
     en: "Englisch",
     es: "Spanisch",
     de: "Deutsch"
