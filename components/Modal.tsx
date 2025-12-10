@@ -113,7 +113,7 @@ export default function Modal({
                   <span className="text-black light text-sm relative ">🗗</span>
                 ) : (
                   <svg className="w-4 h-4 stroke-black relative top-[2px]" fill="none" strokeWidth={2} viewBox="0 0 24 24">
-                    "<rect x={4} y={4} width={16} height={16} stroke="currentColor"/>"
+                    <rect x={4} y={4} width={16} height={16} stroke="currentColor"/>
                   </svg>
                 )} 
               </button>
