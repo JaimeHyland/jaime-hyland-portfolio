@@ -66,7 +66,7 @@ export function CVTxtModal({
       {isOpen && (
         <Modal
           onClose={handleClose}
-          resizable={!isMobile} // ✅ CHANGE: bottom-right resize
+          resizable={!isMobile}
           maximizable={isMobile}
           draggable={!isMobile}
           initialSize={{
@@ -104,6 +104,9 @@ export function CVTxtModal({
               </button>
             </div>
           </div>
+          <div
+          className="resize-handle w-5 h-5 bg-transparent absolute bottom-0 right-0 cursor-se-resize"
+        />
         </Modal>
       )}
     </>
