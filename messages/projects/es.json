@@ -102,6 +102,27 @@
     "title": "Proyectos independientes recientes y en curso",
     "description": "Estos proyectos fueron creados de forma independiente por iniciativa propia; todos deben considerarse trabajo en curso.",
     "projects": {
+      "projectodo": {
+        "name": "Projectodo",
+        "siteURL": "https://projectodo.vercel.app/",
+        "codebaseText": "Repositorio de GitHub",
+        "codebaseURL": "https://github.com/JaimeHyland/projectodo",
+        "desc1": "Actualmente estoy desarrollando este sitio como un proyecto comercial para un cliente que ofrece una amplia gama de servicios musicales, desde clases de música, pasando por soporte técnico y de sonido para conciertos, hasta eventos musicales en vivo. El frontend del sitio (en particular sus funciones de internacionalización y diseño gráfico) se desarrolla con Next.js utilizando React, intl-next y Tailwind, mientras que el backend se basará en una base de datos PostgreSQL. Las APIs necesarias, así como las funciones de autenticación (tanto en el frontend como en el backend), serán proporcionadas por Django.",
+        "desc2": "El sitio contará con las siguientes funcionalidades:",
+        "features": [
+          "Un sistema sencillo que permite al usuario añadir, editar y eliminar páginas personalizadas (por ejemplo, para grupos musicales, técnicos de sonido, etc.)",
+          "Una variedad de categorías de usuario, desde administradores hasta músicos miembros y usuarios no registrados (las categorías exactas y sus permisos se definirán a principios de febrero)",
+          "Soporte de <bold>i18n</bold> cuidado y no intrusivo, con <bold>l10n</bold> en inglés, alemán y español",
+          "Diseño limpio y accesible",
+          "Interfaz totalmente responsive para escritorio, portátil, tablet y smartphone",
+          "Generación automática de metadatos para todas las páginas con fines de SEO; además de sitemap y robots.txt",
+          "Impressum (aviso legal), también completamente localizado",
+          "Correcta localización de las URLs de la interfaz",
+          "Analíticas de Vercel integradas, con banner de consentimiento y modal de gestión de privacidad de datos"
+        ],
+        "desc3": "Como en todo mi trabajo de diseño web, hago especial hincapié en la claridad sin complicaciones, la mantenibilidad, la adaptabilidad, la consistencia entre idiomas y el cumplimiento legal. El sitio utilizará componentes tipados de <bold>React</bold> con <bold>renderizado del lado del servidor</bold> siempre que sea posible y reflejará los mismos estándares que aplico tanto en mi trabajo individual como colaborativo. Será totalmente responsive, optimizado para SEO y demostrará mi capacidad para ofrecer plataformas de contenido robustas y escalables con tecnologías modernas de frontend y backend.",
+        "desc4": "Actualmente estoy trabajando de forma intensiva en el sitio. Estoy aplicando muchas de las lecciones que aprendí al desarrollar mi sitio de portafolio (véase más abajo). También tengo la intención de aplicar lo aprendido en el proyecto Projectodo a los trabajos de refactorización de mi portafolio online."
+      },
       "portfolio": {
         "name": "Portfolio de Jaime Hyland",
         "siteURL": "https://jaime-hyland.com/",

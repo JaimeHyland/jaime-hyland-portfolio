@@ -103,6 +103,27 @@
     "title": "Ongoing independent Projects",
     "description": "These projects were created independently on my own initiative; they should all be considered Work in Progress",
     "projects": {
+      "projectodo": {
+        "name": "Projectodo",
+        "siteURL": "https://projectodo.vercel.app/",
+        "codebaseText": "GitHub repository",
+        "codebaseURL": "https://github.com/JaimeHyland/projectodo",
+        "desc1": "I'm now building this site as a commercial project for a client who provides a variety of musical services, from music lessons, through technical and sound support for concerts, all the way to live musical events. The site's front end (especially its internationalization and graphic features) is developed in next.js using React, intl-next and Tailwind, while its backend will be based on a PostreSQL database.  The APIs it needs will be provided by Django, as will its authentication features (both at front and back end). ",
+        "desc2": "The site will feature:",
+        "features": [
+          "An easy that allows the user to add, edit and remove custom pages (for example, for musical groups, sound technicians, etc.",
+          "A variety of different user categories, from admin through musician member, to unregistered user (the precise categories and their permissions will be defined in early February",
+          "Unintrusive, polished <bold>i18n</bold> support, with l10n in English, German and Spanish",
+          "Clean, accessible design",
+          "Fully responsive UI for desktop, laptop, tablet and smartphone",
+          "Automatic generation of meta nodes all pages for SEO; a sitemap and robots.txt",
+          "Impressum (Legal disclosure), also fully localized",
+          "Note the correct localization of UI URLs.",
+          "Integrated Vercel analytics, with banner consent form and data privacy management modal"
+        ],
+        "desc3": "As with all my web design work, I am emphasizing fuss-free clarity, maintainability, responsiveness, cross-language consistency and legal conformity. It will use typed <bold>React</bold> components with <bold>server-side rendering</bold> wherever possible and will reflect the same standards I bring to all my individual and collaborative work. It'll be fully responsive and SEO-friendly, and demonstrate my ability to deliver robust, scalable content platforms with modern frontend and backend technologies.",
+        "desc4": "I am currently working intensively on the site. I am implementing many of the lessons I learned while developing my portfolio site (see below). I also intend to apply the lessons I'm learning from the projectodo site in my refactoring efforts with my online portfolio."
+      },
       "portfolio": {
         "name": "Jaime Hyland's Portfolio",
         "siteURL": "https://jaime-hyland.com/",

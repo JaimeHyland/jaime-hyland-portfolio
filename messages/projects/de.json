@@ -102,6 +102,27 @@
     "title": "Laufende unabhängige Projekte",
     "description": "Diese Projekte wurden auf eigene Initiative unabhängig erstellt und befinden sich noch in der Entwicklung.",
     "projects": {
+      "projectodo": {
+        "name": "Projectodo",
+        "siteURL": "https://projectodo.vercel.app/",
+        "codebaseText": "GitHub-Repository",
+        "codebaseURL": "https://github.com/JaimeHyland/projectodo",
+        "desc1": "Ich entwickle diese Website derzeit als kommerzielles Projekt für einen Kunden, der eine Vielzahl musikalischer Dienstleistungen anbietet – von Musikunterricht über technische und tontechnische Unterstützung für Konzerte bis hin zu Live-Musikveranstaltungen. Das Frontend der Website (insbesondere Internationalisierung und grafische Funktionen) wird mit Next.js auf Basis von React, intl-next und Tailwind umgesetzt, während das Backend auf einer PostgreSQL-Datenbank basieren wird. Die erforderlichen APIs sowie die Authentifizierungsfunktionen (sowohl im Front- als auch im Backend) werden von Django bereitgestellt.",
+        "desc2": "Die Website wird folgende Funktionen bieten:",
+        "features": [
+          "Ein einfaches System, mit dem Benutzer benutzerdefinierte Seiten hinzufügen, bearbeiten und entfernen können (z. B. für Musikgruppen, Tontechniker usw.)",
+          "Eine Vielzahl unterschiedlicher Benutzerrollen – vom Administrator über Musiker-Mitglieder bis hin zum nicht registrierten Nutzer (die genauen Rollen und Berechtigungen werden Anfang Februar festgelegt)",
+          "Unaufdringliche, hochwertige <bold>i18n</bold>-Unterstützung mit <bold>l10n</bold> in Englisch, Deutsch und Spanisch",
+          "Sauberes, barrierearmes Design",
+          "Vollständig responsives UI für Desktop, Laptop, Tablet und Smartphone",
+          "Automatische Generierung von Meta-Daten für alle Seiten zur Suchmaschinenoptimierung; inklusive Sitemap und robots.txt",
+          "Impressum (rechtliche Angaben), ebenfalls vollständig lokalisiert",
+          "Korrekte Lokalisierung der UI-URLs",
+          "Integrierte Vercel-Analytics mit Consent-Banner und Datenschutz-Verwaltungsdialog"
+        ],
+        "desc3": "Wie bei all meinen Webdesign-Projekten lege ich den Schwerpunkt auf klare, unkomplizierte Strukturen, Wartbarkeit, Responsivität, sprachübergreifende Konsistenz und rechtliche Konformität. Die Website verwendet – wo immer möglich – typisierte <bold>React</bold>-Komponenten mit <bold>Server-Side Rendering</bold> und spiegelt die gleichen Standards wider, die ich in all meiner individuellen und kollaborativen Arbeit anwende. Sie wird vollständig responsiv und SEO-freundlich sein und meine Fähigkeit demonstrieren, robuste und skalierbare Content-Plattformen mit modernen Frontend- und Backend-Technologien zu entwickeln.",
+        "desc4": "Derzeit arbeite ich intensiv an der Website. Dabei setze ich viele der Erkenntnisse um, die ich bei der Entwicklung meiner Portfolio-Website gewonnen habe (siehe unten). Außerdem beabsichtige ich, die Erfahrungen aus dem Projectodo-Projekt auch in die Überarbeitung meines Online-Portfolios einfließen zu lassen."
+      },
       "portfolio": {
         "name": "Jaime Hylands Portfolio",
         "siteURL": "https://jaime-hyland.com/",
