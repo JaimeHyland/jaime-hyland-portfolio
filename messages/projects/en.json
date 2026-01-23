@@ -73,7 +73,7 @@
         "name": "El acento español",
         "siteURL": "https://jaimehyland.github.io/elAcentoEspanyol/",
         "codebaseText": "GitHub repository",
-        "codebaseURL": "https://github.com/JaimeHyland/farming-futures",
+        "codebaseURL": "https://github.com/JaimeHyland/elAcentoEspanyol",
         "desc": "Spanish tilde explainer. It shows the use of a simple, json-based data file and contains some simple logic written in JS (deployment in Github)"
       },
       "witch": {
