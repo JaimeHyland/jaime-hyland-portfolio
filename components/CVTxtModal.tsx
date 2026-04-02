@@ -61,9 +61,8 @@ export function CVTxtModal({
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className={`hover:bg-gray-100 rounded transform hover:scale-105 transition text-left text-sm whitespace-nowrap ${
-          isMobile ? "px-2 w-full" : "px-4 py-1"
-        }`}
+        className={`hover:bg-gray-100 rounded transform hover:scale-105 transition text-left text-sm whitespace-nowrap ${isMobile ? "px-2 w-full" : "px-4 py-1"
+          }`}
       >
         {labels.downloadTxt}
       </button>
@@ -98,13 +97,13 @@ export function CVTxtModal({
               <button
                 onClick={() => {
                   navigator.clipboard.writeText(txtContent)
-                  .then(() => {
-                    setShowCopySuccess(true);
-                    setTimeout(() => setShowCopySuccess(false), 1500);
-                  })
-                  .catch(() => {
-                    console.error("Failed to copy to clipboard");
-                  });
+                    .then(() => {
+                      setShowCopySuccess(true);
+                      setTimeout(() => setShowCopySuccess(false), 1500);
+                    })
+                    .catch(() => {
+                      console.error("Failed to copy to clipboard");
+                    });
                 }}
                 className="bg-slate-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
               >
@@ -125,8 +124,8 @@ export function CVTxtModal({
             </div>
           </div>
           <div
-          className="resize-handle w-5 h-5 bg-transparent absolute bottom-0 right-0 cursor-se-resize"
-        />
+            className="resize-handle w-5 h-5 bg-transparent absolute bottom-0 right-0 cursor-se-resize"
+          />
         </Modal>
       )}
       {showCopySuccess && (
@@ -134,7 +133,7 @@ export function CVTxtModal({
           open={showCopySuccess}
           onClose={() => setShowCopySuccess(false)}
           title={labels.copySuccessTitle}
-          message={labels.copySuccessTitle}
+          message={labels.copySuccessMessage}
         />
       )}
     </>

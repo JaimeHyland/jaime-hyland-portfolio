@@ -10,7 +10,7 @@ interface CopySuccessModalProps {
   message: string; 
 }
 
-export default function CopySuccessModal({ open, onClose }: CopySuccessModalProps) {
+export default function CopySuccessModal({ open, onClose, title, message }: CopySuccessModalProps) {
   if (!open) return null;
 
   return (
@@ -22,9 +22,9 @@ export default function CopySuccessModal({ open, onClose }: CopySuccessModalProp
     >
       <div className="p-4 flex flex-col items-center justify-center text-center">
         <div className="modal-header cursor-move mb-2 select-none">
-          <h3 className="text-lg font-semibold">Copied!</h3>
+          <h3 className="text-lg font-semibold">{title}</h3>
         </div>
-        <div className="text-sm text-gray-700">The text has been copied to your clipboard.</div>
+        <div className="text-sm text-gray-700">{message}</div>
       </div>
     </Modal>
   );
