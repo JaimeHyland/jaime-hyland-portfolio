@@ -1,0 +1,201 @@
+{
+  "pageInline": {
+    "title": "Jaime Hyland",
+    "tagline": "Desarrollador full-stack — Django y Next.js con i18n",
+    "description": "Soy un desarrollador full-stack con experiencia en lenguas y educación, y disfruto creando aplicaciones web limpias, atractivas y escalables que informan, educan, aumentan la productividad y mejoran la calidad de vida.",
+    "buttonLabel": "¿Buscas un colaborador o desarrollador?",
+    "buttonText": "Ponte en contacto",
+    "keywords": [
+      "Desarrollador full-stack",
+      "Python",
+      "TypeScript",
+      "Django",
+      "Next.js",
+      "Flutter",
+      "Desarrollador de backend",
+      "Desarrollador de frontend",
+      "Desarrollo web",
+      "Ingeniero de software",
+      "Portfolio",
+      "Reclutamiento",
+      "Desarrollador remoto"
+    ]
+  },
+    "techsSection": {
+    "heading": "Algunas de las tecnologías con las que trabajo",
+    "items": {
+      "python": {
+        "title": "Python",
+        "description": "Uso Python principalmente en desarrollo con Django, en Flask y para scripting."
+      },
+      "javascript": {
+        "title": "JavaScript",
+        "description": "JJavaScript es el lenguaje de programación más utilizado para crear interfaces web junto con HTML y CSS. Se usa para acceder y manipular datos, interactuar con el DOM y actualizar de forma dinámica el HTML y el CSS."
+      },
+      "typescript": {
+        "title": "TypeScript",
+        "description": "TypeScript es un superconjunto de JavaScript. Aplica un tipado más estricto y ofrece autocompletado, IntelliSense y sugerencias inteligentes, lo que lo hace muy útil para escribir, depurar y refactorizar código. Lo uso ampliamente en conjunto con next.js y React al construir y mantener este sitio."
+      },
+      "dart": {
+        "title": "Dart",
+        "description": "Usado con Flutter para desarrollo móvil multiplataforma, Dart es un lenguaje moderno y orientado a clases, inspirado en JavaScript, Java y C#. Se compila a código nativo para aplicaciones rápidas y fluidas en iOS y Android, o a JavaScript para la web, y ofrece tipado fuerte y potente soporte de async. Su función de hot reload ahorra tiempo de espera, haciendo que la experiencia del desarrollador sea más rápida y menos frustrante."
+      },
+      "java": {
+        "title": "Java Swing",
+        "description": "Java Swing es un framework para crear interfaces gráficas de escritorio. Lo utilicé en una ocasión para crear una aplicación sencilla que permitiera a un administrador mantener datos en una base de datos MySQL. Antes, tuve que trabajar con él para adaptar interfaces complejas a otros idiomas distintos del alemán original."
+      },
+      "cpp": {
+        "title": "C++",
+        "description": "Me familiaricé por primera vez con C++ durante un curso de tres meses, donde aprendí algunas de sus funciones básicas. Obtuve exposición a sus ventajas como un lenguaje de desarrollo de alto rendimiento que ofrece un control detallado sobre la memoria. Más tarde, lo utilicé de manera ocasional mientras solucionaba problemas persistentes de internacionalización."
+      },
+      "dotnet": {
+        "title": "Visual Basic .NET",
+        "description": "VB .NET es un lenguaje de programación orientado a objetos desarrollado por Microsoft, diseñado para ejecutarse en el framework .NET. Lo utilicé principalmente para manipular el modelo de objetos de Passolo con el fin de automatizar la localización de recursos. También lo usé para examinar cadenas en el idioma original y localizadas, asegurando la consistencia y la ausencia de subcadenas prohibidas y concatenaciones no localizables."
+      },
+      "html5": {
+        "title": "HTML5",
+        "description": "El lenguaje de marcado estándar para crear y estructurar contenido en la web."
+      },
+      "css3": {
+        "title": "CSS3",
+        "description": "El lenguaje de hojas de estilo utilizado para controlar la presentación, el diseño y la apariencia del contenido web."
+      },
+      "django": {
+        "title": "Django",
+        "description": "Django es un framework web de Python de alto nivel que facilita un desarrollo sorprendentemente rápido y un diseño limpio y pragmático. Lo he utilizado tanto como backend puro (con Next.js o Flutter en el frontend, PostgreSQL como base de datos y construyendo APIs RESTful para conectar el backend con el frontend), como en todo el stack, desarrollando aplicaciones hasta la interfaz de usuario con la ayuda de React, Bootstrap y otras herramientas."
+      },
+      "flask": {
+        "title": "Flask",
+        "description": "Flask es un framework web ligero de Python, sin ORM, panel de administración ni sistema de plantillas incorporados. Lo utilicé de manera ocasional durante hackathons para ayudar a crear APIs RESTful."
+      },
+      "react": {
+        "title": "React",
+        "description": "React es una biblioteca de JavaScript utilizada popularmente para construir interfaces de usuario interactivas. Cuenta con una arquitectura basada en componentes con componentes reutilizables y soporta la gestión de estado. Principalmente lo he utilizado para crear modales más o menos complejos, botones responsivos y controles similares."
+      },
+      "nextjs": {
+        "title": "Next.js",
+        "description": "App Router, acciones del servidor, rutas API."
+      },
+      "flutter": {
+        "title": "Flutter",
+        "description": "Aplicaciones móviles multiplataforma."
+      },
+      "bootstrap": {
+        "title": "Bootstrap",
+        "description": "Prototipado rápido con componentes predefinidos."
+      },
+      "tailwind": {
+        "title": "Tailwind CSS",
+        "description": "Desarrollo de UI centrado en utilidades."
+      },
+      "postgresql": {
+        "title": "PostgreSQL",
+        "description": "Base de datos principal para Django y apps de análisis."
+      },
+      "mysql": {
+        "title": "MySQL",
+        "description": "Experiencia con diseño de esquemas relacionales."
+      },
+      "heroku": {
+        "title": "Heroku",
+        "description": "Despliegue de apps Django y Node.js."
+      },
+      "vercel": {
+        "title": "Vercel",
+        "description": "Despliegue de apps Next.js."
+      },
+      "godaddy": {
+        "title": "GoDaddy",
+        "description": "Configuración de DNS, hosting y correo electrónico."
+      },
+      "aws": {
+        "title": "AWS",
+        "description": "Conceptos básicos de S3, IAM y CloudFront."
+      },
+      "stripe": {
+        "title": "Stripe",
+        "description": "Integración de API de procesamiento de pagos."
+      },
+      "swagger": {
+        "title": "Swagger",
+        "description": "Generación de documentación de APIs."
+      },
+      "vscode": {
+        "title": "Visual Studio Code",
+        "description": "IDE principal para desarrollo."
+      },
+      "androidStudio": {
+        "title": "Android Studio",
+        "description": "Pruebas en Flutter y nativo de Android."
+      },
+      "eclipse": {
+        "title": "Eclipse",
+        "description": "Desarrollo Java legacy."
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Control de versiones e integración continua."
+      },
+      "git": {
+        "title": "Git",
+        "description": "Ramas, fusiones y flujo de trabajo con PR."
+      },
+      "jira": {
+        "title": "Jira",
+        "description": "Tableros ágiles y planificación de sprints."
+      },
+      "jupyter": {
+        "title": "Jupyter",
+        "description": "Cuadernos para exploración de datos."
+      },
+      "nodejs": {
+        "title": "Node.js",
+        "description": "Entorno de ejecución para herramientas y servidores."
+      },
+      "cloudinary": {
+        "title": "Cloudinary",
+        "description": "Almacenamiento de medios, transformaciones y entrega."
+      }
+    }
+  },
+    "educationSection": {
+    "heading": "Algunos de los lugares donde he aprendido, o estoy todavía aprendiendo",
+
+    "FASTitle": "FÁS",
+    "fasModalContent": "FÁS fue la Autoridad Nacional Irlandesa de Formación Profesional en el momento en que hice mi formación básica en Informática allí. Desde entonces ha sido reemplazada por <link>Solas</link>.",
+
+    "trinityModalTitle": "Trinity College Dublin",
+    "trinityModalContent": "Estudié Filosofía (o \"Ciencia Mental y Moral\", como todavía se llama el curso de grado) en el <link>Trinity College Dublin</link>. En tiempos antiguos (1984 a 1988), hice bastante trabajo allí sobre filosofía de la lógica y las matemáticas.",
+
+    "codeInstituteModalTitle": "Code Institute",
+    "codeInstituteModalContent": "Completé un curso en línea de <link>diplomado en desarrollo de software full-stack</link> en el excelente educador con sede en Dublín, Code Institute, desde 2023 hasta finales de 2024.\nEl curso puso un énfasis particular en el lenguaje Python para la web moderna, aprovechando los frameworks Django y Bootstrap.\nMi proyecto final especializado fue un sitio de comercio electrónico, usando Stripe como su sistema de pago en línea.",
+
+    "khanModalTitle": "Khan Academy",
+    "khanModalContent": "<link>Khan Academy</link> es un recurso excelente para la formación en TI y la educación en matemáticas. Lo he utilizado hasta ahora para autoformación en teoría de ciencias de la computación, programación en JavaScript, estadística y cálculo.",
+
+    "codefinityModalTitle": "Codefinity",
+    "codefinityModalContent": "<link>Codefinity</link> es otro excelente recurso para la formación en TI. Hasta ahora, lo he usado para una variedad de materiales de aprendizaje, con un énfasis especial en Python.",
+
+    "brilliantModalTitle": "Brilliant",
+    "brilliantModalContent": "<link>Brilliant</link> es mi lugar de referencia cuando quiero tomar un descanso corto pero productivo. Lo he estado usando principalmente para repasar mis matemáticas generales escolares antiguas y para aprender un poco sobre circuitos eléctricos, que han sido un misterio para mí toda la vida.",
+
+    "kodekloudModalTitle": "KodeKloud",
+    "kodekloudModalContent": "He estado usando <link>KodeKloud</link> de forma intermitente para mejorar mi comprensión todavía bastante primitiva de Linux.\nEs un proveedor excelente de formación — especialmente en DevOps.",
+
+    "leetcodeModalTitle": "LeetCode",
+    "leetcodeModalContent": "He estado usando <link>LeetCode</link> principalmente para entender algunas de las preguntas comunes que podrían surgir al postularme para un trabajo como programador web full-stack.",
+
+    "linkedinModalTitle": "LinkedIn Learning",
+    "linkedinModalContent": "<link>LinkedIn Learning</link> ofrece una gran variedad de cursos sobre todo el espectro de disciplinas profesionales que uno puede necesitar aprender en la industria de TI y otros campos.\nEs el producto de la compra por parte de LinkedIn del famoso proveedor de formación en TI Lynda.com.\nHasta ahora, lo he usado principalmente para familiarizarme con Dart/Flutter.",
+
+    "freecodecampModalTitle": "freecodecamp",
+    "freecodecampModalContent": "<link>freecodecamp</link> es mi proveedor original de muchas de mis habilidades básicas en desarrollo web.\nHe sacado un enorme provecho de su Currículo Certificado de Desarrollador Full Stack (aunque aún estaba en fase Beta al momento de escribir esto)."
+  },
+  "pages": {
+    "home": "",
+    "projects": "proyectos",
+    "cv": "curriculum",
+    "contact": "contacto",
+    "impressum": "aviso"
+  }
+}

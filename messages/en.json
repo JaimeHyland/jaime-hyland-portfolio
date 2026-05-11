@@ -24,9 +24,21 @@
   "techsSection": {
     "heading": "Some of the technologies I work with",
     "items": {
-      "python": {
-        "title": "Python",
-        "description": "I use Python mainly in Django coding, in Flask and for scripting."
+      "html5": {
+        "title": "HTML5",
+        "description": "HTML is the standard markup language used universally to create and structure content on the web. HTML5 is the latest version, adding semantic elements, enhanced graphics support, and improved data and validation features for apps."
+      },
+      "css3": {
+        "title": "CSS3",
+        "description": "The style sheet language used to control how web content is displayed, arranged and visually styled. Correctly leveraged, it enables responsive layouts, visual effects and consistent appearance across pages."
+      },
+      "bootstrap": {
+        "title": "Bootstrap",
+        "description": "Bootstrap provides prebuilt responsive components (buttons, modals, navbars, etc.) and a standard grid system for rapid prototyping. Compared to raw CSS, it helps build interfaces faster but is less flexible for highly customized designs."
+      },
+      "tailwind": {
+        "title": "Tailwind CSS",
+        "description": "Tailwind is a utility-first CSS framework for highly customizable designs. Compared to raw CSS, it speeds development and enforces consistency. It’s more flexible than Bootstrap, but lacks Bootstrap’s very speedy ready-made grid system."
       },
       "javascript": {
         "title": "JavaScript",
@@ -36,9 +48,101 @@
         "title": "TypeScript",
         "description": "TypeScript is a superset of JavaScript. It enforces stricter typing, provides autocomplete, IntelliSense, and smart hints, making it very useful for writing, debugging, and refactoring code. I use it pretty intensively together with Next.js and React when building and maintaining this site."
       },
+      "react": {
+        "title": "React.js",
+        "description": "React.js is a widely-used JavaScript library for building interactive user interfaces. It has an architecture based on reusable components and supports state management, making my creation of fairly complex UIs manageable. I've mainly used it to build modals, responsive buttons and other dynamic controls."
+      },
+      "nextjs": {
+        "title": "Next.js",
+        "description": "Next.js is a React framework for building fast, production-ready web applications. I've found its division of tasks into server-side and client-side tasks, native React integration, simple SEO integration (for single-locale sites  at least) and relatively shallow learning curve particularly useful at this stage of my developer journey."
+      },
+      "flutter": {
+        "title": "Flutter",
+        "description": "Flutter is a part of the Google stable of open-source UI frameworks for building web apps using a single code base for both iOS and Android-based systems, and even desktop/laptop computers using macOS, Windows or Linux.  The programming language used within it is Dart (also a Google creation).  It provides a variety of UI widgets. In development, it's hot reload features make it easier and faster for developers to test and troubleshoot their work. It's cross-platform consistency as compared to Meta's React Native is one of its more attractive qualities. Compared to React Native it's a steeper learning curve for programmers already familiar with React.js and/or Typescript."
+      },
       "dart": {
         "title": "Dart",
         "description": "Used with Flutter for cross-platform mobile development, Dart is a modern, class-based language inspired by JavaScript, Java, and C#. It compiles to native code for fast, smooth apps on iOS and Android, or to JavaScript for the web, and offers strong typing and powerful async support. Its hot reload feature saves waiting-around time time, making the development experience faster and less frustrating."
+      },
+      "python": {
+        "title": "Python",
+        "description": "I use Python mainly in Django coding, in Flask and for scripting."
+      },
+      "django": {
+        "title": "Django",
+        "description": "Django is a high-level Python web framework that facilitates startlingly rapid development and clean, pragmatic design. I have used it both purely as a backend (with Next.js or Flutter on the frontend, PostgreSQL at the rear, and RESTful APIs to bridge back and frontend), and also as a fullstack solution, using it to build everything to the user interface using Django templates, with the help of React, Bootstrap, and other tools."
+      },
+      "flask": {
+        "title": "Flask",
+        "description": "Flask is a lightweight Python web framework without any built-in object-relational mapping (ORM), admin panel, or templating system. I dabbled in it during hackathons to help create RESTful APIs."
+      },
+      "nodejs": {
+        "title": "Node.js",
+        "description": "Node.js is a runtime for tools and servers that allows you to use JavaScript elsewhere than directly on a browser. Using google's V8 engine, the same engine as in Google Chrome, it comes as part of the Next.js package. Among other things, it allows you develop website backends coding in JavaScript. It's worth noting that Node.js provides the harness within which many web frameworks aside from Next.js do their thing. It's also an essential toolkit when building stuff within the React.js ecosystem.  Its greatest recent relevance for me has been in rewriting GET and POST requests to get around browser restrictions on cross-origin restrictions enforced by modern browsers when creating a fullstack app with a Next.js frontend and a Django backend, both in development and after deployment."
+      },
+      "postgresql": {
+        "title": "PostgreSQL",
+        "description": "PostgreSQL is a powerful, open-source relational database. I use it (via Supabase) as the primary database for Django apps, analytics, and structured data storage."
+      },
+      "mysql": {
+        "title": "MySQL",
+        "description": "MySQL is a widely used relational database with convenient desktop tools and straightforward setup. While it can handle most of what I require of it, I prefer PostgreSQL for projects involving a Django backend because it's more fully integrated with the framework."
+      },
+      "heroku": {
+        "title": "Heroku",
+        "description": "I usually deploy Django applications on Heroku to leverage its simple workflow and integrated PostgreSQL support. Heroku’s choice of various dynos handle traffic scaling easily, and using Redis to containerize processes (e.g., instant messaging) is straightforward. However, it has hard slug-size limits and requires extra setup for static files (I typically use AWS, though for smaller Django setups Django-Whitenoise does the job nicely)."
+      },
+      "vercel": {
+        "title": "Vercel",
+        "description": "I deploy Next.js apps on Vercel, the platform built by the creators of Next.js, so deployment is very seamless and integrates naturally with server‑side rendering, static site generation and its global CDN. Static files are easy to serve compared to Heroku. Vercel also allows straightforward edge functions and scaling, but doesn’t handle Django backends well. It has upload limits (e.g., ~100 MB on Hobby, ~1 GB on Pro), so very large build artifacts may need splitting or external storage."
+      },
+      "aws": {
+        "title": "AWS",
+        "description": "I use AWS to store and serve static files for my more complex Django apps on hosted Heroku, using S3 for storage and IAM for secure access control."
+      },
+      "cloudinary": {
+        "title": "Cloudinary",
+        "description": "Cloud-based media management for storing, transforming, and delivering images and video via API. While I used it in earlier projects; its new credit-based pricing model has put me off it a little. If I need to use something like it in the future, I'll consider my options."
+      },
+      "godaddy": {
+        "title": "GoDaddy",
+        "description": "I use GoDaddy for DNS, hosting, and email (@language-landscapes.com). The service works, but it's costly, outdated, and sometimes inconsistent, which is why I plan to migrate away when I have the time and mental space to deal with the complications such a migration will bring."
+      },
+      "stripe": {
+        "title": "Stripe",
+        "description": "Integrated Stripe’s payment API to implement a test checkout flow using webhook-based event handling. Setup was straightforward with the support of clear documentation and a transparent developer dashboard."
+      },
+      "swagger": {
+        "title": "Swagger",
+        "description": "Used Swagger to generate interactive API documentation for Django endpoints; this helped ensure that APIs continued to work correctly and stayed consistent as data models grew more complex."
+      },
+      "vscode": {
+        "title": "Visual Studio Code",
+        "description": "VS Code is my primary IDE for web development. I used for Django, Next.js, and general front- and back-end coding."
+      },
+      "androidStudio": {
+        "title": "Android Studio",
+        "description": "I use Android Studio exclusively for Flutter development, including emulators and physical devices. Similar to VS Code, but Dart’s declarative style yields different results."
+      },
+      "eclipse": {
+        "title": "Eclipse",
+        "description": "I've used Eclipse in the past for Java and C++ coding, especially on Swing components (Java) and MFC UI code (C++). Not currently in use."
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Like nearly everyone else, I use GitHub for version control, repository management, CI/CD integration, using GitHub's in-built Backlog/Kanban project framework. Here is where I manage PRs, issues, and collaborate with teammates on hackathons and where I protect my projects from my mistakes."
+      },
+      "git": {
+        "title": "Git",
+        "description": "I'm increasingly proficient with branching, merging and pull requests from the command line as well as conflict resolution across multiple projects. Back in the olden days, I also have Subversion under my belt. Here too, my hackathon experience has helped a lot to develop my change control skills."
+      },
+      "jira": {
+        "title": "Jira",
+        "description": "I used Agile boards and sprint planning in the past to track tasks, manage team workflows, and coordinate project milestones. i'm not using it at present."
+      },
+      "jupyter": {
+        "title": "Jupyter",
+        "description": "I have some experience using Jupyter interactive notebooks for Python-based data exploration, analysis, and visualization. My workflows don't include Jupyter at the moment."
       },
       "java": {
         "title": "Java Swing",
@@ -50,111 +154,11 @@
       },
       "dotnet": {
         "title": "Visual Basic .NET",
-        "description": "VB .NET is an object-oriented programming language developed by Microsoft, designed to run on the .NET framework. I used it primarily to manipulate the Passolo object model in efforts to automate localization of resources. I also used it to examine source-language and localized strings for consistency, ensuring the absence of prohibited substrings and unlocalizable concatenations."
+        "description": "VB .NET is an object-oriented language on the .NET framework. I used it primarily to manipulate the Passolo object model, automating localization tasks and for checking source and localized strings for prohibited substrings or unlocalizable concatenations."
       },
-      "html5": {
-        "title": "HTML5",
-        "description": "The standard markup language for creating and structuring content on the web."
-      },
-      "css3": {
-        "title": "CSS3",
-        "description": "The style sheet language used to control the presentation, layout, and appearance of web content."
-      },
-      "django": {
-        "title": "Django",
-        "description": "Django is a high-level Python web framework that facilitates startlingly rapid development and clean, pragmatic design. I have used it both as a pure backend (with Next.js or Flutter on the frontend, PostgreSQL as the database, and implementing RESTful APIs to bridge the backend and frontend), and also across the full stack, creating applications all the way to the user interface with the help of React, Bootstrap, and other tools."
-      },
-      "flask": {
-        "title": "Flask",
-        "description": "Flask is a lightweight Python web framework without any built-in ORM, admin panel, or templating system. I dabbled in it during hackathons to help create RESTful APIs."
-      },
-      "react": {
-        "title": "React",
-        "description": "React is a widely-used JavaScript library for building interactive user interfaces. It has a component-based architecture with reusable components and supports state management. I have mainly used it to create more or less complex modals, responsive buttons and similar controls."
-      },
-      "nextjs": {
-        "title": "Next.js",
-        "description": "App Router, server actions, API routes."
-      },
-      "flutter": {
-        "title": "Flutter",
-        "description": "Cross-platform mobile apps."
-      },
-      "bootstrap": {
-        "title": "Bootstrap",
-        "description": "Rapid prototyping with prebuilt UI components."
-      },
-      "tailwind": {
-        "title": "Tailwind CSS",
-        "description": "Utility-first UI development."
-      },
-      "postgresql": {
-        "title": "PostgreSQL",
-        "description": "Primary database for Django and analytics apps."
-      },
-      "mysql": {
-        "title": "MySQL",
-        "description": "Experience with relational schema design."
-      },
-      "heroku": {
-        "title": "Heroku",
-        "description": "Deployment of Django and Node.js apps."
-      },
-      "vercel": {
-        "title": "Vercel",
-        "description": "Deployment of Next.js apps."
-      },
-      "godaddy": {
-        "title": "GoDaddy",
-        "description": "DNS, hosting, and email configuration."
-      },
-      "aws": {
-        "title": "AWS",
-        "description": "S3, IAM, and CloudFront basics."
-      },
-      "stripe": {
-        "title": "Stripe",
-        "description": "Payment processing API integration."
-      },
-      "swagger": {
-        "title": "Swagger",
-        "description": "API documentation generation."
-      },
-      "vscode": {
-        "title": "Visual Studio Code",
-        "description": "Primary IDE for development."
-      },
-      "androidStudio": {
-        "title": "Android Studio",
-        "description": "Flutter and native Android testing."
-      },
-      "eclipse": {
-        "title": "Eclipse",
-        "description": "Legacy Java development."
-      },
-      "github": {
-        "title": "GitHub",
-        "description": "Version control and CI integration."
-      },
-      "git": {
-        "title": "Git",
-        "description": "Branching, merging, and PR workflows."
-      },
-      "jira": {
-        "title": "Jira",
-        "description": "Agile boards and sprint planning."
-      },
-      "jupyter": {
-        "title": "Jupyter",
-        "description": "Data exploration notebooks."
-      },
-      "nodejs": {
-        "title": "Node.js",
-        "description": "Node.js is a runtime for tools and servers that allows you to use JavaScript elsewhere than directly on a browser. Among other things, it allows you develop website backends coding JavaScript. It's worth noting that Node.js is the harness in which Next.js and many other web framworks do their thing. It's also an essential toolkit when building stuff within the React ecosystem."
-      },
-      "cloudinary": {
-        "title": "Cloudinary",
-        "description": "Media storage, transformations, and delivery."
+      "ant_maven": {
+        "title": "Ant & Maven",
+        "description": "Used for Java build automation and dependency management in earlier projects. Highlights how modern Python/Django and Node/Next.js tooling have simplified this process."
       }
     }
   },

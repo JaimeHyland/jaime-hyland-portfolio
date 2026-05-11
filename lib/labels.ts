@@ -49,7 +49,7 @@ export const localizedLabels: Record<"en" | "es" | "de", LabelSet> = {
     buttonDownload: "Download",
     buttonCopy: "Copy TXT",
     copySuccessTitle: "Copied successfully!",
-    copySuccessMessage: "The content of the Text file is on your clipboard!",
+    copySuccessMessage: "The content of the Text file is now on your clipboard!",
     en: "English",
     es: "Spanish",
     de: "German"

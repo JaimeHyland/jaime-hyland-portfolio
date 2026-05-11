@@ -15,7 +15,7 @@
       "Frontend-Entwickler",
       "Backend-Entwickler",
       "Web-Entwicklung",
-      "Software.Ingenieure",
+      "Softwareentwickler",
       "Portfolio",
       "Personalbeschaffung",
       "Remote-Entwickler"
@@ -24,21 +24,125 @@
   "techsSection": {
     "heading": "Einige der Technologien, mit denen ich arbeite",
     "items": {
+      "html5": {
+        "title": "HTML5",
+        "description": "HTML ist die standardisierte Auszeichnungssprache, die allgemein verwendet wird, um Inhalte im Web zu erstellen und zu strukturieren. HTML5 ist die aktuelle Version und ergänzt semantische Elemente, erweiterte Grafikunterstützung sowie verbesserte Daten- und Validierungsfunktionen für Apps."
+      },
+      "css3": {
+        "title": "CSS3",
+        "description": "Die Stylesheet-Sprache, mit der gesteuert wird, wie Webinhalte dargestellt, angeordnet und visuell gestaltet werden. Richtig eingesetzt ermöglicht sie responsive Layouts, visuelle Effekte und ein einheitliches Erscheinungsbild über mehrere Seiten hinweg."
+      },
+      "bootstrap": {
+        "title": "Bootstrap",
+        "description": "Bootstrap stellt vorgefertigte responsive Komponenten (Buttons, Modalfenster, Navigationsleisten usw.) und ein standardisiertes Grid-System für schnelles Prototyping bereit. Im Vergleich zu reinem CSS hilft es, Oberflächen schneller zu bauen, ist aber weniger flexibel bei stark individualisierten Designs."
+      },
+      "tailwind": {
+        "title": "Tailwind CSS",
+        "description": "Tailwind ist ein Utility-first-CSS-Framework für stark anpassbare Designs. Im Vergleich zu reinem CSS beschleunigt es die Entwicklung und fördert Konsistenz. Es ist flexibler als Bootstrap, bietet aber nicht dessen sehr schnelles, fertig vorbereitetes Grid-System."
+      },
+      "javascript": {
+        "title": "JavaScript",
+        "description": "JavaScript ist die am häufigsten verwendete Programmiersprache zum Erstellen von Web-Frontends zusammen mit HTML und CSS. Sie wird sowohl verwendet, um auf Daten und das DOM zuzugreifen und sie zu bearbeiten, als auch um HTML- und CSS-Code zu verändern."
+      },
+      "typescript": {
+        "title": "TypeScript",
+        "description": "TypeScript ist eine Obermenge von JavaScript. Es erzwingt strengere Typisierung, bietet Autovervollständigung, IntelliSense und intelligente Hinweise und ist dadurch sehr nützlich beim Schreiben, Debuggen und Refaktorisieren von Code. Ich verwende es recht intensiv zusammen mit Next.js und React beim Erstellen und Pflegen dieser Website."
+      },
+      "react": {
+        "title": "React.js",
+        "description": "React.js ist eine weit verbreitete JavaScript-Bibliothek zum Erstellen interaktiver Benutzeroberflächen. Die Architektur basiert auf wiederverwendbaren Komponenten und unterstützt State-Management, wodurch die Erstellung recht komplexer UIs handhabbar wird. Ich habe es hauptsächlich zum Erstellen von Modals, responsiven Buttons und anderen dynamischen Bedienelementen verwendet."
+      },
+      "nextjs": {
+        "title": "Next.js",
+        "description": "Next.js ist ein React-Framework zum Erstellen schneller, produktionsreifer Webanwendungen. Besonders nützlich finde ich derzeit die Aufteilung von Aufgaben in serverseitige und clientseitige Teile, die native React-Integration, die einfache SEO-Integration (zumindest bei einsprachigen Websites) und die vergleichsweise flache Lernkurve auf meinem bisherigen Weg als Entwickler."
+      },
+      "flutter": {
+        "title": "Flutter",
+        "description": "Flutter gehört zu Googles Familie quelloffener UI-Frameworks zum Erstellen von Web-Apps aus einer einzigen Codebasis für iOS- und Android-basierte Systeme und sogar für Desktop- und Laptop-Computer mit macOS, Windows oder Linux. Die darin verwendete Programmiersprache ist Dart (ebenfalls von Google entwickelt). Es bietet eine Vielzahl von UI-Widgets. In der Entwicklung machen die Hot-Reload-Funktionen es leichter und schneller, Arbeit zu testen und Fehler zu beheben. Die plattformübergreifende Konsistenz im Vergleich zu Metas React Native ist eine seiner attraktiveren Eigenschaften. Im Vergleich zu React Native hat es jedoch eine steilere Lernkurve für Programmierer, die bereits mit React.js und/oder TypeScript vertraut sind."
+      },
+      "dart": {
+        "title": "Dart",
+        "description": "In Verbindung mit Flutter für plattformübergreifende mobile Entwicklung ist Dart eine moderne, klassenbasierte Sprache, inspiriert von JavaScript, Java und C#. Es wird zu nativem Code kompiliert, um schnelle und flüssige Apps auf iOS und Android zu ermöglichen, oder zu JavaScript für das Web, und bietet starke Typisierung sowie leistungsstarke Async-Unterstützung. Die Hot-Reload-Funktion spart Wartezeit und macht die Entwicklererfahrung schneller und weniger frustrierend."
+      },
       "python": {
         "title": "Python",
         "description": "Ich nutze Python hauptsächlich für Django, Flask und Scripting."
       },
-      "javascript": {
-        "title": "JavaScript",
-        "description": "JavaScript ist die am häufigsten verwendete Programmiersprache zum Erstellen von Web-Frontends zusammen mit HTML und CSS. Sie wird verwendet, um auf Daten zuzugreifen, sie zu bearbeiten, mit dem DOM zu interagieren und HTML und CSS dynamisch zu aktualisieren."
+      "django": {
+        "title": "Django",
+        "description": "Django ist ein hochentwickeltes Python-Webframework, das eine erstaunlich schnelle Entwicklung und sauberes, pragmatisches Design ermöglicht. Ich habe es sowohl als reines Backend eingesetzt (mit Next.js oder Flutter im Frontend, PostgreSQL dahinter und RESTful APIs, um Backend und Frontend zu verbinden) als auch als Fullstack-Lösung, wobei ich mit Django-Templates und mithilfe von React, Bootstrap und anderen Tools alles bis hin zur Benutzeroberfläche gebaut habe."
       },
-      "typescript": {
-        "title": "TypeScript",
-        "description": "TypeScript ist eine Obermenge von JavaScript. Es erzwingt strengere Typisierung und bietet Autovervollständigung, IntelliSense und intelligente Hinweise, was es sehr nützlich beim Schreiben, Debuggen und Refaktorisieren von Code macht. Ich verwende es umfangreich zusammen mit Next.js und React beim Erstellen und Pflegen dieser Website."
+      "flask": {
+        "title": "Flask",
+        "description": "Flask ist ein leichtgewichtiges Python-Webframework ohne integriertes ORM, Admin-Panel oder Templatesystem. Ich habe es während Hackathons gelegentlich genutzt, um bei der Erstellung von RESTful-APIs zu helfen."
       },
-      "dart": {
-        "title": "Dart",
-        "description": "In Verbindung mit Flutter für plattformübergreifende mobile Entwicklung ist Dart eine moderne, klassenbasierte Sprache, inspiriert von JavaScript, Java und C#. Es wird zu nativen Code kompiliert, um schnelle und flüssige Apps auf iOS und Android zu ermöglichen, oder zu JavaScript für das Web, und bietet starke Typisierung sowie leistungsstarke Async-Unterstützung. Die Hot-Reload-Funktion spart „waiting-around time“ und macht die Entwicklererfahrung schneller und weniger frustrierend."
+      "nodejs": {
+        "title": "Node.js",
+        "description": "Node.js ist eine Laufzeitumgebung für Tools und Server, die es ermöglicht, JavaScript außerhalb des Browsers zu verwenden. Es nutzt Googles V8-Engine, dieselbe Engine wie Google Chrome, und ist Teil des Next.js-Toolings. Unter anderem kann man damit Website-Backends in JavaScript entwickeln. Bemerkenswert ist, dass Node.js die Grundlage bildet, in der viele Webframeworks neben Next.js arbeiten. Es ist außerdem ein wesentliches Toolkit beim Bauen im React.js-Ökosystem. Die größte aktuelle Relevanz hatte es für mich beim Umschreiben von GET- und POST-Requests, um Cross-Origin-Beschränkungen moderner Browser zu umgehen, wenn ich eine Fullstack-App mit Next.js-Frontend und Django-Backend erstelle — sowohl in der Entwicklung als auch nach dem Deployment."
+      },
+      "postgresql": {
+        "title": "PostgreSQL",
+        "description": "PostgreSQL ist eine leistungsfähige, quelloffene relationale Datenbank. Ich nutze sie (über Supabase) als primäre Datenbank für Django-Apps, Analysen und strukturierte Datenspeicherung."
+      },
+      "mysql": {
+        "title": "MySQL",
+        "description": "MySQL ist eine weit verbreitete relationale Datenbank mit praktischen Desktop-Tools und unkomplizierter Einrichtung. Auch wenn es die meisten meiner Anforderungen erfüllen kann, bevorzuge ich PostgreSQL für Projekte mit einem Django-Backend, weil es vollständiger in das Framework integriert ist."
+      },
+      "heroku": {
+        "title": "Heroku",
+        "description": "Ich deploye Django-Anwendungen normalerweise auf Heroku, um den einfachen Workflow und die integrierte PostgreSQL-Unterstützung zu nutzen. Die verschiedenen Dyno-Optionen von Heroku erleichtern das Skalieren bei steigendem Traffic, und mit Redis lassen sich Prozesse (z. B. Instant Messaging) relativ unkompliziert kapseln. Es gibt jedoch harte Slug-Größenlimits, und für statische Dateien ist zusätzliche Einrichtung nötig (meist nutze ich dafür AWS, auch wenn bei kleineren Django-Setups Django-Whitenoise die Aufgabe gut erledigt)."
+      },
+      "vercel": {
+        "title": "Vercel",
+        "description": "Ich deploye Next.js-Apps auf Vercel, der Plattform der Entwickler von Next.js. Das Deployment ist daher sehr nahtlos und passt natürlich zu serverseitigem Rendering, statischer Seitengenerierung und dem globalen CDN. Statische Dateien lassen sich im Vergleich zu Heroku einfach ausliefern. Vercel ermöglicht außerdem unkomplizierte Edge Functions und Skalierung, eignet sich aber nicht gut für Django-Backends. Es gibt Upload-Limits (z. B. ca. 100 MB im Hobby-Plan, ca. 1 GB im Pro-Plan), daher müssen sehr große Build-Artefakte möglicherweise aufgeteilt oder in externem Speicher abgelegt werden."
+      },
+      "aws": {
+        "title": "AWS",
+        "description": "Ich nutze AWS, um statische Dateien für meine komplexeren auf Heroku gehosteten Django-Apps zu speichern und auszuliefern, mit S3 für die Speicherung und IAM für sichere Zugriffskontrolle."
+      },
+      "cloudinary": {
+        "title": "Cloudinary",
+        "description": "Cloudbasierte Medienverwaltung zum Speichern, Transformieren und Ausliefern von Bildern und Videos über eine API. Ich habe es in früheren Projekten verwendet; das neue kreditbasierte Preismodell hat mich allerdings etwas abgeschreckt. Falls ich künftig etwas Ähnliches brauche, werde ich meine Optionen prüfen."
+      },
+      "godaddy": {
+        "title": "GoDaddy",
+        "description": "Ich nutze GoDaddy für DNS, Hosting und E-Mail (@language-landscapes.com). Der Dienst funktioniert, ist aber teuer, veraltet und manchmal inkonsistent, weshalb ich wegmigrieren möchte, wenn ich die Zeit und den mentalen Freiraum habe, die Komplikationen einer solchen Migration anzugehen."
+      },
+      "stripe": {
+        "title": "Stripe",
+        "description": "Ich habe die Stripe-Zahlungs-API integriert, um einen Test-Checkout-Flow mit webhookbasierter Ereignisverarbeitung umzusetzen. Die Einrichtung war dank klarer Dokumentation und eines transparenten Entwickler-Dashboards unkompliziert."
+      },
+      "swagger": {
+        "title": "Swagger",
+        "description": "Ich habe Swagger verwendet, um interaktive API-Dokumentation für Django-Endpunkte zu generieren; das half sicherzustellen, dass APIs weiterhin korrekt funktionierten und konsistent blieben, während die Datenmodelle komplexer wurden."
+      },
+      "vscode": {
+        "title": "Visual Studio Code",
+        "description": "VS Code ist meine primäre IDE für Webentwicklung. Ich nutze sie für Django, Next.js und allgemeine Frontend- und Backend-Entwicklung."
+      },
+      "androidStudio": {
+        "title": "Android Studio",
+        "description": "Ich nutze Android Studio ausschließlich für Flutter-Entwicklung, einschließlich Emulatoren und physischer Geräte. Es ähnelt VS Code, aber Darts deklarativer Stil führt zu anderen Ergebnissen."
+      },
+      "eclipse": {
+        "title": "Eclipse",
+        "description": "Ich habe Eclipse früher für Java- und C++-Programmierung genutzt, insbesondere für Swing-Komponenten (Java) und MFC-UI-Code (C++). Derzeit verwende ich es nicht."
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Wie fast alle anderen nutze ich GitHub für Versionskontrolle, Repository-Management, CI/CD-Integration und GitHubs integrierte Backlog-/Kanban-Projektfunktionen. Dort verwalte ich PRs und Issues, arbeite bei Hackathons mit Teamkollegen zusammen und schütze meine Projekte vor meinen eigenen Fehlern."
+      },
+      "git": {
+        "title": "Git",
+        "description": "Ich werde zunehmend sicherer im Umgang mit Branching, Merging und Pull Requests über die Kommandozeile sowie beim Lösen von Konflikten über mehrere Projekte hinweg. Aus alten Zeiten bringe ich außerdem Subversion-Erfahrung mit. Auch hier hat mir meine Hackathon-Erfahrung sehr geholfen, meine Change-Control-Fähigkeiten zu entwickeln."
+      },
+      "jira": {
+        "title": "Jira",
+        "description": "Ich habe früher Agile Boards und Sprintplanung genutzt, um Aufgaben zu verfolgen, Team-Workflows zu verwalten und Projektmeilensteine zu koordinieren. Derzeit nutze ich Jira nicht."
+      },
+      "jupyter": {
+        "title": "Jupyter",
+        "description": "Ich habe etwas Erfahrung mit interaktiven Jupyter-Notebooks für Python-basierte Datenexploration, Analyse und Visualisierung. Im Moment gehören Jupyter-Workflows nicht zu meiner Arbeitsweise."
       },
       "java": {
         "title": "Java Swing",
@@ -52,142 +156,32 @@
         "title": "Visual Basic .NET",
         "description": "VB .NET ist eine objektorientierte Programmiersprache, die von Microsoft entwickelt wurde und auf dem .NET-Framework ausgeführt wird. Ich habe es hauptsächlich verwendet, um das Passolo-Objektmodell zu manipulieren und die Automatisierung der Ressourcenlokalisierung zu unterstützen. Außerdem nutzte ich es, um Quell- und übersetzte Strings auf Konsistenz zu überprüfen und sicherzustellen, dass keine verbotenen Teilstrings oder nicht lokalisierbare Verkettungen enthalten sind."
       },
-      "html5": {
-        "title": "HTML5",
-        "description": "Die standardisierte Auszeichnungssprache zum Erstellen und Strukturieren von Webinhalten."
-      },
-      "css3": {
-        "title": "CSS3",
-        "description": "Die Stylesheet-Sprache zur Steuerung von Darstellung, Layout und Erscheinungsbild von Webinhalten."
-      },
-      "django": {
-        "title": "Django",
-        "description": "Django ist ein hochentwickeltes Python-Webframework, das eine erstaunlich schnelle Entwicklung und sauberes, pragmatisches Design ermöglicht. Ich habe es sowohl als reines Backend eingesetzt (mit Next.js oder Flutter im Frontend, PostgreSQL als Datenbank und beim Erstellen von RESTful-APIs, um Backend und Frontend zu verbinden), als auch im gesamten Stack, wobei ich Anwendungen bis zur Benutzeroberfläche mit Hilfe von React, Bootstrap und anderen Tools aufgebaut habe."
-      },
-      "flask": {
-        "title": "Flask",
-        "description": "Flask ist ein leichtgewichtiges Python-Webframework ohne integriertes ORM, Admin-Panel oder Templatesystem. Ich habe es während Hackathons gelegentlich genutzt, um bei der Erstellung von RESTful-APIs zu helfen."
-      },
-      "react": {
-        "title": "React",
-        "description": "Moderne Frontend-Entwicklung."
-      },
-      "nextjs": {
-        "title": "Next.js",
-        "description": "App-Router, Server-Aktionen, API-Routen."
-      },
-      "flutter": {
-        "title": "Flutter",
-        "description": "Plattformübergreifende mobile Apps."
-      },
-      "bootstrap": {
-        "title": "Bootstrap",
-        "description": "Schnelles Prototyping mit vorgefertigten UI-Komponenten."
-      },
-      "tailwind": {
-        "title": "Tailwind CSS",
-        "description": "Utility-first UI-Entwicklung."
-      },
-      "postgresql": {
-        "title": "PostgreSQL",
-        "description": "Primäre Datenbank für Django- und Analyse-Apps."
-      },
-      "mysql": {
-        "title": "MySQL",
-        "description": "Erfahrung im relationalen Schema-Design."
-      },
-      "heroku": {
-        "title": "Heroku",
-        "description": "Deployment von Django- und Node.js-Apps."
-      },
-      "vercel": {
-        "title": "Vercel",
-        "description": "Deployment von Next.js-Apps."
-      },
-      "godaddy": {
-        "title": "GoDaddy",
-        "description": "DNS-, Hosting- und E-Mail-Konfiguration."
-      },
-      "aws": {
-        "title": "AWS",
-        "description": "Grundlagen von S3, IAM und CloudFront."
-      },
-      "stripe": {
-        "title": "Stripe",
-        "description": "Integration der Zahlungs-API."
-      },
-      "swagger": {
-        "title": "Swagger",
-        "description": "API-Dokumentation erstellen."
-      },
-      "vscode": {
-        "title": "Visual Studio Code",
-        "description": "Haupt-IDE für Entwicklung."
-      },
-      "androidStudio": {
-        "title": "Android Studio",
-        "description": "Flutter- und native Android-Tests."
-      },
-      "eclipse": {
-        "title": "Eclipse",
-        "description": "Legacy Java-Entwicklung."
-      },
-      "github": {
-        "title": "GitHub",
-        "description": "Versionskontrolle und CI-Integration."
-      },
-      "git": {
-        "title": "Git",
-        "description": "Branches, Merges und PR-Workflows."
-      },
-      "jira": {
-        "title": "Jira",
-        "description": "Agile Boards und Sprintplanung."
-      },
-      "jupyter": {
-        "title": "Jupyter",
-        "description": "Notebooks für Datenexploration."
-      },
-      "nodejs": {
-        "title": "Node.js",
-        "description": "Runtime für Tools und Server."
-      },
-      "cloudinary": {
-        "title": "Cloudinary",
-        "description": "Medien-Speicherung, Transformationen und Auslieferung."
+      "ant_maven": {
+        "title": "Ant & Maven",
+        "description": "Wurde in früheren Projekten für Java-Build-Automatisierung und Dependency-Management verwendet. Es zeigt, wie sehr moderne Python/Django- und Node/Next.js-Toolchains diesen Prozess vereinfacht haben."
       }
     }
   },
   "educationSection": {
     "heading": "Einige der Orte, an denen ich gelernt habe, und noch lerne",
-
     "FASTitle": "FÁS",
     "fasModalContent": "FÁS war zur Zeit meiner grundlegenden IT-Ausbildung die irische nationale Behörde für berufliche Ausbildung. Es wurde inzwischen durch <link>Solas</link> ersetzt.",
-
     "trinityModalTitle": "Trinity College Dublin",
     "trinityModalContent": "Ich habe Philosophie (oder „Mentale und Moralische Wissenschaft“, wie der Studiengang noch genannt wird) am <link>Trinity College Dublin</link> studiert. In längst vergangener Zeit (1984 bis 1988) habe ich dort viel zur Philosophie der Logik und Mathematik gearbeitet.",
-
     "codeInstituteModalTitle": "Code Institute",
     "codeInstituteModalContent": "Ich habe von 2023 bis Ende 2024 einen Online-<link>Full-Stack-Softwareentwicklungs-Diplomkurs</link> beim ausgezeichneten, in Dublin ansässigen Ausbilder Code Institute abgeschlossen.\nDer Kurs legte besonderen Wert auf die Programmiersprache Python für das moderne Web, unter Verwendung der Frameworks Django und Bootstrap.\nMein spezialisiertes Abschlussprojekt war eine E-Commerce-Website, die Stripe als Online-Zahlungssystem einsetzt.",
-
     "khanModalTitle": "Khan Academy",
     "khanModalContent": "<link>Khan Academy</link> ist eine ausgezeichnete Ressource für IT-Ausbildung und Mathematikunterricht. Ich habe sie bisher für das Selbststudium in Informatiktheorie, JavaScript-Programmierung, Statistik und Analysis verwendet.",
-
     "codefinityModalTitle": "Codefinity",
     "codefinityModalContent": "<link>Codefinity</link> ist eine weitere ausgezeichnete Ressource für IT-Ausbildung. Bisher habe ich es für verschiedene Lernmaterialien genutzt, mit besonderem Schwerpunkt auf Python.",
-
     "brilliantModalTitle": "Brilliant",
     "brilliantModalContent": "<link>Brilliant</link> ist mein Lieblingsort, wenn ich eine kurze, aber produktive Pause machen möchte. Bisher habe ich es hauptsächlich genutzt, um meine alten allgemeinen Schulmathematikkenntnisse aufzufrischen und ein wenig über elektrische Schaltkreise zu lernen, die mir mein ganzes Leben lang ein Rätsel waren.",
-
     "kodekloudModalTitle": "KodeKloud",
     "kodekloudModalContent": "Ich nutze <link>KodeKloud</link> immer wieder, um mein bisher noch recht primitives Verständnis von Linux zu verbessern.\nEs ist ein ausgezeichneter Anbieter von Schulungen – insbesondere im Bereich DevOps.",
-
     "leetcodeModalTitle": "LeetCode",
     "leetcodeModalContent": "Ich nutze <link>LeetCode</link> hauptsächlich, um einige der häufigen Fragen zu verstehen, die bei einer Bewerbung als Full-Stack-Webprogrammierer auf mich zukommen könnten.",
-
     "linkedinModalTitle": "LinkedIn Learning",
     "linkedinModalContent": "<link>LinkedIn Learning</link> bietet eine breite Palette an Kursen für das gesamte Spektrum an beruflichen Disziplinen, die man in der IT-Branche und darüber hinaus lernen muss.\nEs ist das Produkt der Übernahme des berühmten IT-Ausbilders Lynda.com durch LinkedIn.\nBisher habe ich es hauptsächlich genutzt, um mich mit Dart/Flutter vertraut zu machen.",
-
     "freecodecampModalTitle": "freecodecamp",
     "freecodecampModalContent": "<link>freecodecamp</link> ist mein ursprünglicher Anbieter vieler meiner Grundkenntnisse in der Webentwicklung.\nIch habe enorm von ihrem Certified Full Stack Developer Curriculum profitiert (obwohl es zum Zeitpunkt des Schreibens noch in der Beta-Phase ist)."
   },
