@@ -111,8 +111,8 @@
         "desc1": "I'm now building this site as a commercial project for a client who provides a variety of musical services, from music lessons, through technical and sound support for concerts, all the way to live musical events. The site's front end (especially its internationalization and graphic features) is developed in next.js using React, intl-next and Tailwind, while its backend will be based on a PostreSQL database.  The APIs it needs will be provided by Django, as will its authentication features (both at front and back end). ",
         "desc2": "The site will feature:",
         "features": [
-          "An easy that allows the user to add, edit and remove custom pages (for example, for musical groups, sound technicians, etc.",
-          "A variety of different user categories, from admin through musician member, to unregistered user (the precise categories and their permissions will be defined in early February",
+          "An easy utility that allows the user to add, edit and remove custom pages (for example, for musical groups, music teachers, sound technicians, etc.)",
+          "A variety of different user categories, from admin through musician member, to unregistered user. The precise categories will be at least webmaster, customer, band member, teacher and ordinary user, but there may be more by the time the project is complete.",
           "Unintrusive, polished <bold>i18n</bold> support, with l10n in English, German and Spanish",
           "Clean, accessible design",
           "Fully responsive UI for desktop, laptop, tablet and smartphone",
