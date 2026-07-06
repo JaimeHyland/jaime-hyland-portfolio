@@ -1,4 +1,4 @@
-Esta es una versión en alemán de mi currículum diseñada para ser leída por máquinas. La fecha de su ultima actualización es el 28.11.2025. Una versión legible para humanos está disponible aquí: https://www.jaime-hyland.com/files/JaimeHyland_CV_es_ES_HR_FullStack_latest.pdf
+Esta es una versión en alemán de mi currículum diseñada para ser leída por máquinas. La fecha de su ultima actualización es el 06.07.2026. Una versión legible para humanos está disponible aquí: https://www.jaime-hyland.com/files/JaimeHyland_CV_es_ES_HR_FullStack_latest.pdf
 
 Jaime Hyland | Desarrollador de Software Fullstack | Berlín
 Correo: mailto:jaime.hyland@language-landscapes.com | GitHub: https://github.com/JaimeHyland
@@ -27,7 +27,7 @@ Ago. – Oct. 2000 | FAS CITP | Diploma en Programación Informática
 1984 – 1988 | Trinity College Dublin | Licenciatura en Filosofía
 
 Proyectos recientes independientes
-Portafolio de cursos | https://www.jaime-hyland.com/en/projects#ci-projects
+Portafolio de cursos | https://www.jaime-hyland.com/en/projects#ci-assessment
 Cinco proyectos fullstack con HTML, CSS, JavaScript, JSON, Bootstrap, Python,
 Django, Flask, React, Stripe. Heroku, Daphne/Channels, Redis, AWS; comunicación
 asíncrona utilizando Channels.
@@ -44,6 +44,10 @@ Proyectos personales | https://www.jaime-hyland.com/en/projects#independent
 - Proyecto actual: aplicación móvil para aprendizaje de idiomas basada en la plantilla Django-Flutter-i18n
 
 Experiencia profesional
+Sept. 2024 – actualidad | Desarrollo web fullstack freelance – Berlín
+- Aplicación web fullstack multilingüe para un colectivo musical local en Berlín (en curso)
+- Aplicación web internacionalizada con CRM para ReduceCO2Now (en curso)
+
 2022 – Julio 2023 | Desarrollador de Software Freelance | Berlín
 - Aplicación móvil de idiomas: Base de datos MySQL, administración Java Swing, UI Flutter/Dart
 - Traducciones técnicas y académicas

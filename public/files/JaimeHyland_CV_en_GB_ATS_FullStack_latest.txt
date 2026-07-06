@@ -1,4 +1,4 @@
-This is an English-language version of my CV designed to be read by machine. It was last updated on 28/11/2025. A human-friendly version is available here: https://www.jaime-hyland.com/files/JaimeHyland_CV_en_GB_HR_FullStack_latest.pdf
+This is an English-language version of my CV designed to be read by machine. It was last updated on 06/07/2026. A human-friendly version is available here: https://www.jaime-hyland.com/files/JaimeHyland_CV_en_GB_HR_FullStack_latest.pdf
 
 Jaime Hyland | Fullstack Software Developer | Berlin
 Email: mailto:jaime.hyland@language-landscapes.com | GitHub: https://github.com/JaimeHyland
@@ -27,7 +27,7 @@ Aug. – Oct. 2000 | FAS CITP | Diploma Computer Programming
 1984 – 1988 | Trinity College Dublin | Bachelor of Arts in Philosophy
 
 Recent independent projects
-Course portfolio | https://www.jaime-hyland.com/en/projects#ci-projects
+Course portfolio | https://www.jaime-hyland.com/en/projects#ci-assessment
 Five fullstack projects with HTML, CSS, JavaScript, JSON, Bootstrap, Python,
 Django, Flask, React, Stripe. Heroku, Daphne/Channels, Redis, AWS; asynchronous
 communication using Channels.
@@ -44,6 +44,10 @@ Personal projects | https://www.jaime-hyland.com/en/projects#independent
 - Current project: Language-learning mobile app based on Django-Flutter-i18n template
 
 Professional experience
+Sept 2024 – today | Freelance Fullstack web development – Berlin
+- Multilingual fullstack web app for a local music collective in Berlin (WIP)
+- Internationalized static web app with CRM for ReduceCO2Now (WIP)
+
 2022 – July 2023 | Freelance Software Developer | Berlin
 - Mobile language app: MySQL DB, Java Swing admin, Flutter/Dart UI
 - Technical and academic translations

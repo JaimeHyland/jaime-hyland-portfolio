@@ -1,4 +1,4 @@
-Dies ist eine deutsche Version meines Lebenslaufs, die für Maschinen lesbar ist. Es wurde zuletzt 28.11.2025 aktualisiert. Eine für Menschen lesbare Version ist hier verfügbar: https://www.jaime-hyland.com/files/JaimeHyland_CV_en_GB_HR_FullStack_latest.pdf
+Dies ist eine deutsche Version meines Lebenslaufs, die für Maschinen lesbar ist. Es wurde zuletzt 06.07.2026 aktualisiert. Eine für Menschen lesbare Version ist hier verfügbar: https://www.jaime-hyland.com/files/JaimeHyland_CV_en_GB_HR_FullStack_latest.pdf
 
 Jaime Hyland | Full-Stack-Webentwickler | Berlin
 Email: jaime.hyland@language-landscapes.com
@@ -28,7 +28,7 @@ Aug. 2023 – Sept. 2024: Code Institute, Dublin – Diplom in Full-Stack-Entwic
 1984 – 1988: Trinity College Dublin – Bachelor of Arts in Philosophie
 
 Aktuelle / Abgeschlossene Projekte
-Kursportfolio: https://www.jaime-hyland.com/de/projects#ci-projects
+Kursportfolio: https://www.jaime-hyland.com/de/projects#ci-assessment
 Abschluss von fünf Full-Stack-Projekten mit HTML, CSS, JavaScript, JSON, Bootstrap,
 Python, Django, Flask, React und Stripe-Integration.
 Einsatz von Heroku, Daphne/Channels, Redis und AWS; Entwicklung asynchroner Kommunikation
@@ -48,6 +48,10 @@ Persönliche Projekte: https://www.jaime-hyland.com/de/projects#independent
 - Aktuelles Projekt: Sprachlern-App auf Basis der Django-Flutter-i18n-Vorlage.
 
 Berufserfahrung
+Sept. 2024 – heute: Freiberufliche Fullstack-Webentwicklung – Berlin
+- Mehrsprachige Fullstack-Web-App für ein lokales Musik-Kollektiv in Berlin (in Arbeit)
+- Internationalisierte statische Web-App mit CRM für ReduceCO2Now (in Arbeit)
+
 2022 – Juli 2023: Freiberuflicher Softwareentwickler – Berlin
 - Entwicklung einer mobilen Sprachlern-App mit MySQL-Datenbank, Java-Swing-Adminoberfläche
   und Flutter/Dart-Benutzeroberfläche.
