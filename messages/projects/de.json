@@ -102,6 +102,53 @@
     "title": "Laufende unabhängige Projekte",
     "description": "Diese Projekte wurden auf eigene Initiative unabhängig erstellt und befinden sich noch in der Entwicklung.",
     "projects": {
+        "shoppingListApp": {
+          "name": "Familien-Einkaufsliste",
+          "siteURL": "https://family-shopper-app-3b0facd8dbb7.herokuapp.com/",
+          "codebaseText": "GitHub-Repository",
+          "codebaseURL": "https://github.com/JaimeHyland/family-shopper-app",
+          "desc1": "Eine Django-basierte Webanwendung, die das gemeinsame Organisieren des Familieneinkaufs so einfach wie möglich machen soll. Familienmitglieder können gemeinsame Einkaufslisten verwalten, Produkte nach Geschäft und Kategorie organisieren und den Überblick darüber behalten, was noch gekauft werden muss und was bereits besorgt wurde. Die Anwendung unterstützt mehrere Familien mit individuellen Benutzerkonten, Familienmitgliedschaften und klar definierten Zugriffsrechten.",
+          "desc2": "Die Anwendung bietet:",
+          "features": [
+            "Familienkonten, mit denen mehrere Haushalte ihren Einkauf unabhängig voneinander organisieren können",
+            "Individuelle Benutzerkonten und Familienmitgliedschaften mit getrennten Rollen für Administratoren und Mitglieder",
+            "Gemeinsame Einkaufslisten für Familienmitglieder",
+            "Organisation von Produkten nach Geschäft und Kategorie",
+            "Einkaufslistenpositionen mit Angaben zur benötigten und bereits gekauften Menge",
+            "Warenkorbverwaltung, mit der Mitglieder die Verantwortung für Artikel übernehmen können, die sie kaufen möchten",
+            "Klare Zuständigkeitsregeln, nach denen jedes Mitglied nur Artikel kaufen kann, die seinem eigenen Warenkorb zugeordnet sind",
+            "Unterstützung mehrerer Familienmitgliedschaften innerhalb eines einzigen Benutzerkontos",
+            "Registrierung, E-Mail-Verifizierung und Familieneinladungen per E-Mail",
+            "Familienbezogener Login für Mitglieder ohne eigene E-Mail-Adresse",
+            "Passwortverwaltung, einschließlich verpflichtender Passwortänderung für neu eingeladene Mitglieder, die ihre Zugangsdaten zunächst erhalten haben",
+            "Rollenbasierte Zugriffskontrolle und auf die jeweilige Familie beschränkte Berechtigungen",
+            "Responsives Design, das auf unterschiedlichen Bildschirmgrößen einfach und benutzerfreundlich bleibt",
+            "Django-Datenbankmodelle und Migrationen zur dauerhaften Speicherung der Daten",
+            "E-Mail-Versand über SMTP für Kontoverifizierung und Registrierungsprozesse"
+          ],
+          "desc3": "Die Idee für die Anwendung entstand im Rahmen eines Prüfungsprojekts während meines Kurses. Aus einer zunächst eher überschaubaren Aufgabe entwickelte sich ein deutlich ambitionierteres Vorhaben: eine praktische Anwendung, die auf die Bedürfnisse von Familien zugeschnitten ist, die Organisation und Verantwortung für den Haushaltseinkauf gemeinsam übernehmen. Langfristig soll daraus eine vollwertige mobile Anwendung entstehen, wahlweise mit React Native oder Flutter entwickelt. Sie soll die Nutzungsmöglichkeiten über das Web hinaus erweitern, ohne die Einfachheit des ursprünglichen Konzepts aufzugeben.",
+          "desc4": "Das Projekt ist eine eigenständig entwickelte und kontinuierlich weiterentwickelte Anwendung, deren Gestaltung bewusst auf eine möglichst einfache Benutzererfahrung ausgerichtet ist. Die zugrunde liegende Architektur berücksichtigt auch die weniger sichtbaren Herausforderungen gemeinsam genutzter Haushaltsdaten, Benutzeridentitäten, Familienmitgliedschaften und Berechtigungen. Gleichzeitig bleibt die Benutzeroberfläche auf die praktische Organisation des Familieneinkaufs konzentriert. Besonderes Augenmerk gilt der Wartbarkeit, Datenintegrität, Sicherheit und der Vermeidung unnötiger Komplexität."
+        },
+        "mobileDeviceTest": {
+          "name": "Backend-Prototyp für die Synchronisierung von Wearable-Daten",
+          "codebaseText": "GitHub-Repository",
+          "codebaseURL": "https://github.com/JaimeHyland/wearable-device-data-sync-api",
+          "desc1": "Dieses Projekt entstand im Rahmen einer technischen Prüfungsaufgabe und führte zu einem funktionsfähigen Prototyp einer Django REST API. Damit kann ein Synchronisierungs-Client für Wearables Geräte registrieren, Forschungs-Sitzungen erstellen, Sensordaten in Datenpaketen hochladen und gespeicherte Daten abrufen. Das Backend validiert eingehende Daten, verfolgt Sequenzen und verhindert die doppelte Verarbeitung von Datenpaketen, um eine zuverlässige Datenübertragung und Speicherung zu gewährleisten.",
+          "desc2": "Die API bietet:",
+          "features": [
+            "Registrierung und Verwaltung von Geräten",
+            "Erstellung und Verwaltung von Forschungs-Sitzungen, einschließlich der Zuordnung von Geräten und anonymisierten Teilnehmerkennungen",
+            "Übernahme strukturierter Datenpakete mit Sensormesswerten von Wearables",
+            "Serverseitige Validierung eingehender Sensordaten und Datenpakete",
+            "Sequenzverfolgung und Schutz vor doppelter Verarbeitung zur Sicherstellung der Datenintegrität",
+            "Sitzungsbezogener Abruf gespeicherter Sensordaten",
+            "RESTful-Endpunkte auf Basis von Django REST Framework",
+            "Generierung eines OpenAPI-Schemas und interaktive <bold>Swagger</bold>-Dokumentation zur Erkundung und zum Testen der API",
+            "Beispielhafte JSON-Daten zur Demonstration und zum Testen von API-Anfragen",
+            "Django-Datenbankmodelle und Migrationen zur dauerhaften Speicherung der Daten"
+          ],
+          "desc4": "Das Ergebnis ist ein gut strukturierter, funktionsfähiger und testbarer Prototyp, der auf Grundlage einer praxisorientierten technischen Aufgabenstellung und unter Einsatz verschiedener selbst ausgewählter technischer Werkzeuge entwickelt wurde."
+      },
       "projectodo": {
         "name": "Projectodo",
         "siteURL": "https://projectodo.vercel.app/",

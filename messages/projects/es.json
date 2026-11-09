@@ -102,6 +102,53 @@
     "title": "Proyectos independientes recientes y en curso",
     "description": "Estos proyectos fueron creados de forma independiente por iniciativa propia; todos deben considerarse trabajo en curso.",
     "projects": {
+      "shoppingListApp": {
+        "name": "Aplicación de listas de la compra familiar",
+        "siteURL": "https://family-shopper-app-3b0facd8dbb7.herokuapp.com/",
+        "codebaseText": "Repositorio de GitHub",
+        "codebaseURL": "https://github.com/JaimeHyland/family-shopper-app",
+        "desc1": "Una aplicación web basada en Django, diseñada para facilitar la organización y la gestión compartida de la compra doméstica. Permite a los miembros de una familia gestionar listas de la compra compartidas, organizar los productos por tienda y categoría, y llevar un seguimiento de lo que queda por comprar y de lo que ya se ha comprado. La aplicación admite varias familias, cada una con cuentas individuales, miembros y permisos claramente definidos.",
+        "desc2": "La aplicación ofrece:",
+        "features": [
+          "Cuentas familiares que permiten a distintos hogares gestionar sus compras de forma independiente",
+          "Cuentas de usuario individuales y pertenencia a familias, con roles diferenciados de administrador y miembro",
+          "Listas de la compra compartidas entre los miembros de la familia",
+          "Organización de productos por tienda y categoría",
+          "Artículos en las listas con cantidades necesarias y cantidades compradas",
+          "Gestión de cestas, que permite a los miembros responsabilizarse de los artículos que tienen previsto comprar",
+          "Reglas claras de asignación que garantizan que cada miembro solo pueda comprar los artículos incluidos en su propia cesta",
+          "Compatibilidad con varias pertenencias familiares desde una única cuenta de usuario",
+          "Registro, verificación por correo electrónico e invitaciones familiares mediante email",
+          "Acceso específico a cada familia para los miembros que no disponen de una dirección de correo electrónico",
+          "Gestión de contraseñas, incluido el cambio obligatorio de contraseña para los nuevos miembros invitados que utilizan credenciales iniciales",
+          "Control de acceso basado en roles y permisos limitados al ámbito de cada familia",
+          "Interfaz adaptable que mantiene su sencillez y facilidad de uso en distintos tamaños de pantalla",
+          "Modelos de base de datos y migraciones de Django para el almacenamiento persistente de datos",
+          "Envío de correo electrónico mediante SMTP para los procesos de registro y verificación de cuentas"
+        ],
+        "desc3": "La idea de la aplicación surgió de un proyecto de evaluación realizado como parte de mi curso. Lo que comenzó como un ejercicio relativamente modesto fue evolucionando hasta convertirse en un proyecto mucho más ambicioso: una aplicación práctica diseñada en torno a las necesidades de las familias que comparten la organización y la responsabilidad de hacer la compra. La visión a largo plazo es convertirla en una aplicación móvil completa, desarrollada con React Native o Flutter, ampliando su accesibilidad y utilidad más allá de la web sin renunciar a la sencillez del concepto original.",
+        "desc4": "Se trata de una aplicación en evolución, desarrollada de forma independiente y concebida desde el principio para ofrecer una experiencia de usuario deliberadamente sencilla. Su arquitectura aborda las complejidades menos visibles de los datos domésticos compartidos, la identidad de los usuarios, la pertenencia a familias y los permisos, manteniendo al mismo tiempo una interfaz centrada en la tarea práctica de organizar la compra familiar. Se presta especial atención a la facilidad de mantenimiento, la integridad de los datos, la seguridad y la eliminación de complejidades innecesarias."
+      },
+      "mobileDeviceTest": {
+        "name": "Prototipo de backend para sincronización de datos de dispositivos wearables",
+        "codebaseText": "Repositorio de GitHub",
+        "codebaseURL": "https://github.com/JaimeHyland/wearable-device-data-sync-api",
+        "desc1": "Este proyecto se desarrolló como parte de una evaluación técnica y dio lugar a un prototipo funcional de una API REST con Django. Permite que un cliente de sincronización de dispositivos wearables registre dispositivos, cree sesiones de investigación, envíe lotes de mediciones de sensores y recupere datos almacenados. El backend valida los datos recibidos, realiza un seguimiento de las secuencias y evita el procesamiento duplicado de lotes para garantizar una transferencia y un almacenamiento fiables.",
+        "desc2": "La API ofrece:",
+        "features": [
+          "Registro y gestión de dispositivos",
+          "Creación y gestión de sesiones de investigación, incluida la asociación de dispositivos e identificadores anonimizados de participantes",
+          "Recepción de lotes estructurados de mediciones de sensores procedentes de dispositivos wearables",
+          "Validación en el servidor de los datos de sensores y del contenido de los lotes recibidos",
+          "Seguimiento de secuencias y protección frente al procesamiento duplicado para mantener la integridad de los datos",
+          "Recuperación de mediciones de sensores almacenadas mediante sesiones",
+          "Endpoints RESTful implementados con Django REST Framework",
+          "Generación de esquemas OpenAPI y documentación interactiva de <bold>Swagger</bold> para explorar y probar la API",
+          "Ejemplos de datos JSON para demostrar y probar las solicitudes a la API",
+          "Modelos de base de datos y migraciones de Django para el almacenamiento persistente de datos"
+        ],
+        "desc4": "El resultado es un prototipo bien estructurado, funcional y comprobable, desarrollado a partir de un encargo técnico práctico y utilizando diversas herramientas tecnológicas seleccionadas por iniciativa propia."
+      },
       "projectodo": {
         "name": "Projectodo",
         "siteURL": "https://projectodo.vercel.app/",

@@ -66,6 +66,47 @@ export default function ProjectsPage() {
           </li>
           <li>
             <strong>
+              <ProjLink href={t("section2.projects.shoppingListApp.siteURL")}>
+                {t("section2.projects.shoppingListApp.name")}
+              </ProjLink>
+            </strong>
+            <p>
+              {t.rich("section2.projects.shoppingListApp.desc1", {
+                bold: (chunks) => <strong>{chunks}</strong>
+              })}
+            </p>
+            <p>
+              {t.rich("section2.projects.shoppingListApp.desc2", {
+                bold: (chunks) => <strong>{chunks}</strong>
+              })}
+            </p>
+            {Array.isArray(features) && (
+              <ul className="list-disc list-outside pl-5 mb-4">
+                {features.map((feature, index) => (
+                  <li key={index} className="pl-2 -text-indent text-indent-hang">
+                    {t.rich(`section2.projects.shoppingListApp.features.${index}`, {
+                      bold: (chunks) => <strong>{chunks}</strong>
+                    })}
+                  </li>
+                ))}
+              </ul>
+            )}
+            <p>
+              {t.rich("section2.projects.shoppingListApp.desc3", {
+                bold: (chunks) => <strong>{chunks}</strong>
+              })}
+            </p>
+            <p>
+              {t.rich("section2.projects.shoppingListApp.desc4", {
+                bold: (chunks) => <strong>{chunks}</strong>
+              })}
+            </p>
+            <ProjLink href={t("section2.projects.shoppingListApp.codebaseURL")}>
+              {t("section2.projects.shoppingListApp.codebaseText")}
+            </ProjLink>
+          </li>
+          <li>
+            <strong>
               <ProjLink href={t("section2.projects.portfolio.siteURL")}>
                 {t("section2.projects.portfolio.name")}
               </ProjLink>

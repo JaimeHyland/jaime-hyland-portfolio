@@ -103,6 +103,53 @@
     "title": "Ongoing independent Projects",
     "description": "These projects were created independently on my own initiative; they should all be considered Work in Progress",
     "projects": {
+      "shoppingListApp": {
+        "name": "Family Shopping List App",
+        "siteURL": "https://family-shopper-app-3b0facd8dbb7.herokuapp.com/",
+        "codebaseText": "GitHub repository",
+        "codebaseURL": "https://github.com/JaimeHyland/family-shopper-app",
+        "desc1": "A Django-based web application designed to make organising and sharing household shopping straightforward. It allows family members to manage shared shopping lists, organise products by shop and category, and keep track of what needs to be bought and what has already been purchased. The application supports multiple families, with individual accounts, family memberships and clearly defined permissions.",
+        "desc2": "The application provides:",
+        "features": [
+          "Family-based accounts, allowing multiple households to manage their shopping independently",
+          "Individual user accounts and family memberships, with distinct administrator and member roles",
+          "Shared shopping lists for family members",
+          "Product organisation by shop and category",
+          "Shopping-list items with quantities required and quantities purchased",
+          "Basket management, allowing members to take responsibility for items they intend to buy",
+          "Clear ownership rules ensuring that each member can only purchase items assigned to their own basket",
+          "Support for multiple family memberships under a single user account",
+          "Email-based registration, verification and family invitations",
+          "Family-specific login for members who do not have an email address",
+          "Password management, including compulsory password changes for newly invited members using initial credentials",
+          "Role-based access controls and family-scoped permissions",
+          "Responsive interface designed to remain straightforward and usable across different screen sizes",
+          "Django database models and migrations for persistent data storage",
+          "SMTP-based email delivery for account verification and registration workflows"
+        ],
+        "desc3": "The idea for the application originated in an assessment project undertaken as part of my course. What began as a relatively modest exercise developed into a much more ambitious project: a practical application designed around the needs of families sharing the organisation and responsibility of household shopping. The longer-term vision is to develop it into a fully-fledged mobile application, using either React Native or Flutter, extending its accessibility and usefulness beyond the web while retaining the simplicity of the original concept.",
+        "desc4": "The project is an independently developed, evolving application built around a deliberately simple user experience. Its underlying architecture addresses the less visible complexities of shared household data, account identity, family membership and permissions, while keeping the interface focused on the practical task of organising a family shop. Particular attention is given to maintainability, data integrity, security and the avoidance of unnecessary complexity."
+      },
+      "mobileDeviceTest": {
+        "name": "Wearable device backend POC",
+        "codebaseText":"GitHub repository",
+        "codebaseURL":"https://github.com/JaimeHyland/wearable-device-data-sync-api",
+        "desc1": "This project was developed as a technical assessment, resulting in a working Django REST API prototype that enables a wearable-device sync client to register devices, create research sessions, upload batches of sensor readings and retrieve stored data. The backend handles incoming data validation, sequence tracking and duplicate-batch protection to support reliable data transfer and storage.",
+        "desc2": "The API provides:",
+        "features": [
+          "Device registration and management",
+          "Research-session creation and management, including association of devices and anonymised participant identifiers",
+          "Ingestion of structured batches of sensor readings from wearable devices",
+          "Server-side validation of incoming sensor data and batch contents",
+          "Sequence tracking and duplicate-batch protection to maintain data integrity",
+          "Session-based retrieval of stored sensor readings",
+          "RESTful endpoints implemented using Django REST Framework",
+          "OpenAPI schema generation and interactive <bold>Swagger</bold> documentation for API exploration and testing",
+          "Sample JSON payloads for demonstrating and testing API requests",
+          "Django database models and migrations for persistent data storage"
+        ],
+        "desc4": "The result is a well-structured and working, testable prototype developed against a practical technical brief, using a variety of self-identified technical tools."
+      },
       "projectodo": {
         "name": "Projectodo",
         "siteURL": "https://projectodo.vercel.app/",
