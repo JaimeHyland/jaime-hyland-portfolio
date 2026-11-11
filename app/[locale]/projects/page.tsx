@@ -107,7 +107,7 @@ export default function ProjectsPage() {
           </li>
           <li>
             <strong>
-              {t("section2.projects.djangoFlutterI18n.name")}
+              {t("section2.projects.wearableDeviceTest.name")}
             </strong>
             <p>
               {t.rich("section2.projects.wearableDeviceTest.desc1", {
