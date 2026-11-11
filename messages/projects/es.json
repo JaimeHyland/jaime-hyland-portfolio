@@ -129,7 +129,7 @@
         "desc3": "La idea de la aplicación surgió de un proyecto de evaluación realizado como parte de mi curso. Lo que comenzó como un ejercicio relativamente modesto fue evolucionando hasta convertirse en un proyecto mucho más ambicioso: una aplicación práctica diseñada en torno a las necesidades de las familias que comparten la organización y la responsabilidad de hacer la compra. La visión a largo plazo es convertirla en una aplicación móvil completa, desarrollada con React Native o Flutter, ampliando su accesibilidad y utilidad más allá de la web sin renunciar a la sencillez del concepto original.",
         "desc4": "Se trata de una aplicación en evolución, desarrollada de forma independiente y concebida desde el principio para ofrecer una experiencia de usuario deliberadamente sencilla. Su arquitectura aborda las complejidades menos visibles de los datos domésticos compartidos, la identidad de los usuarios, la pertenencia a familias y los permisos, manteniendo al mismo tiempo una interfaz centrada en la tarea práctica de organizar la compra familiar. Se presta especial atención a la facilidad de mantenimiento, la integridad de los datos, la seguridad y la eliminación de complejidades innecesarias."
       },
-      "mobileDeviceTest": {
+      "wearableDeviceTest": {
         "name": "Prototipo de backend para sincronización de datos de dispositivos wearables",
         "codebaseText": "Repositorio de GitHub",
         "codebaseURL": "https://github.com/JaimeHyland/wearable-device-data-sync-api",
@@ -147,7 +147,7 @@
           "Ejemplos de datos JSON para demostrar y probar las solicitudes a la API",
           "Modelos de base de datos y migraciones de Django para el almacenamiento persistente de datos"
         ],
-        "desc4": "El resultado es un prototipo bien estructurado, funcional y comprobable, desarrollado a partir de un encargo técnico práctico y utilizando diversas herramientas tecnológicas seleccionadas por iniciativa propia."
+        "desc3": "El resultado es un prototipo bien estructurado, funcional y comprobable, desarrollado a partir de un encargo técnico práctico y utilizando diversas herramientas tecnológicas seleccionadas por iniciativa propia."
       },
       "projectodo": {
         "name": "Projectodo",

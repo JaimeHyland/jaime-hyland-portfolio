@@ -129,7 +129,7 @@
           "desc3": "Die Idee für die Anwendung entstand im Rahmen eines Prüfungsprojekts während meines Kurses. Aus einer zunächst eher überschaubaren Aufgabe entwickelte sich ein deutlich ambitionierteres Vorhaben: eine praktische Anwendung, die auf die Bedürfnisse von Familien zugeschnitten ist, die Organisation und Verantwortung für den Haushaltseinkauf gemeinsam übernehmen. Langfristig soll daraus eine vollwertige mobile Anwendung entstehen, wahlweise mit React Native oder Flutter entwickelt. Sie soll die Nutzungsmöglichkeiten über das Web hinaus erweitern, ohne die Einfachheit des ursprünglichen Konzepts aufzugeben.",
           "desc4": "Das Projekt ist eine eigenständig entwickelte und kontinuierlich weiterentwickelte Anwendung, deren Gestaltung bewusst auf eine möglichst einfache Benutzererfahrung ausgerichtet ist. Die zugrunde liegende Architektur berücksichtigt auch die weniger sichtbaren Herausforderungen gemeinsam genutzter Haushaltsdaten, Benutzeridentitäten, Familienmitgliedschaften und Berechtigungen. Gleichzeitig bleibt die Benutzeroberfläche auf die praktische Organisation des Familieneinkaufs konzentriert. Besonderes Augenmerk gilt der Wartbarkeit, Datenintegrität, Sicherheit und der Vermeidung unnötiger Komplexität."
         },
-        "mobileDeviceTest": {
+        "wearableDeviceTest": {
           "name": "Backend-Prototyp für die Synchronisierung von Wearable-Daten",
           "codebaseText": "GitHub-Repository",
           "codebaseURL": "https://github.com/JaimeHyland/wearable-device-data-sync-api",
@@ -147,7 +147,7 @@
             "Beispielhafte JSON-Daten zur Demonstration und zum Testen von API-Anfragen",
             "Django-Datenbankmodelle und Migrationen zur dauerhaften Speicherung der Daten"
           ],
-          "desc4": "Das Ergebnis ist ein gut strukturierter, funktionsfähiger und testbarer Prototyp, der auf Grundlage einer praxisorientierten technischen Aufgabenstellung und unter Einsatz verschiedener selbst ausgewählter technischer Werkzeuge entwickelt wurde."
+          "desc3": "Das Ergebnis ist ein gut strukturierter, funktionsfähiger und testbarer Prototyp, der auf Grundlage einer praxisorientierten technischen Aufgabenstellung und unter Einsatz verschiedener selbst ausgewählter technischer Werkzeuge entwickelt wurde."
       },
       "projectodo": {
         "name": "Projectodo",

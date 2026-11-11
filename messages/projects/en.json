@@ -130,7 +130,7 @@
         "desc3": "The idea for the application originated in an assessment project undertaken as part of my course. What began as a relatively modest exercise developed into a much more ambitious project: a practical application designed around the needs of families sharing the organisation and responsibility of household shopping. The longer-term vision is to develop it into a fully-fledged mobile application, using either React Native or Flutter, extending its accessibility and usefulness beyond the web while retaining the simplicity of the original concept.",
         "desc4": "The project is an independently developed, evolving application built around a deliberately simple user experience. Its underlying architecture addresses the less visible complexities of shared household data, account identity, family membership and permissions, while keeping the interface focused on the practical task of organising a family shop. Particular attention is given to maintainability, data integrity, security and the avoidance of unnecessary complexity."
       },
-      "mobileDeviceTest": {
+      "wearableDeviceTest": {
         "name": "Wearable device backend POC",
         "codebaseText":"GitHub repository",
         "codebaseURL":"https://github.com/JaimeHyland/wearable-device-data-sync-api",
@@ -148,7 +148,7 @@
           "Sample JSON payloads for demonstrating and testing API requests",
           "Django database models and migrations for persistent data storage"
         ],
-        "desc4": "The result is a well-structured and working, testable prototype developed against a practical technical brief, using a variety of self-identified technical tools."
+        "desc3": "The result is a well-structured and working, testable prototype developed against a practical technical brief, using a variety of self-identified technical tools."
       },
       "projectodo": {
         "name": "Projectodo",
