@@ -41,6 +41,15 @@ interface ModalState {
   description: string;
 }
 
+const CloudinaryIcon: IconType = ({ className, title }) => (
+  <img
+    src="/images/cloudinary_cloud.png"
+    alt={title || "Cloudinary"}
+    title={title}
+    className={`${className || ""} object-contain`}
+  />
+);
+
 const iconMap: Record<string, IconType> = {
   python: SiPython,
   javascript: SiJavascript,
@@ -64,6 +73,7 @@ const iconMap: Record<string, IconType> = {
   vercel: SiVercel,
   godaddy: SiGodaddy,
   aws: SiAmazonaws,
+  cloudinary: CloudinaryIcon,
   stripe: SiStripe,
   swagger: SiSwagger,
   vscode: SiVisualstudiocode,
