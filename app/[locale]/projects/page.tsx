@@ -4,6 +4,7 @@ import { ProjLink } from "../../../components/ProjLink";
 import { BadgeDisplay } from "../../../components/BadgeDisplay";
 import { CollapsibleSection } from "../../../components/CollapsibleSection";
 import { useTranslations } from "next-intl";
+import { CollapsibleItem } from "@/components/CollapsibleItem";
 
 export default function ProjectsPage() {
   const t = useTranslations();
@@ -21,24 +22,21 @@ export default function ProjectsPage() {
       <p className="mb-6">{t("projIntro")}</p>
 
       <CollapsibleSection id={t("portfolioAnchors.independent")} title={t("section2.title")}>
-        <p className="mb-4">{t("section2.description")}</p>
-        <ul className="space-y-4">
-          <li>
-            <strong>
-              <ProjLink href={t("section2.projects.projectodo.siteURL")}>
-                {t("section2.projects.projectodo.name")}
-              </ProjLink>
-            </strong>
+        <p className="mb-4 italic">{t("section2.description")}</p>
+        <ul className="space-y-2">
+          <CollapsibleItem title={t("section2.projects.projectodo.name")}>
             <p>
               {t.rich("section2.projects.projectodo.desc1", {
                 bold: (chunks) => <strong>{chunks}</strong>
               })}
             </p>
+
             <p>
               {t.rich("section2.projects.projectodo.desc2", {
                 bold: (chunks) => <strong>{chunks}</strong>
               })}
             </p>
+
             {Array.isArray(features) && (
               <ul className="list-disc list-outside pl-5 mb-4">
                 {features.map((feature, index) => (
@@ -50,65 +48,24 @@ export default function ProjectsPage() {
                 ))}
               </ul>
             )}
+
             <p>
               {t.rich("section2.projects.projectodo.desc3", {
                 bold: (chunks) => <strong>{chunks}</strong>
               })}
             </p>
+
             <p>
               {t.rich("section2.projects.projectodo.desc4", {
                 bold: (chunks) => <strong>{chunks}</strong>
               })}
             </p>
+
             <ProjLink href={t("section2.projects.projectodo.codebaseURL")}>
               {t("section2.projects.projectodo.codebaseText")}
             </ProjLink>
-          </li>
-          <li>
-            <strong>
-              <ProjLink href={t("section2.projects.shoppingListApp.siteURL")}>
-                {t("section2.projects.shoppingListApp.name")}
-              </ProjLink>
-            </strong>
-            <p>
-              {t.rich("section2.projects.shoppingListApp.desc1", {
-                bold: (chunks) => <strong>{chunks}</strong>
-              })}
-            </p>
-            <p>
-              {t.rich("section2.projects.shoppingListApp.desc2", {
-                bold: (chunks) => <strong>{chunks}</strong>
-              })}
-            </p>
-            {Array.isArray(features) && (
-              <ul className="list-disc list-outside pl-5 mb-4">
-                {features.map((feature, index) => (
-                  <li key={index} className="pl-2 -text-indent text-indent-hang">
-                    {t.rich(`section2.projects.shoppingListApp.features.${index}`, {
-                      bold: (chunks) => <strong>{chunks}</strong>
-                    })}
-                  </li>
-                ))}
-              </ul>
-            )}
-            <p>
-              {t.rich("section2.projects.shoppingListApp.desc3", {
-                bold: (chunks) => <strong>{chunks}</strong>
-              })}
-            </p>
-            <p>
-              {t.rich("section2.projects.shoppingListApp.desc4", {
-                bold: (chunks) => <strong>{chunks}</strong>
-              })}
-            </p>
-            <ProjLink href={t("section2.projects.shoppingListApp.codebaseURL")}>
-              {t("section2.projects.shoppingListApp.codebaseText")}
-            </ProjLink>
-          </li>
-          <li>
-            <strong>
-              {t("section2.projects.wearableDeviceTest.name")}
-            </strong>
+          </CollapsibleItem>
+          <CollapsibleItem title={t("section2.projects.wearableDeviceTest.name")}>
             <p>
               {t.rich("section2.projects.wearableDeviceTest.desc1", {
                 bold: (chunks) => <strong>{chunks}</strong>
@@ -138,8 +95,8 @@ export default function ProjectsPage() {
             <ProjLink href={t("section2.projects.wearableDeviceTest.codebaseURL")}>
               {t("section2.projects.wearableDeviceTest.codebaseText")}
             </ProjLink>
-          </li>
-          <li>
+          </CollapsibleItem>
+          <CollapsibleItem title={t("section2.projects.portfolio.name")}>
             <strong>
               <ProjLink href={t("section2.projects.portfolio.siteURL")}>
                 {t("section2.projects.portfolio.name")}
@@ -190,9 +147,8 @@ export default function ProjectsPage() {
             <ProjLink href={t("section2.projects.portfolio.codebaseURL")}>
               {t("section2.projects.portfolio.codebaseText")}
             </ProjLink>
-          </li>
-          <li>
-            <strong>{t("section2.projects.djangoFlutterI18n.name")}</strong>
+          </CollapsibleItem>
+          <CollapsibleItem title={t("section2.projects.djangoFlutterI18n.name")}>
             <p>
               {t.rich("section2.projects.djangoFlutterI18n.desc1", {
                 bold: (chunks) => <strong>{chunks}</strong>
@@ -206,20 +162,15 @@ export default function ProjectsPage() {
             <ProjLink href={t("section2.projects.djangoFlutterI18n.codebaseURL")}>
               {t("section2.projects.djangoFlutterI18n.codebaseText")}
             </ProjLink>
-          </li>
-          <li>
-            <strong>
-              <ProjLink href={t("section2.projects.language.siteURL")}>
-                {t("section2.projects.language.name")}
-              </ProjLink>
-            </strong>
+          </CollapsibleItem>
+          <CollapsibleItem title={t("section2.projects.language.name")}>
             <p className="mb-4">{t("section2.projects.language.desc1")}</p>
             <p>{t("section2.projects.language.desc2")}</p>
             <ProjLink href={t("section2.projects.language.codebaseURL")}>
               {t("section2.projects.language.codebaseText")}
             </ProjLink>
-          </li>
-          <li>
+          </CollapsibleItem>
+          <CollapsibleItem title={t("section2.projects.pdf-merger.name")}>
             <strong>
               <ProjLink href={t("section2.projects.pdf-merger.siteURL")}>
                 {t("section2.projects.pdf-merger.name")}
@@ -230,13 +181,8 @@ export default function ProjectsPage() {
             <ProjLink href={t("section2.projects.pdf-merger.codebaseURL")}>
               {t("section2.projects.pdf-merger.codebaseText")}
             </ProjLink>
-          </li>
-          <li>
-            <strong>
-              <ProjLink href={t("section2.projects.shopify-prototype.siteURL")}>
-                {t("section2.projects.shopify-prototype.name")}
-              </ProjLink>
-            </strong>
+          </CollapsibleItem>
+          <CollapsibleItem title={t("section2.projects.shopify-prototype.name")}>
             <p className="mb-4">{t("section2.projects.shopify-prototype.desc1")}</p>
 
             {Array.isArray(items) && (
@@ -250,7 +196,7 @@ export default function ProjectsPage() {
             <ProjLink href={t("section2.projects.shopify-prototype.codebaseURL")}>
               {t("section2.projects.shopify-prototype.codebaseText")}
             </ProjLink>
-          </li>
+          </CollapsibleItem>
         </ul>
       </CollapsibleSection>
 
