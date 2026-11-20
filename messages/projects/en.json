@@ -104,31 +104,28 @@
     "description": "These projects were created independently on my own initiative; they should all be considered Work in Progress",
     "projects": {
       "shoppingListApp": {
-        "name": "Family Shopping List App",
+        "name": "Family Shopper",
         "siteURL": "https://family-shopper-app-3b0facd8dbb7.herokuapp.com/",
         "codebaseText": "GitHub repository",
         "codebaseURL": "https://github.com/JaimeHyland/family-shopper-app",
-        "desc1": "A Django-based web application designed to make organising and sharing household shopping straightforward. It allows family members to manage shared shopping lists, organise products by shop and category, and keep track of what needs to be bought and what has already been purchased. The application supports multiple families, with individual accounts, family memberships and clearly defined permissions.",
-        "desc2": "The application provides:",
+        "desc1": "An independently developed, Django-based full-stack application designed to make organising and sharing household shopping straightforward. What began as an assessment project during my Code Institute course has evolved into a substantially more ambitious independent product, developed in a separate repository.",
+        "desc2": "The application allows multiple families to manage their shopping independently, with individual user accounts, family memberships and clearly defined administrator and member roles. Products can be organised by shop and category, while shared shopping lists keep track of quantities required and purchased. Family members can spontaneously take items from the shared shopping list into their own baskets. Changes to item status and basket contents are reflected in real time for all family members.",
+        "desc3": "The application provides:",
         "features": [
-          "Family-based accounts, allowing multiple households to manage their shopping independently",
-          "Individual user accounts and family memberships, with distinct administrator and member roles",
-          "Shared shopping lists for family members",
-          "Product organisation by shop and category",
-          "Shopping-list items with quantities required and quantities purchased",
-          "Basket management, allowing members to take responsibility for items they intend to buy",
-          "Clear ownership rules ensuring that each member can only purchase items assigned to their own basket",
-          "Support for multiple family memberships under a single user account",
-          "Email-based registration, verification and family invitations",
-          "Family-specific login for members who do not have an email address",
-          "Password management, including compulsory password changes for newly invited members using initial credentials",
-          "Role-based access controls and family-scoped permissions",
-          "Responsive interface designed to remain straightforward and usable across different screen sizes",
-          "Django database models and migrations for persistent data storage",
-          "SMTP-based email delivery for account verification and registration workflows"
+          "Family-based accounts, memberships and role-based permissions",
+          "Shared shopping lists, with products organised by shop and category",
+          "Item quantities and purchase tracking",
+          "Individual basket management, allowing members to take items from the shared list spontaneously",
+          "Strict basket ownership, ensuring members can only adjust the contents of their own baskets",
+          "Real-time updates to shared shopping-list status, keeping all family members informed of changes as they happen",
+          "Support for multiple family memberships under one user account",
+          "Email registration, verification and family invitations, alongside signup and login options for members without email addresses",
+          "Password management and family-scoped access controls",
+          "Responsive interface designed to remain straightforward across screen sizes"
         ],
-        "desc3": "The idea for the application originated in an assessment project undertaken as part of my course. What began as a relatively modest exercise developed into a much more ambitious project: a practical application designed around the needs of families sharing the organisation and responsibility of household shopping. The longer-term vision is to develop it into a fully-fledged mobile application, using either React Native or Flutter, extending its accessibility and usefulness beyond the web while retaining the simplicity of the original concept.",
-        "desc4": "The project is an independently developed, evolving application built around a deliberately simple user experience. Its underlying architecture addresses the less visible complexities of shared household data, account identity, family membership and permissions, while keeping the interface focused on the practical task of organising a family shop. Particular attention is given to maintainability, data integrity, security and the avoidance of unnecessary complexity."
+        "desc4": "A large part of the development lies beneath the interface: designing reliable data structures and business logic to handle family membership, account identity, permissions and individual basket ownership. Particular attention is given to data integrity, security and maintainability, without allowing the underlying complexity to make the application difficult to use.",
+        "desc5": "I am responsible for the application architecture, data structures, business logic, implementation and regression testing, working with a manual tester and UX specialist to refine and improve the product.",
+        "desc6": "The longer-term vision is to extend the application into a fully-fledged mobile product, potentially using React Native or Flutter, while retaining the simplicity of the original concept."
       },
       "wearableDeviceTest": {
         "name": "Wearable device backend POC",
