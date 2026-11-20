@@ -123,7 +123,7 @@
           "Responsives Design, das auf unterschiedlichen Bildschirmgrößen einfach und benutzerfreundlich bleibt"
         ],
         "desc4": "Ein großer Teil der Entwicklungsarbeit findet unterhalb der Benutzeroberfläche statt: bei der Konzeption zuverlässiger Datenstrukturen und der Entwicklung der Geschäftslogik für Familienmitgliedschaften, Benutzeridentitäten, Berechtigungen und die individuelle Verantwortung für Einkäufe. Besonderes Augenmerk gilt der Datenintegrität, Sicherheit und Wartbarkeit, ohne dass die zugrunde liegende Komplexität die Bedienung unnötig erschwert.",
-        "desc5": "Ich bin für die Anwendungsarchitektur, Datenstrukturen, Geschäftslogik, Implementierung und Regressionstests verantwortlich und arbeite dabei mit einem manuellen Tester und einer UX-Spezialistin zusammen, um das Produkt kontinuierlich zu verbessern.",
+        "desc5": "Ich bin für die Anwendungsarchitektur, Datenstrukturen, Geschäftslogik, Implementierung und Regressionstests verantwortlich und arbeite dabei mit einer Person, die manuelle Tests durchführt und einer UX-Spezialistin zusammen, um das Produkt kontinuierlich zu verbessern.",
         "desc6": "Langfristig soll die Anwendung zu einem vollwertigen mobilen Produkt weiterentwickelt werden, möglicherweise mit React Native oder Flutter, wobei die Einfachheit des ursprünglichen Konzepts erhalten bleiben soll."
       },
       "wearableDeviceTest": {
