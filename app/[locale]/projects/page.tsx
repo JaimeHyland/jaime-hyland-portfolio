@@ -24,6 +24,53 @@ export default function ProjectsPage() {
       <CollapsibleSection id={t("portfolioAnchors.independent")} title={t("section2.title")}>
         <p className="mb-4 italic">{t("section2.description")}</p>
         <ul className="space-y-2">
+          <CollapsibleItem title={t("section2.projects.shoppingListApp.name")}>
+            <strong>
+              <ProjLink href={t("section2.projects.shoppingListApp.siteURL")}>
+                {t("section2.projects.shoppingListApp.name")}
+              </ProjLink>
+            </strong>
+            <p>
+              {t.rich("section2.projects.shoppingListApp.desc1", {
+                bold: (chunks) => <strong>{chunks}</strong>
+              })}
+            </p>
+            <p>
+              {t.rich("section2.projects.shoppingListApp.desc2", {
+                bold: (chunks) => <strong>{chunks}</strong>
+              })}
+            </p>
+            <p>{t("section2.projects.shoppingListApp.desc3")}</p>
+            {Array.isArray(features) && (
+              <ul className="list-disc list-outside pl-5 mb-4">
+                {features.map((feature, index) => (
+                  <li key={index} className="pl-2 -text-indent text-indent-hang">
+                    {t.rich(`section2.projects.shoppingListApp.features.${index}`, {
+                      bold: (chunks) => <strong>{chunks}</strong>
+                    })}
+                  </li>
+                ))}
+              </ul>
+            )}
+            <p>
+              {t.rich("section2.projects.shoppingListApp.desc4", {
+                bold: (chunks) => <strong>{chunks}</strong>
+              })}
+            </p>
+            <p>
+              {t.rich("section2.projects.shoppingListApp.desc5", {
+                bold: (chunks) => <strong>{chunks}</strong>
+              })}
+            </p>
+            <p>
+              {t.rich("section2.projects.shoppingListApp.desc6", {
+                bold: (chunks) => <strong>{chunks}</strong>
+              })}
+            </p>
+            <ProjLink href={t("section2.projects.shoppingListApp.codebaseURL")}>
+              {t("section2.projects.shoppingListApp.codebaseText")}
+            </ProjLink>
+          </CollapsibleItem>
           <CollapsibleItem title={t("section2.projects.projectodo.name")}>
             <p>
               {t.rich("section2.projects.projectodo.desc1", {
