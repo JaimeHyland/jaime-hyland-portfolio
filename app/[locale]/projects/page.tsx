@@ -77,7 +77,6 @@ export default function ProjectsPage() {
                 bold: (chunks) => <strong>{chunks}</strong>
               })}
             </p>
-
             <p>
               {t.rich("section2.projects.projectodo.desc2", {
                 bold: (chunks) => <strong>{chunks}</strong>
@@ -95,13 +94,11 @@ export default function ProjectsPage() {
                 ))}
               </ul>
             )}
-
             <p>
               {t.rich("section2.projects.projectodo.desc3", {
                 bold: (chunks) => <strong>{chunks}</strong>
               })}
             </p>
-
             <p>
               {t.rich("section2.projects.projectodo.desc4", {
                 bold: (chunks) => <strong>{chunks}</strong>
@@ -110,37 +107,6 @@ export default function ProjectsPage() {
 
             <ProjLink href={t("section2.projects.projectodo.codebaseURL")}>
               {t("section2.projects.projectodo.codebaseText")}
-            </ProjLink>
-          </CollapsibleItem>
-          <CollapsibleItem title={t("section2.projects.wearableDeviceTest.name")}>
-            <p>
-              {t.rich("section2.projects.wearableDeviceTest.desc1", {
-                bold: (chunks) => <strong>{chunks}</strong>
-              })}
-            </p>
-            <p>
-              {t.rich("section2.projects.wearableDeviceTest.desc2", {
-                bold: (chunks) => <strong>{chunks}</strong>
-              })}
-            </p>
-            {Array.isArray(features) && (
-              <ul className="list-disc list-outside pl-5 mb-4">
-                {features.map((feature, index) => (
-                  <li key={index} className="pl-2 -text-indent text-indent-hang">
-                    {t.rich(`section2.projects.wearableDeviceTest.features.${index}`, {
-                      bold: (chunks) => <strong>{chunks}</strong>
-                    })}
-                  </li>
-                ))}
-              </ul>
-            )}
-            <p>
-              {t.rich("section2.projects.wearableDeviceTest.desc3", {
-                bold: (chunks) => <strong>{chunks}</strong>
-              })}
-            </p>
-            <ProjLink href={t("section2.projects.wearableDeviceTest.codebaseURL")}>
-              {t("section2.projects.wearableDeviceTest.codebaseText")}
             </ProjLink>
           </CollapsibleItem>
           <CollapsibleItem title={t("section2.projects.portfolio.name")}>
@@ -193,6 +159,37 @@ export default function ProjectsPage() {
             )}
             <ProjLink href={t("section2.projects.portfolio.codebaseURL")}>
               {t("section2.projects.portfolio.codebaseText")}
+            </ProjLink>
+          </CollapsibleItem>
+          <CollapsibleItem title={t("section2.projects.wearableDeviceTest.name")}>
+            <p>
+              {t.rich("section2.projects.wearableDeviceTest.desc1", {
+                bold: (chunks) => <strong>{chunks}</strong>
+              })}
+            </p>
+            <p>
+              {t.rich("section2.projects.wearableDeviceTest.desc2", {
+                bold: (chunks) => <strong>{chunks}</strong>
+              })}
+            </p>
+            {Array.isArray(features) && (
+              <ul className="list-disc list-outside pl-5 mb-4">
+                {features.map((feature, index) => (
+                  <li key={index} className="pl-2 -text-indent text-indent-hang">
+                    {t.rich(`section2.projects.wearableDeviceTest.features.${index}`, {
+                      bold: (chunks) => <strong>{chunks}</strong>
+                    })}
+                  </li>
+                ))}
+              </ul>
+            )}
+            <p>
+              {t.rich("section2.projects.wearableDeviceTest.desc3", {
+                bold: (chunks) => <strong>{chunks}</strong>
+              })}
+            </p>
+            <ProjLink href={t("section2.projects.wearableDeviceTest.codebaseURL")}>
+              {t("section2.projects.wearableDeviceTest.codebaseText")}
             </ProjLink>
           </CollapsibleItem>
           <CollapsibleItem title={t("section2.projects.djangoFlutterI18n.name")}>
