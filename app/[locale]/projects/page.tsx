@@ -27,7 +27,7 @@ export default function ProjectsPage() {
           <CollapsibleItem title={t("section2.projects.shoppingListApp.name")}>
             <strong>
               <ProjLink href={t("section2.projects.shoppingListApp.siteURL")}>
-                {t("section2.projects.shoppingListApp.name")}
+                {t("section2.projects.shoppingListApp.liveText")}
               </ProjLink>
             </strong>
             <p>
@@ -67,11 +67,18 @@ export default function ProjectsPage() {
                 bold: (chunks) => <strong>{chunks}</strong>
               })}
             </p>
+            <strong> 
             <ProjLink href={t("section2.projects.shoppingListApp.codebaseURL")}>
               {t("section2.projects.shoppingListApp.codebaseText")}
             </ProjLink>
+            </strong>
           </CollapsibleItem>
           <CollapsibleItem title={t("section2.projects.projectodo.name")}>
+            <strong> 
+              <ProjLink href={t("section2.projects.projectodo.siteURL")}>
+                {t("section2.projects.projectodo.liveText")}
+              </ProjLink>
+            </strong>
             <p>
               {t.rich("section2.projects.projectodo.desc1", {
                 bold: (chunks) => <strong>{chunks}</strong>
@@ -104,15 +111,16 @@ export default function ProjectsPage() {
                 bold: (chunks) => <strong>{chunks}</strong>
               })}
             </p>
-
-            <ProjLink href={t("section2.projects.projectodo.codebaseURL")}>
-              {t("section2.projects.projectodo.codebaseText")}
-            </ProjLink>
+            <strong>
+              <ProjLink href={t("section2.projects.projectodo.codebaseURL")}>
+                {t("section2.projects.projectodo.codebaseText")}
+              </ProjLink>
+            </strong>
           </CollapsibleItem>
           <CollapsibleItem title={t("section2.projects.portfolio.name")}>
             <strong>
               <ProjLink href={t("section2.projects.portfolio.siteURL")}>
-                {t("section2.projects.portfolio.name")}
+                {t("section2.projects.portfolio.liveText")}
               </ProjLink>
             </strong>
             <p>
@@ -157,9 +165,11 @@ export default function ProjectsPage() {
                 ))}
               </ul>
             )}
+            <strong>
             <ProjLink href={t("section2.projects.portfolio.codebaseURL")}>
               {t("section2.projects.portfolio.codebaseText")}
             </ProjLink>
+            </strong>
           </CollapsibleItem>
           <CollapsibleItem title={t("section2.projects.wearableDeviceTest.name")}>
             <p>
@@ -188,9 +198,11 @@ export default function ProjectsPage() {
                 bold: (chunks) => <strong>{chunks}</strong>
               })}
             </p>
-            <ProjLink href={t("section2.projects.wearableDeviceTest.codebaseURL")}>
-              {t("section2.projects.wearableDeviceTest.codebaseText")}
-            </ProjLink>
+            <strong>
+              <ProjLink href={t("section2.projects.wearableDeviceTest.codebaseURL")}>
+                {t("section2.projects.wearableDeviceTest.codebaseText")}
+              </ProjLink>
+            </strong>
           </CollapsibleItem>
           <CollapsibleItem title={t("section2.projects.djangoFlutterI18n.name")}>
             <p>
@@ -203,16 +215,25 @@ export default function ProjectsPage() {
                 bold: (chunks) => <strong>{chunks}</strong>
               })}
             </p>
-            <ProjLink href={t("section2.projects.djangoFlutterI18n.codebaseURL")}>
-              {t("section2.projects.djangoFlutterI18n.codebaseText")}
-            </ProjLink>
+            <strong>
+              <ProjLink href={t("section2.projects.djangoFlutterI18n.codebaseURL")}>
+                {t("section2.projects.djangoFlutterI18n.codebaseText")}
+              </ProjLink>
+            </strong>
           </CollapsibleItem>
           <CollapsibleItem title={t("section2.projects.language.name")}>
+            <strong>
+              <ProjLink href={t("section2.projects.language.siteURL")}>
+                {t("section2.projects.language.liveText")}
+              </ProjLink>
+            </strong>
             <p className="mb-4">{t("section2.projects.language.desc1")}</p>
             <p>{t("section2.projects.language.desc2")}</p>
-            <ProjLink href={t("section2.projects.language.codebaseURL")}>
-              {t("section2.projects.language.codebaseText")}
-            </ProjLink>
+            <strong>
+              <ProjLink href={t("section2.projects.language.codebaseURL")}>
+                {t("section2.projects.language.codebaseText")}
+              </ProjLink>
+            </strong>
           </CollapsibleItem>
           <CollapsibleItem title={t("section2.projects.pdf-merger.name")}>
             <strong>

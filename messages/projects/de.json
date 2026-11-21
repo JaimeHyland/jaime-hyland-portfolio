@@ -104,6 +104,7 @@
     "projects": {
       "shoppingListApp": {
         "name": "Family Shopper",
+        "liveText": "Link zur Live-Webseite",
         "siteURL": "https://family-shopper-app-3b0facd8dbb7.herokuapp.com/",
         "codebaseText": "GitHub-Repository",
         "codebaseURL": "https://github.com/JaimeHyland/family-shopper-app",
@@ -148,7 +149,8 @@
       },
       "projectodo": {
         "name": "Projectodo",
-        "siteURL": "https://projectodo.vercel.app/",
+        "liveText": "Link zur Live-Webseite",
+        "siteURL": "https://projectodo.de/de/",
         "codebaseText": "GitHub-Repository",
         "codebaseURL": "https://github.com/JaimeHyland/projectodo",
         "desc1": "Ich entwickle diese Website derzeit als kommerzielles Projekt für einen Kunden, der eine Vielzahl musikalischer Dienstleistungen anbietet – von Musikunterricht über technische und tontechnische Unterstützung für Konzerte bis hin zu Live-Musikveranstaltungen. Das Frontend der Website (insbesondere Internationalisierung und grafische Funktionen) wird mit Next.js auf Basis von React, intl-next und Tailwind umgesetzt, während das Backend auf einer PostgreSQL-Datenbank basieren wird. Die erforderlichen APIs sowie die Authentifizierungsfunktionen (sowohl im Front- als auch im Backend) werden von Django bereitgestellt.",
@@ -169,7 +171,8 @@
       },
       "portfolio": {
         "name": "Jaime Hylands Portfolio",
-        "siteURL": "https://jaime-hyland.com/",
+        "liveText": "Link zur Live-Webseite",
+        "siteURL": "https://jaime-hyland.com/de/",
         "codebaseText": "GitHub-Repository",
         "codebaseURL": "https://github.com/JaimeHyland/jaime-hyland-portfolio",
         "desc1": "Dieses Projekt ist die Seite, die Sie sich gerade ansehen. Es handelt sich um ein professionelles, mehrsprachiges Portfolio, das in <bold>TypeScript</bold> mit <bold>Next.js</bold>, <bold>Tailwind CSS</bold> und <bold>next-intl</bold> entwickelt wurde und meinen Hintergrund in Softwarelokalisierung, Technischem Schreiben und Softwareentwicklung präsentiert.",
@@ -201,7 +204,8 @@
       },
       "language": {
         "name": "language-landscapes.com",
-        "siteURL": "https://language-landscapes.com",
+        "liveText": "Link zur Live-Webseite",
+        "siteURL": "https://language-landscapes.com/deu",
         "codebaseText": "GitHub-Repository",
         "codebaseURL": "https://github.com/JaimeHyland/language-landscapes",
         "desc1": "Dies ist ein älteres CakePHP-Projekt, das ursprünglich von einer externen Fachkraft nach meinen Vorgaben entwickelt wurde. Ich verwalte es inzwischen selbst – inklusive mehrmaliger Reparaturen. Eine spätere Migration auf ein modernes Framework ist geplant. Aktuell ist die Seite nicht responsive.",

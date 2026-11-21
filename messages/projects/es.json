@@ -104,7 +104,8 @@
     "projects": {
       "shoppingListApp": {
         "name": "Family Shopper",
-        "siteURL": "https://family-shopper-app-3b0facd8dbb7.herokuapp.com/",
+        "liveText": "Enlace al sitio en vivo",
+        "siteURL": "https:///",
         "codebaseText": "Repositorio de GitHub",
         "codebaseURL": "https://github.com/JaimeHyland/family-shopper-app",
         "desc1": "Una aplicación full-stack basada en Django, desarrollada de forma independiente para facilitar la organización y la gestión compartida de la compra familiar. Lo que comenzó como un proyecto de evaluación durante mi curso en Code Institute ha evolucionado hasta convertirse en un producto independiente mucho más ambicioso, desarrollado en un repositorio separado.",
@@ -148,6 +149,7 @@
       },
       "projectodo": {
         "name": "Projectodo",
+        "liveText": "Enlace al sitio en vivo",
         "siteURL": "https://projectodo.vercel.app/",
         "codebaseText": "Repositorio de GitHub",
         "codebaseURL": "https://github.com/JaimeHyland/projectodo",
@@ -169,6 +171,7 @@
       },
       "portfolio": {
         "name": "Portfolio de Jaime Hyland",
+        "liveText": "Enlace al sitio en vivo",
         "siteURL": "https://jaime-hyland.com/",
         "codebaseText": "Repositorio en GitHub",
         "codebaseURL": "https://github.com/JaimeHyland/jaime-hyland-portfolio",
@@ -179,7 +182,7 @@
           "Un portafolio detallado de mis proyectos, con énfasis en los más recientes",
           "Compatibilidad <bold>i18n</bold> elegante y sin interrupciones, con localización en inglés, alemán y español",
           "Diseño limpio y accesible",
-          "diseño web responsivo",
+          "Diseño web responsivo",
           "Generación automática de nodos meta en la página principal para SEO; un sitemap y robots.txt",
           "Impressum (aviso legal), también completamente localizado",
           "Se puede ver la correcta localización de las URLs de la interfaz. Debido a las limitaciones de Next.js, esto requirió una solución híbrida cliente-servidor que combina redirecciones, rendering en el servidor y ajustes finales en el lado del cliente. Ya están todos los URL, incluidos los de los enlaces internos basados en anclas, correctamente localizados.",
@@ -201,7 +204,8 @@
       },
       "language": {
         "name": "language-landscapes.com",
-        "siteURL": "https://language-landscapes.com",
+        "liveText": "Enlace al sitio en vivo",
+        "siteURL": "https://language-landscapes.com/eng/",
         "codebaseText": "Repositorio de GitHub",
         "codebaseURL": "https://github.com/JaimeHyland/language-landscapes",
         "desc1": "Este es un proyecto heredado de CakePHP. Fue diseñado y desarrollado originalmente hace más de una década por un tercero cualificado siguiendo mis instrucciones. Ahora lo gestiono yo. Lo he roto y arreglado varias veces. En algún momento del futuro tengo la intención de refactorizarlo hacia un marco más moderno, pero por el momento no es responsivo a pantallas de teléfonos móviles.",
