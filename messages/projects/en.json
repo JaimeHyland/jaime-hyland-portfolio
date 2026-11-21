@@ -105,6 +105,7 @@
     "projects": {
       "shoppingListApp": {
         "name": "Family Shopper",
+        "liveText": "Live site",
         "siteURL": "https://family-shopper-app-3b0facd8dbb7.herokuapp.com/",
         "codebaseText": "GitHub repository",
         "codebaseURL": "https://github.com/JaimeHyland/family-shopper-app",
@@ -149,11 +150,12 @@
       },
       "projectodo": {
         "name": "Projectodo",
-        "siteURL": "https://projectodo.vercel.app/",
+        "liveText": "Live site",
+        "siteURL": "https://projectodo.de/en/",
         "codebaseText": "GitHub repository",
         "codebaseURL": "https://github.com/JaimeHyland/projectodo",
-        "desc1": "I'm now building this site as a commercial project for a client who provides a variety of musical services, from music lessons, through technical and sound support for concerts, all the way to live musical events. The site's front end (especially its internationalization and graphic features) is developed in next.js using React, intl-next and Tailwind, while its backend will be based on a PostreSQL database.  The APIs it needs will be provided by Django, as will its authentication features (both at front and back end). ",
-        "desc2": "The site will feature:",
+        "desc1": "I'm now working on an ongoing basis on this site as a commercial project for a client who provides a variety of musical services, from music lessons, through technical and sound support for concerts, all the way to live musical events. The site's front end (especially its internationalization and graphic features) is developed in next.js using React, intl-next and Tailwind, while its backend will be based on a PostreSQL database.  The APIs it needs will be provided by Django, as will its authentication features (both at front and back end). ",
+        "desc2": "The site features:",
         "features": [
           "An easy utility that allows the user to add, edit and remove custom pages (for example, for musical groups, music teachers, sound technicians, etc.)",
           "A variety of different user categories, from admin through musician member, to unregistered user. The precise categories will be at least webmaster, customer, band member, teacher and ordinary user, but there may be more by the time the project is complete.",
@@ -170,6 +172,7 @@
       },
       "portfolio": {
         "name": "Jaime Hyland's Portfolio",
+        "liveText": "Live site",
         "siteURL": "https://jaime-hyland.com/",
         "codebaseText": "GitHub repository",
         "codebaseURL": "https://github.com/JaimeHyland/jaime-hyland-portfolio",
@@ -202,6 +205,7 @@
       },
       "language": {
         "name": "language-landscapes.com",
+        "liveText": "Live site",
         "siteURL": "https://language-landscapes.com",
         "codebaseText": "GitHub repository",
         "codebaseURL": "https://github.com/JaimeHyland/language-landscapes",
