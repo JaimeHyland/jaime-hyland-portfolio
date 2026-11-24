@@ -1,3 +1,5 @@
+This is an English-language version of my CV designed to be read by machine. A human-friendly version is available here: https://www.jaime-hyland.com/files/JaimeHyland_CV_en_GB_HR_FullStack_latest.pdf
+
 JAIME HYLAND
 Full-stack Developer – i18n with Django & Next.js
 Berlin, Germany
