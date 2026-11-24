@@ -227,6 +227,7 @@
   "portfolioAnchors": {
     "ciProjects": "ci-projects",
     "independent": "independent",
-    "hackathons": "hackathons"
+    "hackathons": "hackathons",
+    "workProjects": "work-projects"
   }
 }

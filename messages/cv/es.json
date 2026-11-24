@@ -230,6 +230,7 @@
   "portfolioAnchors": {
     "ciProjects": "proyectos-ci",
     "independent": "independiente",
-    "hackathons": "hackatones"
+    "hackathons": "hackatones",
+    "workProjects": "proyectos-laborales"
   }
 }

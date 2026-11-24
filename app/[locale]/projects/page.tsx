@@ -419,7 +419,7 @@ export default function ProjectsPage() {
           </li>
         </ul>
       </CollapsibleSection>
-      <CollapsibleSection id="workProjects" title={t("section4.title")}>
+      <CollapsibleSection id={t("portfolioAnchors.workProjects")} title={t("section4.title")}>
         <ul>
           <li>
             <strong>{t("section4.projects.microbus-l10n.name")}</strong>
