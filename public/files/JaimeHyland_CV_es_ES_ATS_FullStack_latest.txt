@@ -1,83 +1,116 @@
-Esta es una versión en alemán de mi currículum diseñada para ser leída por máquinas. La fecha de su ultima actualización es el 06.07.2026. Una versión legible para humanos está disponible aquí: https://www.jaime-hyland.com/files/JaimeHyland_CV_es_ES_HR_FullStack_latest.pdf
+Esta es una versión en español de mi CV diseñada para su lectura automática. Puede consultarse una versión visualmente más cuidada en: https://jaime-hyland.com/es/
 
-Jaime Hyland | Desarrollador de Software Fullstack | Berlín
-Correo: mailto:jaime.hyland@language-landscapes.com | GitHub: https://github.com/JaimeHyland
-Web: https://jaime-hyland.com | LinkedIn: https://www.linkedin.com/in/language-landscapes/
+JAIME HYLAND
+Desarrollador Full-stack – i18n con Django y Next.js
+Berlín, Alemania
+Correo: jaime.hyland@language-landscapes.com
+GitHub: https://github.com/JaimeHyland/
+Web: https://jaime-hyland.com/es/
+LinkedIn: https://www.linkedin.com/in/language-landscapes/
 
-Perfil personal
-Desarrollador de software full-stack con experiencia en frontend (React, JavaScript, HTML, CSS)
-y backend (Python, Django, Flask, Node.js). Experiencia en desarrollo de aplicaciones móviles
-con Flutter y Dart. Amplia formación en internacionalización (i18n),
-localización (l10n) y documentación de software multilingüe. Capacidad demostrada para
-traducir requisitos complejos en soluciones bien estructuradas y listas para desplegar.
+CV EN FORMATO VISUAL
+https://jaime-hyland.com/es/
 
-Competencias técnicas
-Lenguajes de programación | HTML | CSS | JavaScript | Python | Java | VB.NET | Dart
-Frameworks y librerías | React | Flask | Django | Bootstrap | Stripe | Flutter
-Bases de datos y APIs | MySQL | PostgreSQL | Oracle | APIs REST
-Despliegue y Cloud | AWS | Heroku | Cloudinary | GoDaddy | Vercel
-i18n y Localización | Trados | Passolo | Transit | Django-i18n | i18next
-Herramientas y Gestión de Proyectos | Jira | Jupyter | Author-it | https://www.author-it.com/
-| Doc2Help | https://www.doctohelp.com/ | Workflows ágiles
-Control de versiones | Git | GitHub | Subversion | Pipelines CI/CD
+PERFIL PROFESIONAL
 
-Formación
-Ago. 2023 – Sept. 2024 | Code Institute, Dublín | Diploma Full-Stack
-Ago. – Oct. 2000 | FAS CITP | Diploma en Programación Informática
-1984 – 1988 | Trinity College Dublin | Licenciatura en Filosofía
+Desarrollador full-stack con experiencia en internacionalización de software, localización y comunicación técnica. Experiencia en el desarrollo de aplicaciones web y móviles con Python, Django, JavaScript, React, Next.js y Flutter. Combina conocimientos prácticos de desarrollo con una sólida comprensión del software multilingüe, los flujos de trabajo técnicos y las necesidades empresariales que estos deben satisfacer. Especialmente capacitado para transformar requisitos complejos en soluciones claras, bien estructuradas y fáciles de mantener.
 
-Proyectos recientes independientes
-Portafolio de cursos | https://www.jaime-hyland.com/en/projects#ci-assessment
-Cinco proyectos fullstack con HTML, CSS, JavaScript, JSON, Bootstrap, Python,
-Django, Flask, React, Stripe. Heroku, Daphne/Channels, Redis, AWS; comunicación
-asíncrona utilizando Channels.
+COMPETENCIAS TÉCNICAS
 
-Contribuciones en hackathons | https://www.jaime-hyland.com/en/projects#hackathons
-Participación en cuatro hackathons de 5 días y uno de 3 días organizados por Code Institute
-- Desarrollo de sitios Django/Channels/Redis con chatbots de IA en vivo y documentación API Swagger
-- Múltiples premios: 2× segundo lugar, 1× tercer lugar, 1× Premio del Público
-- Cuatro de cinco proyectos desplegados con éxito en línea
+Programación: JS, TypeScript, Python, Java, VB.NET, Dart, HTML, CSS
+Frameworks y bibliotecas: Django, Flask, React, Next.js, Flutter, Bootstrap
+Bases de datos y APIs: PostgreSQL, MySQL, Oracle, APIs REST, Stripe
+Despliegue e infraestructura: AWS, Heroku, Vercel, Supabase, Cloudinary, GoDaddy
+I18n y l10n: Passolo, Trados, Transit, memoQ, Django i18n, i18next
+Herramientas y workflows: Git, GitHub, Subversion, Jira, Jupyter, CI/CD, Author-it, Doc2Help, metodologías ágiles
 
-Proyectos personales | https://www.jaime-hyland.com/en/projects#independent
-- Desarrollo de sitio web CV multilingüe (de/en/es) con Next.js, TypeScript, React e i18next
-- Creación de plantilla Django-Flutter-i18n para integración full-stack web/móvil
-- Proyecto actual: aplicación móvil para aprendizaje de idiomas basada en la plantilla Django-Flutter-i18n
+FORMACIÓN
 
-Experiencia profesional
-Sept. 2024 – actualidad | Desarrollo web fullstack freelance – Berlín
-- Aplicación web fullstack multilingüe para un colectivo musical local en Berlín (en curso)
-- Aplicación web internacionalizada con CRM para ReduceCO2Now (en curso)
+Ago. 2023 – Sept. 2024 | Code Institute, Dublín
+Diploma en Desarrollo Full-Stack
+https://codeinstitute.net/full-stack-software-development-diploma/
 
-2022 – Julio 2023 | Desarrollador de Software Freelance | Berlín
-- Aplicación móvil de idiomas: Base de datos MySQL, administración Java Swing, UI Flutter/Dart
-- Traducciones técnicas y académicas
+Ago. – Oct. 2000 | FAS CITP (Programming)
+Diploma en programación informática
 
-2020 – 2022 | Traductor y Formador Freelance | Berlín
-- Traducción, localización, enseñanza de idiomas
-- Enfoque en contenido técnico y flujos de trabajo de localización
+Sept. 1984 – Junio 1988 | Trinity College Dublin
+Licenciatura (BA) en Filosofía
 
-2010 – 2020 | Traductor Técnico/Especialista en Localización Freelance | language-landscapes.com
-- Traducción Español/Alemán → Inglés, IT, telecomunicaciones, transporte, sociología,
-historia, medicina
-- Herramientas: Trados Studio | Passolo | Déjà Vu | Transit/Termstar | memoQ
+PROYECTOS INDEPENDIENTES RECIENTES Y EN CURSO
 
-Abril 2004 – Sept. 2010 | IVU Traffic Technologies | Berlín | https://www.ivu.de/
-- Especialista en localización técnica y documentación de IVU.suite
-- Automatización de flujo de trabajo para localización de software y documentación de ayuda
-(VB.NET, Ant, API Passolo)
-- Integrado en el ciclo de desarrollo y compilación diaria
-- Responsable de localización para 14 idiomas
+Family Shopper
+https://github.com/JaimeHyland/family-shopper-app
 
-Habilidades adicionales
-Gestión de proyectos | Metodologías ágiles | Planificación estratégica | Documentación técnica
-| Notas de versión | Sistemas de ayuda y formación | Integración de contenidos multilingües
-| Publicación desde fuente única
+Desarrollo de una aplicación full-stack para la compra familiar compartida. Responsable de arquitectura, datos, lógica de negocio, implementación y pruebas de regresión. Colaboración con especialistas en pruebas y UX. Proyecto independiente surgido de una evaluación de Code Institute.
 
-Idiomas
-Inglés (Nativo) | Español (Fluido, 9 años en España) | Alemán (C1, residente prolongado)
-| Francés (Básico) | Italiano (Básico) | Irlandés (Básico)
+Portafolio del curso
+https://jaime-hyland.com/es/proyectos#proyectos-ci
 
-Hobbies e intereses
-- Hackathons, aprendizaje continuo: Code Institute | Brilliant.org | LinkedIn Learning
-| KodeKloud; Especialización en Dart y Flutter
-- Jardinería | Cocina | Apicultura | Creación de moldes de silicona
+Cinco proyectos full-stack con HTML, CSS, JavaScript, JSON, Bootstrap, Python, Django, Flask y React. Integración de Stripe en comercio electrónico, despliegue en Heroku y AWS y comunicación asíncrona con Channels, Daphne y Redis.
+
+Hackatones
+https://jaime-hyland.com/es/proyectos#hackatones
+
+Participación en tres hackatones de cinco días y uno de tres días organizados por Code Institute. Desarrollo de aplicaciones Django/Channels/Redis con chatbots de IA en tiempo real y documentación de APIs con Swagger. Obtención de dos segundos puestos, un tercer puesto y un premio del público. Tres proyectos desplegados en línea con éxito.
+
+Otros proyectos personales
+https://jaime-hyland.com/es/proyectos#independiente
+
+jaime-hyland.com
+https://jaime-hyland.com/es/
+
+Desarrollo de un sitio web multilingüe (inglés/alemán/español) de CV y portafolio con Next.js, TypeScript, React e i18next. Implementación de un sistema propio de enrutamiento mediante middleware para permitir URLs completamente localizadas y mantener las palabras clave SEO específicas de cada página.
+
+Projectodo
+https://projectodo.de/es/
+
+Integración de un frontend Next.js con un backend Django mediante un proxy basado en middleware para resolver las restricciones CORS del navegador y permitir la comunicación entre orígenes distintos.
+
+EXPERIENCIA PROFESIONAL
+
+Sept. 2024 – actualidad | Desarrollador web full-stack autónomo | Berlín
+
+Desarrollo de una aplicación web multilingüe para un colectivo musical local (Projectodo.de); creación y mantenimiento de un sitio web multilingüe de portafolio; diseño y desarrollo independiente de una aplicación full-stack para la compra familiar, con previsión de adaptación futura a dispositivos móviles. También creación de un centro de proyectos funcional en GitHub para ReduceCO2Now.
+
+2022 – Julio 2023 | Desarrollo de software y traducción independiente | Berlín
+
+Desarrollo de una aplicación móvil de aprendizaje de idiomas (prueba de concepto), con MySQL, administración en Java Swing e interfaz en Flutter/Dart. Traducción técnica y académica.
+
+Sept. 2020 – 2022 | Traductor y formador autónomo | Berlín
+
+Traducción, localización y enseñanza de idiomas, con especial atención a contenidos técnicos y flujos de trabajo multilingües.
+
+Sept. 2010 – 2020 | Traductor y especialista en localización | language-landscapes.com
+https://language-landscapes.com/eng/
+
+Traducción del DE y ES al EN en TI, telecomunicaciones, transporte, sociología, historia y medicina. Herramientas: Trados Studio, Passolo, Déjà Vu, Transit/Termstar y memoQ.
+
+Abr. 2004 – Sept. 2010 | IVU Traffic Technologies AG | Berlín
+https://www.ivu.com/es/empresa/sobre-ivu
+
+Especialista en localización técnica y documentación de la suite de transporte público IVU.suite.
+
+Automatización de la localización de software:
+Automatización de la localización mediante VB.NET y la API de Passolo, integrada en las compilaciones nocturnas de Maven. Compatible con cuatro arquitecturas, detectaba nuevos recursos, verificaba la terminología y generaba versiones localizadas cada mañana. Agilizó el proceso y redujo los informes de errores innecesarios.
+
+Publicación de documentación:
+Sustitución del flujo de trabajo de documentación basado en Doc2Help por Author-it, un sistema de single-source publishing. Esto simplificó la producción de documentación multilingüe y eliminó una parte considerable del trabajo de traducción duplicado, ahorrando tiempo y costes.
+
+COMPETENCIAS ADICIONALES
+
+Gestión de proyectos, metodologías ágiles, planificación estratégica, documentación técnica, notas de versión, formación, ayuda al usuario, contenidos multilingües y single-source publishing.
+
+IDIOMAS
+
+Inglés: lengua materna
+Español: fluido
+Alemán: C1
+Francés: básico
+Italiano: básico
+Irlandés: básico
+
+AFICIONES E INTERESES
+
+Aprendizaje continuo: hackatones, Brilliant.org y LinkedIn Learning. Dart, Flutter y React Native. Jardinería, cocina, apicultura y moldes de silicona.
+
+Texto del CV actualizado: 24 de noviembre de 2026
